@@ -1,0 +1,154 @@
+﻿/*-- icon: https://www.flaticon.com/free-icon/down-arrow_7043441?term=triangle&page=2&position=92&origin=search&related_id=7043441 --*/
+
+#headerQPCP {
+    float: left;
+    width: calc(100% - 100px);
+    padding: 0 50px;
+    border-bottom: 1px solid #ebebeb;
+/*    background: #fcfcfc;*/
+}
+
+#headerQPCP[data-fixed="true"] {
+    position:fixed
+}
+
+    #headerQPCP a {
+        color: black;
+        text-decoration: none;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    #headerQPCP[data-description_flag="true"] {
+        border-bottom: none;
+    }
+
+    #headerQPCP > div {
+        float: left;
+        width: 100%;
+    }
+
+        #headerQPCP > div:first-child {
+            height: 53px;
+        }
+
+            #headerQPCP > div:first-child > a > img {
+                float: left;
+                /*width: 24px;
+                height: 24px;
+                margin: 13px 0 18px;*/
+                width: 20px;
+                height: 20px;
+                margin: 17px 2px 18px;
+            }
+
+            #headerQPCP > div:first-child > div:nth-child(2) > a, #headerQPCP > div:first-child > h1 > a {
+                font-family: 'Audiowide', cursive;
+                float: left;
+                font-size: 20px;
+                padding: 14px 0 0 20px;
+                font-weight: 600;
+                letter-spacing: 2px;
+            }
+
+                #headerQPCP > div:first-child ul.icon-menu {
+                    float: right;
+                    margin: 17px 0 0;
+                }
+
+                #headerQPCP > div:first-child ul.icon-menu > li {
+                    float: left;
+                }
+
+                    #headerQPCP > div:first-child ul.icon-menu > li > a {
+                        float: left;
+                        border-right: 1px solid #ebebeb;
+                        padding: 0 12px;
+                        margin-top: 0;
+                    }
+
+                    #headerQPCP > div:first-child ul.icon-menu > li:last-child > a {
+                        border-right: none;
+                        padding: 0 0 0 12px;
+                    }
+
+                    #headerQPCP > div:first-child ul.icon-menu > li > a > img {
+                        float: left;
+                        height: var(--bs-height-icon);
+                        /*height:20px;*/
+                        height: 16px;
+                        margin-top: 0px;
+                    }
+
+                    #headerQPCP > div:first-child ul.icon-menu > li > a[href="/u"][data-numberInCart="0"][data-userf="false"] > img {
+                        content: url(/Pages/i/components/itemsPCM/content/paper-bag.png)
+                    }
+
+                    #headerQPCP > div:first-child ul.icon-menu > li > a[href="/u"][data-numberInCart="0"][data-userf="true"] > img {
+                        content: url(/Pages/i/components/itemsPCM/content/user.png)
+                    }
+
+        #headerQPCP > div:nth-child(2) {
+            display:none;
+        }
+
+        #headerQPCP > div:nth-child(2) > * {
+            float: left;
+        }
+
+            #headerQPCP > div:nth-child(2) > *:first-child {
+                height: 1px;
+                background: #ebebeb;
+                width: 24px;
+                margin-top: 8px;
+            }
+
+
+            #headerQPCP > div:nth-child(2) > *:nth-child(2) {
+                padding: 0 0 0 10px;
+                margin: 0;
+            }
+
+                #headerQPCP > div:nth-child(2) > *:nth-child(2) > span, #headerQPCP > div:nth-child(2) > *:nth-child(2) > a {
+                    margin-right: 5px;
+                    float: left;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    font-size: 9px;
+                    font-weight: 600;
+                    color: #0f0f0f;
+                    font-weight: 700;
+                    background: #efefef;
+                    border-radius: 10px;
+                    padding:3px 10px 2px;
+                }
+
+/*                #headerQPCP > div:nth-child(2) > *:nth-child(2) > a {
+                    color: #00358e;
+                }*/
+
+                #headerQPCP > div:nth-child(2) > *:nth-child(2) > *:last-child {
+                    margin-right: 0;
+                }
+
+            #headerQPCP > div:nth-child(2) > *:nth-child(3) {
+                height: 1px;
+                background: #ebebeb;
+                margin-top: 8px;
+                float: right;
+            }
+
+/*-- rt.ink html helpers --*/
+
+@media (max-width: 800px) {
+    #headerQPCP {
+        width: calc(100% - 60px);
+        padding: 0 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    #headerQPCP {
+        width: calc(100% - 40px);
+        padding: 0 20px;
+    }
+}

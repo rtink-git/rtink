@@ -1,0 +1,245 @@
+﻿#ArticlesHtmlBox {
+    float:left;
+    width:100%;
+    text-align:center;
+}
+
+    #ArticlesHtmlBox ul {
+        display: inline-block;
+        max-width: 600px;
+        width: calc(100% - 100px);
+        margin: 0 0 50px;
+    }
+
+    #ArticlesHtmlBox article {
+        float:left;
+        margin:10px 0 30px;
+    }
+
+    #ArticlesHtmlBox article h1 {
+        float: left;
+        width: 100%;
+        text-align: left;
+        letter-spacing: 0.6px;
+        font-family: 'Montserrat', sans-serif;
+        line-height: 21px;
+        font-size: 18px;
+    }
+
+    #ArticlesHtmlBox time {
+        cursor: pointer;
+    }
+
+    #ArticlesHtmlBox hr {
+        float: right;
+        width: 200px;
+        border: none;
+        border-top: 1px solid #ebebeb;
+        margin-top:11px;
+
+    }
+
+    #ArticlesHtmlBox h1:hover {
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+    }
+
+    /*------------------*/
+
+    #ArticlesHtmlBox article > * {
+        float: left;
+        width: 100%;
+    }
+
+    #ArticlesHtmlBox article > img {
+        border-radius: 6px;
+        margin-bottom:15px;
+        display: none;
+    }
+
+        #ArticlesHtmlBox article > *:first-child {
+            margin-bottom:20px;
+        }
+
+    #ArticlesHtmlBox article[data-tp="2"] > *:first-child {
+        width: calc(65% - 40px);
+        float: right;
+    }
+
+    #ArticlesHtmlBox article[data-tp="2"] > img {
+        cursor: pointer;
+        margin-bottom:0;
+    }
+
+    #ArticlesHtmlBox article[data-tp="2"] > *:first-child > h1 {
+        float: left;
+        width: 100%;
+        /*            line-height: 18px;
+            font-size: 15px;*/
+        text-align: left;
+        padding: 0;
+        font-size: 17px;
+        line-height: 20px;
+    }
+
+    #ArticlesHtmlBox article[data-tp="3"] > *:first-child > h1 {
+        text-align: left;
+        padding: 0;
+        margin-bottom: 10px;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    #ArticlesHtmlBox article #_Description {
+        text-align: left;
+        float: left;
+        font-family: 'Montserrat', sans-serif;
+        padding: 20px 0 15px;
+        width: 100%;
+        font-size: 13px;
+        line-height: 18px;
+        font-weight: normal;
+        color: #404040;
+        letter-spacing: 0.3px
+    }
+
+    #ArticlesHtmlBox article > #_DtLoginHtmlPart {
+        margin-bottom: 10px;
+    }
+
+
+        #ArticlesHtmlBox article > *:last-child > a {
+            float: right;
+            background: #fff;
+            padding-left: 10px;
+            margin-top: -15px;
+        }
+
+    #ArticlesHtmlBox article .BookmarkButton > img {
+        float: left;
+        content: url(/PageComponents/ArticlesHtmlBox/content/bookmark.png);
+        height: 14px;
+        opacity: 0.3
+    }
+
+    #ArticlesHtmlBox article .BookmarkButton[data-isbookmark="true"] > img {
+        content: url(/PageComponents/ArticlesHtmlBox/content/bookmarkSelected.png);
+        opacity: 0.7
+    }
+
+    #ArticlesHtmlBox h1 > a {
+        font-weight: 700;
+        color: #404040;
+    }
+
+    #ArticlesHtmlBox article[data-tp="2"] > img {
+        float:left;
+        width:35%;
+    }
+
+    #ArticlesHtmlBox article #_DtLoginHtmlPart {
+        float: left;
+        text-align: left;
+        padding: 0 0 0;
+    }
+
+    #ArticlesHtmlBox article[data-tp="2"] #_DtLoginHtmlPart {
+        padding: 5px 0 0;
+    }
+
+    #ArticlesHtmlBox article[data-tp="3"] > *:first-child {
+        margin-bottom: 0;
+    }
+
+    #ArticlesHtmlBox #_DtLoginHtmlPart > * {
+        float: left;
+        color: #a3a3a3;
+        font-size: 12px;
+        line-height: 12px;
+        letter-spacing: 1px;
+        margin-right:5px;
+        font-weight:normal;
+        margin-top:5px;
+    }
+
+    #ArticlesHtmlBox article #_Description {
+        display: none;
+    }
+
+        #ArticlesHtmlBox article #_Description[data-isDescription="true"] {
+            display: block;
+        }
+
+    #ArticlesHtmlBox article[data-tp="1"] #_Description {
+        padding: 0 0 15px;
+    }
+
+    #ArticlesHtmlBox article[data-tp="0"] #_Description {
+        padding: 5px 0 10px;
+    }
+
+    #ArticlesHtmlBox article[data-tp="1"] #_DtLoginHtmlPart {
+        padding-bottom: 1px;
+    }
+
+@media (max-width: 650px) {
+    #ArticlesHtmlBox article[data-tp="2"] h1 {
+        line-height: 19px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 600px) {
+    #ArticlesHtmlBox article[data-tp="2"] h1 {
+        line-height: 18px;
+        font-size: 15px;
+    }
+
+    #ArticlesHtmlBox hr {
+        width: 170px;
+    }
+}
+
+@media (max-width: 550px) {
+    #ArticlesHtmlBox ul {
+        width: calc(100% - 40px);
+    }
+
+    #ArticlesHtmlBox article[data-tp="2"] h1 {
+        line-height: 18px;
+        font-size: 15px;
+    }
+
+/*    #ArticlesHtmlBox article[data-tp="2"] > *:first-child > h1 {
+        line-height: 17px;
+        font-size: 14px;
+    }*/
+
+    #ArticlesHtmlBox ul {
+        width: calc(100% - 40px);
+    }
+
+/*    #ArticlesHtmlBox article[data-tp="2"] > *:first-child > h1 {
+        line-height: 17px;
+        font-size: 14px;
+    }*/
+}
+
+@media (max-width: 500px) {
+    #ArticlesHtmlBox article[data-tp="2"] h1 {
+        line-height: 17px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 450px) {
+    #ArticlesHtmlBox hr {
+        width: 120px;
+    }
+}
+
+#ArticlesHtmlBox article #_Description[data-body="true"] {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.65px;
+}

@@ -1,0 +1,150 @@
+﻿/*-- icon: https://www.flaticon.com/free-icon/down-arrow_7043441?term=triangle&page=2&position=92&origin=search&related_id=7043441 --*/
+
+#HeaderBox {
+    float: left;
+    width: calc(100% - 100px);
+    margin: 0 50px;
+    border-bottom: 1px solid #ebebeb;
+/*    background: #fcfcfc;*/
+}
+
+    #HeaderBox[data-fixed="true"] {
+        position: fixed
+    }
+
+    #HeaderBox a {
+        color: black;
+        text-decoration: none;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    #HeaderBox[data-description_flag="true"] {
+        border-bottom: none;
+    }
+
+    #HeaderBox > div {
+        float: left;
+        width: 100%;
+    }
+
+        #HeaderBox > div:first-child {
+            height: 53px;
+        }
+
+            #HeaderBox > div:first-child > a > img {
+                float: left;
+                /*width: 24px;
+                height: 24px;
+                margin: 13px 0 18px;*/
+                width: 20px;
+                height: 20px;
+                margin: 17px 2px 18px;
+            }
+
+            #HeaderBox > div:first-child > div:nth-child(2) > a, #HeaderBox > div:first-child > h1 > a {
+                font-family: 'Audiowide', cursive;
+                float: left;
+                font-size: 20px;
+                padding: 14px 0 0 20px;
+                font-weight: 600;
+                letter-spacing: 2px;
+            }
+
+            #HeaderBox > div:first-child ul.icon-menu {
+                float: right;
+                margin: 17px 0 0;
+            }
+
+                #HeaderBox > div:first-child ul.icon-menu > li {
+                    float: left;
+                }
+
+                    #HeaderBox > div:first-child ul.icon-menu > li > a {
+                        float: left;
+                        border-right: 1px solid #ebebeb;
+                        padding: 0 12px;
+                        margin-top: 0;
+                    }
+
+                    #HeaderBox > div:first-child ul.icon-menu > li:last-child > a {
+                        border-right: none;
+                        padding: 0 0 0 12px;
+                    }
+
+                    #HeaderBox > div:first-child ul.icon-menu > li > a > img {
+                        float: left;
+                        height: var(--bs-height-icon);
+                        /*height:20px;*/
+                        height: 16px;
+                        margin-top: 0px;
+                    }
+
+                    #HeaderBox > div:first-child ul.icon-menu > li > a[href="/u"][data-numberInCart="0"][data-userf="false"] > img {
+                        content: url(/Pages/i/components/itemsPCM/content/paper-bag.png)
+                    }
+
+                    #HeaderBox > div:first-child ul.icon-menu > li > a[href="/u"][data-numberInCart="0"][data-userf="true"] > img {
+                        content: url(/Pages/i/components/itemsPCM/content/user.png)
+                    }
+
+        #HeaderBox > div:nth-child(2) {
+            display: none;
+        }
+
+            #HeaderBox > div:nth-child(2) > * {
+                float: left;
+            }
+
+                #HeaderBox > div:nth-child(2) > *:first-child {
+                    height: 1px;
+                    background: #ebebeb;
+                    width: 24px;
+                    margin-top: 8px;
+                }
+
+
+                #HeaderBox > div:nth-child(2) > *:nth-child(2) {
+                    padding: 0 0 0 10px;
+                    margin: 0;
+                }
+
+                    #HeaderBox > div:nth-child(2) > *:nth-child(2) > span, #headerQPCP > div:nth-child(2) > *:nth-child(2) > a {
+                        margin-right: 5px;
+                        float: left;
+                        text-transform: uppercase;
+                        letter-spacing: 1px;
+                        font-size: 9px;
+                        font-weight: 600;
+                        color: #0f0f0f;
+                        font-weight: 700;
+                        background: #fbfbfb;
+                        border-radius: 2px;
+                        padding: 3px 10px 2px;
+                    }
+
+                    #HeaderBox > div:nth-child(2) > *:nth-child(2) > *:last-child {
+                        margin-right: 0;
+                    }
+
+                #HeaderBox > div:nth-child(2) > *:nth-child(3) {
+                    height: 1px;
+                    background: #ebebeb;
+                    margin-top: 8px;
+                    float: right;
+                }
+
+/*-- rt.ink html helpers --*/
+
+@media (max-width: 800px) {
+    #HeaderBox {
+        width: calc(100% - 60px);
+        margin: 0 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    #HeaderBox {
+        width: calc(100% - 40px);
+        margin: 0 20px;
+    }
+}
