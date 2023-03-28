@@ -54,13 +54,13 @@ builder.Services.AddAuthentication(options =>
             return JwtBearerDefaults.AuthenticationScheme;
     };
 })
-.AddCookie()
-.AddGoogle(options =>
+    .AddCookie()
+    .AddGoogle(options =>
 {
     options.ClientId = "251527858454-opkvgc8mr70dc7kkr6vaeimi37o8gf8h.apps.googleusercontent.com";
     options.ClientSecret = "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";
 })
-.AddJwtBearer(options =>
+    .AddJwtBearer(options =>
 {
     options.RequireHttpsMetadata = false;
     options.TokenValidationParameters = new TokenValidationParameters
@@ -102,8 +102,8 @@ app.UseSession();
 app.UseRouting();
 app.UseAuthorization();
 
-//app.MapGet("/", async (context) => { await context.Response.WriteAsync("<script type=\"module\" src=\"/Pages/i/script.js\"></script>"); }); // /*await context.Response.WriteAsync(new RtInk.Pages.I().GetHtml());*/
-//app.MapGet("/i/{search}", async (context) => { await context.Response.WriteAsync("<script type=\"module\" src=\"/Pages/i/script.js\"></script>"); });
+app.MapGet("/", async (context) => { await context.Response.WriteAsync("<script type=\"module\" src=\"/Pages/i/script.js\"></script>"); }); // /*await context.Response.WriteAsync(new RtInk.Pages.I().GetHtml());*/
+app.MapGet("/i/{search}", async (context) => { await context.Response.WriteAsync("<script type=\"module\" src=\"/Pages/i/script.js\"></script>"); });
 
 app.MapGet("/a/{urlShort}", async (string urlShort, HttpContext context, IHttpClientFactory httpClientFactory) => {
     //-- Task.Note: app.MapGet [/a/{urlShort}] устарел, но необходимо поддерживать, потому что применялся в ранних версиях и может оставаться актуальным
