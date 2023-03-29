@@ -10,11 +10,11 @@
 //, roleId, , 
 
 import { isTest, apiUrl, PageHeadsBuild, authJWToken } from '/PageComponents/Page/script.js';
-//import { HeaderHtmlBox } from '/PageComponents/HeaderHtmlBox/script.js';
+import { HeaderHtmlBox } from '/PageComponents/HeaderHtmlBox/script.js';
 //import { HeaderUnderQHtmlBox } from '/PageComponents/HeaderUnderQHtmlBox/script.js';
-//import { SearchHeaderHtmlBox } from "/PageComponents/SearchHeaderHtmlBox/script.js";
+import { SearchHeaderHtmlBox } from "/PageComponents/SearchHeaderHtmlBox/script.js";
 //import { CentralInfHtmlBox } from '/PageComponents/CentralInfHtmlBox/script.js';
-//import { ArticlesHtmlBox } from '/PageComponents/ArticlesHtmlBox/script.js';
+import { ArticlesHtmlBox } from '/PageComponents/ArticlesHtmlBox/script.js';
 
 
 //--------------------
@@ -54,45 +54,44 @@ if(search.length > 0)
 
 //--------------------
 
-////let apiPageI = await ApiPageI(search)
+let apiPageI = await ApiPageI(search)
+let roleId = apiPageI.id
     
-//let menuList = new Array()
+let menuList = new Array()
 
-//if (roleId > 0)
-//    menuList.push({ "icon": iPageUrlContent + "/category.png", "href": "/list" })
+if (roleId > 0)
+    menuList.push({ "icon": iPageUrlContent + "/category.png", "href": "/list" })
 
-//if (typeApiPageI == 0) {
-//    if (roleId == 0) menuList.push({ "icon": iPageUrlContent + "/login.png", "href": "", "id": "SigninB" });
-//}
-//else if (typeApiPageI == 1) {
-//}
-//else if (typeApiPageI == 2) {
-//}
-//else if (typeApiPageI == 3) {
-//}
+if (typeApiPageI == 0) {
+    if (roleId == 0) menuList.push({ "icon": iPageUrlContent + "/login.png", "href": "", "id": "SigninB" });
+}
+else if (typeApiPageI == 1) {
+}
+else if (typeApiPageI == 2) {
+}
+else if (typeApiPageI == 3) {
+}
 
 ////--------------------
 
-//new HeaderHtmlBox(document.getElementsByTagName("body")[0], "afterbegin", "RT NEWS", null, menuList, isTest)
+new HeaderHtmlBox(document.getElementsByTagName("body")[0], "afterbegin", "RT NEWS", null, menuList, isTest)
 
-//let placeholder = "NEWS AGGREGATOR"
+let placeholder = "NEWS AGGREGATOR"
 
-//if (typeApiPageI == 0) { }
-//else if (typeApiPageI == 1) {
-//    if (search.split('-').length > 2) placeholder = search.toUpperCase().replace('-', '@').replace('-', ':  ').replaceAll('-', ' ')
-//    else placeholder = search.toUpperCase().replace('-', '@') + ": ИЛОН МАСК"
-
-//}
-//else if (typeApiPageI == 3) placeholder = search.toUpperCase().replaceAll('-', ' ')
-//new SearchHeaderHtmlBox(document.getElementById("HeaderHtmlBox"), "afterend", placeholder, "НАЙДЕТСЯ ВСЁ")
-
+if (typeApiPageI == 0) { }
+else if (typeApiPageI == 1) {
+    if (search.split('-').length > 2) placeholder = search.toUpperCase().replace('-', '@').replace('-', ':  ').replaceAll('-', ' ')
+    else placeholder = search.toUpperCase().replace('-', '@') + ": ИЛОН МАСК"
+}
+else if (typeApiPageI == 3) placeholder = search.toUpperCase().replaceAll('-', ' ')
+new SearchHeaderHtmlBox(document.getElementById("HeaderHtmlBox"), "afterend", placeholder, "НАЙДЕТСЯ ВСЁ")
 
 ////let centralInfHtmlBox = new CentralInfHtmlBox(document.getElementById("HeaderUnderHtmlBox"), "afterend", 100, null, 90, 0.3, null, 70, 0.1, "LOADING", document.URL, null, null)
-//let articlesHtmlBox = new ArticlesHtmlBox(document.getElementById("SearchHeaderHtmlBox"), "afterend", search, apiUrl, authJWToken, isTest)
+let articlesHtmlBox = new ArticlesHtmlBox(document.getElementById("SearchHeaderHtmlBox"), "afterend", search, apiUrl, authJWToken, isTest)
 
 ////document.getElementById(centralInfHtmlBox.id).remove()
 
-//await articlesHtmlBox.ListAppend()
+await articlesHtmlBox.ListAppend()
 
 ////if (articlesHtmlBox.listN == 0) {
 ////    new CentralInfHtmlBox(document.getElementById("HeaderUnderHtmlBox"), "afterend", 110, null, 90, 0, "/PageComponents/CentralInfHtmlBox/content/404.png", 60, 0.3, "NOTHING FOUND", document.URL, null, null)
@@ -105,7 +104,7 @@ if(search.length > 0)
 
 
 
-////-- html actions
+//-- html actions
 
 //if (document.getElementById("SigninB") != null)
 //    document.getElementById("SigninB").addEventListener('click', async () => {
@@ -114,15 +113,15 @@ if(search.length > 0)
 //        window.location.href = apiUrl + "/Authorization/Signin/Google/" + authJWToken
 //    });
 
-////-- api actions
+//-- api actions
 
-////async function ApiPageI(search) {
-////    const response = await fetch(apiUrl + "/RtInk/Page/I?search=" + search, {
-////        method: "GET",
-////        headers: { "Accept": "application/json", "Authorization": "Bearer " + authJWToken }
-////    });
-////    if (response.ok === true) return await response.json();
-////    return null;
-////}
+async function ApiPageI(search) {
+    const response = await fetch(apiUrl + "/RtInk/Page/I?search=" + search, {
+        method: "GET",
+        headers: { "Accept": "application/json", "Authorization": "Bearer " + authJWToken }
+    });
+    if (response.ok === true) return await response.json();
+    return null;
+}
 
-////--------------------
+//--------------------

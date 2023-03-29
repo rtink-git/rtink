@@ -24,10 +24,11 @@ import { Sessions } from '/PageComponents/Sessions.js';
 let MontserratGoogleFont = document.createElement("link"); MontserratGoogleFont.setAttribute("rel", "stylesheet"); MontserratGoogleFont.setAttribute("href", "https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900;1000&display=swap"); document.head.append(MontserratGoogleFont);
 
 
-export let isTest = true; // true - режим тестирования. false - режим реализации
+export let isTest = false; // true - режим тестирования. false - режим реализации
 
 export let apiUrl = "https://api.rt.ink"
-apiUrl = "https://localhost:7025"
+if (isTest)
+    apiUrl = "https://localhost:7025"
 
 //export let roleId = 0
 var sessions = new Sessions();
