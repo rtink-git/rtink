@@ -4,7 +4,8 @@
 /*-- Project publication --*/
 //-- 1. wwwroot /PageComponents/Page/script.js 
 //---- Set window.isTest = false
-//---- SEt server host apiUrl 
+//---- set server host apiUrl 
+//---- Set server host url RtInk.Constants
 //---- Check base project params HeadPage
 
 // Tasks

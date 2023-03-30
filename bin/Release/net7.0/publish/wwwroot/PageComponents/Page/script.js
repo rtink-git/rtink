@@ -27,12 +27,10 @@ let MontserratGoogleFont = document.createElement("link"); MontserratGoogleFont.
 export let isTest = false; // true - режим тестирования. false - режим реализации
 
 export let apiUrl = "https://api.rt.ink"
-apiUrl = "https://localhost:7025"
+//apiUrl = "https://localhost:7025"
 
-//export let roleId = 0
 var sessions = new Sessions();
 await sessions.TokenRefresh(apiUrl);
-//roleId = sessions.roleId
 export let authJWToken = sessions.authJWToken
 
 

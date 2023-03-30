@@ -16,7 +16,6 @@ import { SearchHeaderHtmlBox } from "/PageComponents/SearchHeaderHtmlBox/script.
 //import { CentralInfHtmlBox } from '/PageComponents/CentralInfHtmlBox/script.js';
 import { ArticlesHtmlBox } from '/PageComponents/ArticlesHtmlBox/script.js';
 
-
 //--------------------
 
 const iPageName = "i";  const iPageUrl = "/Pages/" + iPageName; const iPageUrlContent = iPageUrl + "/content";
@@ -56,6 +55,7 @@ if(search.length > 0)
 
 let apiPageI = await ApiPageI(search)
 let roleId = apiPageI.id
+
     
 let menuList = new Array()
 

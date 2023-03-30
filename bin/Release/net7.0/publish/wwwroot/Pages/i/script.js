@@ -14,8 +14,7 @@ import { HeaderHtmlBox } from '/PageComponents/HeaderHtmlBox/script.js';
 //import { HeaderUnderQHtmlBox } from '/PageComponents/HeaderUnderQHtmlBox/script.js';
 import { SearchHeaderHtmlBox } from "/PageComponents/SearchHeaderHtmlBox/script.js";
 //import { CentralInfHtmlBox } from '/PageComponents/CentralInfHtmlBox/script.js';
-//import { ArticlesHtmlBox } from '/PageComponents/ArticlesHtmlBox/script.js';
-
+import { ArticlesHtmlBox } from '/PageComponents/ArticlesHtmlBox/script.js';
 
 //--------------------
 
@@ -56,6 +55,7 @@ if(search.length > 0)
 
 let apiPageI = await ApiPageI(search)
 let roleId = apiPageI.id
+
     
 let menuList = new Array()
 
@@ -86,13 +86,12 @@ else if (typeApiPageI == 1) {
 else if (typeApiPageI == 3) placeholder = search.toUpperCase().replaceAll('-', ' ')
 new SearchHeaderHtmlBox(document.getElementById("HeaderHtmlBox"), "afterend", placeholder, "НАЙДЕТСЯ ВСЁ")
 
-
 ////let centralInfHtmlBox = new CentralInfHtmlBox(document.getElementById("HeaderUnderHtmlBox"), "afterend", 100, null, 90, 0.3, null, 70, 0.1, "LOADING", document.URL, null, null)
-//let articlesHtmlBox = new ArticlesHtmlBox(document.getElementById("SearchHeaderHtmlBox"), "afterend", search, apiUrl, authJWToken, isTest)
+let articlesHtmlBox = new ArticlesHtmlBox(document.getElementById("SearchHeaderHtmlBox"), "afterend", search, apiUrl, authJWToken, isTest)
 
 ////document.getElementById(centralInfHtmlBox.id).remove()
 
-//await articlesHtmlBox.ListAppend()
+await articlesHtmlBox.ListAppend()
 
 ////if (articlesHtmlBox.listN == 0) {
 ////    new CentralInfHtmlBox(document.getElementById("HeaderUnderHtmlBox"), "afterend", 110, null, 90, 0, "/PageComponents/CentralInfHtmlBox/content/404.png", 60, 0.3, "NOTHING FOUND", document.URL, null, null)
