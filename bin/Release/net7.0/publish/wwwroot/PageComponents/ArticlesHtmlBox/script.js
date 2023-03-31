@@ -1,6 +1,4 @@
-﻿//import { isTest } from "../Page/script"
-
-export class ArticlesHtmlBox {
+﻿export class ArticlesHtmlBox {
     target
     position
     page
@@ -49,10 +47,22 @@ export class ArticlesHtmlBox {
             this.target.insertAdjacentHTML(this.position, this.BodyHtmlBox(this.name))
             document.querySelector("#" + this.name + " > ul").insertAdjacentHTML("afterbegin", this.LisHtmlBox(list))
             await this.LoadImageAndAddActions(list)
+
+            if (this.page == 1 && list.length == this.take) {
+                document.querySelector("#" + this.name + " > ul").insertAdjacentHTML("afterend", this.MoreButton())
+
+                document.getElementById("MoreButton").addEventListener('click', async () => {
+                    let lst = await this.ApiAticles()
+                    document.querySelector("#" + this.name + " > ul").insertAdjacentHTML("beforeend", this.LisHtmlBox(lst))
+                    await this.LoadImageAndAddActions(lst)
+                });
+            }
         }
 
         this.page++;
     }
+
+    //-- Html Boxes
 
     BodyHtmlBox(name) {
         let html = "\
@@ -169,9 +179,8 @@ export class ArticlesHtmlBox {
                     </article>\
                 </li>"
             }
-        }
 
-        //    if (item.querySelector("[data-isbody]").getAttribute("data-isbody") == 1) {
+                    //    if (item.querySelector("[data-isbody]").getAttribute("data-isbody") == 1) {
         //        item.addEventListener("click", async event => {
         //            let tg = event.target.closest("article")
         //            let body = await ApiGetBody(tg.getAttribute("data-titleHb"));
@@ -182,6 +191,7 @@ export class ArticlesHtmlBox {
         //            }
         //        })
         //    }
+        }
         return html;
     }
 
@@ -200,6 +210,26 @@ export class ArticlesHtmlBox {
 
         return html;
     }
+
+    MoreButton() {
+        let html = "\
+        <div id=\"MoreButton\">\
+            <div>\
+                <a>\
+                    <img src=\"/PageComponents/ArticlesHtmlBox/content/arrow-down-black.png\" />\
+                </a>\
+                <a>\
+                    <span>\
+                        Показать больше\
+                    </span>\
+                </a>\
+            </div>\
+        </div>"
+
+        return html;
+    }
+
+    //----------
 
     async LoadImageAndAddActions(list) {
         let pg = this.page - 1;
@@ -295,6 +325,8 @@ export class ArticlesHtmlBox {
             //if
         }
     }
+
+    //-- Test
 
     ListTest() {
         var list = new Array();
@@ -498,6 +530,8 @@ export class ArticlesHtmlBox {
 
         return list;
     }
+
+    //-- api
 
     async ApiAticles() {
         const response = await fetch(this.ApiUrl + "/RtInk/Articles?search=" + this.search + "&take=" + this.take + "&page=" + this.page, {

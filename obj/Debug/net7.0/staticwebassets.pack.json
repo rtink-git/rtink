@@ -1,6 +1,10 @@
 {
   "Files": [
     {
+      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\ArticlesHtmlBox\\content\\arrow-down-black.png",
+      "PackagePath": "staticwebassets\\PageComponents\\ArticlesHtmlBox\\content\\arrow-down-black.png"
+    },
+    {
       "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\ArticlesHtmlBox\\content\\bookmark.png",
       "PackagePath": "staticwebassets\\PageComponents\\ArticlesHtmlBox\\content\\bookmark.png"
     },

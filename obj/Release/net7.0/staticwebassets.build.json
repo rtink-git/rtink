@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "FC01zhFkRBWpd1761APNU7x/nuQNd6fU9ChpoJ1Qq04=",
+  "Hash": "2YXvcjpALkggH7Yv4St4moQvHpgXop4/Cq3HMEZWzh8=",
   "Source": "RtInk",
   "BasePath": "_content/RtInk",
   "Mode": "Default",
@@ -16,6 +16,23 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\ArticlesHtmlBox\\content\\arrow-down-black.png",
+      "SourceId": "RtInk",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "BasePath": "_content/RtInk",
+      "RelativePath": "PageComponents/ArticlesHtmlBox/content/arrow-down-black.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\PageComponents\\ArticlesHtmlBox\\content\\arrow-down-black.png"
+    },
     {
       "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\ArticlesHtmlBox\\content\\bookmark.png",
       "SourceId": "RtInk",
