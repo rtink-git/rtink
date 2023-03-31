@@ -140,13 +140,6 @@ app.MapGet("/a/{urlShort}", async (string urlShort, HttpContext context, IHttpCl
     else
         await context.Response.WriteAsync("Error 404");
 });
-
-
-
-
-app.MapGet("/list", async (context) => {
-    await context.Response.WriteAsync(new RtInk.Pages.List().GetHtml());
-});
 app.MapGet("/f/{id_with_extension}", (string id_with_extension) =>
 {
     try
@@ -168,10 +161,11 @@ app.MapGet("/f/{id_with_extension}", (string id_with_extension) =>
 
         return Results.File(file_byte_l, mime_type, "rt.ink_" + id_with_extension); //await context.Response.WriteAsync("Error 404");// base.File(file_byte_l, mime_type, "rt.ink_" + pathSplit[2]);
     }
-    catch
-    {
-        return Results.Redirect("/");
-    }
+    catch { return Results.Redirect("/"); }
+});
+
+app.MapGet("/list", async (context) => {
+    await context.Response.WriteAsync(new RtInk.Pages.List().GetHtml());
 });
 
 app.MapGet("/user-profile/{login}", async (context) => {
