@@ -6,7 +6,7 @@
 
         let html = "\
             <div id=\"" + name + "\">\
-                <input type=\"search\" placeholder=\"" + placeholder + "\" />\
+                <input type=\"text\" placeholder=\"" + placeholder + "\" />\
                 <a>\
                     <img src=\"" + url + "/content/search.png\" />\
                 </a>\
@@ -14,9 +14,14 @@
 
         target.insertAdjacentHTML(position, html)
 
-        document.querySelector("#" + name + " input[type=\"search\"]").addEventListener('focus', async () => {
-            document.querySelector("#SearchHeaderHtmlBox input[type=\"search\"]").setAttribute("placeholder", placeholderFocus)
-            document.querySelector("#SearchHeaderHtmlBox a").style.display = "block"
+        document.querySelector("#" + name + " input[type=\"text\"]").addEventListener('focus', async () => {
+            document.querySelector("#SearchHeaderHtmlBox input[type=\"text\"]").setAttribute("placeholder", placeholderFocus)
+            //document.querySelector("#SearchHeaderHtmlBox a").style.display = "block"
+        });
+
+        document.querySelector("#" + name + " input[type=\"text\"]").addEventListener('blur', async () => {
+            document.querySelector("#SearchHeaderHtmlBox input[type=\"text\"]").setAttribute("placeholder", placeholder)
+            //document.querySelector("#SearchHeaderHtmlBox a").style.display = "none"
         });
     }
 }

@@ -10,7 +10,6 @@
     name
     listN
     constructor(target, position, search, apiUrl, authJWToken, isTest) {
-
         this.name = "ArticlesHtmlBox"
         let url = "/PageComponents/" + this.name;
         //let urlContent = "/PageComponents/" + this.name + "/content";
@@ -48,15 +47,15 @@
             document.querySelector("#" + this.name + " > ul").insertAdjacentHTML("afterbegin", this.LisHtmlBox(list))
             await this.LoadImageAndAddActions(list)
 
-            if (this.page == 1 && list.length == this.take) {
-                document.querySelector("#" + this.name + " > ul").insertAdjacentHTML("afterend", this.MoreButton())
+            //if (this.page == 1 && list.length == this.take) {
+            //    document.querySelector("#" + this.name + " > ul").insertAdjacentHTML("afterend", this.MoreButton())
 
-                document.getElementById("MoreButton").addEventListener('click', async () => {
-                    let lst = await this.ApiAticles()
-                    document.querySelector("#" + this.name + " > ul").insertAdjacentHTML("beforeend", this.LisHtmlBox(lst))
-                    await this.LoadImageAndAddActions(lst)
-                });
-            }
+            //    document.getElementById("MoreButton").addEventListener('click', async () => {
+            //        let lst = await this.ApiAticles()
+            //        document.querySelector("#" + this.name + " > ul").insertAdjacentHTML("beforeend", this.LisHtmlBox(lst))
+            //        await this.LoadImageAndAddActions(lst)
+            //    });
+            //}
         }
 
         this.page++;

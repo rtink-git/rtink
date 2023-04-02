@@ -20,7 +20,7 @@ import { ArticlesHtmlBox } from '/PageComponents/ArticlesHtmlBox/script.js';
 
 const iPageName = "i";  const iPageUrl = "/Pages/" + iPageName; const iPageUrlContent = iPageUrl + "/content";
 let iPageCss = document.createElement("link"); iPageCss.setAttribute("rel", "stylesheet"); iPageCss.setAttribute("href", iPageUrl + "/style.css"); document.head.append(iPageCss);
-PageHeadsBuild("News aggregator")
+PageHeadsBuild("News aggregator", "RT - точка сбора самых интересных и актуальных новостей российских онлайн-медиа. \"Картина дня\" формируется автоматически на базе популярности материалов.")
 
 //-- data from url ---
 
@@ -63,6 +63,7 @@ if (roleId > 0)
     menuList.push({ "icon": iPageUrlContent + "/category.png", "href": "/list" })
 
 if (typeApiPageI == 0) {
+    //menuList.push({ "icon": iPageUrlContent + "/search.png", "href": "", "id": "SearchB" });
     if (roleId == 0) menuList.push({ "icon": iPageUrlContent + "/login.png", "href": "", "id": "SigninB" });
 }
 else if (typeApiPageI == 1) {

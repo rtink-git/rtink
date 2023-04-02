@@ -10,7 +10,6 @@
     name
     listN
     constructor(target, position, search, apiUrl, authJWToken, isTest) {
-
         this.name = "ArticlesHtmlBox"
         let url = "/PageComponents/" + this.name;
         //let urlContent = "/PageComponents/" + this.name + "/content";
@@ -51,11 +50,11 @@
             if (this.page == 1 && list.length == this.take) {
                 document.querySelector("#" + this.name + " > ul").insertAdjacentHTML("afterend", this.MoreButton())
 
-                document.getElementById("MoreButton").addEventListener('click', async () => {
-                    let lst = await this.ApiAticles()
-                    document.querySelector("#" + this.name + " > ul").insertAdjacentHTML("beforeend", this.LisHtmlBox(lst))
-                    await this.LoadImageAndAddActions(lst)
-                });
+            //    document.getElementById("MoreButton").addEventListener('click', async () => {
+            //        let lst = await this.ApiAticles()
+            //        document.querySelector("#" + this.name + " > ul").insertAdjacentHTML("beforeend", this.LisHtmlBox(lst))
+            //        await this.LoadImageAndAddActions(lst)
+            //    });
             }
         }
 
