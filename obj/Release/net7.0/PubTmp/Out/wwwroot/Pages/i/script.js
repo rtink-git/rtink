@@ -106,6 +106,17 @@ await articlesHtmlBox.ListAppend()
 
 
 //-- html actions
+//alert(document.body.scrollHeight)
+//window.onload = async function () {
+
+let prevScrollY = window.scrollY
+document.addEventListener('scroll', async (event) => {
+    if (window.scrollY >= prevScrollY && document.body.scrollHeight - window.scrollY < document.body.clientHeight + 100) {
+        prevScrollY = window.scrollY + 200
+        await articlesHtmlBox.ListAppend()
+    }
+});
+//}
 
 //if (document.getElementById("SigninB") != null)
 //    document.getElementById("SigninB").addEventListener('click', async () => {

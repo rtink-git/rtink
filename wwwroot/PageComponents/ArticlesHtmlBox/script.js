@@ -9,6 +9,8 @@
     IsTest
     name
     listN
+    //scrollY
+
     constructor(target, position, search, apiUrl, authJWToken, isTest) {
         this.name = "ArticlesHtmlBox"
         let url = "/PageComponents/" + this.name;
@@ -21,12 +23,13 @@
         this.ApiUrl = apiUrl
         this.AuthJWToken = authJWToken
         this.IsTest = isTest
-
         this.page = 1;
         this.take = 20;
+        //this.scrollY = -100
     }
 
     async ListAppend() {
+        //if (this.scrollY < window.scrollY) {
         let list = new Array();
         if (this.IsTest) {
             let listFull = this.ListTest()
@@ -43,8 +46,9 @@
 
 
         if (list != null && list.length > 0) {
-            this.target.insertAdjacentHTML(this.position, this.BodyHtmlBox(this.name))
-            document.querySelector("#" + this.name + " > ul").insertAdjacentHTML("afterbegin", this.LisHtmlBox(list))
+            if (this.page == 1)
+                this.target.insertAdjacentHTML(this.position, this.BodyHtmlBox(this.name))
+            document.querySelector("#" + this.name + " > ul").insertAdjacentHTML("beforeend", this.LisHtmlBox(list))
             await this.LoadImageAndAddActions(list)
 
             if (this.page == 1 && list.length == this.take) {
@@ -57,6 +61,7 @@
                     await this.LoadImageAndAddActions(lst)
                 });
             }
+
         }
 
         this.page++;
