@@ -47,15 +47,16 @@
             document.querySelector("#" + this.name + " > ul").insertAdjacentHTML("afterbegin", this.LisHtmlBox(list))
             await this.LoadImageAndAddActions(list)
 
-            //if (this.page == 1 && list.length == this.take) {
-            //    document.querySelector("#" + this.name + " > ul").insertAdjacentHTML("afterend", this.MoreButton())
+            if (this.page == 1 && list.length == this.take) {
+                document.querySelector("#" + this.name + " > ul").insertAdjacentHTML("afterend", this.MoreButton())
 
-            //    document.getElementById("MoreButton").addEventListener('click', async () => {
-            //        let lst = await this.ApiAticles()
-            //        document.querySelector("#" + this.name + " > ul").insertAdjacentHTML("beforeend", this.LisHtmlBox(lst))
-            //        await this.LoadImageAndAddActions(lst)
-            //    });
-            //}
+                document.getElementById("MoreButton").addEventListener('click', async () => {
+                    let lst = await this.ApiAticles()
+                    document.querySelector("#" + this.name + " > ul").insertAdjacentHTML("beforeend", this.LisHtmlBox(lst))
+                    this.page++;
+                    await this.LoadImageAndAddActions(lst)
+                });
+            }
         }
 
         this.page++;
@@ -77,6 +78,7 @@
         let html = "";
         //const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
         const months = ["Jan", "Feb", "March", "April", "May", "June", "July", "Aug", "Sept", "Oct", "Nov", "Dec"];
+
         let arr = [];
         let arrInd = 0
         list.forEach(e => {
@@ -533,6 +535,7 @@
     //-- api
 
     async ApiAticles() {
+        //alert("/RtInk/Articles?search=" + this.search + "&take=" + this.take + "&page=" + this.page)
         const response = await fetch(this.ApiUrl + "/RtInk/Articles?search=" + this.search + "&take=" + this.take + "&page=" + this.page, {
             method: "GET",
             headers: { "Accept": "application/json", "Authorization": "Bearer " + this.AuthJWToken }
