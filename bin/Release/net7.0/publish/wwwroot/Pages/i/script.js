@@ -94,20 +94,7 @@ let articlesHtmlBox = new ArticlesHtmlBox(document.getElementById("SearchHeaderH
 
 await articlesHtmlBox.ListAppend()
 
-////if (articlesHtmlBox.listN == 0) {
-////    new CentralInfHtmlBox(document.getElementById("HeaderUnderHtmlBox"), "afterend", 110, null, 90, 0, "/PageComponents/CentralInfHtmlBox/content/404.png", 60, 0.3, "NOTHING FOUND", document.URL, null, null)
-////}
-////else {
-
-////}
-
-
-
-
-
 //-- html actions
-//alert(document.body.scrollHeight)
-//window.onload = async function () {
 
 let prevScrollY = window.scrollY
 document.addEventListener('scroll', async (event) => {
@@ -116,7 +103,6 @@ document.addEventListener('scroll', async (event) => {
         await articlesHtmlBox.ListAppend()
     }
 });
-//}
 
 //if (document.getElementById("SigninB") != null)
 //    document.getElementById("SigninB").addEventListener('click', async () => {
