@@ -237,7 +237,7 @@ export class ArticlesHtmlBox {
                             dsT.setAttribute("data-body", true);
                             dsT.setAttribute("data-isDescription", true)
                         }
-                    }
+                    } 
 
                     if (tr.querySelector(".BookmarkButton").getAttribute("data-isBookmark") == "false")
                         tr.querySelector(".BookmarkButton").setAttribute("data-isBookmark", true)
