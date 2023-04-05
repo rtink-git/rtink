@@ -94,6 +94,25 @@ else if (typeApiPageI == 1) {
 else if (typeApiPageI == 3) placeholder = search.toUpperCase().replaceAll('-', ' ')
 new SearchHeaderHtmlBox(document.getElementById("HeaderHtmlBox"), "afterend", placeholder, "НАЙДЕТСЯ ВСЁ")
 
+document.querySelector("#SearchHeaderHtmlBox > a").addEventListener('click', async () => {
+    let search = document.querySelector("#SearchHeaderHtmlBox input").value;
+    window.open("/i/" + search);
+});
+
+document.querySelector("#SearchHeaderHtmlBox input").addEventListener('keypress', async (event) => {
+    if (event.key == "Enter") {
+        let search = document.querySelector("#SearchHeaderHtmlBox input").value;
+        window.open("/i/" + search);
+
+//        //let v = document.querySelector("input[type=\"search\"]").value
+//        //if (v.length > 0)
+//        //    if (dataPageType == 5)
+//        //        window.location.href = "/i/-" + dataLogin + "-" + v.replaceAll(" ", "-")
+//        //    else
+//        //        window.location.href = "/i/" + v.replaceAll(" ", "-")
+    }
+});
+
 ////let centralInfHtmlBox = new CentralInfHtmlBox(document.getElementById("HeaderUnderHtmlBox"), "afterend", 100, null, 90, 0.3, null, 70, 0.1, "LOADING", document.URL, null, null)
 let articlesHtmlBox = new ArticlesHtmlBox(document.getElementById("SearchHeaderHtmlBox"), "afterend", search, apiUrl, authJWToken, isTest)
 
