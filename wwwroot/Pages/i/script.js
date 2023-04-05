@@ -62,7 +62,6 @@ if (roleId > 0)
     menuList.push({ "icon": iPageUrlContent + "/category.png", "href": "/list" })
 
 if (typeApiPageI == 0) {
-    //menuList.push({ "icon": iPageUrlContent + "/search.png", "href": "", "id": "SearchB" });
     if (roleId == 0) menuList.push({ "icon": iPageUrlContent + "/login.png", "href": "", "id": "SigninB" });
 }
 else if (typeApiPageI == 1) {
@@ -74,8 +73,6 @@ else if (typeApiPageI == 2) {
 else if (typeApiPageI == 3) {
     menuList.push({ "icon": iPageUrlContent + "/undo.png", "href": "/" });
 } 
-
-
 
 //--------------------
 
