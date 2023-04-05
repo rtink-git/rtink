@@ -217,6 +217,7 @@ export class ArticlesHtmlBox {
 
                 let rating = this.#list[i].rating
                 let isBody = this.#list[i].isBody
+                let isBookmark = this.#list[i].isBookmark
                 let titleHb = this.#list[i].titleHb
 
                 trg.addEventListener("click", async event => {
@@ -233,19 +234,17 @@ export class ArticlesHtmlBox {
                         let bodyObj = await this.#ApiArticleBody(titleHb)
                         if (bodyObj != null && bodyObj.body.length > 0) {
                             let dsT = tr.querySelector("#_Description")
-                            dsT.insertAdjacentHTML("beforeend", bodyObj.body)
+                            dsT.innerHTML = bodyObj.body
                             dsT.setAttribute("data-body", true);
                             dsT.setAttribute("data-isDescription", true)
                         }
                     }              
 
-                    if (tr.querySelector(".BookmarkButton").getAttribute("data-isBookmark") == "false")
-                        tr.querySelector(".BookmarkButton").setAttribute("data-isBookmark", true)
-                    else
-                        tr.querySelector(".BookmarkButton").setAttribute("data-isBookmark", false)
-
-
-                    this.#list[i].bookmarkActionAdded = true;
+                    let apiArticleBody = await this.#ApiArticleBookmark(titleHb)
+                    if (apiArticleBody)
+                        if (tr.querySelector(".BookmarkButton").getAttribute("data-isBookmark") == "false")
+                            tr.querySelector(".BookmarkButton").setAttribute("data-isBookmark", true)
+                        else tr.querySelector(".BookmarkButton").setAttribute("data-isBookmark", false)
                 })
             }
         }
@@ -304,6 +303,14 @@ export class ArticlesHtmlBox {
         });
         if (response.ok === true) return await response.json();
         return null;
+    }
+
+    async #ApiArticleBookmark(titleHb) {
+        const response = await fetch(this.ApiUrl + "/RtInk/ArticleBookmark?titleHb=" + titleHb.toString(), {
+            method: "POST",
+            headers: { "Authorization": "Bearer " + this.#AuthJWToken }
+        });
+        return response.ok
     }
 
     //-- Test
