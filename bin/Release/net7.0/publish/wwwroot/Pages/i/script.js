@@ -7,8 +7,6 @@
 /*-- 2023-02-16 Task.Error: User edit about only latin symbols --*/
 /*-- 2023-02-16 Task.Warning: Login не может быть числом --*/
 
-//, roleId, , 
-
 import { isTest, apiUrl, PageHeadsBuild, authJWToken } from '/PageComponents/Page/script.js';
 import { HeaderHtmlBox } from '/PageComponents/HeaderHtmlBox/script.js';
 //import { HeaderUnderQHtmlBox } from '/PageComponents/HeaderUnderQHtmlBox/script.js';
@@ -67,15 +65,24 @@ if (typeApiPageI == 0) {
     if (roleId == 0) menuList.push({ "icon": iPageUrlContent + "/login.png", "href": "", "id": "SigninB" });
 }
 else if (typeApiPageI == 1) {
+    menuList.push({ "icon": iPageUrlContent + "/undo.png", "href": "/" });
 }
 else if (typeApiPageI == 2) {
+    menuList.push({ "icon": iPageUrlContent + "/undo.png", "href": "/" });
 }
 else if (typeApiPageI == 3) {
+    menuList.push({ "icon": iPageUrlContent + "/undo.png", "href": "/" });
 }
 
 ////--------------------
 
 new HeaderHtmlBox(document.getElementsByTagName("body")[0], "afterbegin", "RT NEWS", null, menuList, isTest)
+
+if (typeApiPageI == 0) {
+    document.getElementById("SigninB").addEventListener('click', async () => {
+        window.location.href = apiUrl + "/Base/Authorization/Signin/Google?SessionToken=" + authJWToken + "&RedirectUrl=https://rt.ink"
+    });
+}
 
 let placeholder = "NEWS AGGREGATOR"
 
@@ -103,13 +110,6 @@ document.addEventListener('scroll', async (event) => {
         await articlesHtmlBox.ListAppend()
     }
 });
-
-//if (document.getElementById("SigninB") != null)
-//    document.getElementById("SigninB").addEventListener('click', async () => {
-//        let roleIdStr = "roleId"
-//        localStorage.setItem(roleIdStr, -1)
-//        window.location.href = apiUrl + "/Authorization/Signin/Google/" + authJWToken
-//    });
 
 //-- api actions
 

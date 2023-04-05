@@ -144,32 +144,6 @@ export class ArticlesHtmlBox {
             }
         });
 
-        //if (list != null && list != undefined && list.length > 0) {
-
-        //        //--------------------
-
-        //        //let isBodyStr = "Read more"
-        //        //let isBodyHref = "";
-        //        //if (items[arr[i].ind].isBody == 0) {
-        //        //    isBodyStr = ""
-        //        //    isBodyHref = "href=\"/i/" + items[arr[i].ind].urlShort + "\"";
-        //        //}
-
-        //    }
-
-        //            //    if (item.querySelector("[data-isbody]").getAttribute("data-isbody") == 1) {
-        ////        item.addEventListener("click", async event => {
-        ////            let tg = event.target.closest("article")
-        ////            let body = await ApiGetBody(tg.getAttribute("data-titleHb"));
-        ////            if (body != null && body.length > 0) {
-        ////                let tt = tg.querySelector(".AticleQDescription");
-        ////                tt.setAttribute("data-isBody", 0)
-        ////                tt.innerHTML = body
-        ////            }
-        ////        })
-        ////    }
-        //}
-
         return html;
     }
 

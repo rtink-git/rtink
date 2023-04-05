@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "30qk2LFs6eB/Fc3DzwVHcq9s9Vh0ly08j//AUF6oBEU=",
+  "Hash": "o4aEHQrvugrb/fu/joPpU+f/EOYsENdXoRl2CUggmrg=",
   "Source": "RtInk",
   "BasePath": "_content/RtInk",
   "Mode": "Default",
@@ -1341,6 +1341,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Pages\\i\\content\\tick.png"
+    },
+    {
+      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\i\\content\\undo.png",
+      "SourceId": "RtInk",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "BasePath": "_content/RtInk",
+      "RelativePath": "Pages/i/content/undo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Pages\\i\\content\\undo.png"
     },
     {
       "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\i\\content\\user.png",
