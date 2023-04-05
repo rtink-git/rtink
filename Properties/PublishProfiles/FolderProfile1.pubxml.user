@@ -5,7 +5,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 <Project>
   <PropertyGroup>
     <_PublishTargetUrl>D:\dev\Wecan\rt_ink\dev\rt ink net seven git rep\rtink\bin\Release\net7.0\publish\</_PublishTargetUrl>
-    <History>True|2023-03-29T20:05:01.2362822Z;True|2023-03-29T22:57:46.3432620+03:00;False|2023-03-29T22:57:36.7825006+03:00;True|2023-03-29T22:57:25.3405072+03:00;True|2023-03-29T22:31:44.0441576+03:00;True|2023-03-29T22:29:46.5565684+03:00;</History>
+    <History>True|2023-04-05T01:51:06.2622081Z;True|2023-04-05T04:50:56.5069979+03:00;True|2023-04-05T04:50:48.7756748+03:00;True|2023-03-29T23:05:01.2362822+03:00;True|2023-03-29T22:57:46.3432620+03:00;False|2023-03-29T22:57:36.7825006+03:00;True|2023-03-29T22:57:25.3405072+03:00;True|2023-03-29T22:31:44.0441576+03:00;True|2023-03-29T22:29:46.5565684+03:00;</History>
     <LastFailureDetails />
   </PropertyGroup>
 </Project>

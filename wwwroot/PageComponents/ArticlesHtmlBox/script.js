@@ -33,7 +33,7 @@ export class ArticlesHtmlBox {
 
     async ListAppend() {
         let list = await this.#ApiAticles()
-        list.forEach(e => { this.#list.push({ "title": e.title, "urlShort": e.urlShort, "fileId": e.fileId, "extension": e.extension, "fileUrlSource": e.fileUrlSource, "description": e.description, "dt": e.dt, "login": e.login, "isBody": e.isBody, "titleHb": e.titleHb, "fileUrlSource": e.fileUrlSource, "isBookmark": e.isBookmark, "rating": e.rating, "appended": false, "imgcheck": false }) });
+        list.forEach(e => { this.#list.push({ "title": e.title, "urlShort": e.urlShort, "fileId": e.fileId, "extension": e.extension, "fileUrlSource": e.fileUrlSource, "description": e.description, "dt": e.dt, "login": e.login, "isBody": e.isBody, "titleHb": e.titleHb, "fileUrlSource": e.fileUrlSource, "isBookmark": e.isBookmark, "rating": e.rating, "appended": false, "imgcheck": false, "bookmarkActionAdded": false }) });
 
         if (this.#list != null && this.#list.length > 0)
             if (this.page == 1)
@@ -41,15 +41,18 @@ export class ArticlesHtmlBox {
 
         document.querySelector("#" + this.#name + " > ul").insertAdjacentHTML("beforeend", this.#LisHtmlBox())
         await this.#LoadImages()
+        this.#ListActionSet()
 
         if (this.page == 1 && this.#list.length == this.take) {
             document.querySelector("#" + this.#name + " > ul").insertAdjacentHTML("afterend", this.#MoreButton())
 
             document.getElementById("MoreButton").addEventListener('click', async () => {
                 let list = await this.#ApiAticles()
-                list.forEach(e => { this.#list.push({ "title": e.title, "urlShort": e.urlShort, "fileId": e.fileId, "extension": e.extension, "fileUrlSource": e.fileUrlSource, "description": e.description, "dt": e.dt, "login": e.login, "isBody": e.isBody, "titleHb": e.titleHb, "fileUrlSource": e.fileUrlSource, "isBookmark": e.isBookmark, "rating": e.rating, "appended": false, "imgcheck": false }) });
+                list.forEach(e => { this.#list.push({ "title": e.title, "urlShort": e.urlShort, "fileId": e.fileId, "extension": e.extension, "fileUrlSource": e.fileUrlSource, "description": e.description, "dt": e.dt, "login": e.login, "isBody": e.isBody, "titleHb": e.titleHb, "fileUrlSource": e.fileUrlSource, "isBookmark": e.isBookmark, "rating": e.rating, "appended": false, "imgcheck": false, "bookmarkActionAdded": false }) });
                 document.querySelector("#" + this.#name + " > ul").insertAdjacentHTML("beforeend", this.#LisHtmlBox())
                 await this.#LoadImages()
+                this.#ListActionSet()
+
                 this.page++;
             });
         }
@@ -166,6 +169,7 @@ export class ArticlesHtmlBox {
         ////        })
         ////    }
         //}
+
         return html;
     }
 
@@ -205,6 +209,48 @@ export class ArticlesHtmlBox {
 
     //----------
 
+    #ListActionSet() {
+        for (var i = 0; i < this.#list.length; i++) {
+            if (!this.#list[i].bookmarkActionAdded) {
+                let tr = document.querySelectorAll("article")[i]
+                let trg = tr.getElementsByClassName("BookmarkButton")[0]
+
+                let rating = this.#list[i].rating
+                let isBody = this.#list[i].isBody
+                let titleHb = this.#list[i].titleHb
+
+                trg.addEventListener("click", async event => {
+                    if (rating == 2) {
+                        rating = 0;
+                        tr.setAttribute("data-tp", rating);
+                        var q = tr.querySelector("#_DtLoginHtmlPart")
+                        var w = "<div id=\"_DtLoginHtmlPart\">" + q.innerHTML + "</div>";
+                        q.remove()
+                        tr.querySelector("#_Inf").insertAdjacentHTML("afterbegin", w)
+                    }
+
+                    if (isBody) {
+                        let bodyObj = await this.#ApiArticleBody(titleHb)
+                        if (bodyObj != null && bodyObj.body.length > 0) {
+                            let dsT = tr.querySelector("#_Description")
+                            dsT.insertAdjacentHTML("beforeend", bodyObj.body)
+                            dsT.setAttribute("data-body", true);
+                            dsT.setAttribute("data-isDescription", true)
+                        }
+                    }
+
+                    if (tr.querySelector(".BookmarkButton").getAttribute("data-isBookmark") == "false")
+                        tr.querySelector(".BookmarkButton").setAttribute("data-isBookmark", true)
+                    else
+                        tr.querySelector(".BookmarkButton").setAttribute("data-isBookmark", false)
+
+
+                    this.#list[i].bookmarkActionAdded = true;
+                })
+            }
+        }
+    }
+
     async #LoadImages() {
         for (var i = 0; i < this.#list.length; i++) {
             if (this.#list[i].appended && !this.#list[i].imgcheck && this.#list[i].fileId > 0) {
@@ -234,58 +280,11 @@ export class ArticlesHtmlBox {
                         q.remove()
                         tr.querySelector("#_Inf").insertAdjacentHTML("afterbegin", w)
                     }
-                })
+                });
+
             }
         }
     }
-
-    //async LoadImageAndAddActions(list) {
-    //        tgList[i].getElementsByClassName("BookmarkButton")[0].addEventListener("click", async event => {
-    //            let articleT = event.target.closest("article");
-    //            let titleHb = articleT.getAttribute("data-titleHb")
-    //            let articleTtype = articleT.getAttribute("data-tp")
-    //            if (articleTtype == 2) {
-    //                articleT.setAttribute("data-tp", 0);
-    //                var q = articleT.querySelector("#_DtLoginHtmlPart")
-    //                var w = "<div id=\"_DtLoginHtmlPart\">" + q.innerHTML + "</div>";
-    //                q.remove()
-    //                articleT.querySelector("#_Inf").insertAdjacentHTML("afterbegin", w)
-    //            }
-
-    //            let isBody = articleT.getAttribute("data-isBody")
-    //            if (isBody == "true") {
-    //                let dscrT = articleT.querySelector("#_Description")
-    //                if (dscrT != null) {
-    //                    let body = ""
-
-    //                    if (this.IsTest) this.#ArticlesBodys().forEach(e => {
-    //                            if (e.titleHb == titleHb) {
-    //                                body = e.body
-    //                                return true;
-    //                            }
-    //                        })
-    //                    else body = await this.#ApiArticleBody(titleHb)
-
-    //                    if (body != null && body.length > 0) {
-    //                        dscrT.innerHTML = body
-    //                        var q = articleT.querySelector("#_DtLoginHtmlPart")
-    //                        var w = "<div id=\"_DtLoginHtmlPart\">" + q.innerHTML + "</div>";
-    //                        q.remove()
-    //                        let dsT = articleT.querySelector("#_Description")
-    //                        dsT.insertAdjacentHTML("beforebegin", w)
-    //                        dsT.setAttribute("data-body", true);
-    //                        dsT.setAttribute("data-isDescription", true)
-    //                    }
-    //                }
-    //            }
-
-    //            if (articleT.querySelector(".BookmarkButton").getAttribute("data-isBookmark") == "false")
-    //                articleT.querySelector(".BookmarkButton").setAttribute("data-isBookmark", true)
-    //            else
-    //                articleT.querySelector(".BookmarkButton").setAttribute("data-isBookmark", false)
-    //        })
-    //    }
-    //}
 
     //-- Api
 
