@@ -16,7 +16,6 @@ export class ArticlesHtmlBox {
     constructor(target, position, search, apiUrl, authJWToken, isTest) {
         this.#name = "ArticlesHtmlBox"
         let url = "/PageComponents/" + this.#name;
-        //let urlContent = "/PageComponents/" + this.name + "/content";
         let css = document.createElement("link"); css.setAttribute("rel", "stylesheet"); css.setAttribute("href", url + "/style.css"); document.head.append(css);
 
         this.target = target
@@ -118,7 +117,7 @@ export class ArticlesHtmlBox {
                     <article data-titleHb=\"" + e.titleHb + "\" data-tp=\"" + e.rating + "\" data-isBody=\"" + e.isBody + "\">\
                         <div>\
                             <h1>\
-                                <a href=\"/i/" + e.urlShort + "\">\
+                                <a href=\"/i/" + e.urlShort + "-\">\
                                     " + e.title + "\
                                 </a>\
                             </h1>\
@@ -262,6 +261,7 @@ export class ArticlesHtmlBox {
     //-- Api
 
     async #ApiAticles() {
+        //alert(this.search)
         const response = await fetch(this.ApiUrl + "/RtInk/Articles?search=" + this.search + "&take=" + this.take + "&page=" + this.page, {
             method: "GET",
             headers: { "Accept": "application/json", "Authorization": "Bearer " + this.#AuthJWToken }
