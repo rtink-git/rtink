@@ -54,6 +54,7 @@ if(search.length > 0)
 let apiPageI = await ApiPageI(search)
 let roleId = apiPageI.id
 
+
     
 let menuList = new Array()
 
@@ -61,7 +62,6 @@ if (roleId > 0)
     menuList.push({ "icon": iPageUrlContent + "/category.png", "href": "/list" })
 
 if (typeApiPageI == 0) {
-    //menuList.push({ "icon": iPageUrlContent + "/search.png", "href": "", "id": "SearchB" });
     if (roleId == 0) menuList.push({ "icon": iPageUrlContent + "/login.png", "href": "", "id": "SigninB" });
 }
 else if (typeApiPageI == 1) {
@@ -72,15 +72,15 @@ else if (typeApiPageI == 2) {
 }
 else if (typeApiPageI == 3) {
     menuList.push({ "icon": iPageUrlContent + "/undo.png", "href": "/" });
-}
+} 
 
-////--------------------
+//--------------------
 
 new HeaderHtmlBox(document.getElementsByTagName("body")[0], "afterbegin", "RT NEWS", null, menuList, isTest)
 
-if (typeApiPageI == 0) {
+if (typeApiPageI == 0 && roleId == 0) {
     document.getElementById("SigninB").addEventListener('click', async () => {
-        window.location.href = apiUrl + "/Base/Authorization/Signin/Google?SessionToken=" + authJWToken + "&RedirectUrl=https://rt.ink"
+        window.location.href = apiUrl + "/Base/Authorization/Signin/Google?SessionToken=" + authJWToken + "&RedirectUrl=https://localhost:7199/"
     });
 }
 

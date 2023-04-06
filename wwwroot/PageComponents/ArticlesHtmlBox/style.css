@@ -17,7 +17,7 @@
     }
 
         #ArticlesHtmlBox article[data-tp="2"] {
-            margin: 10px 0 15px;
+            margin: 5px 0 15px;
         }
 
         #ArticlesHtmlBox article[data-tp="3"] {
@@ -98,7 +98,7 @@
     }
 
     #ArticlesHtmlBox article #_Description {
-        text-align: left;
+        text-align: justify;
         float: left;
         font-family: 'Montserrat', sans-serif;
         padding: 20px 0 15px;
@@ -111,8 +111,13 @@
     }
 
     #ArticlesHtmlBox article #_Description * {
-        max-width:100%
+        max-width:100%;
+        text-align:justify;
     }
+
+        #ArticlesHtmlBox article #_Description img {
+            display:none;
+        }
 
     #ArticlesHtmlBox article > #_DtLoginHtmlPart {
         margin-bottom: 10px;
@@ -122,8 +127,23 @@
             float: right;
             background: #fff;
             padding-left: 10px;
-            margin-top: -15px;
         }
+
+    #ArticlesHtmlBox article > *:last-child > #_source {
+        float: right;
+        background: #fff;
+        padding: 2px 10px 3px;
+        margin-right: 23px;
+        margin-top: -20px;
+        font-size: 12px;
+        border: 1px solid #dbdbdb;
+        border-radius:10px;
+        color:#696969;
+    }
+
+    #ArticlesHtmlBox article .BookmarkButton {
+        margin-top:-16px;
+    }
 
     #ArticlesHtmlBox article .BookmarkButton > img {
         float: left;

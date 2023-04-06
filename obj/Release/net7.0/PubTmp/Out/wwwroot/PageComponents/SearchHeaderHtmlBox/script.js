@@ -16,12 +16,29 @@
 
         document.querySelector("#" + name + " input[type=\"text\"]").addEventListener('focus', async () => {
             document.querySelector("#SearchHeaderHtmlBox input[type=\"text\"]").setAttribute("placeholder", placeholderFocus)
-            //document.querySelector("#SearchHeaderHtmlBox a").style.display = "block"
         });
 
         document.querySelector("#" + name + " input[type=\"text\"]").addEventListener('blur', async () => {
-            document.querySelector("#SearchHeaderHtmlBox input[type=\"text\"]").setAttribute("placeholder", placeholder)
-            //document.querySelector("#SearchHeaderHtmlBox a").style.display = "none"
+            document.querySelector("#" + name + " input[type=\"text\"]").setAttribute("placeholder", placeholder)
+        });
+
+        document.querySelector("#" + name + " > a").addEventListener('click', async () => {
+            let search = document.querySelector("#" + name + " input").value.toLowerCase();
+            window.location.href = "/i/" + search
+        });
+
+        document.querySelector("#" + name + " input").addEventListener('keypress', async (event) => {
+            if (event.key == "Enter") {
+                let search = document.querySelector("#" + name + " input").value.toLowerCase();
+                window.location.href = "/i/" + search
+
+                //        //let v = document.querySelector("input[type=\"search\"]").value
+                //        //if (v.length > 0)
+                //        //    if (dataPageType == 5)
+                //        //        window.location.href = "/i/-" + dataLogin + "-" + v.replaceAll(" ", "-")
+                //        //    else
+                //        //        window.location.href = "/i/" + v.replaceAll(" ", "-")
+            }
         });
     }
 }
