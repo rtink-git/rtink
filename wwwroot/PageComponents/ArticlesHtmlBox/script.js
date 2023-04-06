@@ -117,7 +117,7 @@ export class ArticlesHtmlBox {
                     <article data-titleHb=\"" + e.titleHb + "\" data-tp=\"" + e.rating + "\" data-isBody=\"" + e.isBody + "\">\
                         <div>\
                             <h1>\
-                                <a href=\"/i/" + e.urlShort + "\">\
+                                <a href=\"/i/" + e.urlShort + "-\">\
                                     " + e.title + "\
                                 </a>\
                             </h1>\

@@ -24,13 +24,13 @@
 
         document.querySelector("#" + name + " > a").addEventListener('click', async () => {
             let search = document.querySelector("#" + name + " input").value.toLowerCase();
-            window.open("/i/" + search);
+            window.location.href = "/i/" + search
         });
 
         document.querySelector("#" + name + " input").addEventListener('keypress', async (event) => {
             if (event.key == "Enter") {
                 let search = document.querySelector("#" + name + " input").value.toLowerCase();
-                window.open("/i/" + search);
+                window.location.href = "/i/" + search
 
                 //        //let v = document.querySelector("input[type=\"search\"]").value
                 //        //if (v.length > 0)

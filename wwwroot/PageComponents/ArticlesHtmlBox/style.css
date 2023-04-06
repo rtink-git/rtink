@@ -17,7 +17,7 @@
     }
 
         #ArticlesHtmlBox article[data-tp="2"] {
-            margin: 10px 0 15px;
+            margin: 5px 0 15px;
         }
 
         #ArticlesHtmlBox article[data-tp="3"] {
@@ -98,7 +98,7 @@
     }
 
     #ArticlesHtmlBox article #_Description {
-        text-align: left;
+        text-align: justify;
         float: left;
         font-family: 'Montserrat', sans-serif;
         padding: 20px 0 15px;
@@ -111,8 +111,13 @@
     }
 
     #ArticlesHtmlBox article #_Description * {
-        max-width:100%
+        max-width:100%;
+        text-align:justify;
     }
+
+        #ArticlesHtmlBox article #_Description img {
+            display:none;
+        }
 
     #ArticlesHtmlBox article > #_DtLoginHtmlPart {
         margin-bottom: 10px;
