@@ -80,26 +80,131 @@ new HeaderHtmlBox(document.getElementsByTagName("body")[0], "afterbegin", "RT NE
 
 if (typeApiPageI == 0 && roleId == 0) {
     document.getElementById("SigninB").addEventListener('click', async () => {
-        window.location.href = apiUrl + "/Base/Authorization/Signin/Google?SessionToken=" + authJWToken + "&RedirectUrl=https://localhost:7199/"
+        window.location.href = apiUrl + "/Base/Authorization/Signin/Google?SessionToken=" + authJWToken + "&RedirectUrl=https://rt.ink" //https://localhost:7199/
     });
 }
 
 let placeholder = "NEWS AGGREGATOR"
+let afterend = "HeaderHtmlBox"
 
-if (typeApiPageI == 0) { }
+if (typeApiPageI == 0) {
+    document.getElementById("HeaderHtmlBox").insertAdjacentHTML("afterend", DescriptionMainHtmlPart())
+    afterend = "DescriptionMainHtmlPart";
+}
 else if (typeApiPageI == 1) {
     if (search.split('-').length > 2) placeholder = search.toUpperCase().replace('-', '@').replace('-', ':  ').replaceAll('-', ' ')
-    else placeholder = search.toUpperCase().replace('-', '@') + ": ИЛОН МАСК"
+    else placeholder = search.toUpperCase().replace('-', '@') //+ ": ИЛОН МАСК"
+    document.getElementById("HeaderHtmlBox").insertAdjacentHTML("afterend", UserHtmlPart())
+    afterend = "UserHtmlPart";
 }
-else if (typeApiPageI == 3) placeholder = search.toUpperCase().replaceAll('-', ' ')
-new SearchHeaderHtmlBox(document.getElementById("HeaderHtmlBox"), "afterend", placeholder, "НАЙДЕТСЯ ВСЁ")
+else if (typeApiPageI == 2) {
+    //placeholder = "ARTICLE"
+    document.getElementById("HeaderHtmlBox").insertAdjacentHTML("afterend", ArticleHtmlPart())
+    afterend = "ArticleHtmlPart";
+}
+else if (typeApiPageI == 3) {
+    placeholder = search.toUpperCase().replaceAll('-', ' ');
+    document.getElementById("HeaderHtmlBox").insertAdjacentHTML("afterend", SearchHtmlPart())
+    afterend = "SearchHtmlPart";
+}
+//new SearchHeaderHtmlBox(document.getElementById("HeaderHtmlBox"), "afterend", placeholder, "НАЙДЕТСЯ ВСЁ")
 
 ////let centralInfHtmlBox = new CentralInfHtmlBox(document.getElementById("HeaderUnderHtmlBox"), "afterend", 100, null, 90, 0.3, null, 70, 0.1, "LOADING", document.URL, null, null)
-let articlesHtmlBox = new ArticlesHtmlBox(document.getElementById("SearchHeaderHtmlBox"), "afterend", search, apiUrl, authJWToken, isTest)
+let articlesHtmlBox = new ArticlesHtmlBox(document.getElementById(afterend), "afterend", search, apiUrl, authJWToken, isTest)
 
 ////document.getElementById(centralInfHtmlBox.id).remove()
 
 await articlesHtmlBox.ListAppend()
+
+
+
+
+
+// html parts
+
+function DescriptionMainHtmlPart() {
+    let html = "\
+    <a id=\"DescriptionMainHtmlPart\">\
+      <span>\
+        NEWS AGGREGATOR\
+      </span>\
+      <img src=\"/PageComponents/SearchHeaderHtmlBox/content/search.png\" />\
+    </>"
+
+    return html;
+}
+
+function SearchHtmlPart() {
+    let html = "\
+    <div id=\"SearchHtmlPart\">\
+        <input type=\"text\" placeholder=\"НАЙДЕТСЯ ВСЁ\" />\
+        <a>\
+            <img src=\"/PageComponents/SearchHeaderHtmlBox/content/search.png\" />\
+        </a>\
+    </div>"
+
+    return html;
+}
+
+function UserHtmlPart() {
+    let html = "\
+    <a id=\"UserHtmlPart\">\
+        <div>\
+            <div>\
+                <span>\
+                    I\
+                </span>\
+            </div>\
+            <div>\
+                <span>\
+                    N\
+                </span>\
+            </div>\
+            <div>\
+                <span>\
+                    K\
+                </span>\
+            </div>\
+            <div>\
+                <span>\
+                    A\
+                </span>\
+            </div>\
+        </div>\
+        <div>\
+            <span>\
+                USER\
+            </span>\
+        </div>\
+        <div>\
+            <span>\
+                INKAZAN\
+            </span>\
+        </div>\
+        <img src=\"/PageComponents/SearchHeaderHtmlBox/content/search.png\" />\
+    </a>"
+
+    return html;
+}
+
+function ArticleHtmlPart() {
+    let html = "\
+    <a id=\"ArticleHtmlPart\">\
+        <div>\
+            <span>\
+                ARTICLE\
+            </span>\
+        </div>\
+        <div>\
+            <span>\
+                9GhU\
+            </span>\
+        </div>\
+        <img src=\"/PageComponents/SearchHeaderHtmlBox/content/search.png\" />\
+    </a>"
+
+    return html;
+}
 
 //-- html actions
 
@@ -110,6 +215,10 @@ document.addEventListener('scroll', async (event) => {
         await articlesHtmlBox.ListAppend()
     }
 });
+
+
+
+
 
 //-- api actions
 

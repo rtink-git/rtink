@@ -231,14 +231,13 @@ export class ArticlesHtmlBox {
                         }
                     }              
 
-                    let apiArticleBookmark = await this.#ApiArticleBookmark(titleHb)
-                    if (apiArticleBookmark)
-                        if (tr.querySelector(".BookmarkButton").getAttribute("data-isBookmark") == "false")
-                            tr.querySelector(".BookmarkButton").setAttribute("data-isBookmark", true)
-                        else tr.querySelector(".BookmarkButton").setAttribute("data-isBookmark", false)
-
-                    //tr.querySelector("#_Inf time").style.display = "none";
-
+                    if (isBookmark) {
+                        let apiArticleBookmark = await this.#ApiArticleBookmark(titleHb)
+                        if (apiArticleBookmark)
+                            if (tr.querySelector(".BookmarkButton").getAttribute("data-isBookmark") == "false")
+                                tr.querySelector(".BookmarkButton").setAttribute("data-isBookmark", true)
+                            else tr.querySelector(".BookmarkButton").setAttribute("data-isBookmark", false)
+                    }
                 })
             }
         }
