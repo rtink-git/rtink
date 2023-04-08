@@ -55,28 +55,36 @@ let apiPageI = await ApiPageI(search)
 let roleId = apiPageI.id
 
 
-    
+// / NEWS
+// / ARTICLE
+// / USER
+// / SEARCH
+
+let headerT = "RT"
 let menuList = new Array()
 
 if (roleId > 0)
     menuList.push({ "icon": iPageUrlContent + "/category.png", "href": "/list" })
 
 if (typeApiPageI == 0) {
+    menuList.push({ "icon": iPageUrlContent + "/search.png", "href": "", "id": "SearchBM" });
     if (roleId == 0) menuList.push({ "icon": iPageUrlContent + "/login.png", "href": "", "id": "SigninB" });
 }
 else if (typeApiPageI == 1) {
+    menuList.push({ "icon": iPageUrlContent + "/search.png", "href": "", "id": "SearchBM" });
     menuList.push({ "icon": iPageUrlContent + "/undo.png", "href": "/" });
 }
 else if (typeApiPageI == 2) {
     menuList.push({ "icon": iPageUrlContent + "/undo.png", "href": "/" });
 }
 else if (typeApiPageI == 3) {
+    menuList.push({ "icon": iPageUrlContent + "/search.png", "href": "", "id": "SearchBM" });
     menuList.push({ "icon": iPageUrlContent + "/undo.png", "href": "/" });
 } 
 
 //--------------------
 
-new HeaderHtmlBox(document.getElementsByTagName("body")[0], "afterbegin", "RT NEWS", null, menuList, isTest)
+new HeaderHtmlBox(document.getElementsByTagName("body")[0], "afterbegin", headerT, null, menuList, isTest)
 
 if (typeApiPageI == 0 && roleId == 0) {
     document.getElementById("SigninB").addEventListener('click', async () => {
@@ -88,25 +96,28 @@ let placeholder = "NEWS AGGREGATOR"
 let afterend = "HeaderHtmlBox"
 
 if (typeApiPageI == 0) {
-    document.getElementById("HeaderHtmlBox").insertAdjacentHTML("afterend", DescriptionMainHtmlPart())
-    afterend = "DescriptionMainHtmlPart";
+    document.getElementById("HeaderHtmlBox").insertAdjacentHTML("afterend", HeaderDescriptionHtmlPart("NEWS", ""))
+    afterend = "HeaderDescriptionHtmlPart";
 }
 else if (typeApiPageI == 1) {
     if (search.split('-').length > 2) placeholder = search.toUpperCase().replace('-', '@').replace('-', ':  ').replaceAll('-', ' ')
     else placeholder = search.toUpperCase().replace('-', '@') //+ ": ИЛОН МАСК"
-    document.getElementById("HeaderHtmlBox").insertAdjacentHTML("afterend", UserHtmlPart())
-    afterend = "UserHtmlPart";
+    document.getElementById("HeaderHtmlBox").insertAdjacentHTML("afterend", HeaderDescriptionHtmlPart("USER", ""))
+    afterend = "HeaderDescriptionHtmlPart";
 }
 else if (typeApiPageI == 2) {
-    //placeholder = "ARTICLE"
-    document.getElementById("HeaderHtmlBox").insertAdjacentHTML("afterend", ArticleHtmlPart())
-    afterend = "ArticleHtmlPart";
+    document.getElementById("HeaderHtmlBox").insertAdjacentHTML("afterend", HeaderDescriptionHtmlPart("ARTICLE", "")) //"9Hgk"
+    afterend = "HeaderDescriptionHtmlPart";
 }
 else if (typeApiPageI == 3) {
     placeholder = search.toUpperCase().replaceAll('-', ' ');
-    document.getElementById("HeaderHtmlBox").insertAdjacentHTML("afterend", SearchHtmlPart())
-    afterend = "SearchHtmlPart";
+    document.getElementById("HeaderHtmlBox").insertAdjacentHTML("afterend", HeaderDescriptionHtmlPart("SEARCH", ""))
+    afterend = "HeaderDescriptionHtmlPart";
 }
+
+document.getElementById("HeaderDescriptionHtmlPart").insertAdjacentHTML("afterend", SearchHtmlPart())
+afterend = "SearchHtmlPart"
+
 //new SearchHeaderHtmlBox(document.getElementById("HeaderHtmlBox"), "afterend", placeholder, "НАЙДЕТСЯ ВСЁ")
 
 ////let centralInfHtmlBox = new CentralInfHtmlBox(document.getElementById("HeaderUnderHtmlBox"), "afterend", 100, null, 90, 0.3, null, 70, 0.1, "LOADING", document.URL, null, null)
@@ -121,6 +132,32 @@ await articlesHtmlBox.ListAppend()
 
 
 // html parts
+
+function HeaderDescriptionHtmlPart(main, sub) {
+    let mainHtml = "";
+    for (var i = 0; i < main.length; i++) { 
+        mainHtml += "\
+        <div>\
+            <span>" + main[i] + "</span>\
+        </div>"
+    }
+    if (mainHtml.length > 0)
+        mainHtml = "<div>" + mainHtml + "</div>";
+
+    let subHtml = ""
+    for (var i = 0; i < sub.length; i++) {
+        subHtml += "\
+        <div>\
+            <span>" + sub[i] + "</span>\
+        </div>"
+    }
+    if (subHtml.length > 0)
+        subHtml = "<div>" + subHtml + "</div>";
+
+    let html ="\
+    <div id=\"HeaderDescriptionHtmlPart\">" + mainHtml + subHtml + "</div>"
+    return html
+}
 
 function DescriptionMainHtmlPart() {
     let html = "\
@@ -172,16 +209,97 @@ function UserHtmlPart() {
             </div>\
         </div>\
         <div>\
-            <span>\
-                USER\
-            </span>\
+            <div>\
+                <span>\
+                    Z\
+                </span>\
+            </div>\
+            <div>\
+                <span>\
+                    A\
+                </span>\
+            </div>\
+            <div>\
+                <span>\
+                    N\
+                </span>\
+            </div>\
         </div>\
+    </a>"
+
+    return html;
+}
+
+function UserHtmlPartQ() {
+    let html = "\
+    <a id=\"UserHtmlPart\">\
         <div>\
-            <span>\
-                INKAZAN\
-            </span>\
+            <div>\
+                <span>\
+                    N\
+                </span>\
+            </div>\
+            <div>\
+                <span>\
+                    E\
+                </span>\
+            </div>\
+            <div>\
+                <span>\
+                    W\
+                </span>\
+            </div>\
+            <div>\
+                <span>\
+                    S\
+                </span>\
+            </div>\
         </div>\
-        <img src=\"/PageComponents/SearchHeaderHtmlBox/content/search.png\" />\
+    </a>"
+
+    return html;
+}
+
+function UserHtmlPartW() {
+    let html = "\
+    <a id=\"UserHtmlPart\">\
+        <div>\
+            <div>\
+                <span>\
+                    A\
+                </span>\
+            </div>\
+            <div>\
+                <span>\
+                    R\
+                </span>\
+            </div>\
+            <div>\
+                <span>\
+                    T\
+                </span>\
+            </div>\
+            <div>\
+                <span>\
+                    I\
+                </span>\
+            </div>\
+            <div>\
+                <span>\
+                    C\
+                </span>\
+            </div>\
+            <div>\
+                <span>\
+                    L\
+                </span>\
+            </div>\
+            <div>\
+                <span>\
+                    E\
+                </span>\
+            </div>\
+        </div>\
     </a>"
 
     return html;
@@ -192,7 +310,7 @@ function ArticleHtmlPart() {
     <a id=\"ArticleHtmlPart\">\
         <div>\
             <span>\
-                ARTICLE\
+                12:22 Aprile 22\
             </span>\
         </div>\
         <div>\
@@ -206,6 +324,96 @@ function ArticleHtmlPart() {
     return html;
 }
 
+//<div>\
+//    <div>\
+//        <span>\
+//            9\
+//        </span>\
+//    </div>\
+//    <div>\
+//        <span>\
+//            G\
+//        </span>\
+//    </div>\
+//    <div>\
+//        <span>\
+//            H\
+//        </span>\
+//    </div>\
+//    <div>\
+//        <span>\
+//            U\
+//        </span>\
+//    </div>\
+//</div>\
+
+//<div>\
+//    <div>\
+//        <span>\
+//            A\
+//        </span>\
+//    </div>\
+//    <div>\
+//        <span>\
+//            G\
+//        </span>\
+//    </div>\
+//    <div>\
+//        <span>\
+//            G\
+//        </span>\
+//    </div>\
+//    <div>\
+//        <span>\
+//            R\
+//        </span>\
+//    </div>\
+//    <div>\
+//        <span>\
+//            E\
+//        </span>\
+//    </div>\
+//    <div>\
+//        <span>\
+//            G\
+//        </span>\
+//    </div>\
+//    <div>\
+//        <span>\
+//            A\
+//        </span>\
+//    </div>\
+//    <div>\
+//        <span>\
+//            T\
+//        </span>\
+//    </div>\
+//    <div>\
+//        <span>\
+//            O\
+//        </span>\
+//    </div>\
+//    <div>\
+//        <span>\
+//            R\
+//        </span>\
+//    </div>\
+//</div>\
+
+//<div>\
+//    <span>\
+//        USER\
+//    </span>\
+//</div>\
+//<div>\
+//    <span>\
+//        INKAZAN\
+//    </span>\
+//</div>\
+//<img src=\"/PageComponents/SearchHeaderHtmlBox/content/search.png\" />\
+
+
+
 //-- html actions
 
 let prevScrollY = window.scrollY
@@ -214,6 +422,16 @@ document.addEventListener('scroll', async (event) => {
         prevScrollY = window.scrollY + 200
         await articlesHtmlBox.ListAppend()
     }
+});
+
+document.getElementById("SearchBM").addEventListener('click', async (event) => {
+    document.getElementById("SearchBM").style.display = "none";
+    document.getElementById("SearchHtmlPart").style.display = "block";
+});
+
+document.querySelector("#SearchHtmlPart input").addEventListener('blur', async (event) => {
+    document.getElementById("SearchBM").style.display = "block";
+    document.getElementById("SearchHtmlPart").style.display = "none";
 });
 
 
