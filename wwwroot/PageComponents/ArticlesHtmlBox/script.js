@@ -135,7 +135,7 @@ export class ArticlesHtmlBox {
                             <a class=\"BookmarkButton\" data-isBookmark=\"" + e.isBookmark + "\">\
                                 <img />\
                             </a>\
-                            <a id=\"_source\" href=\"/a/" + e.urlShort + "\">\
+                            <a class=\"_source\" href=\"/a/" + e.urlShort + "\">\
                                 source\
                             </a>\
                         </div>\
@@ -151,15 +151,28 @@ export class ArticlesHtmlBox {
 
     #DtLoginHtmlPart(time, login, loginFlag) {
         let loginHtmlPart = ""
-        if (loginFlag)
-            loginHtmlPart = "<a href=\"/i/-" + login + "\">@" + login.toLowerCase() + "</a>"
+        if (loginFlag) {
+            let lgn = login
+            if (lgn.length > 4)
+                lgn = lgn.substring(0, 4)
+            else if (lgn.length < 4)
+                for (i = 0; i < 4 - lgn.length; i++)
+                    lgn += "_";
+
+            for (var i = 0; i < lgn.length; i++)
+                loginHtmlPart += "<div><span>" + lgn[i] + "</span></div>"
+
+            loginHtmlPart = "<a href=\"/i/-" + login + "\" class=\"_login\">" + loginHtmlPart + "</a>"
+
+            //loginHtmlPart = "<a href=\"/i/-" + login + "\">@" + login.toLowerCase() + "</a>"
+        }
 
         let html = "\
         <div id=\"_DtLoginHtmlPart\">\
-            <time>\
-                " + time + " · \
-            </time>\
             " + loginHtmlPart + "\
+            <time>\
+                " + time + "\
+            </time>\
         </div>";
 
         return html;
