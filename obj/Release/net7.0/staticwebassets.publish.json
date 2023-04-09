@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "o4aEHQrvugrb/fu/joPpU+f/EOYsENdXoRl2CUggmrg=",
+  "Hash": "fdtN/KxoFhRF600pfQBDFx3GAvTZADcpv/8z3mhCAMA=",
   "Source": "RtInk",
   "BasePath": "_content/RtInk",
   "Mode": "Default",
@@ -1426,23 +1426,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Pages\\i\\script.js"
-    },
-    {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\i\\style - buffer.css",
-      "SourceId": "RtInk",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
-      "BasePath": "_content/RtInk",
-      "RelativePath": "Pages/i/style - buffer.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Pages\\i\\style - buffer.css"
     },
     {
       "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\i\\style.css",

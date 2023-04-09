@@ -2,6 +2,7 @@
     float:left;
     width:100%;
     text-align:center;
+    margin-top:40px;
 }
 
     #ArticlesHtmlBox ul {
@@ -13,7 +14,7 @@
 
     #ArticlesHtmlBox article {
         float:left;
-        margin:10px 0 30px;
+        margin:10px 0 50px;
     }
 
         #ArticlesHtmlBox article[data-tp="2"] {
@@ -98,7 +99,8 @@
     }
 
     #ArticlesHtmlBox article #_Description {
-        text-align: justify;
+/*        text-align: justify;*/
+        text-align:left;
         float: left;
         font-family: 'Montserrat', sans-serif;
         padding: 20px 0 15px;
@@ -132,7 +134,7 @@
     #ArticlesHtmlBox article > *:last-child > #_source {
         float: right;
         background: #fff;
-        padding: 2px 10px 4px;
+        padding: 2px 10px 3px;
         margin-right: 23px;
         margin-top: -20px;
         font-size: 12px;

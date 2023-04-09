@@ -10,7 +10,7 @@
 import { isTest, apiUrl, PageHeadsBuild, authJWToken } from '/PageComponents/Page/script.js';
 import { HeaderHtmlBox } from '/PageComponents/HeaderHtmlBox/script.js';
 //import { HeaderUnderQHtmlBox } from '/PageComponents/HeaderUnderQHtmlBox/script.js';
-import { SearchHeaderHtmlBox } from "/PageComponents/SearchHeaderHtmlBox/script.js";
+//import { SearchHeaderHtmlBox } from "/PageComponents/SearchHeaderHtmlBox/script.js";
 //import { CentralInfHtmlBox } from '/PageComponents/CentralInfHtmlBox/script.js';
 import { ArticlesHtmlBox } from '/PageComponents/ArticlesHtmlBox/script.js';
 
@@ -44,9 +44,7 @@ if(search.length > 0)
         }
         else if (searchSplit.length == 2 && searchSplit[1].length == 0 && search[search.length - 1] == '-')
             typeApiPageI = 2
-        else {
-            typeApiPageI = 3
-        }
+        else typeApiPageI = 3
 }
 
 //--------------------
@@ -55,51 +53,130 @@ let apiPageI = await ApiPageI(search)
 let roleId = apiPageI.id
 
 
-    
+// / NEWS
+// / ARTICLE
+// / USER
+// / SEARCH
+
+let headerT = "RT"
 let menuList = new Array()
 
 if (roleId > 0)
     menuList.push({ "icon": iPageUrlContent + "/category.png", "href": "/list" })
 
 if (typeApiPageI == 0) {
+    menuList.push({ "icon": iPageUrlContent + "/search.png", "href": "", "id": "SearchBM" });
     if (roleId == 0) menuList.push({ "icon": iPageUrlContent + "/login.png", "href": "", "id": "SigninB" });
 }
 else if (typeApiPageI == 1) {
+    menuList.push({ "icon": iPageUrlContent + "/search.png", "href": "", "id": "SearchBM" });
     menuList.push({ "icon": iPageUrlContent + "/undo.png", "href": "/" });
+
+
 }
 else if (typeApiPageI == 2) {
     menuList.push({ "icon": iPageUrlContent + "/undo.png", "href": "/" });
 }
 else if (typeApiPageI == 3) {
+    menuList.push({ "icon": iPageUrlContent + "/search.png", "href": "", "id": "SearchBM" });
     menuList.push({ "icon": iPageUrlContent + "/undo.png", "href": "/" });
 } 
 
 //--------------------
 
-new HeaderHtmlBox(document.getElementsByTagName("body")[0], "afterbegin", "RT NEWS", null, menuList, isTest)
+new HeaderHtmlBox(document.getElementsByTagName("body")[0], "afterbegin", headerT, null, menuList, isTest)
 
 if (typeApiPageI == 0 && roleId == 0) {
     document.getElementById("SigninB").addEventListener('click', async () => {
-        window.location.href = apiUrl + "/Base/Authorization/Signin/Google?SessionToken=" + authJWToken + "&RedirectUrl=https://localhost:7199/"
+        window.location.href = apiUrl + "/Base/Authorization/Signin/Google?SessionToken=" + authJWToken + "&RedirectUrl=https://rt.ink" //https://localhost:7199/
     });
 }
 
 let placeholder = "NEWS AGGREGATOR"
+//let afterend = "HeaderHtmlBox"
+let headerDescriptionName = ""
+let headerDescriptionNameSub = ""
 
-if (typeApiPageI == 0) { }
+if (typeApiPageI == 0) {
+    headerDescriptionName = "NEWS";
+}
 else if (typeApiPageI == 1) {
     if (search.split('-').length > 2) placeholder = search.toUpperCase().replace('-', '@').replace('-', ':  ').replaceAll('-', ' ')
-    else placeholder = search.toUpperCase().replace('-', '@') + ": ИЛОН МАСК"
+    else placeholder = search.toUpperCase().replace('-', '@') //+ ": ИЛОН МАСК"
+    headerDescriptionName = "USER";
+    let userName = search.split('-')[1].toUpperCase()
+    headerDescriptionName = userName.substring(0, 4);
+    headerDescriptionNameSub = userName.substring(4, userName.length)
 }
-else if (typeApiPageI == 3) placeholder = search.toUpperCase().replaceAll('-', ' ')
-new SearchHeaderHtmlBox(document.getElementById("HeaderHtmlBox"), "afterend", placeholder, "НАЙДЕТСЯ ВСЁ")
+else if (typeApiPageI == 2) {
+    headerDescriptionName = "ARTICLE";
+}
+else if (typeApiPageI == 3) {
+    placeholder = search.toUpperCase().replaceAll('-', ' ');
+    headerDescriptionName = "SEARCH";
+}
+
+document.getElementById("HeaderHtmlBox").insertAdjacentHTML("afterend", HeaderDescriptionHtmlPart(headerDescriptionName, headerDescriptionNameSub))
+
+document.getElementById("HeaderDescriptionHtmlPart").insertAdjacentHTML("afterend", SearchHtmlPart())
+//afterend = "SearchHtmlPart"
+
+//new SearchHeaderHtmlBox(document.getElementById("HeaderHtmlBox"), "afterend", placeholder, "НАЙДЕТСЯ ВСЁ")
 
 ////let centralInfHtmlBox = new CentralInfHtmlBox(document.getElementById("HeaderUnderHtmlBox"), "afterend", 100, null, 90, 0.3, null, 70, 0.1, "LOADING", document.URL, null, null)
-let articlesHtmlBox = new ArticlesHtmlBox(document.getElementById("SearchHeaderHtmlBox"), "afterend", search, apiUrl, authJWToken, isTest)
+let articlesHtmlBox = new ArticlesHtmlBox(document.getElementById("SearchHtmlPart"), "afterend", search, apiUrl, authJWToken, isTest)
 
 ////document.getElementById(centralInfHtmlBox.id).remove()
 
 await articlesHtmlBox.ListAppend()
+
+
+
+
+
+// html parts
+
+function HeaderDescriptionHtmlPart(main, sub) {
+    let mainHtml = "";
+    for (var i = 0; i < main.length; i++) { 
+        mainHtml += "\
+        <div>\
+            <span>" + main[i] + "</span>\
+        </div>"
+    }
+    if (mainHtml.length > 0)
+        mainHtml = "<div>" + mainHtml + "</div>";
+
+    let subHtml = ""
+    for (var i = 0; i < sub.length; i++) {
+        subHtml += "\
+        <div>\
+            <span>" + sub[i] + "</span>\
+        </div>"
+    }
+    if (subHtml.length > 0)
+        subHtml = "<div>" + subHtml + "</div>";
+
+    let html ="\
+    <div id=\"HeaderDescriptionHtmlPart\">" + mainHtml + subHtml + "</div>"
+    return html
+}
+
+function SearchHtmlPart() {
+    let html = "\
+    <div id=\"SearchHtmlPart\">\
+        <input type=\"text\" placeholder=\"НАЙДЕТСЯ ВСЁ\" />\
+        <a>\
+            <img src=\"/PageComponents/SearchHeaderHtmlBox/content/search.png\" />\
+        </a>\
+    </div>"
+
+    return html;
+}
+
+
+
+
 
 //-- html actions
 
@@ -110,6 +187,20 @@ document.addEventListener('scroll', async (event) => {
         await articlesHtmlBox.ListAppend()
     }
 });
+
+document.getElementById("SearchBM").addEventListener('click', async (event) => {
+    document.getElementById("SearchBM").style.display = "none";
+    document.getElementById("SearchHtmlPart").style.display = "block";
+});
+
+document.querySelector("#SearchHtmlPart input").addEventListener('blur', async (event) => {
+    document.getElementById("SearchBM").style.display = "block";
+    document.getElementById("SearchHtmlPart").style.display = "none";
+});
+
+
+
+
 
 //-- api actions
 

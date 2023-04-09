@@ -10,7 +10,7 @@
 import { isTest, apiUrl, PageHeadsBuild, authJWToken } from '/PageComponents/Page/script.js';
 import { HeaderHtmlBox } from '/PageComponents/HeaderHtmlBox/script.js';
 //import { HeaderUnderQHtmlBox } from '/PageComponents/HeaderUnderQHtmlBox/script.js';
-import { SearchHeaderHtmlBox } from "/PageComponents/SearchHeaderHtmlBox/script.js";
+//import { SearchHeaderHtmlBox } from "/PageComponents/SearchHeaderHtmlBox/script.js";
 //import { CentralInfHtmlBox } from '/PageComponents/CentralInfHtmlBox/script.js';
 import { ArticlesHtmlBox } from '/PageComponents/ArticlesHtmlBox/script.js';
 
@@ -44,9 +44,7 @@ if(search.length > 0)
         }
         else if (searchSplit.length == 2 && searchSplit[1].length == 0 && search[search.length - 1] == '-')
             typeApiPageI = 2
-        else {
-            typeApiPageI = 3
-        }
+        else typeApiPageI = 3
 }
 
 //--------------------
@@ -73,6 +71,8 @@ if (typeApiPageI == 0) {
 else if (typeApiPageI == 1) {
     menuList.push({ "icon": iPageUrlContent + "/search.png", "href": "", "id": "SearchBM" });
     menuList.push({ "icon": iPageUrlContent + "/undo.png", "href": "/" });
+
+
 }
 else if (typeApiPageI == 2) {
     menuList.push({ "icon": iPageUrlContent + "/undo.png", "href": "/" });
@@ -93,35 +93,38 @@ if (typeApiPageI == 0 && roleId == 0) {
 }
 
 let placeholder = "NEWS AGGREGATOR"
-let afterend = "HeaderHtmlBox"
+//let afterend = "HeaderHtmlBox"
+let headerDescriptionName = ""
+let headerDescriptionNameSub = ""
 
 if (typeApiPageI == 0) {
-    document.getElementById("HeaderHtmlBox").insertAdjacentHTML("afterend", HeaderDescriptionHtmlPart("NEWS", ""))
-    afterend = "HeaderDescriptionHtmlPart";
+    headerDescriptionName = "NEWS";
 }
 else if (typeApiPageI == 1) {
     if (search.split('-').length > 2) placeholder = search.toUpperCase().replace('-', '@').replace('-', ':  ').replaceAll('-', ' ')
     else placeholder = search.toUpperCase().replace('-', '@') //+ ": ИЛОН МАСК"
-    document.getElementById("HeaderHtmlBox").insertAdjacentHTML("afterend", HeaderDescriptionHtmlPart("USER", ""))
-    afterend = "HeaderDescriptionHtmlPart";
+    headerDescriptionName = "USER";
+    let userName = search.split('-')[1].toUpperCase()
+    headerDescriptionName = userName.substring(0, 4);
+    headerDescriptionNameSub = userName.substring(4, userName.length)
 }
 else if (typeApiPageI == 2) {
-    document.getElementById("HeaderHtmlBox").insertAdjacentHTML("afterend", HeaderDescriptionHtmlPart("ARTICLE", "")) //"9Hgk"
-    afterend = "HeaderDescriptionHtmlPart";
+    headerDescriptionName = "ARTICLE";
 }
 else if (typeApiPageI == 3) {
     placeholder = search.toUpperCase().replaceAll('-', ' ');
-    document.getElementById("HeaderHtmlBox").insertAdjacentHTML("afterend", HeaderDescriptionHtmlPart("SEARCH", ""))
-    afterend = "HeaderDescriptionHtmlPart";
+    headerDescriptionName = "SEARCH";
 }
 
+document.getElementById("HeaderHtmlBox").insertAdjacentHTML("afterend", HeaderDescriptionHtmlPart(headerDescriptionName, headerDescriptionNameSub))
+
 document.getElementById("HeaderDescriptionHtmlPart").insertAdjacentHTML("afterend", SearchHtmlPart())
-afterend = "SearchHtmlPart"
+//afterend = "SearchHtmlPart"
 
 //new SearchHeaderHtmlBox(document.getElementById("HeaderHtmlBox"), "afterend", placeholder, "НАЙДЕТСЯ ВСЁ")
 
 ////let centralInfHtmlBox = new CentralInfHtmlBox(document.getElementById("HeaderUnderHtmlBox"), "afterend", 100, null, 90, 0.3, null, 70, 0.1, "LOADING", document.URL, null, null)
-let articlesHtmlBox = new ArticlesHtmlBox(document.getElementById(afterend), "afterend", search, apiUrl, authJWToken, isTest)
+let articlesHtmlBox = new ArticlesHtmlBox(document.getElementById("SearchHtmlPart"), "afterend", search, apiUrl, authJWToken, isTest)
 
 ////document.getElementById(centralInfHtmlBox.id).remove()
 
@@ -159,18 +162,6 @@ function HeaderDescriptionHtmlPart(main, sub) {
     return html
 }
 
-function DescriptionMainHtmlPart() {
-    let html = "\
-    <a id=\"DescriptionMainHtmlPart\">\
-      <span>\
-        NEWS AGGREGATOR\
-      </span>\
-      <img src=\"/PageComponents/SearchHeaderHtmlBox/content/search.png\" />\
-    </>"
-
-    return html;
-}
-
 function SearchHtmlPart() {
     let html = "\
     <div id=\"SearchHtmlPart\">\
@@ -183,234 +174,7 @@ function SearchHtmlPart() {
     return html;
 }
 
-function UserHtmlPart() {
-    let html = "\
-    <a id=\"UserHtmlPart\">\
-        <div>\
-            <div>\
-                <span>\
-                    I\
-                </span>\
-            </div>\
-            <div>\
-                <span>\
-                    N\
-                </span>\
-            </div>\
-            <div>\
-                <span>\
-                    K\
-                </span>\
-            </div>\
-            <div>\
-                <span>\
-                    A\
-                </span>\
-            </div>\
-        </div>\
-        <div>\
-            <div>\
-                <span>\
-                    Z\
-                </span>\
-            </div>\
-            <div>\
-                <span>\
-                    A\
-                </span>\
-            </div>\
-            <div>\
-                <span>\
-                    N\
-                </span>\
-            </div>\
-        </div>\
-    </a>"
 
-    return html;
-}
-
-function UserHtmlPartQ() {
-    let html = "\
-    <a id=\"UserHtmlPart\">\
-        <div>\
-            <div>\
-                <span>\
-                    N\
-                </span>\
-            </div>\
-            <div>\
-                <span>\
-                    E\
-                </span>\
-            </div>\
-            <div>\
-                <span>\
-                    W\
-                </span>\
-            </div>\
-            <div>\
-                <span>\
-                    S\
-                </span>\
-            </div>\
-        </div>\
-    </a>"
-
-    return html;
-}
-
-function UserHtmlPartW() {
-    let html = "\
-    <a id=\"UserHtmlPart\">\
-        <div>\
-            <div>\
-                <span>\
-                    A\
-                </span>\
-            </div>\
-            <div>\
-                <span>\
-                    R\
-                </span>\
-            </div>\
-            <div>\
-                <span>\
-                    T\
-                </span>\
-            </div>\
-            <div>\
-                <span>\
-                    I\
-                </span>\
-            </div>\
-            <div>\
-                <span>\
-                    C\
-                </span>\
-            </div>\
-            <div>\
-                <span>\
-                    L\
-                </span>\
-            </div>\
-            <div>\
-                <span>\
-                    E\
-                </span>\
-            </div>\
-        </div>\
-    </a>"
-
-    return html;
-}
-
-function ArticleHtmlPart() {
-    let html = "\
-    <a id=\"ArticleHtmlPart\">\
-        <div>\
-            <span>\
-                12:22 Aprile 22\
-            </span>\
-        </div>\
-        <div>\
-            <span>\
-                9GhU\
-            </span>\
-        </div>\
-        <img src=\"/PageComponents/SearchHeaderHtmlBox/content/search.png\" />\
-    </a>"
-
-    return html;
-}
-
-//<div>\
-//    <div>\
-//        <span>\
-//            9\
-//        </span>\
-//    </div>\
-//    <div>\
-//        <span>\
-//            G\
-//        </span>\
-//    </div>\
-//    <div>\
-//        <span>\
-//            H\
-//        </span>\
-//    </div>\
-//    <div>\
-//        <span>\
-//            U\
-//        </span>\
-//    </div>\
-//</div>\
-
-//<div>\
-//    <div>\
-//        <span>\
-//            A\
-//        </span>\
-//    </div>\
-//    <div>\
-//        <span>\
-//            G\
-//        </span>\
-//    </div>\
-//    <div>\
-//        <span>\
-//            G\
-//        </span>\
-//    </div>\
-//    <div>\
-//        <span>\
-//            R\
-//        </span>\
-//    </div>\
-//    <div>\
-//        <span>\
-//            E\
-//        </span>\
-//    </div>\
-//    <div>\
-//        <span>\
-//            G\
-//        </span>\
-//    </div>\
-//    <div>\
-//        <span>\
-//            A\
-//        </span>\
-//    </div>\
-//    <div>\
-//        <span>\
-//            T\
-//        </span>\
-//    </div>\
-//    <div>\
-//        <span>\
-//            O\
-//        </span>\
-//    </div>\
-//    <div>\
-//        <span>\
-//            R\
-//        </span>\
-//    </div>\
-//</div>\
-
-//<div>\
-//    <span>\
-//        USER\
-//    </span>\
-//</div>\
-//<div>\
-//    <span>\
-//        INKAZAN\
-//    </span>\
-//</div>\
-//<img src=\"/PageComponents/SearchHeaderHtmlBox/content/search.png\" />\
 
 
 
