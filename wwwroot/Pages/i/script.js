@@ -35,6 +35,7 @@ if (urlSrplit.length > 4) search = decodeURIComponent(urlSrplit[4]);
 // 3 - search page
 
 let typeApiPageI = 0
+let userLogin = ""
 
 if(search.length > 0)
 {
@@ -42,6 +43,7 @@ if(search.length > 0)
     if (searchSplit.length > 0)
         if (search[0] == '-') {
             typeApiPageI = 1
+            userLogin = searchSplit[1]
         }
         else if (searchSplit.length == 2 && searchSplit[1].length == 0 && search[search.length - 1] == '-')
             typeApiPageI = 2
@@ -121,7 +123,7 @@ else if (typeApiPageI == 3) {
 }
 
 new HeaderDescriptionHtmlBox(document.getElementById("HeaderHtmlBox"), "afterend", headerDescriptionName, headerDescriptionNameSub)
-new SearchHeaderQHtmlBox(document.getElementById("HeaderDescriptionHtmlBox"), "afterend", placeholder, "")
+new SearchHeaderQHtmlBox(document.getElementById("HeaderDescriptionHtmlBox"), "afterend", placeholder, "", userLogin)
 
 if (typeApiPageI == 1) {
     if (search.split('-').length > 2) {

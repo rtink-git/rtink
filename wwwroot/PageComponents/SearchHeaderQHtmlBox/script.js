@@ -1,9 +1,13 @@
 ﻿export class SearchHeaderQHtmlBox {
-    constructor(target, position, placeholder, placeholderFocus) {
+    #userLogin
+
+    constructor(target, position, placeholder, placeholderFocus, userLogin) {
         let name = "SearchHeaderQHtmlBox"
         let url = "/PageComponents/" + name;
         let urlContent = url + "/content"
         let css = document.createElement("link"); css.setAttribute("rel", "stylesheet"); css.setAttribute("href", url + "/style.css"); document.head.append(css);
+
+        this.#userLogin = userLogin
 
         let html = "\
         <div id=\"" + name + "\">\
@@ -27,12 +31,16 @@
 
         document.querySelector("#" + name + " > a").addEventListener('click', async () => {
             let search = document.querySelector("#" + name + " input").value.toLowerCase();
+            if (this.#userLogin.length > 0)
+                search = "-" + this.#userLogin + "-" + search
             window.location.href = "/i/" + search
         });
 
         document.querySelector("#" + name + " input").addEventListener('keypress', async (event) => {
             if (event.key == "Enter") {
                 let search = document.querySelector("#" + name + " input").value.toLowerCase();
+                if (this.#userLogin.length > 0)
+                    search = "-" + this.#userLogin + "-" + search
                 window.location.href = "/i/" + search
             }
         });
