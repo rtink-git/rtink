@@ -10,7 +10,6 @@
 import { isTest, apiUrl, PageHeadsBuild, authJWToken } from '/PageComponents/Page/script.js';
 import { HeaderHtmlBox } from '/PageComponents/HeaderHtmlBox/script.js';
 import { HeaderDescriptionHtmlBox } from '/PageComponents/HeaderDescriptionHtmlBox/script.js';
-//import { HeaderUnderQHtmlBox } from '/PageComponents/HeaderUnderQHtmlBox/script.js';
 import { SearchHeaderQHtmlBox } from "/PageComponents/SearchHeaderQHtmlBox/script.js";
 //import { CentralInfHtmlBox } from '/PageComponents/CentralInfHtmlBox/script.js';
 import { ArticlesHtmlBox } from '/PageComponents/ArticlesHtmlBox/script.js';
@@ -136,7 +135,6 @@ else if (typeApiPageI == 3) {
     document.getElementById("SearchBM").style.display = "none";
 }
 
-////let centralInfHtmlBox = new CentralInfHtmlBox(document.getElementById("HeaderUnderHtmlBox"), "afterend", 100, null, 90, 0.3, null, 70, 0.1, "LOADING", document.URL, null, null)
 let articlesHtmlBox = new ArticlesHtmlBox(document.getElementById("SearchHeaderQHtmlBox"), "afterend", search, apiUrl, authJWToken)
 
 ////document.getElementById(centralInfHtmlBox.id).remove()
