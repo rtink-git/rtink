@@ -12,10 +12,12 @@ export class ArticlesHtmlBox {
     IsTest
     #name
     #list
+    #urlContent
 
     constructor(target, position, search, apiUrl, authJWToken, isTest) {
         this.#name = "ArticlesHtmlBox"
         let url = "/PageComponents/" + this.#name;
+        this.#urlContent = url + "/content"
         let css = document.createElement("link"); css.setAttribute("rel", "stylesheet"); css.setAttribute("href", url + "/style.css"); document.head.append(css);
 
         this.target = target
@@ -149,6 +151,20 @@ export class ArticlesHtmlBox {
         return html;
     }
 
+    #CommentInputHtmlPart() {
+        let name = "CommentInputHtmlPart"
+
+        let html = "\
+        <div id=\"" + name + "\">\
+            <input type=\"text\" placeholder=\"Comment ...\" />\
+            <a>\
+                <img src=\"" + this.#urlContent + "/send.png\" />\
+            </a>\
+        </div>"
+
+        return html;
+    }
+
     #DtLoginHtmlPart(time, login, loginFlag) {
         let loginHtmlPart = ""
         if (loginFlag) {
@@ -244,12 +260,18 @@ export class ArticlesHtmlBox {
                         }
                     }              
 
-                    if (isBookmark) {
-                        let apiArticleBookmark = await this.#ApiArticleBookmark(titleHb)
-                        if (apiArticleBookmark)
-                            if (tr.querySelector(".BookmarkButton").getAttribute("data-isBookmark") == "false")
-                                tr.querySelector(".BookmarkButton").setAttribute("data-isBookmark", true)
-                            else tr.querySelector(".BookmarkButton").setAttribute("data-isBookmark", false)
+                    let apiArticleBookmark = await this.#ApiArticleBookmark(titleHb)
+                    if (apiArticleBookmark)
+                        if (tr.querySelector(".BookmarkButton").getAttribute("data-isBookmark") == "false")
+                            tr.querySelector(".BookmarkButton").setAttribute("data-isBookmark", true)
+                        else tr.querySelector(".BookmarkButton").setAttribute("data-isBookmark", false)
+
+                    if (document.getElementById("CommentInputHtmlPart") == null) {
+                        tr.insertAdjacentHTML("beforeend", this.#CommentInputHtmlPart())
+                    }
+                    else {
+                        document.getElementById("CommentInputHtmlPart").remove()
+                        tr.insertAdjacentHTML("beforeend", this.#CommentInputHtmlPart())
                     }
                 })
             }
