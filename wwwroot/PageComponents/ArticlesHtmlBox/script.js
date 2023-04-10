@@ -43,6 +43,8 @@ export class ArticlesHtmlBox {
         await this.#ListActionSet()
 
         if (this.page == 1 && this.#list.length == this.take) {
+            
+
             document.querySelector("#" + this.#name + " > ul").insertAdjacentHTML("afterend", this.#MoreButton())
 
             document.getElementById("MoreButton").addEventListener('click', async () => {
@@ -84,6 +86,9 @@ export class ArticlesHtmlBox {
 
         this.#list.forEach(e => {
             if (!e.appended) {
+                if (e.rating == 2)
+                    e.rating = 0
+
                 let dt = new Date(e.dt);
                 let dtnow = new Date()
                 dt.setHours(dt.getHours() + (-1) * dt.getTimezoneOffset() / 60)
@@ -121,26 +126,45 @@ export class ArticlesHtmlBox {
                                     " + e.title + "\
                                 </a>\
                             </h1>\
-                            " + _dtLoginHtmlPartDown + "\
                         </div>\
                         <img src=\"" + e.fileUrlSource + "\" />\
-                        <div id=\"_Description\" data-isDescription=\"" + isDescription + "\">\
+                        <div class=\"_Description\" data-isDescription=\"" + isDescription + "\">\
                         " + _descriptionHtmlPart + "\
                         </div>\
-                        <div id=\"_Inf\">\
-                            " + _dtLoginHtmlPartUp + "\
-                            <hr />\
-                        </div>\
-                        <div>\
-                            <a class=\"BookmarkButton\" data-isBookmark=\"" + e.isBookmark + "\">\
-                                <img />\
+                        <div class=\"_footer\">\
+                            <a href=\"/i/-" + e.login.toLowerCase() + "\">\
+                                <span>\
+                                " + e.login + "\
+                                </span>\
                             </a>\
-                            <a class=\"_source\" href=\"/a/" + e.urlShort + "\">\
-                                source\
+                            <span>\
+                            " + dtstr + "\
+                            </span>\
+                            <a href=\"/a/" + e.urlShort + "\">\
+                                <span>\
+                                    SOURCE\
+                                </span>\
                             </a>\
                         </div>\
                     </article>\
                 </li>"
+
+
+                // " + _dtLoginHtmlPartDown + "\
+
+
+                        //<div id=\"_Inf\">\
+                        //    " + _dtLoginHtmlPartUp + "\
+                        //    <hr />\
+                        //</div>\
+                        //<div>\
+                        //    <a class=\"BookmarkButton\" data-isBookmark=\"" + e.isBookmark + "\">\
+                        //        <img />\
+                        //    </a>\
+                        //    <a class=\"_source\" href=\"/a/" + e.urlShort + "\">\
+                        //        source\
+                        //    </a>\
+                        //</div>\
 
                 e.appended = true;
             }
@@ -231,47 +255,47 @@ export class ArticlesHtmlBox {
         for (var i = 0; i < this.#list.length; i++) {
             if (!this.#list[i].bookmarkActionAdded) {
                 let tr = document.querySelectorAll("article")[i]
-                let trg = tr.getElementsByClassName("BookmarkButton")[0]
+                //let trg = tr.getElementsByClassName("BookmarkButton")[0]
 
                 let rating = this.#list[i].rating
                 let isBody = this.#list[i].isBody
                 let isBookmark = this.#list[i].isBookmark
                 let titleHb = this.#list[i].titleHb
 
-                trg.addEventListener("click", async event => {
-                    if (rating == 2) {
-                        rating = 0;
-                        tr.setAttribute("data-tp", rating);
-                        var q = tr.querySelector("#_DtLoginHtmlPart")
-                        var w = "<div id=\"_DtLoginHtmlPart\">" + q.innerHTML + "</div>";
-                        q.remove()
-                        tr.querySelector("#_Inf").insertAdjacentHTML("afterbegin", w)
-                    }
+                //trg.addEventListener("click", async event => {
+                    //if (rating == 2) {
+                    //    rating = 0;
+                    //    tr.setAttribute("data-tp", rating);
+                    //    var q = tr.querySelector("#_DtLoginHtmlPart")
+                    //    var w = "<div id=\"_DtLoginHtmlPart\">" + q.innerHTML + "</div>";
+                    //    q.remove()
+                    //    tr.querySelector("#_Inf").insertAdjacentHTML("afterbegin", w)
+                    //}
 
-                    if (isBody) {
-                        let bodyObj = await this.#ApiArticleBody(titleHb)
-                        if (bodyObj != null && bodyObj.body.length > 0) {
-                            let dsT = tr.querySelector("#_Description")
-                            dsT.innerHTML = bodyObj.body
-                            dsT.setAttribute("data-body", true);
-                            dsT.setAttribute("data-isDescription", true)
-                        }
-                    }              
+                    //if (isBody) {
+                    //    let bodyObj = await this.#ApiArticleBody(titleHb)
+                    //    if (bodyObj != null && bodyObj.body.length > 0) {
+                    //        let dsT = tr.querySelector("#_Description")
+                    //        dsT.innerHTML = bodyObj.body
+                    //        dsT.setAttribute("data-body", true);
+                    //        dsT.setAttribute("data-isDescription", true)
+                    //    }
+                    //}              
 
-                    let apiArticleBookmark = await this.#ApiArticleBookmark(titleHb)
-                    if (apiArticleBookmark)
-                        if (tr.querySelector(".BookmarkButton").getAttribute("data-isBookmark") == "false")
-                            tr.querySelector(".BookmarkButton").setAttribute("data-isBookmark", true)
-                        else tr.querySelector(".BookmarkButton").setAttribute("data-isBookmark", false)
+                    //let apiArticleBookmark = await this.#ApiArticleBookmark(titleHb)
+                    //if (apiArticleBookmark)
+                    //    if (tr.querySelector(".BookmarkButton").getAttribute("data-isBookmark") == "false")
+                    //        tr.querySelector(".BookmarkButton").setAttribute("data-isBookmark", true)
+                    //    else tr.querySelector(".BookmarkButton").setAttribute("data-isBookmark", false)
 
-                    if (document.getElementById("CommentInputHtmlPart") == null) {
-                        tr.insertAdjacentHTML("beforeend", this.#CommentInputHtmlPart())
-                    }
-                    else {
-                        document.getElementById("CommentInputHtmlPart").remove()
-                        tr.insertAdjacentHTML("beforeend", this.#CommentInputHtmlPart())
-                    }
-                })
+                    //if (document.getElementById("CommentInputHtmlPart") == null) {
+                    //    tr.insertAdjacentHTML("beforeend", this.#CommentInputHtmlPart())
+                    //}
+                    //else {
+                    //    document.getElementById("CommentInputHtmlPart").remove()
+                    //    tr.insertAdjacentHTML("beforeend", this.#CommentInputHtmlPart())
+                    //}
+                //})
             }
         }
     }
@@ -295,17 +319,17 @@ export class ArticlesHtmlBox {
                 }
                 img.src = this.#list[i].fileUrlSource
 
-                let rating = this.#list[i].rating
-                trg.addEventListener("click", async event => {
-                    if (rating == 2) {
-                        rating = 0;
-                        tr.setAttribute("data-tp", rating);
-                        var q = tr.querySelector("#_DtLoginHtmlPart")
-                        var w = "<div id=\"_DtLoginHtmlPart\">" + q.innerHTML + "</div>";
-                        q.remove()
-                        tr.querySelector("#_Inf").insertAdjacentHTML("afterbegin", w)
-                    }
-                });
+                //let rating = this.#list[i].rating
+                //trg.addEventListener("click", async event => {
+                //    if (rating == 2) {
+                //        rating = 0;
+                //        tr.setAttribute("data-tp", rating);
+                //        var q = tr.querySelector("#_DtLoginHtmlPart")
+                //        var w = "<div id=\"_DtLoginHtmlPart\">" + q.innerHTML + "</div>";
+                //        q.remove()
+                //        tr.querySelector("#_Inf").insertAdjacentHTML("afterbegin", w)
+                //    }
+                //});
 
             }
         }

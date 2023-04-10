@@ -144,25 +144,6 @@ await articlesHtmlBox.ListAppend()
 
 
 
-
-// html parts
-
-function SearchHtmlPart() {
-    let html = "\
-    <div id=\"SearchHtmlPart\">\
-        <input type=\"text\" placeholder=\"НАЙДЕТСЯ ВСЁ\" />\
-        <a>\
-            <img src=\"/PageComponents/SearchHeaderHtmlBox/content/search.png\" />\
-        </a>\
-    </div>"
-
-    return html;
-}
-
-
-
-
-
 //-- html actions
 
 let prevScrollY = window.scrollY
@@ -177,11 +158,6 @@ document.getElementById("SearchBM").addEventListener('click', async (event) => {
     document.getElementById("SearchBM").style.display = "none";
     document.getElementById("SearchHeaderQHtmlBox").style.display = "block";
 });
-
-//document.querySelector("#SearchHeaderQHtmlBox input").addEventListener('blur', async (event) => {
-//    document.getElementById("SearchBM").style.display = "block";
-//    document.getElementById("SearchHeaderQHtmlBox").style.display = "none";
-//});
 
 
 

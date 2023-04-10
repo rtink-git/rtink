@@ -33,7 +33,8 @@
             let search = document.querySelector("#" + name + " input").value.toLowerCase();
             if (this.#userLogin.length > 0)
                 search = "-" + this.#userLogin + "-" + search
-            window.location.href = "/i/" + search
+            if (search.length > 0)
+                window.location.href = "/i/" + search
         });
 
         document.querySelector("#" + name + " input").addEventListener('keypress', async (event) => {
@@ -41,7 +42,8 @@
                 let search = document.querySelector("#" + name + " input").value.toLowerCase();
                 if (this.#userLogin.length > 0)
                     search = "-" + this.#userLogin + "-" + search
-                window.location.href = "/i/" + search
+                if (search.length > 0)
+                    window.location.href = "/i/" + search
             }
         });
     }
