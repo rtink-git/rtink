@@ -105,6 +105,7 @@ app.UseAuthorization();
 
 app.MapGet("/", async (context) => { await context.Response.WriteAsync("<script type=\"module\" src=\"/Pages/i/script.js\"></script>"); }); // /*await context.Response.WriteAsync(new RtInk.Pages.I().GetHtml());*/
 app.MapGet("/i/{search}", async (context) => { await context.Response.WriteAsync("<script type=\"module\" src=\"/Pages/i/script.js\"></script>"); });
+app.MapGet("/locations", async (context) => { await context.Response.WriteAsync("<script type=\"module\" src=\"/Pages/Locations/script.js\"></script>"); });
 
 app.MapGet("/a/{urlShort}", async (string urlShort, HttpContext context, IHttpClientFactory httpClientFactory) => {
     //-- Task.Note: app.MapGet [/a/{urlShort}] устарел, но необходимо поддерживать, потому что применялся в ранних версиях и может оставаться актуальным

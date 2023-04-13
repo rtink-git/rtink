@@ -9,8 +9,8 @@
 
 import { isTest, apiUrl, PageHeadsBuild, authJWToken } from '/PageComponents/Page/script.js';
 import { HeaderHtmlBox } from '/PageComponents/HeaderHtmlBox/script.js';
-//import { HeaderUnderQHtmlBox } from '/PageComponents/HeaderUnderQHtmlBox/script.js';
-//import { SearchHeaderHtmlBox } from "/PageComponents/SearchHeaderHtmlBox/script.js";
+import { HeaderDescriptionHtmlBox } from '/PageComponents/HeaderDescriptionHtmlBox/script.js';
+import { SearchHeaderQHtmlBox } from "/PageComponents/SearchHeaderQHtmlBox/script.js";
 //import { CentralInfHtmlBox } from '/PageComponents/CentralInfHtmlBox/script.js';
 import { ArticlesHtmlBox } from '/PageComponents/ArticlesHtmlBox/script.js';
 
@@ -34,6 +34,7 @@ if (urlSrplit.length > 4) search = decodeURIComponent(urlSrplit[4]);
 // 3 - search page
 
 let typeApiPageI = 0
+let userLogin = ""
 
 if(search.length > 0)
 {
@@ -41,6 +42,7 @@ if(search.length > 0)
     if (searchSplit.length > 0)
         if (search[0] == '-') {
             typeApiPageI = 1
+            userLogin = searchSplit[1]
         }
         else if (searchSplit.length == 2 && searchSplit[1].length == 0 && search[search.length - 1] == '-')
             typeApiPageI = 2
@@ -58,7 +60,7 @@ let roleId = apiPageI.id
 // / USER
 // / SEARCH
 
-let headerT = "RT"
+//let headerT = "RT"
 let menuList = new Array()
 
 if (roleId > 0)
@@ -71,8 +73,6 @@ if (typeApiPageI == 0) {
 else if (typeApiPageI == 1) {
     menuList.push({ "icon": iPageUrlContent + "/search.png", "href": "", "id": "SearchBM" });
     menuList.push({ "icon": iPageUrlContent + "/undo.png", "href": "/" });
-
-
 }
 else if (typeApiPageI == 2) {
     menuList.push({ "icon": iPageUrlContent + "/undo.png", "href": "/" });
@@ -84,7 +84,7 @@ else if (typeApiPageI == 3) {
 
 //--------------------
 
-new HeaderHtmlBox(document.getElementsByTagName("body")[0], "afterbegin", headerT, null, menuList, isTest)
+new HeaderHtmlBox(document.getElementsByTagName("body")[0], "afterbegin", "RT", null, menuList, isTest)
 
 if (typeApiPageI == 0 && roleId == 0) {
     document.getElementById("SigninB").addEventListener('click', async () => {
@@ -92,7 +92,7 @@ if (typeApiPageI == 0 && roleId == 0) {
     });
 }
 
-let placeholder = "NEWS AGGREGATOR"
+let placeholder = ""
 //let afterend = "HeaderHtmlBox"
 let headerDescriptionName = ""
 let headerDescriptionNameSub = ""
@@ -101,9 +101,14 @@ if (typeApiPageI == 0) {
     headerDescriptionName = "NEWS";
 }
 else if (typeApiPageI == 1) {
-    if (search.split('-').length > 2) placeholder = search.toUpperCase().replace('-', '@').replace('-', ':  ').replaceAll('-', ' ')
-    else placeholder = search.toUpperCase().replace('-', '@') //+ ": ИЛОН МАСК"
-    headerDescriptionName = "USER";
+    if (search.split('-').length > 2) {
+        let searchSplit = search.split('-')
+        for (var i = 2; i < searchSplit.length; i++)
+            placeholder += searchSplit[i] + ' '
+        placeholder = placeholder.trim().toUpperCase();
+        //placeholder = //search.toUpperCase().replace('-', '@').replace('-', ':  ').replaceAll('-', ' ')
+    }
+    //else placeholder = search.toUpperCase().replace('-', '@') //+ ": ИЛОН МАСК"
     let userName = search.split('-')[1].toUpperCase()
     headerDescriptionName = userName.substring(0, 4);
     headerDescriptionNameSub = userName.substring(4, userName.length)
@@ -116,63 +121,25 @@ else if (typeApiPageI == 3) {
     headerDescriptionName = "SEARCH";
 }
 
-document.getElementById("HeaderHtmlBox").insertAdjacentHTML("afterend", HeaderDescriptionHtmlPart(headerDescriptionName, headerDescriptionNameSub))
+new HeaderDescriptionHtmlBox(document.getElementById("HeaderHtmlBox"), "afterend", headerDescriptionName, headerDescriptionNameSub, "Moscow")
+new SearchHeaderQHtmlBox(document.getElementById("HeaderDescriptionHtmlBox"), "afterend", placeholder, "", userLogin)
 
-document.getElementById("HeaderDescriptionHtmlPart").insertAdjacentHTML("afterend", SearchHtmlPart())
-//afterend = "SearchHtmlPart"
+if (typeApiPageI == 1) {
+    if (search.split('-').length > 2) {
+        document.getElementById("SearchHeaderQHtmlBox").style.display = "block"
+        document.getElementById("SearchBM").style.display = "none";
+    }
+}
+else if (typeApiPageI == 3) {
+    document.getElementById("SearchHeaderQHtmlBox").style.display = "block"
+    document.getElementById("SearchBM").style.display = "none";
+}
 
-//new SearchHeaderHtmlBox(document.getElementById("HeaderHtmlBox"), "afterend", placeholder, "НАЙДЕТСЯ ВСЁ")
-
-////let centralInfHtmlBox = new CentralInfHtmlBox(document.getElementById("HeaderUnderHtmlBox"), "afterend", 100, null, 90, 0.3, null, 70, 0.1, "LOADING", document.URL, null, null)
-let articlesHtmlBox = new ArticlesHtmlBox(document.getElementById("SearchHtmlPart"), "afterend", search, apiUrl, authJWToken, isTest)
+let articlesHtmlBox = new ArticlesHtmlBox(document.getElementById("SearchHeaderQHtmlBox"), "afterend", search, apiUrl, authJWToken)
 
 ////document.getElementById(centralInfHtmlBox.id).remove()
 
 await articlesHtmlBox.ListAppend()
-
-
-
-
-
-// html parts
-
-function HeaderDescriptionHtmlPart(main, sub) {
-    let mainHtml = "";
-    for (var i = 0; i < main.length; i++) { 
-        mainHtml += "\
-        <div>\
-            <span>" + main[i] + "</span>\
-        </div>"
-    }
-    if (mainHtml.length > 0)
-        mainHtml = "<div>" + mainHtml + "</div>";
-
-    let subHtml = ""
-    for (var i = 0; i < sub.length; i++) {
-        subHtml += "\
-        <div>\
-            <span>" + sub[i] + "</span>\
-        </div>"
-    }
-    if (subHtml.length > 0)
-        subHtml = "<div>" + subHtml + "</div>";
-
-    let html ="\
-    <div id=\"HeaderDescriptionHtmlPart\">" + mainHtml + subHtml + "</div>"
-    return html
-}
-
-function SearchHtmlPart() {
-    let html = "\
-    <div id=\"SearchHtmlPart\">\
-        <input type=\"text\" placeholder=\"НАЙДЕТСЯ ВСЁ\" />\
-        <a>\
-            <img src=\"/PageComponents/SearchHeaderHtmlBox/content/search.png\" />\
-        </a>\
-    </div>"
-
-    return html;
-}
 
 
 
@@ -190,12 +157,7 @@ document.addEventListener('scroll', async (event) => {
 
 document.getElementById("SearchBM").addEventListener('click', async (event) => {
     document.getElementById("SearchBM").style.display = "none";
-    document.getElementById("SearchHtmlPart").style.display = "block";
-});
-
-document.querySelector("#SearchHtmlPart input").addEventListener('blur', async (event) => {
-    document.getElementById("SearchBM").style.display = "block";
-    document.getElementById("SearchHtmlPart").style.display = "none";
+    document.getElementById("SearchHeaderQHtmlBox").style.display = "block";
 });
 
 

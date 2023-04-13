@@ -60,7 +60,7 @@ let roleId = apiPageI.id
 // / USER
 // / SEARCH
 
-let headerT = "RT"
+//let headerT = "RT"
 let menuList = new Array()
 
 if (roleId > 0)
@@ -68,6 +68,7 @@ if (roleId > 0)
 
 if (typeApiPageI == 0) {
     menuList.push({ "icon": iPageUrlContent + "/search.png", "href": "", "id": "SearchBM" });
+    menuList.push({ "icon": iPageUrlContent + "/category.png", "href": "/list" });
     if (roleId == 0) menuList.push({ "icon": iPageUrlContent + "/login.png", "href": "", "id": "SigninB" });
 }
 else if (typeApiPageI == 1) {
@@ -84,7 +85,7 @@ else if (typeApiPageI == 3) {
 
 //--------------------
 
-new HeaderHtmlBox(document.getElementsByTagName("body")[0], "afterbegin", headerT, null, menuList, isTest)
+new HeaderHtmlBox(document.getElementsByTagName("body")[0], "afterbegin", "RT", null, menuList, isTest)
 
 if (typeApiPageI == 0 && roleId == 0) {
     document.getElementById("SigninB").addEventListener('click', async () => {
@@ -121,7 +122,7 @@ else if (typeApiPageI == 3) {
     headerDescriptionName = "SEARCH";
 }
 
-new HeaderDescriptionHtmlBox(document.getElementById("HeaderHtmlBox"), "afterend", headerDescriptionName, headerDescriptionNameSub)
+new HeaderDescriptionHtmlBox(document.getElementById("HeaderHtmlBox"), "afterend", headerDescriptionName, headerDescriptionNameSub, "Moscow")
 new SearchHeaderQHtmlBox(document.getElementById("HeaderDescriptionHtmlBox"), "afterend", placeholder, "", userLogin)
 
 if (typeApiPageI == 1) {
@@ -140,6 +141,7 @@ let articlesHtmlBox = new ArticlesHtmlBox(document.getElementById("SearchHeaderQ
 ////document.getElementById(centralInfHtmlBox.id).remove()
 
 await articlesHtmlBox.ListAppend()
+
 
 
 

@@ -149,23 +149,6 @@ export class ArticlesHtmlBox {
                     </article>\
                 </li>"
 
-
-                // " + _dtLoginHtmlPartDown + "\
-
-
-                        //<div id=\"_Inf\">\
-                        //    " + _dtLoginHtmlPartUp + "\
-                        //    <hr />\
-                        //</div>\
-                        //<div>\
-                        //    <a class=\"BookmarkButton\" data-isBookmark=\"" + e.isBookmark + "\">\
-                        //        <img />\
-                        //    </a>\
-                        //    <a class=\"_source\" href=\"/a/" + e.urlShort + "\">\
-                        //        source\
-                        //    </a>\
-                        //</div>\
-
                 e.appended = true;
             }
         });

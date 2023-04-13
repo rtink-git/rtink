@@ -1,0 +1,65 @@
+﻿.LocationBox {
+    float: left;
+    margin-top: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+    .LocationBox > * {
+        display: inline-block;
+        width: 600px;
+        margin: 0 40px;
+    }
+
+@media (max-width: 680px) {
+    .LocationBox > * {
+        width: calc(100% - 80px);
+        margin: 0;
+    }
+}
+
+@media (max-width: 550px) {
+    .LocationBox > * {
+        width: calc(100% - 30px);
+        margin: 0;
+    }
+}
+
+.LocationBox > * > * {
+    float: left;
+    width: 100%;
+    height: 30px;
+    margin-bottom: 5px;
+    background: #f3f3f3;
+    border-radius: 4px;
+}
+
+    .LocationBox > * > * > *:first-child {
+        float: left;
+        margin-top: 8px;
+        margin-left: 20px;
+    }
+
+        .LocationBox > * > * > *:first-child span {
+            float: left;
+            text-transform: uppercase;
+            font-size: 10px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            color: #666666
+        }
+
+    .LocationBox > * > * > *:last-child {
+        float: right;
+        margin-top: 9px;
+        margin-right: 15px;
+    }
+
+        .LocationBox > * > * > *:last-child > img {
+            height: 14px;
+            opacity: 0.3
+        }
+
+#LocationsCheckedHtmlPart > * > * {
+    background: #e5fdc6;
+}

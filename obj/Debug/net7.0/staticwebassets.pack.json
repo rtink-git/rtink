@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\PageComponents\\ArticlesHtmlBox\\content\\bookmarkSelected.png"
     },
     {
+      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\ArticlesHtmlBox\\content\\send.png",
+      "PackagePath": "staticwebassets\\PageComponents\\ArticlesHtmlBox\\content\\send.png"
+    },
+    {
       "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\ArticlesHtmlBox\\script.js",
       "PackagePath": "staticwebassets\\PageComponents\\ArticlesHtmlBox\\script.js"
     },
@@ -61,16 +65,12 @@
       "PackagePath": "staticwebassets\\PageComponents\\CentralInfHtmlBox\\style.css"
     },
     {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\HeaderBox\\content\\triangle.png",
-      "PackagePath": "staticwebassets\\PageComponents\\HeaderBox\\content\\triangle.png"
+      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\HeaderDescriptionHtmlBox\\script.js",
+      "PackagePath": "staticwebassets\\PageComponents\\HeaderDescriptionHtmlBox\\script.js"
     },
     {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\HeaderBox\\script.js",
-      "PackagePath": "staticwebassets\\PageComponents\\HeaderBox\\script.js"
-    },
-    {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\HeaderBox\\style.css",
-      "PackagePath": "staticwebassets\\PageComponents\\HeaderBox\\style.css"
+      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\HeaderDescriptionHtmlBox\\style.css",
+      "PackagePath": "staticwebassets\\PageComponents\\HeaderDescriptionHtmlBox\\style.css"
     },
     {
       "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\HeaderHtmlBox\\content\\logo.png",
@@ -97,30 +97,6 @@
       "PackagePath": "staticwebassets\\PageComponents\\HeaderHtmlBox\\style.css"
     },
     {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\HeaderUnderBoxHtmlPart\\script.js",
-      "PackagePath": "staticwebassets\\PageComponents\\HeaderUnderBoxHtmlPart\\script.js"
-    },
-    {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\HeaderUnderBoxHtmlPart\\style.css",
-      "PackagePath": "staticwebassets\\PageComponents\\HeaderUnderBoxHtmlPart\\style.css"
-    },
-    {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\HeaderUnderHtmlBox\\script.js",
-      "PackagePath": "staticwebassets\\PageComponents\\HeaderUnderHtmlBox\\script.js"
-    },
-    {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\HeaderUnderHtmlBox\\style.css",
-      "PackagePath": "staticwebassets\\PageComponents\\HeaderUnderHtmlBox\\style.css"
-    },
-    {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\HeaderUnderQHtmlBox\\script.js",
-      "PackagePath": "staticwebassets\\PageComponents\\HeaderUnderQHtmlBox\\script.js"
-    },
-    {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\HeaderUnderQHtmlBox\\style.css",
-      "PackagePath": "staticwebassets\\PageComponents\\HeaderUnderQHtmlBox\\style.css"
-    },
-    {
       "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\HtmlBase\\content\\logo.png",
       "PackagePath": "staticwebassets\\PageComponents\\HtmlBase\\content\\logo.png"
     },
@@ -137,72 +113,20 @@
       "PackagePath": "staticwebassets\\PageComponents\\Page\\style.css"
     },
     {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\SearchHeaderHtmlBox\\content\\search.png",
-      "PackagePath": "staticwebassets\\PageComponents\\SearchHeaderHtmlBox\\content\\search.png"
+      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\SearchHeaderQHtmlBox\\content\\search.png",
+      "PackagePath": "staticwebassets\\PageComponents\\SearchHeaderQHtmlBox\\content\\search.png"
     },
     {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\SearchHeaderHtmlBox\\script.js",
-      "PackagePath": "staticwebassets\\PageComponents\\SearchHeaderHtmlBox\\script.js"
+      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\SearchHeaderQHtmlBox\\script.js",
+      "PackagePath": "staticwebassets\\PageComponents\\SearchHeaderQHtmlBox\\script.js"
     },
     {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\SearchHeaderHtmlBox\\style.css",
-      "PackagePath": "staticwebassets\\PageComponents\\SearchHeaderHtmlBox\\style.css"
+      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\SearchHeaderQHtmlBox\\style.css",
+      "PackagePath": "staticwebassets\\PageComponents\\SearchHeaderQHtmlBox\\style.css"
     },
     {
       "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\Sessions.js",
       "PackagePath": "staticwebassets\\PageComponents\\Sessions.js"
-    },
-    {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\headerQPCP\\content\\down-arrow.png",
-      "PackagePath": "staticwebassets\\PageComponents\\headerQPCP\\content\\down-arrow.png"
-    },
-    {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\headerQPCP\\content\\logo.png",
-      "PackagePath": "staticwebassets\\PageComponents\\headerQPCP\\content\\logo.png"
-    },
-    {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\headerQPCP\\content\\triangle.png",
-      "PackagePath": "staticwebassets\\PageComponents\\headerQPCP\\content\\triangle.png"
-    },
-    {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\headerQPCP\\script.js",
-      "PackagePath": "staticwebassets\\PageComponents\\headerQPCP\\script.js"
-    },
-    {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\headerQPCP\\style.css",
-      "PackagePath": "staticwebassets\\PageComponents\\headerQPCP\\style.css"
-    },
-    {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\itemsPCP\\content\\bookmark.png",
-      "PackagePath": "staticwebassets\\PageComponents\\itemsPCP\\content\\bookmark.png"
-    },
-    {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\itemsPCP\\content\\bookmarkSelected.png",
-      "PackagePath": "staticwebassets\\PageComponents\\itemsPCP\\content\\bookmarkSelected.png"
-    },
-    {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\itemsPCP\\content\\chat-box.png",
-      "PackagePath": "staticwebassets\\PageComponents\\itemsPCP\\content\\chat-box.png"
-    },
-    {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\itemsPCP\\content\\menu.png",
-      "PackagePath": "staticwebassets\\PageComponents\\itemsPCP\\content\\menu.png"
-    },
-    {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\itemsPCP\\content\\message.png",
-      "PackagePath": "staticwebassets\\PageComponents\\itemsPCP\\content\\message.png"
-    },
-    {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\itemsPCP\\content\\retweet.png",
-      "PackagePath": "staticwebassets\\PageComponents\\itemsPCP\\content\\retweet.png"
-    },
-    {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\itemsPCP\\script.js",
-      "PackagePath": "staticwebassets\\PageComponents\\itemsPCP\\script.js"
-    },
-    {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\itemsPCP\\style.css",
-      "PackagePath": "staticwebassets\\PageComponents\\itemsPCP\\style.css"
     },
     {
       "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\ArticleAdd\\script.js",
@@ -243,6 +167,26 @@
     {
       "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\List\\style.css",
       "PackagePath": "staticwebassets\\Pages\\List\\style.css"
+    },
+    {
+      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\Locations\\content\\check.png",
+      "PackagePath": "staticwebassets\\Pages\\Locations\\content\\check.png"
+    },
+    {
+      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\Locations\\content\\search.png",
+      "PackagePath": "staticwebassets\\Pages\\Locations\\content\\search.png"
+    },
+    {
+      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\Locations\\content\\undo.png",
+      "PackagePath": "staticwebassets\\Pages\\Locations\\content\\undo.png"
+    },
+    {
+      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\Locations\\script.js",
+      "PackagePath": "staticwebassets\\Pages\\Locations\\script.js"
+    },
+    {
+      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\Locations\\style.css",
+      "PackagePath": "staticwebassets\\Pages\\Locations\\style.css"
     },
     {
       "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\U\\content\\link.png",
@@ -455,10 +399,6 @@
     {
       "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\i\\content\\user.png",
       "PackagePath": "staticwebassets\\Pages\\i\\content\\user.png"
-    },
-    {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\i\\script - buffer.js",
-      "PackagePath": "staticwebassets\\Pages\\i\\script - buffer.js"
     },
     {
       "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\i\\script.js",
