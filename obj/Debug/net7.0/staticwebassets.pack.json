@@ -173,6 +173,10 @@
       "PackagePath": "staticwebassets\\Pages\\Locations\\content\\check.png"
     },
     {
+      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\Locations\\content\\close.png",
+      "PackagePath": "staticwebassets\\Pages\\Locations\\content\\close.png"
+    },
+    {
       "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\Locations\\content\\search.png",
       "PackagePath": "staticwebassets\\Pages\\Locations\\content\\search.png"
     },
@@ -307,10 +311,6 @@
     {
       "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\i\\content\\check.png",
       "PackagePath": "staticwebassets\\Pages\\i\\content\\check.png"
-    },
-    {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\i\\content\\close.png",
-      "PackagePath": "staticwebassets\\Pages\\i\\content\\close.png"
     },
     {
       "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\i\\content\\cross.png",

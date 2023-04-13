@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "miSyOGv3l+MNS91EECiQJZq196g+8iPp21hLOv+65Ts=",
+  "Hash": "uZg8fAcVQiqMLlnYVQOVQd4Rfxqa+REccuqoheFmogQ=",
   "Source": "RtInk",
   "BasePath": "_content/RtInk",
   "Mode": "Default",
@@ -680,23 +680,6 @@
       "OriginalItemSpec": "wwwroot\\Pages\\i\\content\\check.png"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\i\\content\\close.png",
-      "SourceId": "RtInk",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
-      "BasePath": "_content/RtInk",
-      "RelativePath": "Pages/i/content/close.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Pages\\i\\content\\close.png"
-    },
-    {
       "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\i\\content\\cross.png",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
@@ -1256,6 +1239,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Pages\\Locations\\content\\check.png"
+    },
+    {
+      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\Locations\\content\\close.png",
+      "SourceId": "RtInk",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "BasePath": "_content/RtInk",
+      "RelativePath": "Pages/Locations/content/close.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Pages\\Locations\\content\\close.png"
     },
     {
       "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\Locations\\content\\search.png",

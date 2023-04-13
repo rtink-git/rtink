@@ -40,49 +40,6 @@ builder.Services.AddSession(options =>
     options.IdleTimeout = TimeSpan.FromDays(1);
 });
 
-builder.Services.AddAuthentication(options =>
-{
-    options.DefaultScheme = "Custom";
-    //options.DefaultChallengeScheme = GoogleDefaults.AuthenticationScheme;
-})
-    .AddPolicyScheme("Custom", "Custom", options =>
-{
-    options.ForwardDefaultSelector = context =>
-    {
-        if (context.Request.Path.StartsWithSegments("/signin-google", StringComparison.InvariantCulture))
-            return CookieAuthenticationDefaults.AuthenticationScheme;
-        else
-            return JwtBearerDefaults.AuthenticationScheme;
-    };
-})
-    .AddCookie()
-    .AddGoogle(options =>
-{
-    options.ClientId = "251527858454-opkvgc8mr70dc7kkr6vaeimi37o8gf8h.apps.googleusercontent.com";
-    options.ClientSecret = "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";
-})
-    .AddJwtBearer(options =>
-{
-    options.RequireHttpsMetadata = false;
-    options.TokenValidationParameters = new TokenValidationParameters
-    {
-        // указывает, будет ли валидироваться издатель при валидации токена
-        ValidateIssuer = true,
-        // строка, представляющая издателя
-        ValidIssuer = Session.JWToken.AuthOptions.ISSUER,
-        // будет ли валидироваться потребитель токена
-        ValidateAudience = true,
-        // установка потребителя токена
-        ValidAudience = Session.JWToken.AuthOptions.AUDIENCE,
-        // будет ли валидироваться время существования
-        ValidateLifetime = true,
-        // установка ключа безопасности
-        IssuerSigningKey = Session.JWToken.AuthOptions.GetSymmetricSecurityKey(),
-        // валидация ключа безопасности
-        ValidateIssuerSigningKey = true,
-    };
-});
-
 builder.Services.AddHttpClient("ApiRtInkNetCoreApp", client => {
     client.DefaultRequestHeaders.Add("key", Constants.apiKeyRtInk);
 });
@@ -165,16 +122,16 @@ app.MapGet("/f/{id_with_extension}", (string id_with_extension) =>
     catch { return Results.Redirect("/"); }
 });
 
-app.MapGet("/list", async (context) => {
-    await context.Response.WriteAsync(new RtInk.Pages.List().GetHtml());
-});
+//app.MapGet("/list", async (context) => {
+//    await context.Response.WriteAsync(new RtInk.Pages.List().GetHtml());
+//});
 
-app.MapGet("/user-profile/{login}", async (context) => {
-    await context.Response.WriteAsync(new RtInk.Pages.UserProfile().GetHtml());
-});
-app.MapGet("/article-add/{login}", async (context) => {
-    await context.Response.WriteAsync(new RtInk.Pages.ArticleAdd().GetHtml());
-});
+//app.MapGet("/user-profile/{login}", async (context) => {
+//    await context.Response.WriteAsync(new RtInk.Pages.UserProfile().GetHtml());
+//});
+//app.MapGet("/article-add/{login}", async (context) => {
+//    await context.Response.WriteAsync(new RtInk.Pages.ArticleAdd().GetHtml());
+//});
 app.MapPost("/user-logo-upload", async (IFormFile file, HttpContext context) => {
     try
     {
@@ -205,17 +162,17 @@ app.MapGet("/user-logo/{login_with_extension}", (string login_with_extension) =>
         return Results.NotFound();
 
 });
-app.MapGet("/u/{login}", async (context) => {
-    string[] pathSplit = context.Request.Path.ToString().TrimEnd('/').Split('/');
-    if (pathSplit.Length == 3)
-        await context.Response.WriteAsync(new RtInk.Pages.U().GetHtml(pathSplit[2]));
-});
-app.MapGet("/users", async (context) => {
-    await context.Response.WriteAsync(new RtInk.Pages.Users().GetHtml(context.Request.Path));
-});
-app.MapGet("/users/{search}", async (context) => {
-    await context.Response.WriteAsync(new RtInk.Pages.Users().GetHtml(context.Request.Path));
-});
+//app.MapGet("/u/{login}", async (context) => {
+//    string[] pathSplit = context.Request.Path.ToString().TrimEnd('/').Split('/');
+//    if (pathSplit.Length == 3)
+//        await context.Response.WriteAsync(new RtInk.Pages.U().GetHtml(pathSplit[2]));
+//});
+//app.MapGet("/users", async (context) => {
+//    await context.Response.WriteAsync(new RtInk.Pages.Users().GetHtml(context.Request.Path));
+//});
+//app.MapGet("/users/{search}", async (context) => {
+//    await context.Response.WriteAsync(new RtInk.Pages.Users().GetHtml(context.Request.Path));
+//});
 
 
 //-- Api
@@ -303,19 +260,19 @@ app.MapPost("/api/Article", [Authorize] async (ArticleModel articleModel, HttpCo
 
     return Results.NotFound();
 });
-app.MapGet("/api/GetAticleSimillars", (HttpContext context) => {
-    long userId = new Session.JWToken().GetUserId(context);
+//app.MapGet("/api/GetAticleSimillars", (HttpContext context) => {
+//    long userId = new Session.JWToken().GetUserId(context);
 
-    string url = Constants.urlApi + Constants.apiRtInkWebPartStr + "/AticleSimillarList?userId=" + userId;
-    using (var httpClient = new HttpClient())
-    {
-        httpClient.DefaultRequestHeaders.Add("key", Constants.apiKeyRtInk);
-        var m = JsonSerializer.Deserialize<List<GetAticleSimillarsModel>>(httpClient.GetStringAsync(url).Result);
-        if (m != null)
-            return Results.Ok(m);
-    }
-    return Results.NotFound();
-});
+//    string url = Constants.urlApi + Constants.apiRtInkWebPartStr + "/AticleSimillarList?userId=" + userId;
+//    using (var httpClient = new HttpClient())
+//    {
+//        httpClient.DefaultRequestHeaders.Add("key", Constants.apiKeyRtInk);
+//        var m = JsonSerializer.Deserialize<List<GetAticleSimillarsModel>>(httpClient.GetStringAsync(url).Result);
+//        if (m != null)
+//            return Results.Ok(m);
+//    }
+//    return Results.NotFound();
+//});
 app.MapPost("/api/EditProfile", async (string loginPrev, string name, string login, string about, HttpContext context) => {
     long userId = 0;
     byte roleId = 0;
