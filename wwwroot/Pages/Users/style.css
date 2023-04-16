@@ -1,133 +1,225 @@
-﻿
-
-#UserList
-{
-    display:inline-block;
-    width:600px;
-    margin:20px 0;
+﻿#UsersHtmlPart {
+    float: left;
+    margin-top: 50px;
+    width: 100%;
+    text-align: center;
 }
 
-    #UserList article {
+    #UsersHtmlPart > * {
+        display: inline-block;
+        width: 600px;
+        margin: 0 40px;
+    }
+
+@media (max-width: 680px) {
+    #UsersHtmlPart > * {
+        width: calc(100% - 80px);
+        margin: 0;
+    }
+}
+
+@media (max-width: 550px) {
+    #UsersHtmlPart > * {
+        width: calc(100% - 30px);
+        margin: 0;
+    }
+}
+
+#UsersHtmlPart > * > * {
+    float: left;
+    width: 100%;
+    height: 30px;
+    margin-bottom: 5px;
+    background: #f9f9f9;
+    border-radius: 2px;
+}
+
+    #UsersHtmlPart > * > * > *:first-child {
         float: left;
-        width: 100%;
-        padding: 20px 0;
-        border-bottom: 1px solid var(--bs-color-bordergray)
-    }
-
-    #UserList article > img {
-        float: left;
-        width:60px;
-        height:60px;
-        border-radius:100px;
-    }
-
-        #UserList article > div {
-            float: left;
-            margin-left:20px;
-            width: calc(100% - 125px);
-        }
-
-        #UserList article > div > * {
-            float: left;
-            width: calc(100% - 100px);
-        }
-
-            #UserList article > div > *:last-child {
-                float: left;
-                width: 80px;
-                margin-right:20px;
-            }
-
-            #UserList article > div > *:last-child > span {
-                float: left;
-                font-size:12px;
-            }
-
-            #UserList article > div > a > * {
-                float: left;
-                width: 100%;
-                text-align:left;
-            }
-
-            #UserList article > div > a > h2 {
-                font-size:16px;
-                font-weight:600;
-                margin-top:5px;
-            }
-
-            #UserList article > div > a > span:first-child {
-                font-size: 10px;
-                text-transform:uppercase;
-                letter-spacing: 1px;
-                font-weight: 600;
-            }
-
-            #UserList article > div > a > span:last-child {
-                font-size: 12px;
-                margin-top: 2px;
-            }
-
-        #UserList article > a {
-            float: left;
-            width: 40px;
-            height: 40px;
-        }
-
-            #UserList article > a[data-actp="-1"] {
-                display: none;
-            }
-
-        #UserList article > a > img {
-            float: left;
-            width: 25px;
-            height: 25px;
-        }
-
-            #UserList article > a[data-actp="0"] img {
-                content: url(/Pages/Users/content/doubleCheckGreyGrey.png)
-            }
-
-            #UserList article > a[data-actp="1"] img {
-                content: url(/Pages/Users/content/doubleCheckGreyGreen.png)
-            }
-
-            #UserList article > a[data-actp="2"] img {
-                content: url(/Pages/Users/content/doubleCheckGreenGrey.png)
-            }
-
-            #UserList article > a[data-actp="3"] img {
-                content: url(/Pages/Users/content/doubleCheckGreenGreen.png)
-            }
-
-@media (max-width: 800px) {
-    #UserList {
-        float:left;
-        width:calc(100% - 100px);
-        margin-left:75px;
-    }
-}
-
-@media (max-width: 700px) {
-    #UserList {
-        width: calc(100% - 55px);
-        margin-left: 30px;
-    }
-}
-
-@media (max-width: 600px) {
-    #UserList {
-        width: calc(100% - 40px);
+        margin-top: 8px;
         margin-left: 20px;
     }
+
+        #UsersHtmlPart > * > * > *:first-child span {
+            float: left;
+            text-transform: uppercase;
+            font-size: 10px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            color: #3f3f3f
+        }
+
+    #UsersHtmlPart > * > * > *:nth-child(2) {
+        float: right;
+        margin-top: 8px;
+        padding-right: 20px;
+    }
+
+        #UsersHtmlPart > * > * > *:nth-child(2) > span {
+            float: right;
+            font-size: 10px;
+            color: #666666
+        }
+
+    #UsersHtmlPart > * > * > *:last-child {
+        float: right;
+        margin-top: 9px;
+        margin-right: 15px;
+    }
+
+        #UsersHtmlPart > * > * > *:last-child > img {
+            height: 14px;
+            opacity: 0.3
+        }
+
+
+/*#ListPageBox {
+    float: left;
+    width: 100%;
+    margin: 20px 0;
+    text-align: center;
 }
 
-/* double check */
-/*--------------*/
-/* https://www.flaticon.com/free-icon/double-check_6164403?term=check&page=6&position=10&origin=search&related_id=6164403*/
-/* #78B315 - one - green */
-/* #78B315 - two - green */
-/* #B7B8B5 - three - grey */
-/* #B7B8B5 - fore - grey */
+    #ListPageBox > div {
+        width: 600px;
+        display:inline-block;  
+    }
 
-/* #A1A1A1 - grey dark */
-/* #629310 - green dark */
+        #ListPageBox > div > h3 {
+            display: inline-block;
+            width: 100%;
+            margin-bottom: 10px;
+            text-align:left;
+            font-size:15px;
+            letter-spacing:1px;
+            font-weight:600;
+            color:#373737
+        }
+
+        #ListPageBox > div > ul {
+            display: inline-block;
+            width: 100%;
+            margin-bottom:20px;
+        }
+
+@media (max-width: 640px) {
+    #ListPageBox > div {
+        width: calc(100% - 40px);
+    }
+}
+
+        #ListPageBox > div > ul > li {
+            float: left;
+            width: 100%;
+            text-align: center;
+        }
+
+#ListPageBox ._boxTOne, #ListPageBox ._boxTwo {
+    float: left;
+    width: calc(100% - 2px);
+    border: 1px solid var(--bs-color-bordergray);
+    min-height: 80px;
+    background: #f7f7f7;
+    border-radius: 6px;
+    margin: 5px 0;
+}
+
+#ListPageBox > div > ul > li ._boxTOne {
+    border-color:#fff;
+    background:none;
+}
+
+    #ListPageBox ._boxTOne > img, #ListPageBox ._boxTwo > img {
+        float: left;
+        width: 50px;
+        height: 50px;
+        margin: 15px;
+        border-radius: 100px;
+    }
+
+    #ListPageBox ._boxTOne > div, #ListPageBox ._boxTwo > div {
+        float: left;
+        width: calc(100% - 80px - 15px);
+        min-height: 80px;
+    }
+
+        #ListPageBox ._boxTOne > div > p, #ListPageBox ._boxTwo > div > p {
+            float: left;
+            letter-spacing: 1px;
+            font-weight: 600;
+            margin-top: 10px;
+            font-size: 12px;
+            color: #767676;
+            width: 100%;
+            text-align: left;
+        }
+
+        #ListPageBox ._boxTOne > div > h2 {
+            float: left;
+            letter-spacing: 1px;
+            font-weight: bold;
+            margin-top: 4px;
+            font-size: 18px;
+            color: #373737;
+            width: 100%;
+            text-align: left;
+        }
+
+        #ListPageBox ._boxTOne > div > *:last-child, #ListPageBox ._boxTwo > div > *:last-child {
+            margin-top: 3px;
+            letter-spacing: unset;
+            margin-bottom: 15px;
+            letter-spacing: 0.4px;
+            font-weight: unset;
+            color: #656565
+        }
+
+    #ListPageBox ._boxTwo > img {
+        width: 60px;
+        height: 60px;
+        margin: 10px;
+    }
+
+    #ListPageBox ._boxTwo > div {
+        width: calc(100% - 80px - 15px - 50px);
+    }
+
+    #ListPageBox ._boxTwo > div > p:first-child > span:first-child {
+        font-weight:bold;
+    }
+
+        #ListPageBox ._boxTwo > div > *:last-child{
+            margin-top:8px;
+        }
+
+        #ListPageBox ._boxTwo > div:last-child {
+            float:left;
+            width: 44px;
+            margin-left: 15px;
+            padding-left: 5px;
+            min-height: 40px;
+            margin-top: 15px;
+            padding:10px 0;
+            border-left: 1px solid var(--bs-color-bordergray);
+        }
+
+        #ListPageBox ._boxTwo > div:last-child > img {
+            float:left;
+            width:14px;
+            height:14px;
+            margin-left:10px;
+        }
+
+            #ListPageBox ._boxTwo > div:last-child > img:last-child {
+                margin-top: 10px;
+            }
+
+            #ListPageBox ._boxTwo > div:last-child > span {
+                float:left;
+                width:30px;
+                letter-spacing:1px;
+                font-size:10px;
+                margin:0;
+                margin-top:10px;
+                margin-left:2px;
+            }*/

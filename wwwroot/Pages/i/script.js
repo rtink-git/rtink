@@ -55,12 +55,8 @@ let apiPageI = await ApiPageI(search)
 let roleId = apiPageI.id
 
 
-// / NEWS
-// / ARTICLE
-// / USER
-// / SEARCH
 
-//let headerT = "RT"
+let subscribType = 0;
 let menuList = new Array()
 
 if (roleId > 0)
@@ -68,10 +64,23 @@ if (roleId > 0)
 
 if (typeApiPageI == 0) {
     menuList.push({ "icon": iPageUrlContent + "/search.png", "href": "", "id": "SearchBM" });
-    menuList.push({ "icon": iPageUrlContent + "/category.png", "href": "/list" });
+    menuList.push({ "icon": iPageUrlContent + "/category.png", "href": "/users" });
     if (roleId == 0) menuList.push({ "icon": iPageUrlContent + "/login.png", "href": "", "id": "SigninB" });
 }
 else if (typeApiPageI == 1) {
+    let userBio = await ApiUserBio(userLogin)
+    subscribType = userBio.sbt
+    if (subscribType != 1) {
+        let subscribUrl = iPageUrlContent + "/doubleCheckBlackBlack.png"
+        if (subscribType == 2)
+            subscribUrl = iPageUrlContent + "/doubleCheckBlackRed.png"
+        else if (subscribType == 3)
+            subscribUrl = iPageUrlContent + "/doubleCheckRedBlack.png"
+        else if (subscribType == 4)
+            subscribUrl = iPageUrlContent + "/doubleCheckRedRed.png"
+
+        menuList.push({ "icon": subscribUrl, "href": "", "id": "SubsribB" });
+    }
     menuList.push({ "icon": iPageUrlContent + "/search.png", "href": "", "id": "SearchBM" });
     menuList.push({ "icon": iPageUrlContent + "/undo.png", "href": "/" });
 }
@@ -82,6 +91,10 @@ else if (typeApiPageI == 3) {
     menuList.push({ "icon": iPageUrlContent + "/search.png", "href": "", "id": "SearchBM" });
     menuList.push({ "icon": iPageUrlContent + "/undo.png", "href": "/" });
 } 
+
+if (typeApiPageI == 1) {
+
+}
 
 //--------------------
 
@@ -161,6 +174,31 @@ document.getElementById("SearchBM").addEventListener('click', async (event) => {
     document.getElementById("SearchHeaderQHtmlBox").style.display = "block";
 });
 
+document.getElementById("SubsribB").addEventListener('click', async (event) => {
+    let userSubscrib = await ApiUserSubscrib(userLogin)
+
+    if (userSubscrib.ok) {
+        if (subscribType == 0) {
+            subscribType = 2
+            document.querySelector("#SubsribB img").setAttribute("src", iPageUrlContent + "/doubleCheckBlackRed.png");
+        }
+        else if (subscribType == 2) {
+            subscribType = 0
+            document.querySelector("#SubsribB img").setAttribute("src", iPageUrlContent + "/doubleCheckBlackBlack.png");
+        }
+        else if (subscribType == 3) {
+            subscribType = 4
+            document.querySelector("#SubsribB img").setAttribute("src", iPageUrlContent + "/doubleCheckRedRed.png");
+        }
+        else if (subscribType == 4) {
+            subscribType = 3
+            document.querySelector("#SubsribB img").setAttribute("src", iPageUrlContent + "/doubleCheckRedBlack.png");
+        }
+    }
+    //document.getElementById("SearchBM").style.display = "none";
+    //document.getElementById("SearchHeaderQHtmlBox").style.display = "block";
+});
+
 
 
 
@@ -170,6 +208,24 @@ document.getElementById("SearchBM").addEventListener('click', async (event) => {
 async function ApiPageI(search) {
     const response = await fetch(apiUrl + "/RtInk/Page/I?search=" + search, {
         method: "GET",
+        headers: { "Accept": "application/json", "Authorization": "Bearer " + authJWToken }
+    });
+    if (response.ok === true) return await response.json();
+    return null;
+}
+
+async function ApiUserBio(userLogin) {
+    const response = await fetch(apiUrl + "/Base/User/Bio?userLogin=" + userLogin, {
+        method: "GET",
+        headers: { "Accept": "application/json", "Authorization": "Bearer " + authJWToken }
+    });
+    if (response.ok === true) return await response.json();
+    return null;
+}
+
+async function ApiUserSubscrib(userLogin) {
+    const response = await fetch(apiUrl + "/Base/User/Subscrib?userLogin=" + userLogin, {
+        method: "POST",
         headers: { "Accept": "application/json", "Authorization": "Bearer " + authJWToken }
     });
     if (response.ok === true) return await response.json();
