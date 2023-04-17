@@ -11,7 +11,6 @@ import { isTest, apiUrl, PageHeadsBuild, authJWToken } from '/PageComponents/Pag
 import { HeaderHtmlBox } from '/PageComponents/HeaderHtmlBox/script.js';
 import { HeaderDescriptionHtmlBox } from '/PageComponents/HeaderDescriptionHtmlBox/script.js';
 import { SearchHeaderQHtmlBox } from "/PageComponents/SearchHeaderQHtmlBox/script.js";
-//import { CentralInfHtmlBox } from '/PageComponents/CentralInfHtmlBox/script.js';
 import { ArticlesHtmlBox } from '/PageComponents/ArticlesHtmlBox/script.js';
 
 //--------------------
@@ -82,7 +81,7 @@ else if (typeApiPageI == 1) {
         menuList.push({ "icon": subscribUrl, "href": "", "id": "SubsribB" });
     }
     menuList.push({ "icon": iPageUrlContent + "/search.png", "href": "", "id": "SearchBM" });
-    menuList.push({ "icon": iPageUrlContent + "/undo.png", "href": "/" });
+    menuList.push({ "icon": iPageUrlContent + "/undo.png", "href": "/users" });
 }
 else if (typeApiPageI == 2) {
     menuList.push({ "icon": iPageUrlContent + "/undo.png", "href": "/" });

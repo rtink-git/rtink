@@ -1,0 +1,99 @@
+﻿#UsersHtmlBox {
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+
+    #UsersHtmlBox > *:first-child {
+        display: inline-block;
+        width: 600px;
+        margin: 20px 40px;
+    }
+
+@media (max-width: 680px) {
+    #UsersHtmlBox > *:first-child {
+        width: calc(100% - 80px);
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 550px) {
+    #UsersHtmlBox > *:first-child {
+        width: calc(100% - 30px);
+        margin: 20px 0;
+    }
+}
+
+#UsersHtmlBox > *:first-child > * {
+    float: left;
+    width: 100%;
+    height: 30px;
+    margin-bottom: 5px;
+    /*    background: #f9f9f9;*/
+    background-image: linear-gradient( 45deg, hsl(0deg 0% 94%) 0%, hsl(344deg 0% 95%) 11%, hsl(344deg 0% 96%) 22%, hsl(344deg 0% 96%) 33%, hsl(344deg 0% 97%) 44%, hsl(344deg 0% 98%) 56%, hsl(344deg 0% 98%) 67%, hsl(344deg 0% 99%) 78%, hsl(344deg 0% 99%) 89%, hsl(0deg 0% 100%) 100% );
+    border-radius: 2px;
+}
+
+    #UsersHtmlBox > *:first-child > *:nth-child(2n+1) {
+        background: linear-gradient(90deg, rgba(243,240,216,1) 0%, rgba(241,241,241,1) 48%, rgba(255,255,255,1) 100%);
+    }
+
+    #UsersHtmlBox > *:first-child > * > *:first-child {
+        float: left;
+        margin-top: 8px;
+        margin-left: 20px;
+    }
+
+        #UsersHtmlBox > *:first-child > * > *:first-child span {
+            float: left;
+            text-transform: uppercase;
+            font-size: 10px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            color: #3f3f3f
+        }
+
+    #UsersHtmlBox > *:first-child > * > ._ArticleN {
+        float: right;
+        margin-top: 8px;
+        padding-right: 10px;
+        margin-right: 10px;
+        border-right: 1px solid #e4e4e4
+    }
+
+        #UsersHtmlBox > *:first-child > * > ._ArticleN > span {
+            float: right;
+            font-size: 10px;
+            color: #666666
+        }
+
+    #UsersHtmlBox > *:first-child > * > ._Subscrib {
+        float: right;
+        margin-top: 7px;
+        margin-right: 15px;
+    }
+
+        #UsersHtmlBox > *:first-child > * > ._Subscrib > img {
+            height: 14px;
+            opacity: 0.8
+        }
+
+        #UsersHtmlBox > *:first-child > * > ._Subscrib[data-type="0"] > img {
+            content: url(/PageComponents/UsersHtmlBox/content/doubleCheckBlackBlack.png)
+        }
+
+        #UsersHtmlBox > *:first-child > * > ._Subscrib[data-type="1"] > img {
+            content: url(/PageComponents/UsersHtmlBox/content/doubleCheckBlackBlack.png)
+        }
+
+        #UsersHtmlBox > *:first-child > * > ._Subscrib[data-type="2"] > img {
+            content: url(/PageComponents/UsersHtmlBox/content/doubleCheckBlackRed.png)
+        }
+
+        #UsersHtmlBox > *:first-child > * > ._Subscrib[data-type="3"] > img {
+            content: url(/PageComponents/UsersHtmlBox/content/doubleCheckRedBlack.png)
+        }
+
+        #UsersHtmlBox > *:first-child > * > ._Subscrib[data-type="4"] > img {
+            content: url(/PageComponents/UsersHtmlBox/content/doubleCheckRedRed.png)
+        }
