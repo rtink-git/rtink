@@ -1,6 +1,5 @@
 ﻿import { isTest, apiUrl, PageHeadsBuild, authJWToken } from '/PageComponents/Page/script.js';
 import { HeaderHtmlBox } from '/PageComponents/HeaderHtmlBox/script.js';
-import { HeaderDescriptionHtmlBox } from '/PageComponents/HeaderDescriptionHtmlBox/script.js';
 import { SearchHeaderQHtmlBox } from "/PageComponents/SearchHeaderQHtmlBox/script.js";
 import { MoreButtonHtmlBox } from '/PageComponents/MoreButtonHtmlBox/script.js';
 
@@ -16,7 +15,6 @@ menuList.push({ "icon": UsersPageUrlContent + "/search.png", "href": "", "id": "
 menuList.push({ "icon": UsersPageUrlContent + "/undo.png", "href": "/" });
 
 new HeaderHtmlBox(document.getElementsByTagName("body")[0], "afterbegin", "RT / USERS", null, menuList, isTest)
-//new HeaderDescriptionHtmlBox(document.getElementById("HeaderHtmlBox"), "afterend", "USERS", "", "")
 new SearchHeaderQHtmlBox(document.getElementById("HeaderHtmlBox"), "afterend", "", "", "")
 
 let page = 1
@@ -26,9 +24,7 @@ let UsersJson = await ApiUsers(page);
 UsersJson.forEach(e => { UsersList.push(e); })
 document.getElementById("SearchHeaderQHtmlBox").insertAdjacentHTML("afterend", UsersHtmlPart())
 if (page == 1 && UsersList.length == take)
-{
     new MoreButtonHtmlBox(document.getElementById("UsersHtmlPart"), "beforeend")
-}
 if (UsersJson.length > 0) page++;
 
 
