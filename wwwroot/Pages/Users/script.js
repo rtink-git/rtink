@@ -33,3 +33,17 @@ document.getElementById("SearchBM").addEventListener('click', async (event) => {
     document.getElementById("SearchBM").style.display = "none";
     document.getElementById("SearchHeaderQHtmlBox").style.display = "block";
 });
+
+if (document.getElementById(usersHtmlBox.Name) != null) {
+    document.getElementById(usersHtmlBox.Name).addEventListener('click', async (event) => {
+        await usersHtmlBox.AppendList()
+    });
+}
+
+let prevScrollY = window.scrollY
+document.addEventListener('scroll', async (event) => {
+    if (window.scrollY >= prevScrollY && document.body.scrollHeight - window.scrollY < document.body.clientHeight + 100) {
+        prevScrollY = window.scrollY + 200
+        await usersHtmlBox.AppendList()
+    }
+});

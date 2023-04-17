@@ -7,9 +7,9 @@ export class UsersHtmlBox {
     #ApiUrl
     #AuthJWToken
 
+    Name
     Page
 
-    #Name
     #UrlContent
     #Take
     #List
@@ -20,8 +20,8 @@ export class UsersHtmlBox {
         this.#ApiUrl = apiUrl
         this.#AuthJWToken = authJWToken
 
-        this.#Name = "UsersHtmlBox"
-        let url = "/PageComponents/" + this.#Name;
+        this.Name = "UsersHtmlBox"
+        let url = "/PageComponents/" + this.Name;
         this.#UrlContent = url + "/content"
         let css = document.createElement("link"); css.setAttribute("rel", "stylesheet"); css.setAttribute("href", url + "/style.css"); document.head.append(css);
 
@@ -40,11 +40,13 @@ export class UsersHtmlBox {
                 this.#Target.insertAdjacentHTML(this.#Position, this.#HtmlPart())
                 if (this.#List.length == this.#Take) {
                     new MoreButtonHtmlBox(document.getElementById("UsersHtmlBox"), "beforeend")
-                    this.Page++;
                 }
             }
 
         this.#LisHtmlBox()
+
+        this.Page++;
+
     }
 
 
@@ -55,7 +57,7 @@ export class UsersHtmlBox {
 
     #HtmlPart() {
         let html = "\
-        <div id=\"" + this.#Name + "\">\
+        <div id=\"" + this.Name + "\">\
             <div>\
             </div>\
         </div>"
@@ -85,7 +87,7 @@ export class UsersHtmlBox {
                     </div>\
                 </div>"
 
-                document.querySelector("#" + this.#Name + " > *:first-child").insertAdjacentHTML("beforeend", html)
+                document.querySelector("#" + this.Name + " > *:first-child").insertAdjacentHTML("beforeend", html)
             }
         });
     }
