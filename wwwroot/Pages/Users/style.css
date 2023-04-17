@@ -2,26 +2,25 @@
     float: left;
     width: 100%;
     text-align: center;
-
 }
 
     #UsersHtmlPart > *:first-child {
         display: inline-block;
         width: 600px;
-        margin: 50px 40px;
+        margin: 20px 40px;
     }
 
 @media (max-width: 680px) {
     #UsersHtmlPart > *:first-child {
         width: calc(100% - 80px);
-        margin: 50px 0;
+        margin: 20px 0;
     }
 }
 
 @media (max-width: 550px) {
     #UsersHtmlPart > *:first-child {
         width: calc(100% - 30px);
-        margin: 50px 0;
+        margin: 20px 0;
     }
 }
 
@@ -98,213 +97,3 @@
         #UsersHtmlPart > *:first-child > * > ._Subscrib[data-type="4"] > img {
             content: url(/Pages/i/content/doubleCheckRedRed.png)
         }
-
-#MoreButton {
-    float: left;
-    width: 100%;
-    text-align: center;
-    margin-bottom: 30px;
-    margin-top: 6px;
-}
-
-    #MoreButton > * {
-        height: 30px;
-        min-width: 280px;
-        /*        background: #f5f5f5;*/
-        background-image: linear-gradient( 45deg, hsl(0deg 0% 94%) 0%, hsl(344deg 0% 95%) 11%, hsl(344deg 0% 96%) 22%, hsl(344deg 0% 96%) 33%, hsl(344deg 0% 97%) 44%, hsl(344deg 0% 98%) 56%, hsl(344deg 0% 98%) 67%, hsl(344deg 0% 99%) 78%, hsl(344deg 0% 99%) 89%, hsl(0deg 0% 100%) 100% );
-        display: inline-block;
-        border-radius: 8px;
-        border: 1px solid #e0e0e0;
-    }
-
-
-        #MoreButton > * > a {
-            float: left;
-        }
-
-            #MoreButton > * > a:first-child {
-                float: left;
-                width: 58px;
-                height: 100%;
-                border-radius: 30px;
-                text-align: center;
-            }
-
-                #MoreButton > * > a:first-child img {
-                    width: 14px;
-                    height: 14px;
-                    margin: 8px 0;
-                    display: inline-block;
-                }
-
-                    #MoreButton > * > a:first-child img[data-rotate="180"] {
-                        transform: rotate(180deg);
-                    }
-
-            #MoreButton > * > a:last-child {
-                float: left;
-                width: calc(100% - 116px);
-                padding-right: 58px;
-                height: 100%;
-                text-align: center;
-            }
-
-            #MoreButton > * > a > span {
-                display: inline-block;
-                font-family: 'Montserrat', sans-serif;
-                margin-top: 7px;
-                font-weight: 600;
-                letter-spacing: 1px;
-                font-size: 12px;
-            }
-
-/*#ListPageBox {
-    float: left;
-    width: 100%;
-    margin: 20px 0;
-    text-align: center;
-}
-
-    #ListPageBox > div {
-        width: 600px;
-        display:inline-block;  
-    }
-
-        #ListPageBox > div > h3 {
-            display: inline-block;
-            width: 100%;
-            margin-bottom: 10px;
-            text-align:left;
-            font-size:15px;
-            letter-spacing:1px;
-            font-weight:600;
-            color:#373737
-        }
-
-        #ListPageBox > div > ul {
-            display: inline-block;
-            width: 100%;
-            margin-bottom:20px;
-        }
-
-@media (max-width: 640px) {
-    #ListPageBox > div {
-        width: calc(100% - 40px);
-    }
-}
-
-        #ListPageBox > div > ul > li {
-            float: left;
-            width: 100%;
-            text-align: center;
-        }
-
-#ListPageBox ._boxTOne, #ListPageBox ._boxTwo {
-    float: left;
-    width: calc(100% - 2px);
-    border: 1px solid var(--bs-color-bordergray);
-    min-height: 80px;
-    background: #f7f7f7;
-    border-radius: 6px;
-    margin: 5px 0;
-}
-
-#ListPageBox > div > ul > li ._boxTOne {
-    border-color:#fff;
-    background:none;
-}
-
-    #ListPageBox ._boxTOne > img, #ListPageBox ._boxTwo > img {
-        float: left;
-        width: 50px;
-        height: 50px;
-        margin: 15px;
-        border-radius: 100px;
-    }
-
-    #ListPageBox ._boxTOne > div, #ListPageBox ._boxTwo > div {
-        float: left;
-        width: calc(100% - 80px - 15px);
-        min-height: 80px;
-    }
-
-        #ListPageBox ._boxTOne > div > p, #ListPageBox ._boxTwo > div > p {
-            float: left;
-            letter-spacing: 1px;
-            font-weight: 600;
-            margin-top: 10px;
-            font-size: 12px;
-            color: #767676;
-            width: 100%;
-            text-align: left;
-        }
-
-        #ListPageBox ._boxTOne > div > h2 {
-            float: left;
-            letter-spacing: 1px;
-            font-weight: bold;
-            margin-top: 4px;
-            font-size: 18px;
-            color: #373737;
-            width: 100%;
-            text-align: left;
-        }
-
-        #ListPageBox ._boxTOne > div > *:last-child, #ListPageBox ._boxTwo > div > *:last-child {
-            margin-top: 3px;
-            letter-spacing: unset;
-            margin-bottom: 15px;
-            letter-spacing: 0.4px;
-            font-weight: unset;
-            color: #656565
-        }
-
-    #ListPageBox ._boxTwo > img {
-        width: 60px;
-        height: 60px;
-        margin: 10px;
-    }
-
-    #ListPageBox ._boxTwo > div {
-        width: calc(100% - 80px - 15px - 50px);
-    }
-
-    #ListPageBox ._boxTwo > div > p:first-child > span:first-child {
-        font-weight:bold;
-    }
-
-        #ListPageBox ._boxTwo > div > *:last-child{
-            margin-top:8px;
-        }
-
-        #ListPageBox ._boxTwo > div:last-child {
-            float:left;
-            width: 44px;
-            margin-left: 15px;
-            padding-left: 5px;
-            min-height: 40px;
-            margin-top: 15px;
-            padding:10px 0;
-            border-left: 1px solid var(--bs-color-bordergray);
-        }
-
-        #ListPageBox ._boxTwo > div:last-child > img {
-            float:left;
-            width:14px;
-            height:14px;
-            margin-left:10px;
-        }
-
-            #ListPageBox ._boxTwo > div:last-child > img:last-child {
-                margin-top: 10px;
-            }
-
-            #ListPageBox ._boxTwo > div:last-child > span {
-                float:left;
-                width:30px;
-                letter-spacing:1px;
-                font-size:10px;
-                margin:0;
-                margin-top:10px;
-                margin-left:2px;
-            }*/

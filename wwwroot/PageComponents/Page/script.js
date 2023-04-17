@@ -15,7 +15,6 @@
 //-- icon sizes - https://blog.hubspot.com/website/what-is-a-favicon
 
 /*-- Tasks --*/
-/*-- На удаление, предварительно проверив /PageComponents/HtmlBase --*/
 
 
 

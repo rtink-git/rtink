@@ -2,6 +2,8 @@
 import { HeaderHtmlBox } from '/PageComponents/HeaderHtmlBox/script.js';
 import { HeaderDescriptionHtmlBox } from '/PageComponents/HeaderDescriptionHtmlBox/script.js';
 import { SearchHeaderQHtmlBox } from "/PageComponents/SearchHeaderQHtmlBox/script.js";
+import { MoreButtonHtmlBox } from '/PageComponents/MoreButtonHtmlBox/script.js';
+
 
 const UsersPageName = "Users";
 const UsersPageUrl = "/Pages/" + UsersPageName;
@@ -13,9 +15,9 @@ let menuList = new Array()
 menuList.push({ "icon": UsersPageUrlContent + "/search.png", "href": "", "id": "SearchBM" });
 menuList.push({ "icon": UsersPageUrlContent + "/undo.png", "href": "/" });
 
-new HeaderHtmlBox(document.getElementsByTagName("body")[0], "afterbegin", "RT", null, menuList, isTest)
-new HeaderDescriptionHtmlBox(document.getElementById("HeaderHtmlBox"), "afterend", "USERS", "", "")
-new SearchHeaderQHtmlBox(document.getElementById("HeaderDescriptionHtmlBox"), "afterend", "", "", "")
+new HeaderHtmlBox(document.getElementsByTagName("body")[0], "afterbegin", "RT / USERS", null, menuList, isTest)
+//new HeaderDescriptionHtmlBox(document.getElementById("HeaderHtmlBox"), "afterend", "USERS", "", "")
+new SearchHeaderQHtmlBox(document.getElementById("HeaderHtmlBox"), "afterend", "", "", "")
 
 let page = 1
 let take = 50
@@ -25,7 +27,7 @@ UsersJson.forEach(e => { UsersList.push(e); })
 document.getElementById("SearchHeaderQHtmlBox").insertAdjacentHTML("afterend", UsersHtmlPart())
 if (page == 1 && UsersList.length == take)
 {
-    document.getElementById("UsersHtmlPart").insertAdjacentHTML("beforeend", MoreButton())
+    new MoreButtonHtmlBox(document.getElementById("UsersHtmlPart"), "beforeend")
 }
 if (UsersJson.length > 0) page++;
 
@@ -65,27 +67,10 @@ function UsersHtmlPartAppend(e) {
     document.querySelector("#UsersHtmlPart > *").insertAdjacentHTML("beforeend", html)
 }
 
-function MoreButton() {
-    let html = "\
-        <div id=\"MoreButton\">\
-            <div>\
-                <a>\
-                    <img src=\"/PageComponents/ArticlesHtmlBox/content/arrow-down-black.png\" />\
-                </a>\
-                <a>\
-                    <span>\
-                        Показать больше\
-                    </span>\
-                </a>\
-            </div>\
-        </div>"
-
-    return html;
-}
-
 UsersList.forEach(e => {
     UsersHtmlPartAppend(e)
 })
+
 
 
 
