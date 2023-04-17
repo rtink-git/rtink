@@ -26,8 +26,7 @@ let MontserratGoogleFont = document.createElement("link"); MontserratGoogleFont.
 
 export let isTest = false; // true - режим тестирования. false - режим реализации
 
-export let apiUrl = "https://api.rt.ink"
-apiUrl = "https://localhost:7025"
+export let apiUrl = await ApiUrl()
 
 var sessions = new Sessions();
 await sessions.TokenRefresh(apiUrl);
@@ -187,3 +186,15 @@ export function PageHeadsBuild(title = null, description = null, imageUrl = null
     let scriptHeadGoogleTag = document.createElement("script"); scriptHeadGoogleTag.textContent = "window.dataLayer || [];  function gtag(){dataLayer.push(arguments);}  gtag('js', new Date());  gtag('config', 'G-M6XTS2RJDG');"; document.head.append(scriptHeadGoogleTag);
 }
 
+
+//ApiUrl
+
+//-- api actions
+
+async function ApiUrl() {
+    const response = await fetch("/ApiUrl", {
+        method: "GET"
+    });
+    if (response.ok === true) return response.json();
+    return null;
+}

@@ -9,26 +9,17 @@
 //---- Check base project params HeadPage
 
 // Tasks
-//-- Article page /a/ - по сути это таже самая лента новостей, но упорядоченная по искомому материалу
-//-- Удалить /PageComponents/HtmlBase
-//-- Удалить w/PageComponents/HeaderBox
-//-- Удалить w/PageComponents/headerQPCP
-//-- Удалить w/PageComponents/RefreshJSTokenAsync
 
 
 
 
-using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.AspNetCore.Authentication.Cookies;
-using Microsoft.IdentityModel.Tokens;
+
 using System.Text.Json;
 using RtInk;
 using Microsoft.AspNetCore.Authorization;
 
 using System.Security.Claims;
 using System.Text;
-using System.Net.Http;
-using System.Reflection;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -62,6 +53,8 @@ app.UseAuthorization();
 
 app.MapGet("/", async (context) => { await context.Response.WriteAsync("<script type=\"module\" src=\"/Pages/i/script.js\"></script>"); }); // /*await context.Response.WriteAsync(new RtInk.Pages.I().GetHtml());*/
 app.MapGet("/i/{search}", async (context) => { await context.Response.WriteAsync("<script type=\"module\" src=\"/Pages/i/script.js\"></script>"); });
+app.MapGet("/users", async (context) => { await context.Response.WriteAsync("<script type=\"module\" src=\"/Pages/Users/script.js\"></script>"); });
+
 app.MapGet("/locations", async (context) => { await context.Response.WriteAsync("<script type=\"module\" src=\"/Pages/Locations/script.js\"></script>"); });
 
 app.MapGet("/a/{urlShort}", async (string urlShort, HttpContext context, IHttpClientFactory httpClientFactory) => {
@@ -121,6 +114,8 @@ app.MapGet("/f/{id_with_extension}", (string id_with_extension) =>
     }
     catch { return Results.Redirect("/"); }
 });
+
+app.MapGet("/ApiUrl", () => { return Results.Ok(Constants.urlApi); });
 
 //app.MapGet("/list", async (context) => {
 //    await context.Response.WriteAsync(new RtInk.Pages.List().GetHtml());

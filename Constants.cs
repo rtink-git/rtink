@@ -6,7 +6,6 @@
         //internal static string urlApi = "https://api.rt.ink";
         internal static string urlApi = "https://localhost:7025";
         
-        
         public static string apiRtInkWebPartStr = "/RtInk";
         public static string apiKeyRtInk = "";
         public static string apiKeySecurityApi = "";

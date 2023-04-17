@@ -18,10 +18,16 @@ new HeaderDescriptionHtmlBox(document.getElementById("HeaderHtmlBox"), "afterend
 new SearchHeaderQHtmlBox(document.getElementById("HeaderDescriptionHtmlBox"), "afterend", "", "", "")
 
 let page = 1
+let take = 50
 let UsersList = new Array();
 let UsersJson = await ApiUsers(page);
 UsersJson.forEach(e => { UsersList.push(e); })
 document.getElementById("SearchHeaderQHtmlBox").insertAdjacentHTML("afterend", UsersHtmlPart())
+if (page == 1 && UsersList.length == take)
+{
+    document.getElementById("UsersHtmlPart").insertAdjacentHTML("beforeend", MoreButton())
+}
+if (UsersJson.length > 0) page++;
 
 
 
@@ -46,17 +52,35 @@ function UsersHtmlPartAppend(e) {
                 " + e.login + "\
                 </span>\
             </a>\
-            <div>\
+            <a class=\"_Subscrib\" data-type=\"" + e.subscribeType + "\">\
+                <img />\
+            </a>\
+            <div class=\"_ArticleN\">\
                 <span>\
             " + e.artn + "\
                 </span>\
             </div>\
-            <a class=\"_close\">\
-                <img src=\"" + UsersPageUrlContent + "/close.png\" />\
-            </a>\
         </div>"
 
     document.querySelector("#UsersHtmlPart > *").insertAdjacentHTML("beforeend", html)
+}
+
+function MoreButton() {
+    let html = "\
+        <div id=\"MoreButton\">\
+            <div>\
+                <a>\
+                    <img src=\"/PageComponents/ArticlesHtmlBox/content/arrow-down-black.png\" />\
+                </a>\
+                <a>\
+                    <span>\
+                        Показать больше\
+                    </span>\
+                </a>\
+            </div>\
+        </div>"
+
+    return html;
 }
 
 UsersList.forEach(e => {
@@ -81,7 +105,7 @@ document.getElementById("SearchBM").addEventListener('click', async (event) => {
 //-- api actions
 
 async function ApiUsers(page) {
-    const response = await fetch(apiUrl + "/RtInk/Users?take=50&page=" + page, {
+    const response = await fetch(apiUrl + "/RtInk/Users?take=" + take + "&page=" + page, {
         method: "GET",
         headers: { "Accept": "application/json", "Authorization": "Bearer " + authJWToken }
     });
