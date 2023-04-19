@@ -31,6 +31,9 @@ var sessions = new Sessions();
 await sessions.TokenRefresh(apiUrl);
 export let authJWToken = sessions.authJWToken
 
+let authorizationInformationApi = await AuthorizationInformationApi()
+export let RoleId = await authorizationInformationApi.roleId
+
 
 export function PageHeadsBuild(title = null, description = null, imageUrl = null, imageAlt = null, urlCanonical = null, robot = "index,follow") {
     //-- base project params
@@ -186,7 +189,8 @@ export function PageHeadsBuild(title = null, description = null, imageUrl = null
 }
 
 
-//ApiUrl
+
+
 
 //-- api actions
 
@@ -195,5 +199,15 @@ async function ApiUrl() {
         method: "GET"
     });
     if (response.ok === true) return response.json();
+    return null;
+}
+
+async function AuthorizationInformationApi() {
+    const response = await fetch(apiUrl + "/Base/Authorization/Information", {
+        method: "GET",
+        headers: { "Accept": "application/json", "Authorization": "Bearer " + sessions.authJWToken }
+    });
+    if (response.ok === true)
+        return await response.json();
     return null;
 }

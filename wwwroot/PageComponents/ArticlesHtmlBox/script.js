@@ -283,19 +283,6 @@ export class ArticlesHtmlBox {
                     imgQ.src = srcQ
                 }
                 img.src = this.#list[i].fileUrlSource
-
-                //let rating = this.#list[i].rating
-                //trg.addEventListener("click", async event => {
-                //    if (rating == 2) {
-                //        rating = 0;
-                //        tr.setAttribute("data-tp", rating);
-                //        var q = tr.querySelector("#_DtLoginHtmlPart")
-                //        var w = "<div id=\"_DtLoginHtmlPart\">" + q.innerHTML + "</div>";
-                //        q.remove()
-                //        tr.querySelector("#_Inf").insertAdjacentHTML("afterbegin", w)
-                //    }
-                //});
-
             }
         }
     }

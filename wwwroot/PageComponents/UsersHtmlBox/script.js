@@ -27,7 +27,6 @@ export class UsersHtmlBox {
 
         this.Page = 1;
         this.#Take = 50;
-
         this.#List = new Array();
     }
 
@@ -39,14 +38,13 @@ export class UsersHtmlBox {
             if (this.Page == 1) {
                 this.#Target.insertAdjacentHTML(this.#Position, this.#HtmlPart())
                 if (this.#List.length == this.#Take) {
-                    new MoreButtonHtmlBox(document.getElementById("UsersHtmlBox"), "beforeend")
+                    new MoreButtonHtmlBox(document.getElementById(this.Name), "beforeend")
                 }
             }
 
         this.#LisHtmlBox()
 
         this.Page++;
-
     }
 
 

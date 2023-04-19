@@ -23,7 +23,7 @@
 
         let locationHtml = ""
         if (location != null && location.length > 0)
-            locationHtml = "<a href=\"/locations\" class=\"_w\"><span>Russia</span></a>"
+            locationHtml = "<a href=\"/locations\" class=\"_w\"><span></span></a>"
 
         if (subHtml.length > 0)
             subHtml = "<div class=\"_q\">" + subHtml + "</div>";

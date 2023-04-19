@@ -7,7 +7,7 @@
 /*-- 2023-02-16 Task.Error: User edit about only latin symbols --*/
 /*-- 2023-02-16 Task.Warning: Login не может быть числом --*/
 
-import { isTest, apiUrl, PageHeadsBuild, authJWToken } from '/PageComponents/Page/script.js';
+import { isTest, apiUrl, PageHeadsBuild, authJWToken, RoleId } from '/PageComponents/Page/script.js';
 import { HeaderHtmlBox } from '/PageComponents/HeaderHtmlBox/script.js';
 import { HeaderDescriptionHtmlBox } from '/PageComponents/HeaderDescriptionHtmlBox/script.js';
 import { SearchHeaderQHtmlBox } from "/PageComponents/SearchHeaderQHtmlBox/script.js";
@@ -35,8 +35,7 @@ if (urlSrplit.length > 4) search = decodeURIComponent(urlSrplit[4]);
 let typeApiPageI = 0
 let userLogin = ""
 
-if(search.length > 0)
-{
+if (search.length > 0) {
     let searchSplit = search.split('-')
     if (searchSplit.length > 0)
         if (search[0] == '-') {
@@ -50,21 +49,21 @@ if(search.length > 0)
 
 //--------------------
 
-let apiPageI = await ApiPageI(search)
-let roleId = apiPageI.id
-
-
 
 let subscribType = 0;
 let menuList = new Array()
 
-if (roleId > 0)
+if (RoleId > 0)
     menuList.push({ "icon": iPageUrlContent + "/category.png", "href": "/list" })
 
 if (typeApiPageI == 0) {
     menuList.push({ "icon": iPageUrlContent + "/search.png", "href": "", "id": "SearchBM" });
-    menuList.push({ "icon": iPageUrlContent + "/category.png", "href": "/users" });
-    if (roleId == 0) menuList.push({ "icon": iPageUrlContent + "/login.png", "href": "", "id": "SigninB" });
+    if (RoleId == 0)
+        menuList.push({ "icon": iPageUrlContent + "/location.png", "href": "/locations" });
+    else
+        menuList.push({ "icon": iPageUrlContent + "/category.png", "href": "/users" });
+
+    if (RoleId == 0) menuList.push({ "icon": iPageUrlContent + "/login.png", "href": "", "id": "SigninB" });
 }
 else if (typeApiPageI == 1) {
     let userBio = await ApiUserBio(userLogin)
@@ -99,7 +98,7 @@ if (typeApiPageI == 1) {
 
 new HeaderHtmlBox(document.getElementsByTagName("body")[0], "afterbegin", "RT", null, menuList, isTest)
 
-if (typeApiPageI == 0 && roleId == 0) {
+if (typeApiPageI == 0 && RoleId == 0) {
     document.getElementById("SigninB").addEventListener('click', async () => {
         window.location.href = apiUrl + "/Base/Authorization/Signin/Google?SessionToken=" + authJWToken + "&RedirectUrl=https://rt.ink" //https://localhost:7199/
     });
@@ -194,8 +193,6 @@ document.getElementById("SubsribB").addEventListener('click', async (event) => {
             document.querySelector("#SubsribB img").setAttribute("src", iPageUrlContent + "/doubleCheckRedBlack.png");
         }
     }
-    //document.getElementById("SearchBM").style.display = "none";
-    //document.getElementById("SearchHeaderQHtmlBox").style.display = "block";
 });
 
 
@@ -204,14 +201,14 @@ document.getElementById("SubsribB").addEventListener('click', async (event) => {
 
 //-- api actions
 
-async function ApiPageI(search) {
-    const response = await fetch(apiUrl + "/RtInk/Page/I?search=" + search, {
-        method: "GET",
-        headers: { "Accept": "application/json", "Authorization": "Bearer " + authJWToken }
-    });
-    if (response.ok === true) return await response.json();
-    return null;
-}
+//async function ApiPageI(search) {
+//    const response = await fetch(apiUrl + "/RtInk/Page/I?search=" + search, {
+//        method: "GET",
+//        headers: { "Accept": "application/json", "Authorization": "Bearer " + authJWToken }
+//    });
+//    if (response.ok === true) return await response.json();
+//    return null;
+//}
 
 async function ApiUserBio(userLogin) {
     const response = await fetch(apiUrl + "/Base/User/Bio?userLogin=" + userLogin, {

@@ -1,4 +1,13 @@
-﻿import { isTest, apiUrl, PageHeadsBuild, authJWToken } from '/PageComponents/Page/script.js';
+﻿//-- Tasks
+//-- 2023-04-17 Add user page as first page
+//-- 2023-04-17 First row - your user page
+//-- 2023-04-17 Location user icon
+
+
+
+
+
+import { isTest, apiUrl, PageHeadsBuild, authJWToken } from '/PageComponents/Page/script.js';
 import { HeaderHtmlBox } from '/PageComponents/HeaderHtmlBox/script.js';
 import { SearchHeaderQHtmlBox } from "/PageComponents/SearchHeaderQHtmlBox/script.js";
 import { UsersHtmlBox } from '/PageComponents/UsersHtmlBox/script.js';
@@ -14,6 +23,7 @@ let UsersPageCss = document.createElement("link"); UsersPageCss.setAttribute("re
 PageHeadsBuild("Users - RT", "")
 
 let menuList = new Array()
+menuList.push({ "icon": UsersPageUrlContent + "/location.png", "href": "/locations" });
 menuList.push({ "icon": UsersPageUrlContent + "/search.png", "href": "", "id": "SearchBM" });
 menuList.push({ "icon": UsersPageUrlContent + "/undo.png", "href": "/" });
 
