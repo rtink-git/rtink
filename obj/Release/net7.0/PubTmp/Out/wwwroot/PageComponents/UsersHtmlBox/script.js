@@ -103,4 +103,8 @@ export class UsersHtmlBox {
         if (response.ok === true) return await response.json();
         return null;
     }
+
+    async #ApiGetAuthUserProfile() {
+
+    }
 }

@@ -173,14 +173,6 @@
       "PackagePath": "staticwebassets\\PageComponents\\UsersHtmlBox\\style.css"
     },
     {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\ArticleAdd\\script.js",
-      "PackagePath": "staticwebassets\\Pages\\ArticleAdd\\script.js"
-    },
-    {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\ArticleAdd\\style.css",
-      "PackagePath": "staticwebassets\\Pages\\ArticleAdd\\style.css"
-    },
-    {
       "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\Locations\\content\\check.png",
       "PackagePath": "staticwebassets\\Pages\\Locations\\content\\check.png"
     },
@@ -203,22 +195,6 @@
     {
       "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\Locations\\style.css",
       "PackagePath": "staticwebassets\\Pages\\Locations\\style.css"
-    },
-    {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\UserProfile\\content\\direct-download-white.png",
-      "PackagePath": "staticwebassets\\Pages\\UserProfile\\content\\direct-download-white.png"
-    },
-    {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\UserProfile\\content\\direct-download.png",
-      "PackagePath": "staticwebassets\\Pages\\UserProfile\\content\\direct-download.png"
-    },
-    {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\UserProfile\\script.js",
-      "PackagePath": "staticwebassets\\Pages\\UserProfile\\script.js"
-    },
-    {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\UserProfile\\style.css",
-      "PackagePath": "staticwebassets\\Pages\\UserProfile\\style.css"
     },
     {
       "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\Users\\content\\add-friend.png",

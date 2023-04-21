@@ -3,18 +3,12 @@
 //-- 2023-04-17 First row - your user page
 //-- 2023-04-17 Location user icon
 
-
-
-
-
 import { isTest, apiUrl, PageHeadsBuild, authJWToken } from '/PageComponents/Page/script.js';
 import { HeaderHtmlBox } from '/PageComponents/HeaderHtmlBox/script.js';
 import { SearchHeaderQHtmlBox } from "/PageComponents/SearchHeaderQHtmlBox/script.js";
 import { UsersHtmlBox } from '/PageComponents/UsersHtmlBox/script.js';
 
-
-
-
+//--------------------
 
 const UsersPageName = "Users";
 const UsersPageUrl = "/Pages/" + UsersPageName;

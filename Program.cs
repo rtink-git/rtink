@@ -16,10 +16,6 @@
 
 using System.Text.Json;
 using RtInk;
-using Microsoft.AspNetCore.Authorization;
-
-using System.Security.Claims;
-using System.Text;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -54,7 +50,6 @@ app.UseAuthorization();
 app.MapGet("/", async (context) => { await context.Response.WriteAsync("<script type=\"module\" src=\"/Pages/i/script.js\"></script>"); }); // /*await context.Response.WriteAsync(new RtInk.Pages.I().GetHtml());*/
 app.MapGet("/i/{search}", async (context) => { await context.Response.WriteAsync("<script type=\"module\" src=\"/Pages/i/script.js\"></script>"); });
 app.MapGet("/users", async (context) => { await context.Response.WriteAsync("<script type=\"module\" src=\"/Pages/Users/script.js\"></script>"); });
-
 app.MapGet("/locations", async (context) => { await context.Response.WriteAsync("<script type=\"module\" src=\"/Pages/Locations/script.js\"></script>"); });
 
 app.MapGet("/a/{urlShort}", async (string urlShort, HttpContext context, IHttpClientFactory httpClientFactory) => {
@@ -115,50 +110,40 @@ app.MapGet("/f/{id_with_extension}", (string id_with_extension) =>
     catch { return Results.Redirect("/"); }
 });
 
-app.MapGet("/ApiUrl", () => { 
-    return Results.Ok(Constants.urlApi); 
-});
+app.MapGet("/ApiUrl", () => { return Results.Ok(Constants.urlApi); });
 
-//app.MapGet("/list", async (context) => {
-//    await context.Response.WriteAsync(new RtInk.Pages.List().GetHtml());
+
+//app.MapPost("/user-logo-upload", async (IFormFile file, HttpContext context) => {
+//    try
+//    {
+//        string filePath = Path.Combine(@"C:\wecan\Users\", file.FileName);
+
+//        using (var fs = new FileStream(filePath, FileMode.Create))
+//        {
+//            await file.CopyToAsync(fs);
+//        }
+//        return Results.Ok();
+//        //return StatusCode(StatusCodes.Status201Created);
+//    }
+//    catch
+//    {
+//        return Results.NotFound();
+//        //return StatusCode(StatusCodes.Status500InternalServerError);
+//    }
+//});
+//app.MapGet("/user-logo/{login_with_extension}", (string login_with_extension) =>
+//{
+//    var path = RtInk.Constants.fls + "Users\\" + login_with_extension;
+//    if (File.Exists(path))
+//    {
+//        byte[] file_byte_l = System.IO.File.ReadAllBytes(path);
+//        return Results.File(file_byte_l, "image/jpeg", login_with_extension); //await context.Response.WriteAsync("Error 404");// base.File(file_byte_l, mime_type, "rt.ink_" + pathSplit[2]);
+//    }
+//    else
+//        return Results.NotFound();
+
 //});
 
-//app.MapGet("/user-profile/{login}", async (context) => {
-//    await context.Response.WriteAsync(new RtInk.Pages.UserProfile().GetHtml());
-//});
-//app.MapGet("/article-add/{login}", async (context) => {
-//    await context.Response.WriteAsync(new RtInk.Pages.ArticleAdd().GetHtml());
-//});
-app.MapPost("/user-logo-upload", async (IFormFile file, HttpContext context) => {
-    try
-    {
-        string filePath = Path.Combine(@"C:\wecan\Users\", file.FileName);
-
-        using (var fs = new FileStream(filePath, FileMode.Create))
-        {
-            await file.CopyToAsync(fs);
-        }
-        return Results.Ok();
-        //return StatusCode(StatusCodes.Status201Created);
-    }
-    catch
-    {
-        return Results.NotFound();
-        //return StatusCode(StatusCodes.Status500InternalServerError);
-    }
-});
-app.MapGet("/user-logo/{login_with_extension}", (string login_with_extension) =>
-{
-    var path = RtInk.Constants.fls + "Users\\" + login_with_extension;
-    if (File.Exists(path))
-    {
-        byte[] file_byte_l = System.IO.File.ReadAllBytes(path);
-        return Results.File(file_byte_l, "image/jpeg", login_with_extension); //await context.Response.WriteAsync("Error 404");// base.File(file_byte_l, mime_type, "rt.ink_" + pathSplit[2]);
-    }
-    else
-        return Results.NotFound();
-
-});
 //app.MapGet("/u/{login}", async (context) => {
 //    string[] pathSplit = context.Request.Path.ToString().TrimEnd('/').Split('/');
 //    if (pathSplit.Length == 3)
@@ -174,89 +159,155 @@ app.MapGet("/user-logo/{login_with_extension}", (string login_with_extension) =>
 
 //-- Api
 
-app.MapGet("/api/UserBio", [Authorize] (HttpContext context, IHttpClientFactory httpClientFactory) => {
-    try
-    {
-        var sessionId = context.Request.Headers["sessionId"][0];
-        var sessionToken = context.Request.Headers["Authorization"][0];
-        if (sessionToken != null)
-            sessionToken = sessionToken.Replace("Bearer ", "");
+//app.MapGet("/api/UserBio", [Authorize] (HttpContext context, IHttpClientFactory httpClientFactory) => {
+//    try
+//    {
+//        var sessionId = context.Request.Headers["sessionId"][0];
+//        var sessionToken = context.Request.Headers["Authorization"][0];
+//        if (sessionToken != null)
+//            sessionToken = sessionToken.Replace("Bearer ", "");
 
-        UserBioModel? m = null;
-        using (var httpClient = httpClientFactory.CreateClient("ApiRtInkNetCoreApp"))
-        {
-            httpClient.DefaultRequestHeaders.Add("sessionToken", sessionId + ":" + sessionToken);
-            m = httpClient.GetFromJsonAsync<UserBioModel>(Constants.urlApi + Constants.apiRtInkWebPartStr + "/UserBio").Result;
-        }
+//        UserBioModel? m = null;
+//        using (var httpClient = httpClientFactory.CreateClient("ApiRtInkNetCoreApp"))
+//        {
+//            httpClient.DefaultRequestHeaders.Add("sessionToken", sessionId + ":" + sessionToken);
+//            m = httpClient.GetFromJsonAsync<UserBioModel>(Constants.urlApi + Constants.apiRtInkWebPartStr + "/UserBio").Result;
+//        }
 
-        if (m != null)
-            return Results.Ok(m);
-        else
-            return Results.NotFound();
-    }
-    catch { return Results.NotFound(); }
+//        if (m != null)
+//            return Results.Ok(m);
+//        else
+//            return Results.NotFound();
+//    }
+//    catch { return Results.NotFound(); }
 
-});
-app.MapGet("/api/UserProfilePage", (string login, HttpContext context) =>
-{
-    if (!String.IsNullOrEmpty(login))
-    {
-        long userId = 0;
-        byte roleId = 0;
-        var claims = context.User.Claims;
-        if (claims != null)
-            foreach (var i in claims)
-                if (i.Type == "userId")
-                    userId = Convert.ToInt64(i.Value);
-                else if (i.Type == ClaimTypes.Role)
-                    roleId = Convert.ToByte(i.Value);
+//});
+//app.MapGet("/api/UserProfilePage", (string login, HttpContext context) =>
+//{
+//    if (!String.IsNullOrEmpty(login))
+//    {
+//        long userId = 0;
+//        byte roleId = 0;
+//        var claims = context.User.Claims;
+//        if (claims != null)
+//            foreach (var i in claims)
+//                if (i.Type == "userId")
+//                    userId = Convert.ToInt64(i.Value);
+//                else if (i.Type == ClaimTypes.Role)
+//                    roleId = Convert.ToByte(i.Value);
 
-        string url = Constants.urlApi + Constants.apiRtInkWebPartStr + "/UserProfilePage?userId=" + userId + "&login=" + login + "&roleId=" + roleId;
-        using (var httpClient = new HttpClient())
-        {
-            httpClient.DefaultRequestHeaders.Add("key", Constants.apiKeyRtInk);
-            var m = httpClient.GetFromJsonAsync<UserProfileModel>(url).Result; //JsonSerializer.Deserialize<IPageModel>(httpClient.GetStringAsync(url).Result);
-            if (m != null)
-                if (m.name != null)
-                    return Results.Ok(m);
-        }
-    }
-    return Results.NotFound();
-});
-app.MapPost("/api/Article", [Authorize] async (ArticleModel articleModel, HttpContext context) => {
-    long sessionId = 0;
-    long userId = 0;
-    var claims = context.User.Claims;
-    if (claims != null)
-        foreach (var i in claims)
-            if (i.Type == ClaimTypes.Sid)
-                sessionId = Convert.ToInt64(i.Value);
-            else if (i.Type == "userId")
-                userId = Convert.ToInt64(i.Value);
+//        string url = Constants.urlApi + Constants.apiRtInkWebPartStr + "/UserProfilePage?userId=" + userId + "&login=" + login + "&roleId=" + roleId;
+//        using (var httpClient = new HttpClient())
+//        {
+//            httpClient.DefaultRequestHeaders.Add("key", Constants.apiKeyRtInk);
+//            var m = httpClient.GetFromJsonAsync<UserProfileModel>(url).Result; //JsonSerializer.Deserialize<IPageModel>(httpClient.GetStringAsync(url).Result);
+//            if (m != null)
+//                if (m.name != null)
+//                    return Results.Ok(m);
+//        }
+//    }
+//    return Results.NotFound();
+//});
+//app.MapPost("/api/Follow", async (string login, HttpContext context) => {
+//    long userId = 0;
+//    var claims = context.User.Claims;
+//    if (claims != null)
+//        foreach (var i in claims)
+//            if (i.Type == "userId")
+//                userId = Convert.ToInt64(i.Value);
+//    if (userId > 0)
+//    {
+//        string url = Constants.urlApi + Constants.apiRtInkWebPartStr + "/UserFollow?userId=" + userId + "&login=" + login;
+//        using (var httpClient = new HttpClient())
+//        {
+//            httpClient.DefaultRequestHeaders.Add("key", Constants.apiKeyRtInk);
+//            var t = await httpClient.GetAsync(url); // PostAsync(url, null);
+//            if(t.StatusCode == System.Net.HttpStatusCode.OK)
+//                return Results.Ok();
+//        }
+//        //new wecandbMssqlLibrary.Programmability.StoredProccedures.UserSubscriptionsFollowWebApi().Post(jWToken.GetUserId(context.User), context.Request.Headers["login"][0]); 
+//    }
+//    return Results.NotFound();
+//});
+//app.MapGet("/api/Users", async (string search, long sessionId, string sessionToken, HttpContext context) =>
+//{
+//    try
+//    {
+//        string url = Constants.urlApi + Constants.apiRtInkWebPartStr + "/Users?search=" + search + "&sessionId=" + sessionId + "&sessionToken=" + sessionToken;
+//        using (var httpClient = new HttpClient())
+//        {
+//            httpClient.DefaultRequestHeaders.Add("key", Constants.apiKeyRtInk);
+//            var l = httpClient.GetFromJsonAsync<List<UserModel>>(url).Result;
+//            return Results.Ok(l);
+//        }
+//    }
+//    catch { }
+//    return Results.NotFound();
+//});
 
-    if (userId > 0)
-    {
-        var token = context.Request.Headers["Authorization"][0];
-        if (token != null)
-            token = token.Substring(7, token.Length - 7);
-        if (token != null)
-        {
-            string json = JsonSerializer.Serialize(new ArticlePostModel(sessionId, token, articleModel.title)); // JsonConvert.SerializeObject(createLoginPayload(usernameTextBox.Text, password)));
-            var httpContent = new StringContent(json, Encoding.UTF8, "application/json");
-            var t = 0;
-            string url = Constants.urlApi + Constants.apiRtInkWebPartStr + "/Article";
-            using (var httpClient = new HttpClient())
-            {
-                httpClient.DefaultRequestHeaders.Add("key", Constants.apiKeyRtInk);
-                var rsp = await httpClient.PostAsync(url, httpContent);
-                if(rsp.StatusCode == System.Net.HttpStatusCode.OK)
-                    return Results.Ok();
-            }
-        }
-    }
+//app.MapPost("/api/Article", [Authorize] async (ArticleModel articleModel, HttpContext context) => {
+//    long sessionId = 0;
+//    long userId = 0;
+//    var claims = context.User.Claims;
+//    if (claims != null)
+//        foreach (var i in claims)
+//            if (i.Type == ClaimTypes.Sid)
+//                sessionId = Convert.ToInt64(i.Value);
+//            else if (i.Type == "userId")
+//                userId = Convert.ToInt64(i.Value);
 
-    return Results.NotFound();
-});
+//    if (userId > 0)
+//    {
+//        var token = context.Request.Headers["Authorization"][0];
+//        if (token != null)
+//            token = token.Substring(7, token.Length - 7);
+//        if (token != null)
+//        {
+//            string json = JsonSerializer.Serialize(new ArticlePostModel(sessionId, token, articleModel.title)); // JsonConvert.SerializeObject(createLoginPayload(usernameTextBox.Text, password)));
+//            var httpContent = new StringContent(json, Encoding.UTF8, "application/json");
+//            var t = 0;
+//            string url = Constants.urlApi + Constants.apiRtInkWebPartStr + "/Article";
+//            using (var httpClient = new HttpClient())
+//            {
+//                httpClient.DefaultRequestHeaders.Add("key", Constants.apiKeyRtInk);
+//                var rsp = await httpClient.PostAsync(url, httpContent);
+//                if (rsp.StatusCode == System.Net.HttpStatusCode.OK)
+//                    return Results.Ok();
+//            }
+//        }
+//    }
+
+//    return Results.NotFound();
+//});
+
+
+//app.MapPost("/api/EditProfile", async (string loginPrev, string name, string login, string about, HttpContext context) => {
+//    long userId = 0;
+//    byte roleId = 0;
+//    var claims = context.User.Claims;
+//    if (claims != null)
+//        foreach (var i in claims)
+//            if (i.Type == "userId")
+//                userId = Convert.ToInt64(i.Value);
+//            else if (i.Type == ClaimTypes.Role)
+//                roleId = Convert.ToByte(i.Value);
+//    if (userId > 0)
+//    {
+//        string url = Constants.urlApi + Constants.apiRtInkWebPartStr + "/EditProfile?userId=" + userId + "&roleId=" + roleId + "&loginPrev=" + loginPrev + "&name=" + name + "&login=" + login + "&about=" + about;
+//        using (var httpClient = new HttpClient())
+//        {
+//            httpClient.DefaultRequestHeaders.Add("key", Constants.apiKeyRtInk);
+//            var t = await httpClient.PostAsync(url, null); // PostAsync(url, null);
+//            if (t.StatusCode == System.Net.HttpStatusCode.OK)
+//                return Results.Ok();
+//        }
+//        //new wecandbMssqlLibrary.Programmability.StoredProccedures.UsersUpdateByClientApi().Post(jWToken.GetUserId(context.User), jWToken.GetRoleId(context.User), context.Request.Headers["loginPrev"][0], name, 
+//        //    context.Request.Headers["login"][0]); 
+//    }
+//    return Results.NotFound();
+//});
+
+
 //app.MapGet("/api/GetAticleSimillars", (HttpContext context) => {
 //    long userId = new Session.JWToken().GetUserId(context);
 
@@ -270,68 +321,6 @@ app.MapPost("/api/Article", [Authorize] async (ArticleModel articleModel, HttpCo
 //    }
 //    return Results.NotFound();
 //});
-app.MapPost("/api/EditProfile", async (string loginPrev, string name, string login, string about, HttpContext context) => {
-    long userId = 0;
-    byte roleId = 0;
-    var claims = context.User.Claims;
-    if (claims != null)
-        foreach (var i in claims)
-            if (i.Type == "userId")
-                userId = Convert.ToInt64(i.Value);
-            else if (i.Type == ClaimTypes.Role)
-                roleId = Convert.ToByte(i.Value);
-    if (userId > 0)
-    {
-        string url = Constants.urlApi + Constants.apiRtInkWebPartStr + "/EditProfile?userId=" + userId + "&roleId=" + roleId + "&loginPrev=" + loginPrev + "&name=" + name + "&login=" + login + "&about=" + about;
-        using (var httpClient = new HttpClient())
-        {
-            httpClient.DefaultRequestHeaders.Add("key", Constants.apiKeyRtInk);
-            var t = await httpClient.PostAsync(url, null); // PostAsync(url, null);
-            if (t.StatusCode == System.Net.HttpStatusCode.OK)
-                return Results.Ok();
-        }
-        //new wecandbMssqlLibrary.Programmability.StoredProccedures.UsersUpdateByClientApi().Post(jWToken.GetUserId(context.User), jWToken.GetRoleId(context.User), context.Request.Headers["loginPrev"][0], name, 
-        //    context.Request.Headers["login"][0]); 
-    }
-    return Results.NotFound();
-});
-app.MapPost("/api/Follow", async (string login, HttpContext context) => {
-    long userId = 0;
-    var claims = context.User.Claims;
-    if (claims != null)
-        foreach (var i in claims)
-            if (i.Type == "userId")
-                userId = Convert.ToInt64(i.Value);
-    if (userId > 0)
-    {
-        string url = Constants.urlApi + Constants.apiRtInkWebPartStr + "/UserFollow?userId=" + userId + "&login=" + login;
-        using (var httpClient = new HttpClient())
-        {
-            httpClient.DefaultRequestHeaders.Add("key", Constants.apiKeyRtInk);
-            var t = await httpClient.GetAsync(url); // PostAsync(url, null);
-            if(t.StatusCode == System.Net.HttpStatusCode.OK)
-                return Results.Ok();
-        }
-        //new wecandbMssqlLibrary.Programmability.StoredProccedures.UserSubscriptionsFollowWebApi().Post(jWToken.GetUserId(context.User), context.Request.Headers["login"][0]); 
-    }
-    return Results.NotFound();
-});
-app.MapGet("/api/Users", async (string search, long sessionId, string sessionToken, HttpContext context) =>
-{
-    try
-    {
-        string url = Constants.urlApi + Constants.apiRtInkWebPartStr + "/Users?search=" + search + "&sessionId=" + sessionId + "&sessionToken=" + sessionToken;
-        using (var httpClient = new HttpClient())
-        {
-            httpClient.DefaultRequestHeaders.Add("key", Constants.apiKeyRtInk);
-            var l = httpClient.GetFromJsonAsync<List<UserModel>>(url).Result;
-            return Results.Ok(l);
-        }
-    }
-    catch { }
-    return Results.NotFound();
-});
-
 
 //-------------------------
 
