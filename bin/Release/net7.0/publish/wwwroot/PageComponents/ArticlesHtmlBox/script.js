@@ -1,6 +1,8 @@
 ﻿//-- Knowledge Library
 //-- JS: Private class features: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Private_class_fields
 
+import { MoreButtonHtmlBox } from '/PageComponents/MoreButtonHtmlBox/script.js';
+
 export class ArticlesHtmlBox {
     #Target
     #Position
@@ -43,11 +45,9 @@ export class ArticlesHtmlBox {
         await this.#ListActionSet()
 
         if (this.page == 1 && this.#list.length == this.take) {
-            
+            new MoreButtonHtmlBox(document.querySelector("#" + this.#name + " > ul"), "afterend")
 
-            document.querySelector("#" + this.#name + " > ul").insertAdjacentHTML("afterend", this.#MoreButton())
-
-            document.getElementById("MoreButton").addEventListener('click', async () => {
+            document.getElementById("MoreButtonHtmlBox").addEventListener('click', async () => {
                 let list = await this.#ApiAticles()
                 list.forEach(e => { this.#list.push({ "title": e.title, "urlShort": e.urlShort, "fileId": e.fileId, "extension": e.extension, "fileUrlSource": e.fileUrlSource, "description": e.description, "dt": e.dt, "login": e.login, "isBody": e.isBody, "titleHb": e.titleHb, "fileUrlSource": e.fileUrlSource, "isBookmark": e.isBookmark, "rating": e.rating, "appended": false, "imgcheck": false, "bookmarkActionAdded": false }) });
                 document.querySelector("#" + this.#name + " > ul").insertAdjacentHTML("beforeend", this.#LisHtmlBox())
@@ -149,23 +149,6 @@ export class ArticlesHtmlBox {
                     </article>\
                 </li>"
 
-
-                // " + _dtLoginHtmlPartDown + "\
-
-
-                        //<div id=\"_Inf\">\
-                        //    " + _dtLoginHtmlPartUp + "\
-                        //    <hr />\
-                        //</div>\
-                        //<div>\
-                        //    <a class=\"BookmarkButton\" data-isBookmark=\"" + e.isBookmark + "\">\
-                        //        <img />\
-                        //    </a>\
-                        //    <a class=\"_source\" href=\"/a/" + e.urlShort + "\">\
-                        //        source\
-                        //    </a>\
-                        //</div>\
-
                 e.appended = true;
             }
         });
@@ -212,24 +195,6 @@ export class ArticlesHtmlBox {
                 " + time + "\
             </time>\
         </div>";
-
-        return html;
-    }
-
-    #MoreButton() {
-        let html = "\
-        <div id=\"MoreButton\">\
-            <div>\
-                <a>\
-                    <img src=\"/PageComponents/ArticlesHtmlBox/content/arrow-down-black.png\" />\
-                </a>\
-                <a>\
-                    <span>\
-                        Показать больше\
-                    </span>\
-                </a>\
-            </div>\
-        </div>"
 
         return html;
     }
@@ -318,19 +283,6 @@ export class ArticlesHtmlBox {
                     imgQ.src = srcQ
                 }
                 img.src = this.#list[i].fileUrlSource
-
-                //let rating = this.#list[i].rating
-                //trg.addEventListener("click", async event => {
-                //    if (rating == 2) {
-                //        rating = 0;
-                //        tr.setAttribute("data-tp", rating);
-                //        var q = tr.querySelector("#_DtLoginHtmlPart")
-                //        var w = "<div id=\"_DtLoginHtmlPart\">" + q.innerHTML + "</div>";
-                //        q.remove()
-                //        tr.querySelector("#_Inf").insertAdjacentHTML("afterbegin", w)
-                //    }
-                //});
-
             }
         }
     }

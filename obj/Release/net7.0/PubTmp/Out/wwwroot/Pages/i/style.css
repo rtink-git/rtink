@@ -1,5 +1,7 @@
-﻿#DescriptionMainHtmlPart {
-/*    display:none;*/
+﻿/* https://www.flaticon.com/free-icon/double-check_8138091?term=check+double&page=2&position=17&origin=search&related_id=8138091 */
+/* #FF0000 - red */
+
+#DescriptionMainHtmlPart {
     float: left;
     width: calc(100% - 80px);
     margin-left: 40px;

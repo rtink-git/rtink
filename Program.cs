@@ -115,7 +115,9 @@ app.MapGet("/f/{id_with_extension}", (string id_with_extension) =>
     catch { return Results.Redirect("/"); }
 });
 
-app.MapGet("/ApiUrl", () => { return Results.Ok(Constants.urlApi); });
+app.MapGet("/ApiUrl", () => { 
+    return Results.Ok(Constants.urlApi); 
+});
 
 //app.MapGet("/list", async (context) => {
 //    await context.Response.WriteAsync(new RtInk.Pages.List().GetHtml());

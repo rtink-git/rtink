@@ -1,0 +1,57 @@
+﻿#MoreButtonHtmlBox {
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 6px;
+}
+
+    #MoreButtonHtmlBox > * {
+        height: 30px;
+        min-width: 280px;
+        background-image: linear-gradient( 45deg, hsl(0deg 0% 94%) 0%, hsl(344deg 0% 95%) 11%, hsl(344deg 0% 96%) 22%, hsl(344deg 0% 96%) 33%, hsl(344deg 0% 97%) 44%, hsl(344deg 0% 98%) 56%, hsl(344deg 0% 98%) 67%, hsl(344deg 0% 99%) 78%, hsl(344deg 0% 99%) 89%, hsl(0deg 0% 100%) 100% );
+        display: inline-block;
+        border-radius: 8px;
+        border: 1px solid #e0e0e0;
+    }
+
+
+        #MoreButtonHtmlBox > * > a {
+            float: left;
+        }
+
+            #MoreButtonHtmlBox > * > a:first-child {
+                float: left;
+                width: 58px;
+                height: 100%;
+                border-radius: 30px;
+                text-align: center;
+            }
+
+                #MoreButtonHtmlBox > * > a:first-child img {
+                    width: 14px;
+                    height: 14px;
+                    margin: 8px 0;
+                    display: inline-block;
+                }
+
+                    #MoreButtonHtmlBox > * > a:first-child img[data-rotate="180"] {
+                        transform: rotate(180deg);
+                    }
+
+            #MoreButtonHtmlBox > * > a:last-child {
+                float: left;
+                width: calc(100% - 116px);
+                padding-right: 58px;
+                height: 100%;
+                text-align: center;
+            }
+
+            #MoreButtonHtmlBox > * > a > span {
+                display: inline-block;
+                font-family: 'Montserrat', sans-serif;
+                margin-top: 7px;
+                font-weight: 600;
+                letter-spacing: 1px;
+                font-size: 12px;
+            }

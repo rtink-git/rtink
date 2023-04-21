@@ -15,7 +15,6 @@
 //-- icon sizes - https://blog.hubspot.com/website/what-is-a-favicon
 
 /*-- Tasks --*/
-/*-- На удаление, предварительно проверив /PageComponents/HtmlBase --*/
 
 
 
@@ -24,14 +23,16 @@ import { Sessions } from '/PageComponents/Sessions.js';
 let MontserratGoogleFont = document.createElement("link"); MontserratGoogleFont.setAttribute("rel", "stylesheet"); MontserratGoogleFont.setAttribute("href", "https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900;1000&display=swap"); document.head.append(MontserratGoogleFont);
 
 
-export let isTest = true; // true - режим тестирования. false - режим реализации
+export let isTest = false; // true - режим тестирования. false - режим реализации
 
-export let apiUrl = "https://api.rt.ink"
-//apiUrl = "https://localhost:7025"
+export let apiUrl = await ApiUrl()
 
 var sessions = new Sessions();
 await sessions.TokenRefresh(apiUrl);
 export let authJWToken = sessions.authJWToken
+
+let authorizationInformationApi = await AuthorizationInformationApi()
+export let RoleId = await authorizationInformationApi.roleId
 
 
 export function PageHeadsBuild(title = null, description = null, imageUrl = null, imageAlt = null, urlCanonical = null, robot = "index,follow") {
@@ -187,3 +188,26 @@ export function PageHeadsBuild(title = null, description = null, imageUrl = null
     let scriptHeadGoogleTag = document.createElement("script"); scriptHeadGoogleTag.textContent = "window.dataLayer || [];  function gtag(){dataLayer.push(arguments);}  gtag('js', new Date());  gtag('config', 'G-M6XTS2RJDG');"; document.head.append(scriptHeadGoogleTag);
 }
 
+
+
+
+
+//-- api actions
+
+async function ApiUrl() {
+    const response = await fetch("/ApiUrl", {
+        method: "GET"
+    });
+    if (response.ok === true) return response.json();
+    return null;
+}
+
+async function AuthorizationInformationApi() {
+    const response = await fetch(apiUrl + "/Base/Authorization/Information", {
+        method: "GET",
+        headers: { "Accept": "application/json", "Authorization": "Bearer " + sessions.authJWToken }
+    });
+    if (response.ok === true)
+        return await response.json();
+    return null;
+}

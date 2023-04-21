@@ -1,0 +1,112 @@
+﻿/*-- Icons --*/
+/*-- Pin: https://www.flaticon.com/free-icon/pin_8674923?term=pin&page=10&position=60&origin=search&related_id=8674923 --*/
+
+
+
+
+
+#LocsHtmlBox {
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin:10px 0 0;
+}
+
+    #LocsHtmlBox > ul > li {
+        float:left;
+        width:100%;
+        padding:0;
+        margin:0;
+        text-align:center;
+        list-style:none;
+    }
+
+    #LocsHtmlBox > ul > li:last-child {
+        margin-bottom:30px
+    }
+
+        #LocsHtmlBox > ul > li > div {
+            display: inline-block;
+            width: 600px;
+            height: 30px;
+            padding:0;
+            margin:0;
+            border-radius:2px;
+            background-image: linear-gradient( 45deg, hsl(0deg 0% 94%) 0%, hsl(344deg 0% 95%) 11%, hsl(344deg 0% 96%) 22%, hsl(344deg 0% 96%) 33%, hsl(344deg 0% 97%) 44%, hsl(344deg 0% 98%) 56%, hsl(344deg 0% 98%) 67%, hsl(344deg 0% 99%) 78%, hsl(344deg 0% 99%) 89%, hsl(0deg 0% 100%) 100% );
+        }
+
+        #LocsHtmlBox > ul > li:nth-child(2n+1) > div {
+            background: linear-gradient(90deg, rgba(243,240,216,1) 0%, rgba(241,241,241,1) 48%, rgba(255,255,255,1) 100%);
+        }
+
+@media (max-width: 680px) {
+    #LocsHtmlBox > ul > li > div {
+        width: calc(100% - 80px);
+    }
+}
+
+@media (max-width: 550px) {
+    #LocsHtmlBox > ul > li > div {
+        width: calc(100% - 30px);
+    }
+}
+
+#LocsHtmlBox > ul > li > div > *:first-child {
+    float: left;
+    padding: 8px 25px 9px 15px;
+    background: #f0f0f0;
+}
+
+#LocsHtmlBox > ul > li:nth-child(2n+1) > div > *:first-child {
+    background: #eff0ca
+}
+
+#LocsHtmlBox ul > li > div > *:first-child span {
+    float: left;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #3f3f3f
+}
+
+#LocsHtmlBox > ul > li > div > ._HasChildrensB {
+    float: right;
+    margin-top: 9px;
+    margin-right: 15px;
+    opacity: 1
+}
+
+    #LocsHtmlBox > ul > li > div > ._HasChildrensB > img {
+        height: 12px;
+        opacity: 0.3
+    }
+
+    #LocsHtmlBox > ul > li > div > ._HasChildrensB[data-display="true"] > img {
+        transform: rotate(180deg);
+    }
+
+#LocsHtmlBox > ul > li > div > ._SelectLocB {
+    float: right;
+    margin-top: 9px;
+    margin-right: 15px;
+    opacity: 0.5
+}
+
+    #LocsHtmlBox > ul > li > div > ._SelectLocB > img {
+        height: 12px;
+        content:url(/PageComponents/LocsHtmlBox/content/pin.png)
+    }
+
+#LocsHtmlBox > ul > li > div[data-issubscribed="true"] > ._SelectLocB > img {
+    height: 12px;
+    content: url(/PageComponents/LocsHtmlBox/content/pin-checked-red.png)
+}
+
+#LocsHtmlBox > ul > li > div > ._LineB {
+    float: right;
+    height: 22px;
+    width: 1px;
+    margin: 4px 20px 0 0;
+    background: #e7e7e7
+}

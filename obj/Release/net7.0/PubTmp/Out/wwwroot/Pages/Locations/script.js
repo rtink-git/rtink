@@ -1,6 +1,10 @@
-﻿import { isTest, apiUrl, PageHeadsBuild, authJWToken } from '/PageComponents/Page/script.js';
+﻿import { isTest, apiUrl, PageHeadsBuild, authJWToken, RoleId } from '/PageComponents/Page/script.js';
 import { HeaderHtmlBox } from '/PageComponents/HeaderHtmlBox/script.js';
-import { HeaderDescriptionHtmlBox } from '/PageComponents/HeaderDescriptionHtmlBox/script.js';
+import { SearchHeaderQHtmlBox } from "/PageComponents/SearchHeaderQHtmlBox/script.js";
+import { LocsHtmlBox } from '/PageComponents/LocsHtmlBox/script.js';
+
+
+
 
 
 const LocationsPageName = "Locations";
@@ -11,82 +15,23 @@ PageHeadsBuild("Locations - RT", "")
 
 let menuList = new Array()
 menuList.push({ "icon": LocationsPageUrlContent + "/search.png", "href": "", "id": "SearchBM" });
-menuList.push({ "icon": LocationsPageUrlContent + "/undo.png", "href": "/" });
+let href = "/users"
+if (RoleId == 0)
+    href = "/"
+menuList.push({ "icon": LocationsPageUrlContent + "/undo.png", "href": href });
 
-new HeaderHtmlBox(document.getElementsByTagName("body")[0], "afterbegin", "RT", null, menuList, isTest)
-new HeaderDescriptionHtmlBox(document.getElementById("HeaderHtmlBox"), "afterend", "LOCATIONS", "", "")
+new HeaderHtmlBox(document.getElementsByTagName("body")[0], "afterbegin", "RT / LOCS", null, menuList, isTest)
+new SearchHeaderQHtmlBox(document.getElementById("HeaderHtmlBox"), "afterend", "", "", "")
 
-//----------
-
-let LocationList = new Array();
-
-//if (isTest) LocationList = LocationListAsTest()
-//else { }
-
-let UserAsLocations = await ApiUserAsLocations();
-UserAsLocations.forEach(e => { LocationList.push(e) })
-
-document.getElementById("HeaderDescriptionHtmlBox").insertAdjacentHTML("afterend", LocationsHtmlPart())
-
-
-
-function LocationsHtmlPart() {
-    let listHtml = ""
-    LocationList.forEach(e => {
-        listHtml += "\
-        <div>\
-            <div>\
-                <span>\
-                " + e.login + "\
-                </span>\
-            </div>\
-            <a>\
-                <img src=\"" + LocationsPageUrlContent + "/check.png\" />\
-            </a>\
-        </div>"
-    })
-
-    let html = "\
-    <div id=\"LocationsHtmlPart\">\
-        <div>\
-        " + listHtml + "\
-        </div>\
-    </div>"
-
-    return html
-}
-
-//function LocationListAsTest() {
-//    let locationList = new Array();
-
-//    locationList.push({ "title": "Canada", "login": "canada", "parentId": "0" });
-//    locationList.push({ "title": "China", "login": "china", "parentId": "0" });
-//    locationList.push({ "title": "France", "login": "france", "parentId": "0" });
-//    locationList.push({ "title": "Germany", "login": "germany", "parentId": "0" });
-//    locationList.push({ "title": "India", "login": "india", "parentId": "0" });
-//    locationList.push({ "title": "Italy", "login": "italy", "parentId": "0" });
-//    locationList.push({ "title": "Japan", "login": "japan", "parentId": "0" });
-//    locationList.push({ "title": "Norway", "login": "norway", "parentId": "0" });
-//    locationList.push({ "title": "Russia", "login": "russia", "parentId": "0" });
-//    locationList.push({ "title": "Spain", "login": "spain", "parentId": "0" });
-//    locationList.push({ "title": "Turkey", "login": "turkey", "parentId": "0" });
-//    locationList.push({ "title": "United Kingdom", "login": "uk", "parentId": "0" });
-//    locationList.push({ "title": "United States", "login": "usa", "parentId": "0" });
-
-//    return locationList;
-//}
+let locsHtmlBox = new LocsHtmlBox(document.getElementById("SearchHeaderQHtmlBox"), "afterend", apiUrl, authJWToken)
+await locsHtmlBox.AppendList()
 
 
 
 
-//-- api actions
+//-- html actions
 
-async function ApiUserAsLocations() {
-    const response = await fetch(apiUrl + "/RtInk/UserAsLocations", {
-        method: "GET"
-    });
-    if (response.ok === true) return await response.json();
-    return null;
-}
-
-//--------------------
+document.getElementById("SearchBM").addEventListener('click', async (event) => {
+    document.getElementById("SearchBM").style.display = "none";
+    document.getElementById("SearchHeaderQHtmlBox").style.display = "block";
+});
