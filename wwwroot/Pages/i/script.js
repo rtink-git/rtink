@@ -53,9 +53,6 @@ if (search.length > 0) {
 let subscribType = 0;
 let menuList = new Array()
 
-if (RoleId > 0)
-    menuList.push({ "icon": iPageUrlContent + "/category.png", "href": "/list" })
-
 if (typeApiPageI == 0) {
     menuList.push({ "icon": iPageUrlContent + "/search.png", "href": "", "id": "SearchBM" });
     if (RoleId == 0)
@@ -80,7 +77,10 @@ else if (typeApiPageI == 1) {
         menuList.push({ "icon": subscribUrl, "href": "", "id": "SubsribB" });
     }
     menuList.push({ "icon": iPageUrlContent + "/search.png", "href": "", "id": "SearchBM" });
-    menuList.push({ "icon": iPageUrlContent + "/undo.png", "href": "/users" });
+    let href = "/users"
+    if (RoleId == 0)
+        href = "/"
+    menuList.push({ "icon": iPageUrlContent + "/undo.png", "href": href });
 }
 else if (typeApiPageI == 2) {
     menuList.push({ "icon": iPageUrlContent + "/undo.png", "href": "/" });
@@ -100,7 +100,7 @@ new HeaderHtmlBox(document.getElementsByTagName("body")[0], "afterbegin", "RT", 
 
 if (typeApiPageI == 0 && RoleId == 0) {
     document.getElementById("SigninB").addEventListener('click', async () => {
-        window.location.href = apiUrl + "/Base/Authorization/Signin/Google?SessionToken=" + authJWToken + "&RedirectUrl=https://rt.ink" //https://localhost:7199/
+        window.location.href = apiUrl + "/Base/Authorization/Signin/Google?SessionToken=" + authJWToken + "&RedirectUrl=" + document.URL //https://localhost:7199/
     });
 }
 
