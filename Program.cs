@@ -15,12 +15,10 @@
 
 
 //-- Tasks
-//-- 2023-04-25 RT [your account] - add post
-//-- 2023-04-25 Menu button /i/-user (your account) - settings
 //-- 2023-04-25 i/-user (location account) - RT / LOC
-//-- 2023-04-25 Menu bookmark. RT [ article ] /i/article-
-//-- 2023-04-25 RT [ article ]. add image
-//-- 2023-04-25 RT / USERS. Loc block styles.
+//-- 2023-04-25 RT. Menu bookmarks
+//-- 2023-04-25 RT [ ARTICLE ]. Set bookmark / unset
+//-- 2023-04-25 RT [ ARTICLE ]. Body show
 
 
 

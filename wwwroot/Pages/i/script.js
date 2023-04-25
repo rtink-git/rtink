@@ -49,7 +49,7 @@ if (search.length > 0) {
 
 //--------------------
 
-
+let HeaderTitle = "RT"
 let subscribType = 0;
 let menuList = new Array()
 
@@ -64,6 +64,8 @@ if (typeApiPageI == 0) {
     //if (RoleId == 0) menuList.push({ "icon": iPageUrlContent + "/login.png", "href": "", "id": "SigninB" });
 }
 else if (typeApiPageI == 1) {
+    HeaderTitle = "RT / USER"
+
     let userBio = await ApiUserBio(userLogin)
     subscribType = userBio.sbt
     if (subscribType != 1) {
@@ -77,6 +79,11 @@ else if (typeApiPageI == 1) {
 
         menuList.push({ "icon": subscribUrl, "href": "", "id": "SubsribB" });
     }
+    else {
+        menuList.push({ "icon": iPageUrlContent + "/add.png", "href": "" });
+        menuList.push({ "icon": iPageUrlContent + "/settings.png", "href": "" });
+    }
+
     menuList.push({ "icon": iPageUrlContent + "/search.png", "href": "", "id": "SearchBM" });
     let href = "/users"
     if (RoleId == 0)
@@ -84,6 +91,7 @@ else if (typeApiPageI == 1) {
     menuList.push({ "icon": iPageUrlContent + "/undo.png", "href": href });
 }
 else if (typeApiPageI == 2) {
+    menuList.push({ "icon": iPageUrlContent + "/bookmark.png", "href": "/" });
     menuList.push({ "icon": iPageUrlContent + "/undo.png", "href": "/" });
 }
 else if (typeApiPageI == 3) {
@@ -97,7 +105,7 @@ if (typeApiPageI == 1) {
 
 //--------------------
 
-new HeaderHtmlBox(document.getElementsByTagName("body")[0], "afterbegin", "RT", null, menuList, isTest)
+new HeaderHtmlBox(document.getElementsByTagName("body")[0], "afterbegin", HeaderTitle, null, menuList, isTest)
 
 //if (typeApiPageI == 0 && RoleId == 0) {
 //    document.getElementById("SigninB").addEventListener('click', async () => {

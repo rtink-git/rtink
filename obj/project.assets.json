@@ -643,11 +643,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\RtInk.csproj",
+      "projectUniqueName": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\RtInk.csproj",
       "projectName": "RtInk",
-      "projectPath": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\RtInk.csproj",
+      "projectPath": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\RtInk.csproj",
       "packagesPath": "C:\\Users\\aidargalimov\\.nuget\\packages\\",
-      "outputPath": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\obj\\",
+      "outputPath": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\aidargalimov\\AppData\\Roaming\\NuGet\\NuGet.Config",

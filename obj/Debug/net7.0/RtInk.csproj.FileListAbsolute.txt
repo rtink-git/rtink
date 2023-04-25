@@ -180,3 +180,39 @@ D:\dev\Wecan\rt_ink\dev\rt ink net seven git rep\rtink\obj\Debug\net7.0\ref\RtIn
 \\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink net seven git rep clone\rtink-git\rtink\obj\Debug\net7.0\RtInk.pdb
 \\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink net seven git rep clone\rtink-git\rtink\obj\Debug\net7.0\RtInk.genruntimeconfig.cache
 \\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink net seven git rep clone\rtink-git\rtink\obj\Debug\net7.0\ref\RtInk.dll
+\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink git\rtink\bin\Debug\net7.0\appsettings.Development.json
+\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink git\rtink\bin\Debug\net7.0\appsettings.json
+\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink git\rtink\bin\Debug\net7.0\RtInk.staticwebassets.runtime.json
+\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink git\rtink\bin\Debug\net7.0\RtInk.exe
+\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink git\rtink\bin\Debug\net7.0\RtInk.deps.json
+\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink git\rtink\bin\Debug\net7.0\RtInk.runtimeconfig.json
+\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink git\rtink\bin\Debug\net7.0\RtInk.dll
+\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink git\rtink\bin\Debug\net7.0\RtInk.pdb
+\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink git\rtink\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.Google.dll
+\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink git\rtink\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink git\rtink\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink git\rtink\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink git\rtink\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink git\rtink\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink git\rtink\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink git\rtink\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink git\rtink\obj\Debug\net7.0\RtInk.csproj.AssemblyReference.cache
+\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink git\rtink\obj\Debug\net7.0\RtInk.GeneratedMSBuildEditorConfig.editorconfig
+\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink git\rtink\obj\Debug\net7.0\RtInk.AssemblyInfoInputs.cache
+\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink git\rtink\obj\Debug\net7.0\RtInk.AssemblyInfo.cs
+\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink git\rtink\obj\Debug\net7.0\RtInk.csproj.CoreCompileInputs.cache
+\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink git\rtink\obj\Debug\net7.0\RtInk.MvcApplicationPartsAssemblyInfo.cache
+\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink git\rtink\obj\Debug\net7.0\staticwebassets\msbuild.RtInk.Microsoft.AspNetCore.StaticWebAssets.props
+\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink git\rtink\obj\Debug\net7.0\staticwebassets\msbuild.build.RtInk.props
+\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink git\rtink\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.RtInk.props
+\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink git\rtink\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.RtInk.props
+\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink git\rtink\obj\Debug\net7.0\staticwebassets.pack.json
+\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink git\rtink\obj\Debug\net7.0\staticwebassets.build.json
+\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink git\rtink\obj\Debug\net7.0\staticwebassets.development.json
+\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink git\rtink\obj\Debug\net7.0\scopedcss\bundle\RtInk.styles.css
+\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink git\rtink\obj\Debug\net7.0\RtInk.csproj.CopyComplete
+\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink git\rtink\obj\Debug\net7.0\RtInk.dll
+\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink git\rtink\obj\Debug\net7.0\refint\RtInk.dll
+\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink git\rtink\obj\Debug\net7.0\RtInk.pdb
+\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink git\rtink\obj\Debug\net7.0\RtInk.genruntimeconfig.cache
+\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink git\rtink\obj\Debug\net7.0\ref\RtInk.dll

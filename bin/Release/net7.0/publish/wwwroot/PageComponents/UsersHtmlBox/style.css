@@ -26,13 +26,12 @@
             padding: 0;
             margin: 0;
             margin-bottom:10px;
-/*            border-bottom: 1px solid #cecece;*/
             border-radius: 2px;
             background-image: linear-gradient( 45deg, hsl(0deg 0% 94%) 0%, hsl(344deg 0% 95%) 11%, hsl(344deg 0% 96%) 22%, hsl(344deg 0% 96%) 33%, hsl(344deg 0% 97%) 44%, hsl(344deg 0% 98%) 56%, hsl(344deg 0% 98%) 67%, hsl(344deg 0% 99%) 78%, hsl(344deg 0% 99%) 89%, hsl(0deg 0% 100%) 100% );
         }
 
         #UsersHtmlBox > ul > li:nth-child(2n+1) > div {
-            background:#fcfcfc;
+/*            background:#fcfcfc;*/
 /*            background: linear-gradient(90deg, rgba(243,240,216,1) 0%, rgba(241,241,241,1) 48%, rgba(255,255,255,1) 100%);*/
         }
 

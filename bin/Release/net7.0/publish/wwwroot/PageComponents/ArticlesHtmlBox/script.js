@@ -184,8 +184,6 @@ export class ArticlesHtmlBox {
                 loginHtmlPart += "<div><span>" + lgn[i] + "</span></div>"
 
             loginHtmlPart = "<a href=\"/i/-" + login + "\" class=\"_login\">" + loginHtmlPart + "</a>"
-
-            //loginHtmlPart = "<a href=\"/i/-" + login + "\">@" + login.toLowerCase() + "</a>"
         }
 
         let html = "\
@@ -267,7 +265,7 @@ export class ArticlesHtmlBox {
 
     async #LoadImages() {
         for (var i = 0; i < this.#list.length; i++) {
-            if (this.#list[i].appended && !this.#list[i].imgcheck && this.#list[i].fileId > 0) {
+            if (this.#list[i].appended && !this.#list[i].imgcheck && this.#list[i].rating != 4) {
                 let tr = document.querySelectorAll("article")[i];
                 let trg = tr.querySelector("img")
                 let fileId = this.#list[i].fileId
