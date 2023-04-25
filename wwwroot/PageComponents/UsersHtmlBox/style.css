@@ -1,99 +1,168 @@
-﻿#UsersHtmlBox {
+﻿/*-- CSS Gradient: https://cssgradient.io/ --*/
+
+#UsersHtmlBox {
     float: left;
     width: 100%;
     text-align: center;
+    margin: 20px 0 0;
 }
 
-    #UsersHtmlBox > *:first-child {
-        display: inline-block;
-        width: 600px;
-        margin: 20px 40px;
+    #UsersHtmlBox > ul > li {
+        float: left;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        list-style: none;
     }
 
+        #UsersHtmlBox > ul > li:last-child {
+            margin-bottom: 30px
+        }
+
+        #UsersHtmlBox > ul > li > div  {
+            display: inline-block;
+            width: 600px;
+            padding: 0;
+            margin: 0;
+            margin-bottom:10px;
+/*            border-bottom: 1px solid #cecece;*/
+            border-radius: 2px;
+            background-image: linear-gradient( 45deg, hsl(0deg 0% 94%) 0%, hsl(344deg 0% 95%) 11%, hsl(344deg 0% 96%) 22%, hsl(344deg 0% 96%) 33%, hsl(344deg 0% 97%) 44%, hsl(344deg 0% 98%) 56%, hsl(344deg 0% 98%) 67%, hsl(344deg 0% 99%) 78%, hsl(344deg 0% 99%) 89%, hsl(0deg 0% 100%) 100% );
+        }
+
+        #UsersHtmlBox > ul > li:nth-child(2n+1) > div {
+            background:#fcfcfc;
+/*            background: linear-gradient(90deg, rgba(243,240,216,1) 0%, rgba(241,241,241,1) 48%, rgba(255,255,255,1) 100%);*/
+        }
+
+/*        #UsersHtmlBox > ul > li:first-child > div {
+            background: linear-gradient(90deg, rgba(224,218,162,1) 0%, rgba(246,244,225,1) 35%, rgba(255,255,255,1) 100%);
+        }*/
+
 @media (max-width: 680px) {
-    #UsersHtmlBox > *:first-child {
+    #UsersHtmlBox > ul > li > div {
         width: calc(100% - 80px);
-        margin: 20px 0;
     }
 }
 
 @media (max-width: 550px) {
-    #UsersHtmlBox > *:first-child {
+    #UsersHtmlBox > ul > li > div {
         width: calc(100% - 30px);
-        margin: 20px 0;
     }
 }
 
-#UsersHtmlBox > *:first-child > * {
+#UsersHtmlBox > ul > li > div > div:first-child {
     float: left;
     width: 100%;
-    height: 30px;
-    margin-bottom: 5px;
-    /*    background: #f9f9f9;*/
-    background-image: linear-gradient( 45deg, hsl(0deg 0% 94%) 0%, hsl(344deg 0% 95%) 11%, hsl(344deg 0% 96%) 22%, hsl(344deg 0% 96%) 33%, hsl(344deg 0% 97%) 44%, hsl(344deg 0% 98%) 56%, hsl(344deg 0% 98%) 67%, hsl(344deg 0% 99%) 78%, hsl(344deg 0% 99%) 89%, hsl(0deg 0% 100%) 100% );
-    border-radius: 2px;
+    height: 33px;
 }
 
-    #UsersHtmlBox > *:first-child > *:nth-child(2n+1) {
-        background: linear-gradient(90deg, rgba(243,240,216,1) 0%, rgba(241,241,241,1) 48%, rgba(255,255,255,1) 100%);
-    }
-
-    #UsersHtmlBox > *:first-child > * > *:first-child {
+    #UsersHtmlBox > ul > li > div > div:first-child > *:first-child {
         float: left;
-        margin-top: 8px;
-        margin-left: 15px;
+        padding: 10px 25px 8px 15px;
+        /*    background: #fff2f2;
+    background: none;
+    background: #f0f0f0;*/
+        border-top-left-radius: 2px;
+        border-top-right-radius: 2px;
     }
 
-        #UsersHtmlBox > *:first-child > * > *:first-child span {
-            float: left;
-            text-transform: uppercase;
-            font-size: 10px;
-            font-weight: 600;
-            letter-spacing: 1px;
-            color: #3f3f3f
-        }
+#UsersHtmlBox > ul > li:nth-child(2n+1) > div > div:first-child > *:first-child {
+    background: #f6efef;
+    background: none;
+    /*    background: #eff0ca;*/
+}
 
-    #UsersHtmlBox > *:first-child > * > ._ArticleN {
-        float: right;
-        margin-top: 8px;
-        padding-right: 10px;
-        margin-right: 10px;
-        border-right: 1px solid #e4e4e4
+#UsersHtmlBox > ul > li:first-child > div > div:first-child > *:first-child {
+    /*    background: #dbd6b3;*/
+}
+
+#UsersHtmlBox ul > li > div > div:first-child > *:first-child span {
+    float: left;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    color: #1e1e1e
+}
+
+#UsersHtmlBox > ul > li > div > div:first-child > ._SubscribB {
+    float: right;
+    margin-top: 13px;
+    margin-right: 15px;
+}
+
+    #UsersHtmlBox > ul > li > div > div:first-child > ._SubscribB > img {
+        height: 14px;
+        opacity: 0.8
     }
 
-        #UsersHtmlBox > *:first-child > * > ._ArticleN > span {
-            float: right;
-            font-size: 10px;
-            color: #666666
-        }
+#UsersHtmlBox > ul > li > div > div:first-child > ._ArticleN {
+    float: right;
+    width: 35px;
+}
 
-    #UsersHtmlBox > *:first-child > * > ._Subscrib {
-        float: right;
-        margin-top: 7px;
-        margin-right: 15px;
+    #UsersHtmlBox > ul > li > div > div:first-child > ._ArticleN > span {
+        float: left;
+        font-size: 10px;
+        line-height: 10px;
+        margin-top: 15px;
+        color: #a3a3a3;
     }
 
-        #UsersHtmlBox > *:first-child > * > ._Subscrib > img {
-            height: 14px;
-            opacity: 0.8
-        }
+#UsersHtmlBox > ul > li > div > div:first-child > ._SubscribB[data-subscribetype="0"] > img {
+    content: url(/PageComponents/UsersHtmlBox/content/doubleCheckBlackBlack.png)
+}
 
-        #UsersHtmlBox > *:first-child > * > ._Subscrib[data-type="0"] > img {
-            content: url(/PageComponents/UsersHtmlBox/content/doubleCheckBlackBlack.png)
-        }
+#UsersHtmlBox > ul > li > div > div:first-child > ._SubscribB[data-subscribetype="1"] > img {
+    content: url(/PageComponents/UsersHtmlBox/content/doubleCheckBlackBlack.png)
+}
 
-        #UsersHtmlBox > *:first-child > * > ._Subscrib[data-type="1"] > img {
-            content: url(/PageComponents/UsersHtmlBox/content/doubleCheckBlackBlack.png)
-        }
+#UsersHtmlBox > ul > li > div > div:first-child > ._SubscribB[data-subscribetype="2"] > img {
+    content: url(/PageComponents/UsersHtmlBox/content/doubleCheckBlackRed.png)
+}
 
-        #UsersHtmlBox > *:first-child > * > ._Subscrib[data-type="2"] > img {
-            content: url(/PageComponents/UsersHtmlBox/content/doubleCheckBlackRed.png)
-        }
+#UsersHtmlBox > ul > li > div > div:first-child > ._SubscribB[data-subscribetype="3"] > img {
+    content: url(/PageComponents/UsersHtmlBox/content/doubleCheckRedBlack.png)
+}
 
-        #UsersHtmlBox > *:first-child > * > ._Subscrib[data-type="3"] > img {
-            content: url(/PageComponents/UsersHtmlBox/content/doubleCheckRedBlack.png)
-        }
+#UsersHtmlBox > ul > li > div > div:first-child > ._SubscribB[data-subscribetype="4"] > img {
+    content: url(/PageComponents/UsersHtmlBox/content/doubleCheckRedRed.png)
+}
 
-        #UsersHtmlBox > *:first-child > * > ._Subscrib[data-type="4"] > img {
-            content: url(/PageComponents/UsersHtmlBox/content/doubleCheckRedRed.png)
-        }
+#UsersHtmlBox > ul > li > div > div:first-child > ._SigninB {
+    float: right;
+    padding-top: 6px;
+    padding-right: 18px;
+    padding-bottom: 6px;
+}
+
+    #UsersHtmlBox > ul > li > div > div:first-child > ._SigninB > img {
+        height: 14px;
+        opacity: 0.4
+    }
+
+#UsersHtmlBox > ul > li > div > div:first-child > ._SettingsB {
+    float: right;
+    padding-top: 6px;
+    padding-right: 18px;
+    padding-bottom: 6px;
+}
+
+    #UsersHtmlBox > ul > li > div > div:first-child > ._SettingsB > img {
+        height: 14px;
+        opacity: 0.4
+    }
+
+    #UsersHtmlBox > ul > li > div > div:nth-child(2) {
+        text-align:left;
+        padding:15px 15px 18px;
+    }
+
+#UsersHtmlBox > ul > li > div > div:nth-child(2) > span {
+    font-size:13px;
+    line-height:16px;
+    color:#3c3c3c
+}

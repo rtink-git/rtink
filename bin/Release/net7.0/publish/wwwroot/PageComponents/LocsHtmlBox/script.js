@@ -11,7 +11,6 @@ export class LocsHtmlBox {
 
     #UrlContent
     //#Take
-    //#List
 
     constructor(target, position, apiUrl, authJWToken) {
         this.#Target = target
@@ -26,7 +25,6 @@ export class LocsHtmlBox {
 
         this.Page = 1;
         //this.#Take = 50;
-        //this.#List = new Array();
     }
 
     async AppendList() {

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "7EuwuFHO5UgySHna0iZrbS/NYxXzMlNyX0aEZPE4NEY=",
+  "Hash": "PBEJwP9jBPj9Q30YCKvRjNTBlf0IKE9pRTw3bcqYYGA=",
   "Source": "RtInk",
   "BasePath": "_content/RtInk",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "RtInk\\wwwroot",
       "Source": "RtInk",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\ArticlesHtmlBox\\content\\arrow-down-black.png",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\PageComponents\\ArticlesHtmlBox\\content\\arrow-down-black.png",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "PageComponents/ArticlesHtmlBox/content/arrow-down-black.png",
       "AssetKind": "All",
@@ -34,10 +34,10 @@
       "OriginalItemSpec": "wwwroot\\PageComponents\\ArticlesHtmlBox\\content\\arrow-down-black.png"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\ArticlesHtmlBox\\content\\bookmark.png",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\PageComponents\\ArticlesHtmlBox\\content\\bookmark.png",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "PageComponents/ArticlesHtmlBox/content/bookmark.png",
       "AssetKind": "All",
@@ -51,10 +51,10 @@
       "OriginalItemSpec": "wwwroot\\PageComponents\\ArticlesHtmlBox\\content\\bookmark.png"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\ArticlesHtmlBox\\content\\bookmarkSelected.png",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\PageComponents\\ArticlesHtmlBox\\content\\bookmarkSelected.png",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "PageComponents/ArticlesHtmlBox/content/bookmarkSelected.png",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\PageComponents\\ArticlesHtmlBox\\content\\bookmarkSelected.png"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\ArticlesHtmlBox\\content\\send.png",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\PageComponents\\ArticlesHtmlBox\\content\\send.png",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "PageComponents/ArticlesHtmlBox/content/send.png",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot\\PageComponents\\ArticlesHtmlBox\\content\\send.png"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\ArticlesHtmlBox\\script.js",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\PageComponents\\ArticlesHtmlBox\\script.js",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "PageComponents/ArticlesHtmlBox/script.js",
       "AssetKind": "All",
@@ -102,10 +102,10 @@
       "OriginalItemSpec": "wwwroot\\PageComponents\\ArticlesHtmlBox\\script.js"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\ArticlesHtmlBox\\style.css",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\PageComponents\\ArticlesHtmlBox\\style.css",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "PageComponents/ArticlesHtmlBox/style.css",
       "AssetKind": "All",
@@ -119,10 +119,10 @@
       "OriginalItemSpec": "wwwroot\\PageComponents\\ArticlesHtmlBox\\style.css"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\CentralHtmlPart\\content\\404.png",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\PageComponents\\CentralHtmlPart\\content\\404.png",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "PageComponents/CentralHtmlPart/content/404.png",
       "AssetKind": "All",
@@ -136,10 +136,10 @@
       "OriginalItemSpec": "wwwroot\\PageComponents\\CentralHtmlPart\\content\\404.png"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\CentralHtmlPart\\content\\error-x.png",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\PageComponents\\CentralHtmlPart\\content\\error-x.png",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "PageComponents/CentralHtmlPart/content/error-x.png",
       "AssetKind": "All",
@@ -153,10 +153,10 @@
       "OriginalItemSpec": "wwwroot\\PageComponents\\CentralHtmlPart\\content\\error-x.png"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\CentralHtmlPart\\content\\loading.gif",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\PageComponents\\CentralHtmlPart\\content\\loading.gif",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "PageComponents/CentralHtmlPart/content/loading.gif",
       "AssetKind": "All",
@@ -170,10 +170,10 @@
       "OriginalItemSpec": "wwwroot\\PageComponents\\CentralHtmlPart\\content\\loading.gif"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\CentralHtmlPart\\script.js",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\PageComponents\\CentralHtmlPart\\script.js",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "PageComponents/CentralHtmlPart/script.js",
       "AssetKind": "All",
@@ -187,10 +187,10 @@
       "OriginalItemSpec": "wwwroot\\PageComponents\\CentralHtmlPart\\script.js"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\CentralHtmlPart\\style.css",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\PageComponents\\CentralHtmlPart\\style.css",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "PageComponents/CentralHtmlPart/style.css",
       "AssetKind": "All",
@@ -204,10 +204,10 @@
       "OriginalItemSpec": "wwwroot\\PageComponents\\CentralHtmlPart\\style.css"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\CentralInfHtmlBox\\content\\404.png",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\PageComponents\\CentralInfHtmlBox\\content\\404.png",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "PageComponents/CentralInfHtmlBox/content/404.png",
       "AssetKind": "All",
@@ -221,10 +221,10 @@
       "OriginalItemSpec": "wwwroot\\PageComponents\\CentralInfHtmlBox\\content\\404.png"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\CentralInfHtmlBox\\content\\loading.gif",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\PageComponents\\CentralInfHtmlBox\\content\\loading.gif",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "PageComponents/CentralInfHtmlBox/content/loading.gif",
       "AssetKind": "All",
@@ -238,10 +238,10 @@
       "OriginalItemSpec": "wwwroot\\PageComponents\\CentralInfHtmlBox\\content\\loading.gif"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\CentralInfHtmlBox\\content\\loop.png",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\PageComponents\\CentralInfHtmlBox\\content\\loop.png",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "PageComponents/CentralInfHtmlBox/content/loop.png",
       "AssetKind": "All",
@@ -255,10 +255,10 @@
       "OriginalItemSpec": "wwwroot\\PageComponents\\CentralInfHtmlBox\\content\\loop.png"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\CentralInfHtmlBox\\script.js",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\PageComponents\\CentralInfHtmlBox\\script.js",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "PageComponents/CentralInfHtmlBox/script.js",
       "AssetKind": "All",
@@ -272,10 +272,10 @@
       "OriginalItemSpec": "wwwroot\\PageComponents\\CentralInfHtmlBox\\script.js"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\CentralInfHtmlBox\\style.css",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\PageComponents\\CentralInfHtmlBox\\style.css",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "PageComponents/CentralInfHtmlBox/style.css",
       "AssetKind": "All",
@@ -289,10 +289,10 @@
       "OriginalItemSpec": "wwwroot\\PageComponents\\CentralInfHtmlBox\\style.css"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\HeaderDescriptionHtmlBox\\script.js",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\PageComponents\\HeaderDescriptionHtmlBox\\script.js",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "PageComponents/HeaderDescriptionHtmlBox/script.js",
       "AssetKind": "All",
@@ -306,10 +306,10 @@
       "OriginalItemSpec": "wwwroot\\PageComponents\\HeaderDescriptionHtmlBox\\script.js"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\HeaderDescriptionHtmlBox\\style.css",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\PageComponents\\HeaderDescriptionHtmlBox\\style.css",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "PageComponents/HeaderDescriptionHtmlBox/style.css",
       "AssetKind": "All",
@@ -323,10 +323,10 @@
       "OriginalItemSpec": "wwwroot\\PageComponents\\HeaderDescriptionHtmlBox\\style.css"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\HeaderHtmlBox\\content\\logo.png",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\PageComponents\\HeaderHtmlBox\\content\\logo.png",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "PageComponents/HeaderHtmlBox/content/logo.png",
       "AssetKind": "All",
@@ -340,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\PageComponents\\HeaderHtmlBox\\content\\logo.png"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\HeaderHtmlBox\\content\\test\\category.png",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\PageComponents\\HeaderHtmlBox\\content\\test\\category.png",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "PageComponents/HeaderHtmlBox/content/test/category.png",
       "AssetKind": "All",
@@ -357,10 +357,10 @@
       "OriginalItemSpec": "wwwroot\\PageComponents\\HeaderHtmlBox\\content\\test\\category.png"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\HeaderHtmlBox\\content\\test\\login.png",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\PageComponents\\HeaderHtmlBox\\content\\test\\login.png",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "PageComponents/HeaderHtmlBox/content/test/login.png",
       "AssetKind": "All",
@@ -374,10 +374,10 @@
       "OriginalItemSpec": "wwwroot\\PageComponents\\HeaderHtmlBox\\content\\test\\login.png"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\HeaderHtmlBox\\content\\test\\menu.png",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\PageComponents\\HeaderHtmlBox\\content\\test\\menu.png",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "PageComponents/HeaderHtmlBox/content/test/menu.png",
       "AssetKind": "All",
@@ -391,10 +391,10 @@
       "OriginalItemSpec": "wwwroot\\PageComponents\\HeaderHtmlBox\\content\\test\\menu.png"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\HeaderHtmlBox\\script.js",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\PageComponents\\HeaderHtmlBox\\script.js",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "PageComponents/HeaderHtmlBox/script.js",
       "AssetKind": "All",
@@ -408,10 +408,10 @@
       "OriginalItemSpec": "wwwroot\\PageComponents\\HeaderHtmlBox\\script.js"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\HeaderHtmlBox\\style.css",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\PageComponents\\HeaderHtmlBox\\style.css",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "PageComponents/HeaderHtmlBox/style.css",
       "AssetKind": "All",
@@ -425,10 +425,10 @@
       "OriginalItemSpec": "wwwroot\\PageComponents\\HeaderHtmlBox\\style.css"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\LocsHtmlBox\\content\\arrow-down-black.png",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\PageComponents\\LocsHtmlBox\\content\\arrow-down-black.png",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "PageComponents/LocsHtmlBox/content/arrow-down-black.png",
       "AssetKind": "All",
@@ -442,10 +442,10 @@
       "OriginalItemSpec": "wwwroot\\PageComponents\\LocsHtmlBox\\content\\arrow-down-black.png"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\LocsHtmlBox\\content\\pin.png",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\PageComponents\\LocsHtmlBox\\content\\pin.png",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "PageComponents/LocsHtmlBox/content/pin.png",
       "AssetKind": "All",
@@ -459,10 +459,10 @@
       "OriginalItemSpec": "wwwroot\\PageComponents\\LocsHtmlBox\\content\\pin.png"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\LocsHtmlBox\\content\\pin-checked-red.png",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\PageComponents\\LocsHtmlBox\\content\\pin-checked-red.png",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "PageComponents/LocsHtmlBox/content/pin-checked-red.png",
       "AssetKind": "All",
@@ -476,10 +476,10 @@
       "OriginalItemSpec": "wwwroot\\PageComponents\\LocsHtmlBox\\content\\pin-checked-red.png"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\LocsHtmlBox\\script.js",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\PageComponents\\LocsHtmlBox\\script.js",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "PageComponents/LocsHtmlBox/script.js",
       "AssetKind": "All",
@@ -493,10 +493,10 @@
       "OriginalItemSpec": "wwwroot\\PageComponents\\LocsHtmlBox\\script.js"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\LocsHtmlBox\\style.css",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\PageComponents\\LocsHtmlBox\\style.css",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "PageComponents/LocsHtmlBox/style.css",
       "AssetKind": "All",
@@ -510,10 +510,10 @@
       "OriginalItemSpec": "wwwroot\\PageComponents\\LocsHtmlBox\\style.css"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\MoreButtonHtmlBox\\script.js",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\PageComponents\\MoreButtonHtmlBox\\script.js",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "PageComponents/MoreButtonHtmlBox/script.js",
       "AssetKind": "All",
@@ -527,10 +527,10 @@
       "OriginalItemSpec": "wwwroot\\PageComponents\\MoreButtonHtmlBox\\script.js"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\MoreButtonHtmlBox\\style.css",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\PageComponents\\MoreButtonHtmlBox\\style.css",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "PageComponents/MoreButtonHtmlBox/style.css",
       "AssetKind": "All",
@@ -544,10 +544,10 @@
       "OriginalItemSpec": "wwwroot\\PageComponents\\MoreButtonHtmlBox\\style.css"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\Page\\script.js",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\PageComponents\\Page\\script.js",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "PageComponents/Page/script.js",
       "AssetKind": "All",
@@ -561,10 +561,10 @@
       "OriginalItemSpec": "wwwroot\\PageComponents\\Page\\script.js"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\Page\\style.css",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\PageComponents\\Page\\style.css",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "PageComponents/Page/style.css",
       "AssetKind": "All",
@@ -578,10 +578,10 @@
       "OriginalItemSpec": "wwwroot\\PageComponents\\Page\\style.css"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\SearchHeaderQHtmlBox\\content\\search.png",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\PageComponents\\SearchHeaderQHtmlBox\\content\\search.png",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "PageComponents/SearchHeaderQHtmlBox/content/search.png",
       "AssetKind": "All",
@@ -595,10 +595,10 @@
       "OriginalItemSpec": "wwwroot\\PageComponents\\SearchHeaderQHtmlBox\\content\\search.png"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\SearchHeaderQHtmlBox\\script.js",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\PageComponents\\SearchHeaderQHtmlBox\\script.js",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "PageComponents/SearchHeaderQHtmlBox/script.js",
       "AssetKind": "All",
@@ -612,10 +612,10 @@
       "OriginalItemSpec": "wwwroot\\PageComponents\\SearchHeaderQHtmlBox\\script.js"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\SearchHeaderQHtmlBox\\style.css",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\PageComponents\\SearchHeaderQHtmlBox\\style.css",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "PageComponents/SearchHeaderQHtmlBox/style.css",
       "AssetKind": "All",
@@ -629,10 +629,10 @@
       "OriginalItemSpec": "wwwroot\\PageComponents\\SearchHeaderQHtmlBox\\style.css"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\Sessions.js",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\PageComponents\\Sessions.js",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "PageComponents/Sessions.js",
       "AssetKind": "All",
@@ -646,10 +646,10 @@
       "OriginalItemSpec": "wwwroot\\PageComponents\\Sessions.js"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\UsersHtmlBox\\content\\doubleCheckBlackBlack.png",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\PageComponents\\UsersHtmlBox\\content\\doubleCheckBlackBlack.png",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "PageComponents/UsersHtmlBox/content/doubleCheckBlackBlack.png",
       "AssetKind": "All",
@@ -663,10 +663,10 @@
       "OriginalItemSpec": "wwwroot\\PageComponents\\UsersHtmlBox\\content\\doubleCheckBlackBlack.png"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\UsersHtmlBox\\content\\doubleCheckBlackRed.png",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\PageComponents\\UsersHtmlBox\\content\\doubleCheckBlackRed.png",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "PageComponents/UsersHtmlBox/content/doubleCheckBlackRed.png",
       "AssetKind": "All",
@@ -680,10 +680,10 @@
       "OriginalItemSpec": "wwwroot\\PageComponents\\UsersHtmlBox\\content\\doubleCheckBlackRed.png"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\UsersHtmlBox\\content\\doubleCheckRedBlack.png",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\PageComponents\\UsersHtmlBox\\content\\doubleCheckRedBlack.png",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "PageComponents/UsersHtmlBox/content/doubleCheckRedBlack.png",
       "AssetKind": "All",
@@ -697,10 +697,10 @@
       "OriginalItemSpec": "wwwroot\\PageComponents\\UsersHtmlBox\\content\\doubleCheckRedBlack.png"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\UsersHtmlBox\\content\\doubleCheckRedRed.png",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\PageComponents\\UsersHtmlBox\\content\\doubleCheckRedRed.png",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "PageComponents/UsersHtmlBox/content/doubleCheckRedRed.png",
       "AssetKind": "All",
@@ -714,10 +714,44 @@
       "OriginalItemSpec": "wwwroot\\PageComponents\\UsersHtmlBox\\content\\doubleCheckRedRed.png"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\UsersHtmlBox\\script.js",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\PageComponents\\UsersHtmlBox\\content\\login.png",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
+      "BasePath": "_content/RtInk",
+      "RelativePath": "PageComponents/UsersHtmlBox/content/login.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\PageComponents\\UsersHtmlBox\\content\\login.png"
+    },
+    {
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\PageComponents\\UsersHtmlBox\\content\\settings.png",
+      "SourceId": "RtInk",
+      "SourceType": "Discovered",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
+      "BasePath": "_content/RtInk",
+      "RelativePath": "PageComponents/UsersHtmlBox/content/settings.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\PageComponents\\UsersHtmlBox\\content\\settings.png"
+    },
+    {
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\PageComponents\\UsersHtmlBox\\script.js",
+      "SourceId": "RtInk",
+      "SourceType": "Discovered",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "PageComponents/UsersHtmlBox/script.js",
       "AssetKind": "All",
@@ -731,10 +765,10 @@
       "OriginalItemSpec": "wwwroot\\PageComponents\\UsersHtmlBox\\script.js"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\UsersHtmlBox\\style.css",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\PageComponents\\UsersHtmlBox\\style.css",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "PageComponents/UsersHtmlBox/style.css",
       "AssetKind": "All",
@@ -748,10 +782,10 @@
       "OriginalItemSpec": "wwwroot\\PageComponents\\UsersHtmlBox\\style.css"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\i\\content\\add-friend.png",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\Pages\\i\\content\\add-friend.png",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "Pages/i/content/add-friend.png",
       "AssetKind": "All",
@@ -765,10 +799,10 @@
       "OriginalItemSpec": "wwwroot\\Pages\\i\\content\\add-friend.png"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\i\\content\\arrow-down-black.png",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\Pages\\i\\content\\arrow-down-black.png",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "Pages/i/content/arrow-down-black.png",
       "AssetKind": "All",
@@ -782,10 +816,10 @@
       "OriginalItemSpec": "wwwroot\\Pages\\i\\content\\arrow-down-black.png"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\i\\content\\category.png",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\Pages\\i\\content\\category.png",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "Pages/i/content/category.png",
       "AssetKind": "All",
@@ -799,10 +833,10 @@
       "OriginalItemSpec": "wwwroot\\Pages\\i\\content\\category.png"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\i\\content\\categoryRed.png",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\Pages\\i\\content\\categoryRed.png",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "Pages/i/content/categoryRed.png",
       "AssetKind": "All",
@@ -816,10 +850,10 @@
       "OriginalItemSpec": "wwwroot\\Pages\\i\\content\\categoryRed.png"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\i\\content\\check.png",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\Pages\\i\\content\\check.png",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "Pages/i/content/check.png",
       "AssetKind": "All",
@@ -833,10 +867,10 @@
       "OriginalItemSpec": "wwwroot\\Pages\\i\\content\\check.png"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\i\\content\\cross.png",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\Pages\\i\\content\\cross.png",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "Pages/i/content/cross.png",
       "AssetKind": "All",
@@ -850,10 +884,10 @@
       "OriginalItemSpec": "wwwroot\\Pages\\i\\content\\cross.png"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\i\\content\\delete-friend.png",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\Pages\\i\\content\\delete-friend.png",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "Pages/i/content/delete-friend.png",
       "AssetKind": "All",
@@ -867,10 +901,10 @@
       "OriginalItemSpec": "wwwroot\\Pages\\i\\content\\delete-friend.png"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\i\\content\\doubleCheckBlackBlack.png",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\Pages\\i\\content\\doubleCheckBlackBlack.png",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "Pages/i/content/doubleCheckBlackBlack.png",
       "AssetKind": "All",
@@ -884,10 +918,10 @@
       "OriginalItemSpec": "wwwroot\\Pages\\i\\content\\doubleCheckBlackBlack.png"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\i\\content\\doubleCheckBlackRed.png",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\Pages\\i\\content\\doubleCheckBlackRed.png",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "Pages/i/content/doubleCheckBlackRed.png",
       "AssetKind": "All",
@@ -901,10 +935,10 @@
       "OriginalItemSpec": "wwwroot\\Pages\\i\\content\\doubleCheckBlackRed.png"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\i\\content\\doubleCheckRedBlack.png",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\Pages\\i\\content\\doubleCheckRedBlack.png",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "Pages/i/content/doubleCheckRedBlack.png",
       "AssetKind": "All",
@@ -918,10 +952,10 @@
       "OriginalItemSpec": "wwwroot\\Pages\\i\\content\\doubleCheckRedBlack.png"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\i\\content\\doubleCheckRedRed.png",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\Pages\\i\\content\\doubleCheckRedRed.png",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "Pages/i/content/doubleCheckRedRed.png",
       "AssetKind": "All",
@@ -935,10 +969,10 @@
       "OriginalItemSpec": "wwwroot\\Pages\\i\\content\\doubleCheckRedRed.png"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\i\\content\\edit.png",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\Pages\\i\\content\\edit.png",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "Pages/i/content/edit.png",
       "AssetKind": "All",
@@ -952,10 +986,10 @@
       "OriginalItemSpec": "wwwroot\\Pages\\i\\content\\edit.png"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\i\\content\\edit-text.png",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\Pages\\i\\content\\edit-text.png",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "Pages/i/content/edit-text.png",
       "AssetKind": "All",
@@ -969,10 +1003,10 @@
       "OriginalItemSpec": "wwwroot\\Pages\\i\\content\\edit-text.png"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\i\\content\\empty-folder.png",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\Pages\\i\\content\\empty-folder.png",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "Pages/i/content/empty-folder.png",
       "AssetKind": "All",
@@ -986,10 +1020,10 @@
       "OriginalItemSpec": "wwwroot\\Pages\\i\\content\\empty-folder.png"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\i\\content\\home.png",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\Pages\\i\\content\\home.png",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "Pages/i/content/home.png",
       "AssetKind": "All",
@@ -1003,10 +1037,10 @@
       "OriginalItemSpec": "wwwroot\\Pages\\i\\content\\home.png"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\i\\content\\house.png",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\Pages\\i\\content\\house.png",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "Pages/i/content/house.png",
       "AssetKind": "All",
@@ -1020,10 +1054,10 @@
       "OriginalItemSpec": "wwwroot\\Pages\\i\\content\\house.png"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\i\\content\\loading-gif-transparent-13.gif",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\Pages\\i\\content\\loading-gif-transparent-13.gif",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "Pages/i/content/loading-gif-transparent-13.gif",
       "AssetKind": "All",
@@ -1037,10 +1071,10 @@
       "OriginalItemSpec": "wwwroot\\Pages\\i\\content\\loading-gif-transparent-13.gif"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\i\\content\\location.png",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\Pages\\i\\content\\location.png",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "Pages/i/content/location.png",
       "AssetKind": "All",
@@ -1054,10 +1088,10 @@
       "OriginalItemSpec": "wwwroot\\Pages\\i\\content\\location.png"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\i\\content\\login.png",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\Pages\\i\\content\\login.png",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "Pages/i/content/login.png",
       "AssetKind": "All",
@@ -1071,10 +1105,10 @@
       "OriginalItemSpec": "wwwroot\\Pages\\i\\content\\login.png"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\i\\content\\loop.png",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\Pages\\i\\content\\loop.png",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "Pages/i/content/loop.png",
       "AssetKind": "All",
@@ -1088,10 +1122,10 @@
       "OriginalItemSpec": "wwwroot\\Pages\\i\\content\\loop.png"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\i\\content\\menu.png",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\Pages\\i\\content\\menu.png",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "Pages/i/content/menu.png",
       "AssetKind": "All",
@@ -1105,10 +1139,10 @@
       "OriginalItemSpec": "wwwroot\\Pages\\i\\content\\menu.png"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\i\\content\\plus.png",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\Pages\\i\\content\\plus.png",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "Pages/i/content/plus.png",
       "AssetKind": "All",
@@ -1122,10 +1156,10 @@
       "OriginalItemSpec": "wwwroot\\Pages\\i\\content\\plus.png"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\i\\content\\reload.png",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\Pages\\i\\content\\reload.png",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "Pages/i/content/reload.png",
       "AssetKind": "All",
@@ -1139,10 +1173,10 @@
       "OriginalItemSpec": "wwwroot\\Pages\\i\\content\\reload.png"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\i\\content\\rotate.png",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\Pages\\i\\content\\rotate.png",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "Pages/i/content/rotate.png",
       "AssetKind": "All",
@@ -1156,10 +1190,10 @@
       "OriginalItemSpec": "wwwroot\\Pages\\i\\content\\rotate.png"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\i\\content\\search.png",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\Pages\\i\\content\\search.png",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "Pages/i/content/search.png",
       "AssetKind": "All",
@@ -1173,10 +1207,10 @@
       "OriginalItemSpec": "wwwroot\\Pages\\i\\content\\search.png"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\i\\content\\settings.png",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\Pages\\i\\content\\settings.png",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "Pages/i/content/settings.png",
       "AssetKind": "All",
@@ -1190,10 +1224,10 @@
       "OriginalItemSpec": "wwwroot\\Pages\\i\\content\\settings.png"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\i\\content\\spaceship.png",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\Pages\\i\\content\\spaceship.png",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "Pages/i/content/spaceship.png",
       "AssetKind": "All",
@@ -1207,10 +1241,10 @@
       "OriginalItemSpec": "wwwroot\\Pages\\i\\content\\spaceship.png"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\i\\content\\testProfile.jpg",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\Pages\\i\\content\\testProfile.jpg",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "Pages/i/content/testProfile.jpg",
       "AssetKind": "All",
@@ -1224,10 +1258,10 @@
       "OriginalItemSpec": "wwwroot\\Pages\\i\\content\\testProfile.jpg"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\i\\content\\tick.png",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\Pages\\i\\content\\tick.png",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "Pages/i/content/tick.png",
       "AssetKind": "All",
@@ -1241,10 +1275,10 @@
       "OriginalItemSpec": "wwwroot\\Pages\\i\\content\\tick.png"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\i\\content\\undo.png",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\Pages\\i\\content\\undo.png",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "Pages/i/content/undo.png",
       "AssetKind": "All",
@@ -1258,10 +1292,10 @@
       "OriginalItemSpec": "wwwroot\\Pages\\i\\content\\undo.png"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\i\\content\\user.png",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\Pages\\i\\content\\user.png",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "Pages/i/content/user.png",
       "AssetKind": "All",
@@ -1275,10 +1309,10 @@
       "OriginalItemSpec": "wwwroot\\Pages\\i\\content\\user.png"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\i\\content\\user-settings.png",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\Pages\\i\\content\\user-settings.png",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "Pages/i/content/user-settings.png",
       "AssetKind": "All",
@@ -1292,10 +1326,10 @@
       "OriginalItemSpec": "wwwroot\\Pages\\i\\content\\user-settings.png"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\i\\script.js",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\Pages\\i\\script.js",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "Pages/i/script.js",
       "AssetKind": "All",
@@ -1309,10 +1343,10 @@
       "OriginalItemSpec": "wwwroot\\Pages\\i\\script.js"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\i\\style.css",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\Pages\\i\\style.css",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "Pages/i/style.css",
       "AssetKind": "All",
@@ -1326,10 +1360,10 @@
       "OriginalItemSpec": "wwwroot\\Pages\\i\\style.css"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\Locations\\content\\check.png",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\Pages\\Locations\\content\\check.png",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "Pages/Locations/content/check.png",
       "AssetKind": "All",
@@ -1343,10 +1377,10 @@
       "OriginalItemSpec": "wwwroot\\Pages\\Locations\\content\\check.png"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\Locations\\content\\close.png",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\Pages\\Locations\\content\\close.png",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "Pages/Locations/content/close.png",
       "AssetKind": "All",
@@ -1360,10 +1394,10 @@
       "OriginalItemSpec": "wwwroot\\Pages\\Locations\\content\\close.png"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\Locations\\content\\search.png",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\Pages\\Locations\\content\\search.png",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "Pages/Locations/content/search.png",
       "AssetKind": "All",
@@ -1377,10 +1411,10 @@
       "OriginalItemSpec": "wwwroot\\Pages\\Locations\\content\\search.png"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\Locations\\content\\undo.png",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\Pages\\Locations\\content\\undo.png",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "Pages/Locations/content/undo.png",
       "AssetKind": "All",
@@ -1394,10 +1428,10 @@
       "OriginalItemSpec": "wwwroot\\Pages\\Locations\\content\\undo.png"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\Locations\\script.js",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\Pages\\Locations\\script.js",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "Pages/Locations/script.js",
       "AssetKind": "All",
@@ -1411,10 +1445,10 @@
       "OriginalItemSpec": "wwwroot\\Pages\\Locations\\script.js"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\Locations\\style.css",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\Pages\\Locations\\style.css",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "Pages/Locations/style.css",
       "AssetKind": "All",
@@ -1428,10 +1462,10 @@
       "OriginalItemSpec": "wwwroot\\Pages\\Locations\\style.css"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\Users\\content\\add-friend.png",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\Pages\\Users\\content\\add-friend.png",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "Pages/Users/content/add-friend.png",
       "AssetKind": "All",
@@ -1445,10 +1479,10 @@
       "OriginalItemSpec": "wwwroot\\Pages\\Users\\content\\add-friend.png"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\Users\\content\\bookmark.png",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\Pages\\Users\\content\\bookmark.png",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "Pages/Users/content/bookmark.png",
       "AssetKind": "All",
@@ -1462,10 +1496,10 @@
       "OriginalItemSpec": "wwwroot\\Pages\\Users\\content\\bookmark.png"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\Users\\content\\comment.png",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\Pages\\Users\\content\\comment.png",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "Pages/Users/content/comment.png",
       "AssetKind": "All",
@@ -1479,10 +1513,10 @@
       "OriginalItemSpec": "wwwroot\\Pages\\Users\\content\\comment.png"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\Users\\content\\delete-friend.png",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\Pages\\Users\\content\\delete-friend.png",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "Pages/Users/content/delete-friend.png",
       "AssetKind": "All",
@@ -1496,10 +1530,10 @@
       "OriginalItemSpec": "wwwroot\\Pages\\Users\\content\\delete-friend.png"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\Users\\content\\location.png",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\Pages\\Users\\content\\location.png",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "Pages/Users/content/location.png",
       "AssetKind": "All",
@@ -1513,10 +1547,27 @@
       "OriginalItemSpec": "wwwroot\\Pages\\Users\\content\\location.png"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\Users\\content\\logout.png",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\Pages\\Users\\content\\login.png",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
+      "BasePath": "_content/RtInk",
+      "RelativePath": "Pages/Users/content/login.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Pages\\Users\\content\\login.png"
+    },
+    {
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\Pages\\Users\\content\\logout.png",
+      "SourceId": "RtInk",
+      "SourceType": "Discovered",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "Pages/Users/content/logout.png",
       "AssetKind": "All",
@@ -1530,10 +1581,10 @@
       "OriginalItemSpec": "wwwroot\\Pages\\Users\\content\\logout.png"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\Users\\content\\search.png",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\Pages\\Users\\content\\search.png",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "Pages/Users/content/search.png",
       "AssetKind": "All",
@@ -1547,10 +1598,10 @@
       "OriginalItemSpec": "wwwroot\\Pages\\Users\\content\\search.png"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\Users\\content\\undo.png",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\Pages\\Users\\content\\undo.png",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "Pages/Users/content/undo.png",
       "AssetKind": "All",
@@ -1564,10 +1615,10 @@
       "OriginalItemSpec": "wwwroot\\Pages\\Users\\content\\undo.png"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\Users\\content\\user.png",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\Pages\\Users\\content\\user.png",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "Pages/Users/content/user.png",
       "AssetKind": "All",
@@ -1581,10 +1632,10 @@
       "OriginalItemSpec": "wwwroot\\Pages\\Users\\content\\user.png"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\Users\\script.js",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\Pages\\Users\\script.js",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "Pages/Users/script.js",
       "AssetKind": "All",
@@ -1598,10 +1649,10 @@
       "OriginalItemSpec": "wwwroot\\Pages\\Users\\script.js"
     },
     {
-      "Identity": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\Users\\style.css",
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\Pages\\Users\\style.css",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep clone\\rtink-git\\rtink\\wwwroot\\",
       "BasePath": "_content/RtInk",
       "RelativePath": "Pages/Users/style.css",
       "AssetKind": "All",

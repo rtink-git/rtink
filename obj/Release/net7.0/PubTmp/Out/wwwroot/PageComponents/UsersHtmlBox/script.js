@@ -6,19 +6,20 @@ export class UsersHtmlBox {
     #Position
     #ApiUrl
     #AuthJWToken
+    #RoleId
 
     Name
     Page
 
     #UrlContent
     #Take
-    #List
 
-    constructor(target, position, apiUrl, authJWToken) {
+    constructor(target, position, apiUrl, authJWToken, roleId) {
         this.#Target = target
         this.#Position = position
         this.#ApiUrl = apiUrl
         this.#AuthJWToken = authJWToken
+        this.#RoleId = roleId
 
         this.Name = "UsersHtmlBox"
         let url = "/PageComponents/" + this.Name;
@@ -27,22 +28,23 @@ export class UsersHtmlBox {
 
         this.Page = 1;
         this.#Take = 50;
-        this.#List = new Array();
     }
 
     async AppendList() {
         let list = await this.#ApiGetList()
-        list.forEach(e => { this.#List.push({ "login": e.login, "articleNumber": e.artn, "subscribeType": e.subscribeType, "appended": false }); });
-
-        if (this.#List != null && this.#List.length > 0)
+        if (list != null && list.length > 0)
             if (this.Page == 1) {
                 this.#Target.insertAdjacentHTML(this.#Position, this.#HtmlPart())
-                if (this.#List.length == this.#Take) {
+
+                if (list.length == this.#Take)
                     new MoreButtonHtmlBox(document.getElementById(this.Name), "beforeend")
-                }
             }
 
-        this.#LisHtmlBox()
+        list.forEach(e => {
+            document.querySelector("#" + this.Name + " > ul").insertAdjacentHTML("beforeend", this.#ItemHtmlBox(e.login, e.artn, e.title))
+            if (this.#RoleId > 0)
+                this.#SubscribButtonItemHtmlBox(e.login, e.subscribeType)
+        })
 
         this.Page++;
     }
@@ -56,39 +58,107 @@ export class UsersHtmlBox {
     #HtmlPart() {
         let html = "\
         <div id=\"" + this.Name + "\">\
-            <div>\
-            </div>\
+            <ul>\
+            </ul>\
         </div>"
 
         return html;
     }
 
-    #LisHtmlBox() {
-        this.#List.forEach(e => {
-            if (!e.appended) {
-                e.append = true;
+    #ItemHtmlBox(login, articleN, title) {
+        let href = "/i/-" + login
 
-                let html = "\
-                <div data-login=\"" + e.login + "\">\
-                    <a href=\"/i/-" + e.login + "\">\
-                        <span>\
-                        " + e.login + "\
-                        </span>\
-                    </a>\
-                    <a class=\"_Subscrib\" data-type=\"" + e.subscribeType + "\">\
-                        <img />\
-                    </a>\
-                    <div class=\"_ArticleN\">\
-                        <span>\
-                    " + e.articleNumber + "\
-                        </span>\
-                    </div>\
+        let articleHB = "";
+        if (articleN > 0)
+            articleHB =
+                "<div class=\"_ArticleN\">\
+                    <span>\
+                    " + articleN + "\
+                    </span>\
                 </div>"
 
-                document.querySelector("#" + this.Name + " > *:first-child").insertAdjacentHTML("beforeend", html)
+        let html = "\
+        <li>\
+            <div data-login=\"" + login + "\">\
+                <div>\
+                    <a href =\"" + href + "\">\
+                        <span>\
+                        " + login + "\
+                        </span>\
+                    </a>\
+                    " + articleHB + "\
+                </div>\
+                <div>\
+                    <span>\
+                    " + title + "\
+                    </span>\
+                </div>\
+            </div>\
+        </li>"
+
+        return html;
+    }
+
+    #SubscribButtonItemHtmlBox(login, subscribeType) {
+        let html = "\
+        <a class=\"_SubscribB\" data-subscribeType=\"" + subscribeType + "\">\
+            <img />\
+        </a>"
+
+        document.querySelector("#" + this.Name + " > ul > li > div[data-login=\"" + login + "\"] > div:first-child > *:nth-child(1)").insertAdjacentHTML('afterend', html)
+
+        let trg = document.querySelector("#" + this.Name + " > ul > li > div[data-login=\"" + login + "\"] ._SubscribB")
+        trg.addEventListener('click', async (event) => {
+            let usb = await this.#ApiUserSubscrib(login)
+            if (usb.ok) {
+                if (subscribeType == 0) {
+                    subscribeType = 2
+                    trg.setAttribute("data-subscribeType", subscribeType)
+                }
+                else if (subscribeType == 2) {
+                    subscribeType = 0
+                    trg.setAttribute("data-subscribeType", subscribeType)
+                }
+                else if (subscribeType == 3) {
+                    subscribeType = 4
+                    trg.setAttribute("data-subscribeType", subscribeType)
+                }
+                else if (subscribeType == 4) {
+                    subscribeType = 3
+                    trg.setAttribute("data-subscribeType", subscribeType)
+                }
             }
         });
     }
+
+    //#SigninButtonHtmlBox(login) {
+    //    localStorage.setItem("SessionRefrshRequired", "true")
+    //    let html = "\
+    //    <a class=\"_SigninB\">\
+    //        <img src=\"" + this.#UrlContent + "/login.png\"/>\
+    //    </a>"
+
+    //    document.querySelector("#" + this.Name + " > ul > li > div[data-login=\"" + login + "\"]").insertAdjacentHTML('beforeend', html)
+
+    //    document.querySelector("#" + this.Name + " > ul > li > div[data-login=\"" + login + "\"] ._SigninB").addEventListener('click', async (event) => {
+    //        window.location.href = this.#ApiUrl + "/Base/Authorization/Signin/Google?SessionToken=" + this.#AuthJWToken + "&RedirectUrl=" + document.URL
+    //    });
+    //}
+
+    //#SettingsButtonHtmlBox(login) {
+    //    let html = "\
+    //    <a class=\"_SettingsB\">\
+    //        <img src=\"" + this.#UrlContent + "/settings.png\"/>\
+    //    </a>"
+
+    //    document.querySelector("#" + this.Name + " > ul > li > div[data-login=\"" + login + "\"]").insertAdjacentHTML('beforeend', html)
+    //}
+
+
+
+
+
+
 
 
 
@@ -104,7 +174,12 @@ export class UsersHtmlBox {
         return null;
     }
 
-    async #ApiGetAuthUserProfile() {
-
+    async #ApiUserSubscrib(userLogin) {
+        const response = await fetch(this.#ApiUrl + "/Base/User/Subscrib?userLogin=" + userLogin, {
+            method: "POST",
+            headers: { "Accept": "application/json", "Authorization": "Bearer " + this.#AuthJWToken }
+        });
+        if (response.ok === true) return await response.json();
+        return null;
     }
 }
