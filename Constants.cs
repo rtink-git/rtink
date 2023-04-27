@@ -3,8 +3,8 @@
     internal class Constants
     {
         internal static string fls = @"C:\wecan\";
-        internal static string urlApi = "https://api.rt.ink";
-        //internal static string urlApi = "https://localhost:7025";
+        //internal static string urlApi = "https://api.rt.ink";
+        internal static string urlApi = "https://localhost:7025";
         
         public static string apiRtInkWebPartStr = "/RtInk";
         public static string apiKeyRtInk = "";

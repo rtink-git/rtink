@@ -157,10 +157,7 @@ else if (typeApiPageI == 3) {
 }
 
 let articlesHtmlBox = new ArticlesHtmlBox(document.getElementById("SearchHeaderQHtmlBox"), "afterend", search, apiUrl, authJWToken)
-
-////document.getElementById(centralInfHtmlBox.id).remove()
-
-await articlesHtmlBox.ListAppend()
+await articlesHtmlBox.AppendList()
 
 
 
@@ -172,7 +169,7 @@ let prevScrollY = window.scrollY
 document.addEventListener('scroll', async (event) => {
     if (window.scrollY >= prevScrollY && document.body.scrollHeight - window.scrollY < document.body.clientHeight + 100) {
         prevScrollY = window.scrollY + 200
-        await articlesHtmlBox.ListAppend()
+        await articlesHtmlBox.AppendList()
     }
 });
 
@@ -181,28 +178,29 @@ document.getElementById("SearchBM").addEventListener('click', async (event) => {
     document.getElementById("SearchHeaderQHtmlBox").style.display = "block";
 });
 
-document.getElementById("SubsribB").addEventListener('click', async (event) => {
-    let userSubscrib = await ApiUserSubscrib(userLogin)
+if (document.getElementById("SubsribB") != null)
+    document.getElementById("SubsribB").addEventListener('click', async (event) => {
+        let userSubscrib = await ApiUserSubscrib(userLogin)
 
-    if (userSubscrib.ok) {
-        if (subscribType == 0) {
-            subscribType = 2
-            document.querySelector("#SubsribB img").setAttribute("src", iPageUrlContent + "/doubleCheckBlackRed.png");
+        if (userSubscrib.ok) {
+            if (subscribType == 0) {
+                subscribType = 2
+                document.querySelector("#SubsribB img").setAttribute("src", iPageUrlContent + "/doubleCheckBlackRed.png");
+            }
+            else if (subscribType == 2) {
+                subscribType = 0
+                document.querySelector("#SubsribB img").setAttribute("src", iPageUrlContent + "/doubleCheckBlackBlack.png");
+            }
+            else if (subscribType == 3) {
+                subscribType = 4
+                document.querySelector("#SubsribB img").setAttribute("src", iPageUrlContent + "/doubleCheckRedRed.png");
+            }
+            else if (subscribType == 4) {
+                subscribType = 3
+                document.querySelector("#SubsribB img").setAttribute("src", iPageUrlContent + "/doubleCheckRedBlack.png");
+            }
         }
-        else if (subscribType == 2) {
-            subscribType = 0
-            document.querySelector("#SubsribB img").setAttribute("src", iPageUrlContent + "/doubleCheckBlackBlack.png");
-        }
-        else if (subscribType == 3) {
-            subscribType = 4
-            document.querySelector("#SubsribB img").setAttribute("src", iPageUrlContent + "/doubleCheckRedRed.png");
-        }
-        else if (subscribType == 4) {
-            subscribType = 3
-            document.querySelector("#SubsribB img").setAttribute("src", iPageUrlContent + "/doubleCheckRedBlack.png");
-        }
-    }
-});
+    });
 
 
 

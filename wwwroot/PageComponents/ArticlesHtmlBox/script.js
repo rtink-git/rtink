@@ -222,13 +222,4 @@ export class ArticlesHtmlBox {
         if (response.ok === true) return await response.json();
         return null;
     }
-
-//    async #ApiArticleBookmark(titleHb) {
-//        const response = await fetch(this.#ApiUrl + "/RtInk/ArticleBookmark?titleHb=" + titleHb.toString(), {
-//            method: "POST",
-//            headers: { "Authorization": "Bearer " + this.#AuthJWToken }
-//        });
-//        return response.ok
-//    }
-
 }
