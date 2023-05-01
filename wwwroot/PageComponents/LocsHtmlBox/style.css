@@ -103,6 +103,11 @@
     content: url(/PageComponents/LocsHtmlBox/content/pin-checked-red.png)
 }
 
+#LocsHtmlBox > ul > li > div[data-issubscribed="wait"] > ._SelectLocB > img {
+    height: 12px;
+    content: url(/PageComponents/LocsHtmlBox/content/pin-wait-CD9814.png)
+}
+
 #LocsHtmlBox > ul > li > div > ._LineB {
     float: right;
     height: 22px;

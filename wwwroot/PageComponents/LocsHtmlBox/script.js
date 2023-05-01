@@ -29,6 +29,8 @@ export class LocsHtmlBox {
 
     async AppendList() {
         let list = await this.#ApiUsersAsLocations()
+        let listCh = await this.#ApiUsersLocationsChecked()
+        //alert(listCh.length)
         if (list != null && list.length > 0)
             if (this.Page == 1)
                 this.#Target.insertAdjacentHTML(this.#Position, this.#HtmlPart())
@@ -36,7 +38,31 @@ export class LocsHtmlBox {
         list.forEach(e => {
             document.querySelector("#" + this.Name + " > ul").insertAdjacentHTML("beforeend", this.#ItemHtmlBox(e.login, e.isSubscribed))
             if (e.hasChildrens) this.#ItemHasChildrensButtonHtmlBoxAppend(e.login)
-            else this.#ItemSelectLocButtonHtmlBoxAppend(e.login)
+            this.#ItemSelectLocButtonHtmlBoxAppend(e.login)
+            if (!e.isSubscribed) {
+                //    //alert(listCh.length)
+                //    //listCh.forEach(ee => {
+                //    //    if (login == e.login) {
+                //    //        alert("df")
+                //    //    }
+                //    //})
+                //alert(listCh.length)
+                for (var i = 0; i < listCh.length; i++) {
+                    for (var j = 0; j < listCh[i].parentLogins.length; j++)
+                        if (e.login == listCh[i].parentLogins[j]) {
+                            //alert(listCh[i].login)
+                            let mT = document.querySelector("#" + this.Name + " > ul > li > div[data-login=\"" + e.login + "\"]")
+                            mT.setAttribute("data-isSubscribed", "wait")
+                        }
+                    if (e.login == listCh[i].login) {
+                        alert("df")
+                        //alert(listCh[i].login)
+                        let mT = document.querySelector("#" + this.Name + " > ul > li > div[data-login=\"" + e.login + "\"]")
+                        mT.setAttribute("data-isSubscribed", "true")
+                    }
+                }
+            }
+
         })
 
         this.Page++;
@@ -73,14 +99,15 @@ export class LocsHtmlBox {
         return html;
     }
 
-    #ItemHasChildrensButtonHtmlBoxAppend(login) {
+    async #ItemHasChildrensButtonHtmlBoxAppend(login) {
         let html = "\
         <a class=\"_HasChildrensB\" data-type=\"\", data-display=\"false\" data-childrensAppended=\"false\">\
             <img src=\"" + this.#UrlContent + "/arrow-down-black.png\" />\
         </a>"
 
-
         document.querySelector("#" + this.Name + " > ul > li > div[data-login=\"" + login + "\"]").insertAdjacentHTML('beforeend', html)
+
+        let listCh = await this.#ApiUsersLocationsChecked()
 
         document.querySelector("#" + this.Name + " > ul > li > div[data-login=\"" + login + "\"] ._HasChildrensB").addEventListener('click', async (event) => {
             let parentT = event.target.closest("._HasChildrensB");
@@ -109,16 +136,50 @@ export class LocsHtmlBox {
                     parentT.setAttribute("data-display", true)
                 }
 
+                //----------
+
+                let divT = event.target.closest("div")
+                let isSubscribed = divT.getAttribute("data-issubscribed")
+
+                if (isSubscribed == "true")
+                    document.querySelectorAll("#" + this.Name + " > ul > li > div[data-parentlogin=\"" + login + "\"]").forEach(e => {
+                        e.setAttribute("data-issubscribed", "true")
+                        e.querySelector("._SelectLocB").style.opacity = 0
+                    })
+                else
+                    document.querySelectorAll("#" + this.Name + " > ul > li > div[data-parentlogin=\"" + login + "\"]").forEach(e => {
+                        e.setAttribute("data-issubscribed", "false")
+                        e.querySelector("._SelectLocB").style.opacity = 0.5
+                    })
+
                 if (parentT.closest("div").querySelector("._SelectLocB") == null) this.#ItemSelectLocButtonHtmlBoxAppend(login)
                 else parentT.closest("div").querySelector("._SelectLocB").style.display = "block"
 
+
+                ////if (!e.isSubscribed) {
+
+                //for (var i = 0; i < listCh.length; i++) {
+                //    for (var j = 0; j < listCh[i].parentLogins.length; j++)
+                //        if (e.login == listCh[i].parentLogins[j]) {
+                //            //alert(listCh[i].login)
+                //            let mT = document.querySelector("#" + this.Name + " > ul > li > div[data-login=\"" + e.login + "\"]")
+                //            mT.setAttribute("data-isSubscribed", "wait")
+                //        }
+                //    if (e.login == listCh[i].login) {
+                //        let mTx = document.querySelector("#" + this.Name + " > ul > li > div[data-login=\"" + e.login + "\"]")
+                //        alert(mTx.getAttribute("data-isSubscribed"))
+
+                //        //mTx.setAttribute("data-isSubscribed", "true")
+                //    }
+                //}
+                //            //}
             }
             else {
                 document.querySelectorAll("#" + this.Name + " > ul > li > div[data-parentlogin=\"" + login + "\"]").forEach(e => {
                     e.closest("li").style.display = "none"
                 })
                 parentT.setAttribute("data-display", false)
-                parentT.closest("div").querySelector("._SelectLocB").style.display = "none"
+                //parentT.closest("div").querySelector("._SelectLocB").style.display = "none"
             }
         });
     }
@@ -126,13 +187,21 @@ export class LocsHtmlBox {
     #ItemSelectLocButtonHtmlBoxAppend(login) {
         let html = "\
         <a class=\"_SelectLocB\">\
-            <img src=\"" + this.#UrlContent + "/pin.png\" />\
+            <img />\
         </a>"
 
         let mT = document.querySelector("#" + this.Name + " > ul > li > div[data-login=\"" + login + "\"]")
         document.querySelector("#" + this.Name + " > ul > li > div[data-login=\"" + login + "\"] > *:first-child").insertAdjacentHTML('afterend', html)
 
         document.querySelector("#" + this.Name + " > ul > li > div[data-login=\"" + login + "\"] ._SelectLocB").addEventListener('click', async (event) => {
+            document.querySelectorAll("#" + this.Name + " > ul > li > div[data-parentlogin=\"" + login + "\"]").forEach(e => {
+                e.closest("li").style.display = "none"
+            })
+
+            let parentT = event.target.closest("div").querySelector("._HasChildrensB");
+            if (parentT != null)
+                parentT.setAttribute("data-display", false)
+
             let isSubscribed = mT.getAttribute("data-issubscribed")
             let userSubscriptionSet = await this.#ApiUserSubscriptionSet(login)
             if (userSubscriptionSet.ok) {
@@ -173,6 +242,15 @@ export class LocsHtmlBox {
 
     async #ApiUserSubscriptionSet(login) {
         const response = await fetch(this.#ApiUrl + "/RtInk/UserSubscriptionSet?userLogin=" + login, {
+            method: "GET",
+            headers: { "Accept": "application/json", "Authorization": "Bearer " + this.#AuthJWToken }
+        });
+        if (response.ok === true) return await response.json();
+        return null;
+    }
+
+    async #ApiUsersLocationsChecked() {
+        const response = await fetch(this.#ApiUrl + "/Base/Users/Locations/Checked", {
             method: "GET",
             headers: { "Accept": "application/json", "Authorization": "Bearer " + this.#AuthJWToken }
         });
