@@ -17,15 +17,14 @@
 //-- Tasks
 //-- 2023-04-25 i/-user (location account) - RT / LOC
 //-- 2023-04-27 i/-user - удаляем пользователей у article так как они одинаковые
-//-- 2023-04-27 RT. article item bookmarks
-//-- 2023-05-02 PageComponents / ArrticleesHtmlBox - удаляем время если новость была добавлена мменее чем час назад
 
 
 
 
 
 //-- Knowledge Library
-//-- Polly with .NET 6, Part 4 - Dependency Injection of a HttpClientFactory and Policy into a Minimal API Endpoint: https://nodogmablog.bryanhogan.net/2022/03/polly-with-net-6-part-4-dependency-injection-of-a-httpclientfactory-and-policy-into-a-minimal-api-endpoint/
+//-- ASP.NET: Polly with .NET 6, Part 4 - Dependency Injection of a HttpClientFactory and Policy into a Minimal API Endpoint: https://nodogmablog.bryanhogan.net/2022/03/polly-with-net-6-part-4-dependency-injection-of-a-httpclientfactory-and-policy-into-a-minimal-api-endpoint/
+//-- JS: Private class features: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Private_class_fields
 
 
 

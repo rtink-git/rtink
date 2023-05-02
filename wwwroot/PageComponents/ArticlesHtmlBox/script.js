@@ -1,5 +1,8 @@
-﻿//-- Knowledge Library
-//-- JS: Private class features: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Private_class_fields
+﻿//-- Tasks
+//-- 2023-04-27 RT. article item bookmarks
+//-- 2023-05-03 Не нравится как отображаются одиночные новости / публикации
+
+
 
 import { MoreButtonHtmlBox } from '/PageComponents/MoreButtonHtmlBox/script.js';
 

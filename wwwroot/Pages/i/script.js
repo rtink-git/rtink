@@ -54,8 +54,8 @@ let subscribType = 0;
 let menuList = new Array()
 
 if (typeApiPageI == 0) {
-    //menuList.push({ "icon": iPageUrlContent + "/location.png", "href": "/locations" });
     menuList.push({ "icon": iPageUrlContent + "/search.png", "href": "", "id": "SearchBM" });
+    menuList.push({ "icon": iPageUrlContent + "/location.png", "href": "/locations", "id": "LocationBM" });
     if (RoleId == 0) {
         localStorage.setItem("SessionRefrshRequired", "true")
         menuList.push({ "icon": iPageUrlContent + "/login.png", "href": apiUrl + "/Base/Authorization/Signin/Google?SessionToken=" + authJWToken + "&RedirectUrl=" + document.URL });
