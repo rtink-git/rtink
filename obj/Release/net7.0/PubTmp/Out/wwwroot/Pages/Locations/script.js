@@ -23,7 +23,7 @@ menuList.push({ "icon": LocationsPageUrlContent + "/undo.png", "href": href });
 new HeaderHtmlBox(document.getElementsByTagName("body")[0], "afterbegin", "RT / LOCS", null, menuList, isTest)
 //new SearchHeaderQHtmlBox(document.getElementById("HeaderHtmlBox"), "afterend", "", "", "")
 
-let locsHtmlBox = new LocsHtmlBox(document.getElementById("HeaderHtmlBox"), "afterend", apiUrl, authJWToken)
+let locsHtmlBox = new LocsHtmlBox(document.getElementById("HeaderHtmlBox"), "afterend", apiUrl, authJWToken, RoleId)
 await locsHtmlBox.AppendBaseList()
 
 

@@ -1,5 +1,6 @@
 ﻿import { isTest, apiUrl, PageHeadsBuild, authJWToken, RoleId } from '/PageComponents/Page/script.js';
 import { HeaderHtmlBox } from '/PageComponents/HeaderHtmlBox/script.js';
+import { HeaderDescriptionHtmlBox } from '/PageComponents/HeaderDescriptionHtmlBox/script.js';
 //import { SearchHeaderQHtmlBox } from "/PageComponents/SearchHeaderQHtmlBox/script.js";
 import { LocsHtmlBox } from '/PageComponents/LocsHtmlBox/script.js';
 
@@ -20,10 +21,12 @@ if (RoleId == 0)
     href = "/"
 menuList.push({ "icon": LocationsPageUrlContent + "/undo.png", "href": href });
 
-new HeaderHtmlBox(document.getElementsByTagName("body")[0], "afterbegin", "RT / LOCS", null, menuList, isTest)
+new HeaderHtmlBox(document.getElementsByTagName("body")[0], "afterbegin", "RT", null, menuList, isTest)
+new HeaderDescriptionHtmlBox(document.getElementById("HeaderHtmlBox"), "afterend", "LOCATIONS", "")
+
 //new SearchHeaderQHtmlBox(document.getElementById("HeaderHtmlBox"), "afterend", "", "", "")
 
-let locsHtmlBox = new LocsHtmlBox(document.getElementById("HeaderHtmlBox"), "afterend", apiUrl, authJWToken, RoleId)
+let locsHtmlBox = new LocsHtmlBox(document.getElementById("HeaderDescriptionHtmlBox"), "afterend", apiUrl, authJWToken, RoleId)
 await locsHtmlBox.AppendBaseList()
 
 

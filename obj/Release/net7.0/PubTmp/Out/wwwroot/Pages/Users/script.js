@@ -19,14 +19,9 @@ PageHeadsBuild("Users - RT", "")
 let menuList = new Array()
 menuList.push({ "icon": UsersPageUrlContent + "/location.png", "href": "/locations", "id": "LocationBM" });
 if (RoleId == 0) {
-    localStorage.setItem("SessionRefrshRequired", "true")
-    menuList.push({ "icon": UsersPageUrlContent + "/login.png", "href": apiUrl + "/Base/Authorization/Signin/Google?SessionToken=" + authJWToken + "&RedirectUrl=" + document.URL });
 }
 else {
     var userLoginJson = await ApiGetUserLogin()
-                    //document.querySelector("#" + this.Name + " > ul").insertAdjacentHTML("beforeend", this.#ItemHtmlBox(userLoginJson.login, 0, ''))
-                    //this.#SettingsButtonHtmlBox(userLoginJson.login)
-
     menuList.push({ "icon": UsersPageUrlContent + "/user.png", "href": "/i/-" + userLoginJson.login });
 }
 menuList.push({ "icon": UsersPageUrlContent + "/search.png", "href": "", "id": "SearchBM" });
