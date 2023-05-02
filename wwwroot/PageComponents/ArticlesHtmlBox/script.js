@@ -91,45 +91,6 @@ export class ArticlesHtmlBox {
     }
 
     #ItemHtmlBox(e) {
-        //const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-        const months = ["Jan", "Feb", "March", "April", "May", "June", "July", "Aug", "Sept", "Oct", "Nov", "Dec"];
-
-        //let loginFlag = false;
-        //for (var i = 0; i < this.#list.length; i++)
-        //    if (this.#list[0].login != this.#list[i].login)
-        //        loginFlag = true;
-
-        //if (e.rating == 2)
-        //    e.rating = 0
-
-        let dt = new Date(e.dt);
-        let dtnow = new Date()
-        dt.setHours(dt.getHours() + (-1) * dt.getTimezoneOffset() / 60)
-        let mm = dt.getMinutes().toString();
-        if (mm.length == 1) mm = "0" + mm;
-
-        const dtstrbase = months[dt.getMonth()] + " " + dt.getDate() + ", " + dt.getFullYear() + " · " + dt.getHours() + ":" + mm
-        let dtstr = dtstrbase
-
-        let minago = parseFloat(Date.now() - dt) / 1000 / 60
-        if (minago < 60) dtstr = parseInt(minago) + " min ago"
-        else if (new Date().getFullYear() == dt.getFullYear())
-        if (dtnow.getDate() == dt.getDate()) dtstr = dt.getHours() + ":" + mm
-        else dtstr = months[dt.getMonth()] + " " + dt.getDate()
-
-        //let _dtLoginHtmlPartUp = "";
-        //let _dtLoginHtmlPartDown = "";
-        //let _dtLoginHtmlPart = this.#DtLoginHtmlPart(dtstr, e.login, loginFlag)
-        //if (e.rating == 2) _dtLoginHtmlPartDown = _dtLoginHtmlPart
-        //else _dtLoginHtmlPartUp = _dtLoginHtmlPart
-
-        //let _descriptionHtmlPart = "";
-        //let isDescription = false
-        //if (e.description != null && e.description != undefined && e.description.length > 0) {
-        //    _descriptionHtmlPart = e.description;
-        //    isDescription = true
-        //}
-
         let html = "\
         <li>\
             <article data-titleHb=\"" + e.titleHb + "\" data-tp=\"" + e.rating + "\" data-isBody=\"" + e.isBody + "\">\
@@ -151,7 +112,7 @@ export class ArticlesHtmlBox {
                         </span>\
                     </a>\
                     <span>\
-                    " + dtstr + "\
+                    " + this.#ConvertDatetimeToShortFormat(e.dt) + "\
                     </span>\
                     <a href=\"/a/" + e.urlShort + "\">\
                         <span>\
@@ -164,6 +125,34 @@ export class ArticlesHtmlBox {
 
 
         return html;
+    }
+
+    #ConvertDatetimeToShortFormat(datetime) {
+        let s = "";
+
+        //const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        const months = ["Jan", "Feb", "March", "April", "May", "June", "July", "Aug", "Sept", "Oct", "Nov", "Dec"];
+
+
+        let dt = new Date(datetime);
+        let dtnow = new Date()
+        dt.setHours(dt.getHours() + (-1) * dt.getTimezoneOffset() / 60)
+        let mm = dt.getMinutes().toString();
+        if (mm.length == 1) mm = "0" + mm;
+
+        const dtstrbase = months[dt.getMonth()] + " " + dt.getDate() + ", " + dt.getFullYear() + " · " + dt.getHours() + ":" + mm
+        s = dtstrbase
+
+        let minago = parseFloat(Date.now() - dt) / 1000 / 60
+
+        if (minago > 60) {
+            if (new Date().getFullYear() == dt.getFullYear())
+                if (dtnow.getDate() == dt.getDate()) s = dt.getHours() + ":" + mm
+                else s = months[dt.getMonth()] + " " + dt.getDate() + " · " + dt.getHours() + ":" + mm
+        }
+        else s = ""
+
+        return s;
     }
 
 
