@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "xhIMKvl2TksW+btD3L9y4fnnf5/TiLwiW0nwPcq6KtE=",
+  "Hash": "3fQmby5jbkSe1pvaHvYtwYZJGoWf9DRcoR66DOhnl9U=",
   "Source": "RtInk",
   "BasePath": "_content/RtInk",
   "Mode": "Default",
@@ -474,6 +474,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\PageComponents\\LocsHtmlBox\\content\\pin-checked-red.png"
+    },
+    {
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\LocsHtmlBox\\content\\pin-wait-CD9814.png",
+      "SourceId": "RtInk",
+      "SourceType": "Discovered",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\",
+      "BasePath": "_content/RtInk",
+      "RelativePath": "PageComponents/LocsHtmlBox/content/pin-wait-CD9814.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\PageComponents\\LocsHtmlBox\\content\\pin-wait-CD9814.png"
     },
     {
       "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\LocsHtmlBox\\script.js",

@@ -19,8 +19,8 @@ PageHeadsBuild("Users - RT", "")
 let menuList = new Array()
 menuList.push({ "icon": UsersPageUrlContent + "/location.png", "href": "/locations", "id": "LocationBM" });
 if (RoleId == 0) {
-    localStorage.setItem("SessionRefrshRequired", "true")
-    menuList.push({ "icon": UsersPageUrlContent + "/login.png", "href": apiUrl + "/Base/Authorization/Signin/Google?SessionToken=" + authJWToken + "&RedirectUrl=" + document.URL });
+//    localStorage.setItem("SessionRefrshRequired", "true")
+//    menuList.push({ "icon": UsersPageUrlContent + "/login.png", "href": apiUrl + "/Base/Authorization/Signin/Google?SessionToken=" + authJWToken + "&RedirectUrl=" + document.URL });
 }
 else {
     var userLoginJson = await ApiGetUserLogin()

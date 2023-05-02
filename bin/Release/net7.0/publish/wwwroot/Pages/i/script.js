@@ -91,17 +91,13 @@ else if (typeApiPageI == 1) {
     menuList.push({ "icon": iPageUrlContent + "/undo.png", "href": href });
 }
 else if (typeApiPageI == 2) {
-    menuList.push({ "icon": iPageUrlContent + "/bookmark.png", "href": "/" });
+    menuList.push({ "icon": iPageUrlContent + "/bookmark.png", "id": "BookmarkB" });
     menuList.push({ "icon": iPageUrlContent + "/undo.png", "href": "/" });
 }
 else if (typeApiPageI == 3) {
     menuList.push({ "icon": iPageUrlContent + "/search.png", "href": "", "id": "SearchBM" });
     menuList.push({ "icon": iPageUrlContent + "/undo.png", "href": "/" });
 } 
-
-if (typeApiPageI == 1) {
-
-}
 
 //--------------------
 
@@ -127,9 +123,7 @@ else if (typeApiPageI == 1) {
         for (var i = 2; i < searchSplit.length; i++)
             placeholder += searchSplit[i] + ' '
         placeholder = placeholder.trim().toUpperCase();
-        //placeholder = //search.toUpperCase().replace('-', '@').replace('-', ':  ').replaceAll('-', ' ')
     }
-    //else placeholder = search.toUpperCase().replace('-', '@') //+ ": ИЛОН МАСК"
     let userName = search.split('-')[1].toUpperCase()
     headerDescriptionName = userName.substring(0, 4);
     headerDescriptionNameSub = userName.substring(4, userName.length)
@@ -151,6 +145,14 @@ if (typeApiPageI == 1) {
         document.getElementById("SearchBM").style.display = "none";
     }
 }
+else if (typeApiPageI == 2)
+{
+    let apiArticleBookmarkJson = await ApiArticleBookmarkGet(search.substring(0, search.length - 1))
+    if (apiArticleBookmarkJson.ok)
+        document.getElementById("BookmarkB").querySelector("img").setAttribute("src", iPageUrlContent + "/bookmarkSelected.png")
+    else
+        document.getElementById("BookmarkB").querySelector("img").setAttribute("src", iPageUrlContent + "/bookmark.png")
+}
 else if (typeApiPageI == 3) {
     document.getElementById("SearchHeaderQHtmlBox").style.display = "block"
     document.getElementById("SearchBM").style.display = "none";
@@ -164,6 +166,16 @@ await articlesHtmlBox.AppendList()
 
 
 //-- html actions
+
+if (document.getElementById("BookmarkB") != null)
+    document.getElementById("BookmarkB").addEventListener('click', async (event) => {
+        let apiArticleBookmarkJson = await ApiArticleBookmarkPost(search.substring(0, search.length - 1))
+        if (apiArticleBookmarkJson)
+            if (document.getElementById("BookmarkB").querySelector("img").getAttribute("src") == iPageUrlContent + "/bookmark.png")
+                document.getElementById("BookmarkB").querySelector("img").setAttribute("src", iPageUrlContent + "/bookmarkSelected.png")
+            else
+                document.getElementById("BookmarkB").querySelector("img").setAttribute("src", iPageUrlContent + "/bookmark.png")
+    });
 
 let prevScrollY = window.scrollY
 document.addEventListener('scroll', async (event) => {
@@ -208,19 +220,9 @@ if (document.getElementById("SubsribB") != null)
 
 //-- api actions
 
-//async function ApiPageI(search) {
-//    const response = await fetch(apiUrl + "/RtInk/Page/I?search=" + search, {
-//        method: "GET",
-//        headers: { "Accept": "application/json", "Authorization": "Bearer " + authJWToken }
-//    });
-//    if (response.ok === true) return await response.json();
-//    return null;
-//}
-
 async function ApiUserBio(userLogin) {
     const response = await fetch(apiUrl + "/Base/User/Bio?userLogin=" + userLogin, {
-        method: "GET",
-        headers: { "Accept": "application/json", "Authorization": "Bearer " + authJWToken }
+        method: "GET", headers: { "Accept": "application/json", "Authorization": "Bearer " + authJWToken }
     });
     if (response.ok === true) return await response.json();
     return null;
@@ -228,11 +230,23 @@ async function ApiUserBio(userLogin) {
 
 async function ApiUserSubscrib(userLogin) {
     const response = await fetch(apiUrl + "/Base/User/Subscrib?userLogin=" + userLogin, {
-        method: "POST",
-        headers: { "Accept": "application/json", "Authorization": "Bearer " + authJWToken }
+        method: "POST", headers: { "Accept": "application/json", "Authorization": "Bearer " + authJWToken }
     });
     if (response.ok === true) return await response.json();
     return null;
 }
 
-//--------------------
+async function ApiArticleBookmarkGet(urlShort) {
+    const response = await fetch(apiUrl + "/RtInk/ArticleBookmark?urlShort=" + urlShort, {
+        method: "GET", headers: { "Authorization": "Bearer " + authJWToken }
+    });
+    if (response.ok === true) return await response.json();
+    return null;
+}
+
+async function ApiArticleBookmarkPost(urlShort) {
+    const response = await fetch(apiUrl + "/RtInk/ArticleBookmark?urlShort=" + urlShort, {
+        method: "POST", headers: { "Authorization": "Bearer " + authJWToken }
+    });
+    return response.ok
+}

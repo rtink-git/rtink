@@ -18,6 +18,7 @@
 //-- 2023-04-25 i/-user (location account) - RT / LOC
 //-- 2023-04-27 i/-user - удаляем пользователей у article так как они одинаковые
 //-- 2023-04-27 RT. article item bookmarks
+//-- 2023-05-02 PageComponents / ArrticleesHtmlBox - удаляем время если новость была добавлена мменее чем час назад
 
 
 

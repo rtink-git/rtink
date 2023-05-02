@@ -257,10 +257,6 @@
       "PackagePath": "staticwebassets\\Pages\\Users\\style.css"
     },
     {
-      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\Pages\\i\\content\\add-friend.png",
-      "PackagePath": "staticwebassets\\Pages\\i\\content\\add-friend.png"
-    },
-    {
       "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\Pages\\i\\content\\add.png",
       "PackagePath": "staticwebassets\\Pages\\i\\content\\add.png"
     },
@@ -279,10 +275,6 @@
     {
       "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\Pages\\i\\content\\category.png",
       "PackagePath": "staticwebassets\\Pages\\i\\content\\category.png"
-    },
-    {
-      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\Pages\\i\\content\\categoryRed.png",
-      "PackagePath": "staticwebassets\\Pages\\i\\content\\categoryRed.png"
     },
     {
       "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\Pages\\i\\content\\check.png",
@@ -313,40 +305,12 @@
       "PackagePath": "staticwebassets\\Pages\\i\\content\\doubleCheckRedRed.png"
     },
     {
-      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\Pages\\i\\content\\edit-text.png",
-      "PackagePath": "staticwebassets\\Pages\\i\\content\\edit-text.png"
-    },
-    {
-      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\Pages\\i\\content\\edit.png",
-      "PackagePath": "staticwebassets\\Pages\\i\\content\\edit.png"
-    },
-    {
-      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\Pages\\i\\content\\empty-folder.png",
-      "PackagePath": "staticwebassets\\Pages\\i\\content\\empty-folder.png"
-    },
-    {
-      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\Pages\\i\\content\\home.png",
-      "PackagePath": "staticwebassets\\Pages\\i\\content\\home.png"
-    },
-    {
-      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\Pages\\i\\content\\house.png",
-      "PackagePath": "staticwebassets\\Pages\\i\\content\\house.png"
-    },
-    {
-      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\Pages\\i\\content\\loading-gif-transparent-13.gif",
-      "PackagePath": "staticwebassets\\Pages\\i\\content\\loading-gif-transparent-13.gif"
-    },
-    {
       "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\Pages\\i\\content\\location.png",
       "PackagePath": "staticwebassets\\Pages\\i\\content\\location.png"
     },
     {
       "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\Pages\\i\\content\\login.png",
       "PackagePath": "staticwebassets\\Pages\\i\\content\\login.png"
-    },
-    {
-      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\Pages\\i\\content\\loop.png",
-      "PackagePath": "staticwebassets\\Pages\\i\\content\\loop.png"
     },
     {
       "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\Pages\\i\\content\\menu.png",
@@ -357,14 +321,6 @@
       "PackagePath": "staticwebassets\\Pages\\i\\content\\plus.png"
     },
     {
-      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\Pages\\i\\content\\reload.png",
-      "PackagePath": "staticwebassets\\Pages\\i\\content\\reload.png"
-    },
-    {
-      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\Pages\\i\\content\\rotate.png",
-      "PackagePath": "staticwebassets\\Pages\\i\\content\\rotate.png"
-    },
-    {
       "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\Pages\\i\\content\\search.png",
       "PackagePath": "staticwebassets\\Pages\\i\\content\\search.png"
     },
@@ -373,24 +329,12 @@
       "PackagePath": "staticwebassets\\Pages\\i\\content\\settings.png"
     },
     {
-      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\Pages\\i\\content\\spaceship.png",
-      "PackagePath": "staticwebassets\\Pages\\i\\content\\spaceship.png"
-    },
-    {
-      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\Pages\\i\\content\\testProfile.jpg",
-      "PackagePath": "staticwebassets\\Pages\\i\\content\\testProfile.jpg"
-    },
-    {
       "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\Pages\\i\\content\\tick.png",
       "PackagePath": "staticwebassets\\Pages\\i\\content\\tick.png"
     },
     {
       "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\Pages\\i\\content\\undo.png",
       "PackagePath": "staticwebassets\\Pages\\i\\content\\undo.png"
-    },
-    {
-      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\Pages\\i\\content\\user-settings.png",
-      "PackagePath": "staticwebassets\\Pages\\i\\content\\user-settings.png"
     },
     {
       "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\Pages\\i\\content\\user.png",

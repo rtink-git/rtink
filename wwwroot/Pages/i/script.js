@@ -56,12 +56,12 @@ let menuList = new Array()
 if (typeApiPageI == 0) {
     //menuList.push({ "icon": iPageUrlContent + "/location.png", "href": "/locations" });
     menuList.push({ "icon": iPageUrlContent + "/search.png", "href": "", "id": "SearchBM" });
-    //if (RoleId == 0)
-    //    menuList.push({ "icon": iPageUrlContent + "/location.png", "href": "/locations" });
-    //else
-    menuList.push({ "icon": iPageUrlContent + "/category.png", "href": "/users" });
-
-    //if (RoleId == 0) menuList.push({ "icon": iPageUrlContent + "/login.png", "href": "", "id": "SigninB" });
+    if (RoleId == 0) {
+        localStorage.setItem("SessionRefrshRequired", "true")
+        menuList.push({ "icon": iPageUrlContent + "/login.png", "href": apiUrl + "/Base/Authorization/Signin/Google?SessionToken=" + authJWToken + "&RedirectUrl=" + document.URL });
+    }
+    else
+        menuList.push({ "icon": iPageUrlContent + "/category.png", "href": "/users" });
 }
 else if (typeApiPageI == 1) {
     HeaderTitle = "RT / USER"
