@@ -1,29 +1,28 @@
 ﻿//-- Tasks
 //-- 2023-05-02 Modul нуждается в доработке
 
-import { MoreButtonHtmlBox } from '/PageComponents/MoreButtonHtmlBox/script.js';
-
 export class LocsHtmlBox {
     #Target
     #Position
     #ApiUrl
     #AuthJWToken
+    #RoleId
 
     Name
     Page
 
     #UrlContent
     #ListChecked
-    //#ListCheckedFlag
     //#Take
 
-    constructor(target, position, apiUrl, authJWToken) {
+    constructor(target, position, apiUrl, authJWToken, RoleId) {
         this.#Target = target
         this.#Position = position
         this.#ApiUrl = apiUrl
         this.#AuthJWToken = authJWToken
+        this.#RoleId = RoleId
 
-        this.Name = this.constructor.name //"LocsHtmlBox"
+        this.Name = this.constructor.name
         let url = "/PageComponents/" + this.Name;
         this.#UrlContent = url + "/content"
         let css = document.createElement("link"); css.setAttribute("rel", "stylesheet"); css.setAttribute("href", url + "/style.css"); document.head.append(css);
@@ -51,16 +50,17 @@ export class LocsHtmlBox {
                 document.querySelector("#" + this.Name + " > ul").insertAdjacentHTML("beforeend", this.#ItemHtmlBox(e.login))
                 if (e.hasChildrens) this.#MoreChildrensButtonHtmlBoxAppend(e.login)
 
-                document.querySelector("#" + this.Name + " > ul > li > div[data-login=\"" + e.login + "\"] ._SelectLocB").addEventListener('click', async (event) => {
-                    let mT = document.querySelector("#" + this.Name + " > ul > li > div[data-login=\"" + e.login + "\"]");
-                    let isSubscribed = mT.getAttribute("data-issubscribed")
-                    let userSubscriptionSet = await this.#ApiUserSubscriptionSet(e.login)
-                    if (userSubscriptionSet.ok) {
-                        if (isSubscribed == "true") mT.setAttribute("data-issubscribed", false)
-                        else mT.setAttribute("data-issubscribed", true)
-                        this.#ListChecked = await this.#ApiUsersLocationsChecked()
-                    }
-                });
+                if (document.querySelector("#" + this.Name + " > ul > li > div[data-login=\"" + e.login + "\"] ._SelectLocB") != null)
+                    document.querySelector("#" + this.Name + " > ul > li > div[data-login=\"" + e.login + "\"] ._SelectLocB").addEventListener('click', async (event) => {
+                        let mT = document.querySelector("#" + this.Name + " > ul > li > div[data-login=\"" + e.login + "\"]");
+                        let isSubscribed = mT.getAttribute("data-issubscribed")
+                        let userSubscriptionSet = await this.#ApiUserSubscriptionSet(e.login)
+                        if (userSubscriptionSet.ok) {
+                            if (isSubscribed == "true") mT.setAttribute("data-issubscribed", false)
+                            else mT.setAttribute("data-issubscribed", true)
+                            this.#ListChecked = await this.#ApiUsersLocationsChecked()
+                        }
+                    });
             });
 
             if (this.#ListChecked.length > 0) {
@@ -102,6 +102,13 @@ export class LocsHtmlBox {
         if (parentLogin != null)
             parentLoginAttr = "data-parentLogin=\"" + parentLogin + "\"";
 
+        let _shtml = "";
+        if (this.#RoleId > 0)
+            _shtml = "\
+            <a class=\"_SelectLocB\">\
+                <img />\
+            </a>"
+
         let html = "\
         <li>\
             <div data-login=\"" + login + "\"  " + parentLoginAttr + " data-isSubscribed=\"false\">\
@@ -110,9 +117,7 @@ export class LocsHtmlBox {
                     " + login + "\
                     </span>\
                 </a>\
-                <a class=\"_SelectLocB\">\
-                    <img />\
-                </a>\
+                " + _shtml + "\
             </div>\
         </li>"
 
@@ -151,17 +156,18 @@ export class LocsHtmlBox {
                         if (e.hasChildrens) this.#MoreChildrensButtonHtmlBoxAppend(e.login)
                         this.#ItemLineHtmlBoxAppend(e.login)
 
-                        document.querySelector("#" + this.Name + " > ul > li > div[data-login=\"" + e.login + "\"] ._SelectLocB").addEventListener('click', async (event) => {
-                            let mT = document.querySelector("#" + this.Name + " > ul > li > div[data-login=\"" + e.login + "\"]");
-                            let isSubscribed = mT.getAttribute("data-issubscribed")
-                            let userSubscriptionSet = await this.#ApiUserSubscriptionSet(e.login)
-                            if (userSubscriptionSet.ok) {
-                                if (isSubscribed == "true") mT.setAttribute("data-issubscribed", false)
-                                else mT.setAttribute("data-issubscribed", true)
+                        if (document.querySelector("#" + this.Name + " > ul > li > div[data-login=\"" + e.login + "\"] ._SelectLocB") != null)
+                            document.querySelector("#" + this.Name + " > ul > li > div[data-login=\"" + e.login + "\"] ._SelectLocB").addEventListener('click', async (event) => {
+                                let mT = document.querySelector("#" + this.Name + " > ul > li > div[data-login=\"" + e.login + "\"]");
+                                let isSubscribed = mT.getAttribute("data-issubscribed")
+                                let userSubscriptionSet = await this.#ApiUserSubscriptionSet(e.login)
+                                if (userSubscriptionSet.ok) {
+                                    if (isSubscribed == "true") mT.setAttribute("data-issubscribed", false)
+                                    else mT.setAttribute("data-issubscribed", true)
 
-                                this.#ListChecked = await this.#ApiUsersLocationsChecked()
-                            }
-                        });
+                                    this.#ListChecked = await this.#ApiUsersLocationsChecked()
+                                }
+                            });
                     })
 
                     parentT.setAttribute("data-loading", true)
