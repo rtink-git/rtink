@@ -108,6 +108,10 @@
     content: url(/PageComponents/LocsHtmlBox/content/pin-wait-CD9814.png)
 }
 
+#LocsHtmlBox > ul > li > div[data-issubscribed="null"] > ._SelectLocB > img {
+    opacity:0;
+}
+
 #LocsHtmlBox > ul > li > div > ._LineB {
     float: right;
     height: 22px;

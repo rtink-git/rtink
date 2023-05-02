@@ -24,7 +24,7 @@ new HeaderHtmlBox(document.getElementsByTagName("body")[0], "afterbegin", "RT / 
 //new SearchHeaderQHtmlBox(document.getElementById("HeaderHtmlBox"), "afterend", "", "", "")
 
 let locsHtmlBox = new LocsHtmlBox(document.getElementById("HeaderHtmlBox"), "afterend", apiUrl, authJWToken)
-await locsHtmlBox.AppendList()
+await locsHtmlBox.AppendBaseList()
 
 
 
