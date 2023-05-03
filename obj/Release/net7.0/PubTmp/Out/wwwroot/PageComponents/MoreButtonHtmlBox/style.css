@@ -2,17 +2,18 @@
     float: left;
     width: 100%;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     margin-top: 6px;
 }
 
     #MoreButtonHtmlBox > * {
         height: 30px;
         min-width: 280px;
-        background-image: linear-gradient( 45deg, hsl(0deg 0% 94%) 0%, hsl(344deg 0% 95%) 11%, hsl(344deg 0% 96%) 22%, hsl(344deg 0% 96%) 33%, hsl(344deg 0% 97%) 44%, hsl(344deg 0% 98%) 56%, hsl(344deg 0% 98%) 67%, hsl(344deg 0% 99%) 78%, hsl(344deg 0% 99%) 89%, hsl(0deg 0% 100%) 100% );
+        /*        background-image: linear-gradient( 45deg, hsl(0deg 0% 94%) 0%, hsl(344deg 0% 95%) 11%, hsl(344deg 0% 96%) 22%, hsl(344deg 0% 96%) 33%, hsl(344deg 0% 97%) 44%, hsl(344deg 0% 98%) 56%, hsl(344deg 0% 98%) 67%, hsl(344deg 0% 99%) 78%, hsl(344deg 0% 99%) 89%, hsl(0deg 0% 100%) 100% );*/
         display: inline-block;
-        border-radius: 8px;
-        border: 1px solid #e0e0e0;
+        /*        border-radius: 8px;*/
+        border-top: 1px dashed #e8e8e8;
+/*        border-bottom: 1px dashed #e8e8e8;*/
     }
 
 
@@ -26,6 +27,7 @@
                 height: 100%;
                 border-radius: 30px;
                 text-align: center;
+                opacity:0;
             }
 
                 #MoreButtonHtmlBox > * > a:first-child img {
@@ -50,8 +52,10 @@
             #MoreButtonHtmlBox > * > a > span {
                 display: inline-block;
                 font-family: 'Montserrat', sans-serif;
-                margin-top: 7px;
+                margin-top: 12px;
                 font-weight: 600;
-                letter-spacing: 1px;
-                font-size: 12px;
+                letter-spacing: 10px;
+                font-size: 10px;
+                text-transform:uppercase;
+                color:#696969
             }

@@ -3,7 +3,7 @@
 //-- 2023-04-17 First row - your user page
 //-- 2023-04-17 Location user icon
 
-import { isTest, apiUrl, PageHeadsBuild, authJWToken } from '/PageComponents/Page/script.js';
+import { isTest, apiUrl, PageHeadsBuild, authJWToken, RoleId } from '/PageComponents/Page/script.js';
 import { HeaderHtmlBox } from '/PageComponents/HeaderHtmlBox/script.js';
 import { SearchHeaderQHtmlBox } from "/PageComponents/SearchHeaderQHtmlBox/script.js";
 import { UsersHtmlBox } from '/PageComponents/UsersHtmlBox/script.js';
@@ -17,14 +17,20 @@ let UsersPageCss = document.createElement("link"); UsersPageCss.setAttribute("re
 PageHeadsBuild("Users - RT", "")
 
 let menuList = new Array()
-menuList.push({ "icon": UsersPageUrlContent + "/location.png", "href": "/locations" });
+menuList.push({ "icon": UsersPageUrlContent + "/location.png", "href": "/locations", "id": "LocationBM" });
+if (RoleId == 0) {
+}
+else {
+    var userLoginJson = await ApiGetUserLogin()
+    menuList.push({ "icon": UsersPageUrlContent + "/user.png", "href": "/i/-" + userLoginJson.login });
+}
 menuList.push({ "icon": UsersPageUrlContent + "/search.png", "href": "", "id": "SearchBM" });
 menuList.push({ "icon": UsersPageUrlContent + "/undo.png", "href": "/" });
 
 new HeaderHtmlBox(document.getElementsByTagName("body")[0], "afterbegin", "RT / USERS", null, menuList, isTest)
 new SearchHeaderQHtmlBox(document.getElementById("HeaderHtmlBox"), "afterend", "", "", "")
 
-let usersHtmlBox = new UsersHtmlBox(document.getElementById("SearchHeaderQHtmlBox"), "afterend", apiUrl, authJWToken)
+let usersHtmlBox = new UsersHtmlBox(document.getElementById("SearchHeaderQHtmlBox"), "afterend", apiUrl, authJWToken, RoleId)
 await usersHtmlBox.AppendList()
 
 
@@ -36,10 +42,11 @@ await usersHtmlBox.AppendList()
 document.getElementById("SearchBM").addEventListener('click', async (event) => {
     document.getElementById("SearchBM").style.display = "none";
     document.getElementById("SearchHeaderQHtmlBox").style.display = "block";
+    document.getElementById("LocationBM").style.display = "block"
 });
 
 if (document.getElementById(usersHtmlBox.Name) != null) {
-    document.getElementById(usersHtmlBox.Name).addEventListener('click', async (event) => {
+    document.getElementById("MoreButtonHtmlBox").addEventListener('click', async (event) => {
         await usersHtmlBox.AppendList()
     });
 }
@@ -51,3 +58,18 @@ document.addEventListener('scroll', async (event) => {
         await usersHtmlBox.AppendList()
     }
 });
+
+
+
+
+
+//-- api actions
+
+async function ApiGetUserLogin() {
+    const response = await fetch(apiUrl + "/Base/User/Login", {
+        method: "GET",
+        headers: { "Accept": "application/json", "Authorization": "Bearer " + authJWToken }
+    });
+    if (response.ok === true) { return await response.json(); }
+    return null;
+}

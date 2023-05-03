@@ -1,71 +1,92 @@
-﻿//-- Knowledge Library
-//-- JS: Private class features: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Private_class_fields
+﻿//-- Tasks
+//-- 2023-04-27 RT. article item bookmarks
+//-- 2023-04-27 i/-user - удаляем пользователей у article так как они одинаковые
+//-- 2023-05-03 Не нравится как отображаются одиночные новости / публикации
+
+
 
 import { MoreButtonHtmlBox } from '/PageComponents/MoreButtonHtmlBox/script.js';
 
 export class ArticlesHtmlBox {
     #Target
     #Position
-    page
-    take
-    search
+    #Search
     #ApiUrl
     #AuthJWToken
-    #name
-    #list
-    #urlContent
+
+    Name
+    Page
+
+    #UrlContent
+    #Take
 
     constructor(target, position, search, apiUrl, authJWToken) {
-        this.#name = "ArticlesHtmlBox"
-        let url = "/PageComponents/" + this.#name;
-        this.#urlContent = url + "/content"
-        let css = document.createElement("link"); css.setAttribute("rel", "stylesheet"); css.setAttribute("href", url + "/style.css"); document.head.append(css);
-
         this.#Target = target
         this.#Position = position
-        this.search = search;
+        this.#Search = search
         this.#ApiUrl = apiUrl
         this.#AuthJWToken = authJWToken
-        this.page = 1;
-        this.take = 20;
 
-        this.#list = new Array();
+        this.Name = "ArticlesHtmlBox"
+        let url = "/PageComponents/" + this.Name;
+        this.#UrlContent = url + "/content"
+        let css = document.createElement("link"); css.setAttribute("rel", "stylesheet"); css.setAttribute("href", url + "/style.css"); document.head.append(css);
+
+        this.Page = 1;
+        this.#Take = 20;
     }
 
-    async ListAppend() {
+    async AppendList() {
         let list = await this.#ApiAticles()
-        list.forEach(e => { this.#list.push({ "title": e.title, "urlShort": e.urlShort, "fileId": e.fileId, "extension": e.extension, "fileUrlSource": e.fileUrlSource, "description": e.description, "dt": e.dt, "login": e.login, "isBody": e.isBody, "titleHb": e.titleHb, "fileUrlSource": e.fileUrlSource, "isBookmark": e.isBookmark, "rating": e.rating, "appended": false, "imgcheck": false, "bookmarkActionAdded": false }) });
+        if (this.Page == 1) {
+            this.#Target.insertAdjacentHTML(this.#Position, this.#HtmlPart())
 
-        if (this.#list != null && this.#list.length > 0)
-            if (this.page == 1)
-                this.#Target.insertAdjacentHTML(this.#Position, this.#BodyHtmlBox(this.#name))
+            if (list.length == this.#Take) {
+                let moreButtonHtmlBox = new MoreButtonHtmlBox(document.getElementById(this.Name), "beforeend")
 
-        document.querySelector("#" + this.#name + " > ul").insertAdjacentHTML("beforeend", this.#LisHtmlBox())
-        await this.#LoadImages()
-        await this.#ListActionSet()
+                document.getElementById(moreButtonHtmlBox.Name).addEventListener('click', async () => {
+                    let list = await this.#ApiAticles()
 
-        if (this.page == 1 && this.#list.length == this.take) {
-            new MoreButtonHtmlBox(document.querySelector("#" + this.#name + " > ul"), "afterend")
+                    list.forEach(e => {
+                        document.querySelector("#" + this.Name + " > ul").insertAdjacentHTML("beforeend", this.#ItemHtmlBox(e))
+                        this.#LoadImages(e.titleHb, e.fileUrlSource, e.fileId, e.extension)
+                        if (e.description.length > 0 && e.isBody) {
+                            document.querySelector("article[data-titleHb=\"" + e.titleHb + "\"] ._Description").addEventListener('click', async () => {
+                                this.#AppendBody(e.titleHb)
+                            });
+                        }
+                    })
 
-            document.getElementById("MoreButtonHtmlBox").addEventListener('click', async () => {
-                let list = await this.#ApiAticles()
-                list.forEach(e => { this.#list.push({ "title": e.title, "urlShort": e.urlShort, "fileId": e.fileId, "extension": e.extension, "fileUrlSource": e.fileUrlSource, "description": e.description, "dt": e.dt, "login": e.login, "isBody": e.isBody, "titleHb": e.titleHb, "fileUrlSource": e.fileUrlSource, "isBookmark": e.isBookmark, "rating": e.rating, "appended": false, "imgcheck": false, "bookmarkActionAdded": false }) });
-                document.querySelector("#" + this.#name + " > ul").insertAdjacentHTML("beforeend", this.#LisHtmlBox())
-                await this.#LoadImages()
-                await this.#ListActionSet()
-
-                this.page++;
-            });
+                    this.Page++
+                });
+            }
         }
 
-        this.page++;
+        list.forEach(e => {
+            document.querySelector("#" + this.Name + " > ul").insertAdjacentHTML("beforeend", this.#ItemHtmlBox(e))
+            if (e.rating != 4)
+                this.#LoadImages(e.titleHb, e.fileUrlSource, e.fileId, e.extension)
+            if (e.rating == -9223372036854776000)
+                this.#AppendBody(e.titleHb)
+            if (e.description.length > 0 && e.isBody) {
+                document.querySelector("article[data-titleHb=\"" + e.titleHb + "\"] ._Description").addEventListener('click', async () => {
+                    this.#AppendBody(e.titleHb)
+                });
+            }
+        })
+
+        this.Page++;
     }
 
-    //-- Html Boxes
 
-    #BodyHtmlBox(name) {
+
+
+
+    //-- html parts
+
+    #HtmlPart() {
         let html = "\
-        <div id=\"" + name + "\">\
+        <div id=\"" + this.Name + "\">\
             <ul>\
             </ul>\
         </div>"
@@ -73,224 +94,112 @@ export class ArticlesHtmlBox {
         return html;
     }
 
-    #LisHtmlBox() {
-        let html = "";
+    #ItemHtmlBox(e) {
+        let html = "\
+        <li>\
+            <article data-titleHb=\"" + e.titleHb + "\" data-tp=\"" + e.rating + "\" data-isBody=\"" + e.isBody + "\">\
+                <div>\
+                    <h1>\
+                        <a href=\"/i/" + e.urlShort + "-\">\
+                        " + e.title + "\
+                        </a>\
+                    </h1>\
+                </div>\
+                <img src=\"" + e.fileUrlSource + "\" />\
+                <div class=\"_Description\">\
+                " + e.description + "\
+                </div>\
+                <div class=\"_footer\">\
+                    <a href=\"/i/-" + e.login.toLowerCase() + "\">\
+                        <span>\
+                        " + e.login + "\
+                        </span>\
+                    </a>\
+                    <span>\
+                    " + this.#ConvertDatetimeToShortFormat(e.dt) + "\
+                    </span>\
+                    <a href=\"/a/" + e.urlShort + "\">\
+                        <span>\
+                            SOURCE\
+                        </span>\
+                    </a>\
+                </div>\
+            </article>\
+        </li>"
+
+
+        return html;
+    }
+
+    #ConvertDatetimeToShortFormat(datetime) {
+        let s = "";
 
         //const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
         const months = ["Jan", "Feb", "March", "April", "May", "June", "July", "Aug", "Sept", "Oct", "Nov", "Dec"];
 
-        let loginFlag = false;
-        for (var i = 0; i < this.#list.length; i++)
-            if (this.#list[0].login != this.#list[i].login)
-                loginFlag = true;
 
-        this.#list.forEach(e => {
-            if (!e.appended) {
-                if (e.rating == 2)
-                    e.rating = 0
+        let dt = new Date(datetime);
+        let dtnow = new Date()
+        dt.setHours(dt.getHours() + (-1) * dt.getTimezoneOffset() / 60)
+        let mm = dt.getMinutes().toString();
+        if (mm.length == 1) mm = "0" + mm;
 
-                let dt = new Date(e.dt);
-                let dtnow = new Date()
-                dt.setHours(dt.getHours() + (-1) * dt.getTimezoneOffset() / 60)
-                let mm = dt.getMinutes().toString();
-                if (mm.length == 1) mm = "0" + mm;
+        const dtstrbase = months[dt.getMonth()] + " " + dt.getDate() + ", " + dt.getFullYear() + " · " + dt.getHours() + ":" + mm
+        s = dtstrbase
 
-                const dtstrbase = months[dt.getMonth()] + " " + dt.getDate() + ", " + dt.getFullYear() + " · " + dt.getHours() + ":" + mm
-                let dtstr = dtstrbase
+        let minago = parseFloat(Date.now() - dt) / 1000 / 60
 
-                let minago = parseFloat(Date.now() - dt) / 1000 / 60
-                if (minago < 60) dtstr = parseInt(minago) + " min ago"
-                else if (new Date().getFullYear() == dt.getFullYear())
-                    if (dtnow.getDate() == dt.getDate()) dtstr = dt.getHours() + ":" + mm
-                    else dtstr = months[dt.getMonth()] + " " + dt.getDate()
-
-                let _dtLoginHtmlPartUp = "";
-                let _dtLoginHtmlPartDown = "";
-                let _dtLoginHtmlPart = this.#DtLoginHtmlPart(dtstr, e.login, loginFlag)
-                if (e.rating == 2) _dtLoginHtmlPartDown = _dtLoginHtmlPart
-                else _dtLoginHtmlPartUp = _dtLoginHtmlPart
-
-                let _descriptionHtmlPart = "";
-                let isDescription = false
-                if (e.description != null && e.description != undefined && e.description.length > 0) {
-                    _descriptionHtmlPart = e.description;
-                    isDescription = true
-                }
-
-                html += "\
-                <li>\
-                    <article data-titleHb=\"" + e.titleHb + "\" data-tp=\"" + e.rating + "\" data-isBody=\"" + e.isBody + "\">\
-                        <div>\
-                            <h1>\
-                                <a href=\"/i/" + e.urlShort + "-\">\
-                                    " + e.title + "\
-                                </a>\
-                            </h1>\
-                        </div>\
-                        <img src=\"" + e.fileUrlSource + "\" />\
-                        <div class=\"_Description\" data-isDescription=\"" + isDescription + "\">\
-                        " + _descriptionHtmlPart + "\
-                        </div>\
-                        <div class=\"_footer\">\
-                            <a href=\"/i/-" + e.login.toLowerCase() + "\">\
-                                <span>\
-                                " + e.login + "\
-                                </span>\
-                            </a>\
-                            <span>\
-                            " + dtstr + "\
-                            </span>\
-                            <a href=\"/a/" + e.urlShort + "\">\
-                                <span>\
-                                    SOURCE\
-                                </span>\
-                            </a>\
-                        </div>\
-                    </article>\
-                </li>"
-
-                e.appended = true;
-            }
-        });
-
-        return html;
-    }
-
-    #CommentInputHtmlPart() {
-        let name = "CommentInputHtmlPart"
-
-        let html = "\
-        <div id=\"" + name + "\">\
-            <input type=\"text\" placeholder=\"Comment ...\" />\
-            <a>\
-                <img src=\"" + this.#urlContent + "/send.png\" />\
-            </a>\
-        </div>"
-
-        return html;
-    }
-
-    #DtLoginHtmlPart(time, login, loginFlag) {
-        let loginHtmlPart = ""
-        if (loginFlag) {
-            let lgn = login
-            if (lgn.length > 4)
-                lgn = lgn.substring(0, 4)
-            else if (lgn.length < 4)
-                for (i = 0; i < 4 - lgn.length; i++)
-                    lgn += "_";
-
-            for (var i = 0; i < lgn.length; i++)
-                loginHtmlPart += "<div><span>" + lgn[i] + "</span></div>"
-
-            loginHtmlPart = "<a href=\"/i/-" + login + "\" class=\"_login\">" + loginHtmlPart + "</a>"
-
-            //loginHtmlPart = "<a href=\"/i/-" + login + "\">@" + login.toLowerCase() + "</a>"
+        if (minago > 60) {
+            if (new Date().getFullYear() == dt.getFullYear())
+                if (dtnow.getDate() == dt.getDate()) s = dt.getHours() + ":" + mm
+                else s = months[dt.getMonth()] + " " + dt.getDate() + " · " + dt.getHours() + ":" + mm
         }
+        else s = ""
 
-        let html = "\
-        <div id=\"_DtLoginHtmlPart\">\
-            " + loginHtmlPart + "\
-            <time>\
-                " + time + "\
-            </time>\
-        </div>";
-
-        return html;
+        return s;
     }
 
-    //----------
 
-    async #ListActionSet() {
-        if (this.#list.length > 0)
-            if (this.#list[0].rating == -9223372036854776000) {
-                let tr = document.querySelectorAll("article")[0]
-                if (this.#list[0].isBody) {
-                    let bodyObj = await this.#ApiArticleBody(this.#list[0].titleHb)
-                    if (bodyObj != null && bodyObj.body.length > 0) {
-                        let dsT = tr.querySelector("#_Description")
-                        dsT.innerHTML = bodyObj.body
-                        dsT.setAttribute("data-body", true);
-                        dsT.setAttribute("data-isDescription", true)
-                    }
-                } 
-            }
-        
 
-        for (var i = 0; i < this.#list.length; i++) {
-            if (!this.#list[i].bookmarkActionAdded) {
-                let tr = document.querySelectorAll("article")[i]
-                //let trg = tr.getElementsByClassName("BookmarkButton")[0]
 
-                let rating = this.#list[i].rating
-                let isBody = this.#list[i].isBody
-                let isBookmark = this.#list[i].isBookmark
-                let titleHb = this.#list[i].titleHb
 
-                //trg.addEventListener("click", async event => {
-                    //if (rating == 2) {
-                    //    rating = 0;
-                    //    tr.setAttribute("data-tp", rating);
-                    //    var q = tr.querySelector("#_DtLoginHtmlPart")
-                    //    var w = "<div id=\"_DtLoginHtmlPart\">" + q.innerHTML + "</div>";
-                    //    q.remove()
-                    //    tr.querySelector("#_Inf").insertAdjacentHTML("afterbegin", w)
-                    //}
+    //-- actions
 
-                    //if (isBody) {
-                    //    let bodyObj = await this.#ApiArticleBody(titleHb)
-                    //    if (bodyObj != null && bodyObj.body.length > 0) {
-                    //        let dsT = tr.querySelector("#_Description")
-                    //        dsT.innerHTML = bodyObj.body
-                    //        dsT.setAttribute("data-body", true);
-                    //        dsT.setAttribute("data-isDescription", true)
-                    //    }
-                    //}              
+    #LoadImages(titleHb, fileUrlSource, fileId, extension) {
+        let tr = document.querySelector("article[data-titleHb=\"" + titleHb + "\"]");
+        let trg = tr.querySelector("img")
 
-                    //let apiArticleBookmark = await this.#ApiArticleBookmark(titleHb)
-                    //if (apiArticleBookmark)
-                    //    if (tr.querySelector(".BookmarkButton").getAttribute("data-isBookmark") == "false")
-                    //        tr.querySelector(".BookmarkButton").setAttribute("data-isBookmark", true)
-                    //    else tr.querySelector(".BookmarkButton").setAttribute("data-isBookmark", false)
-
-                    //if (document.getElementById("CommentInputHtmlPart") == null) {
-                    //    tr.insertAdjacentHTML("beforeend", this.#CommentInputHtmlPart())
-                    //}
-                    //else {
-                    //    document.getElementById("CommentInputHtmlPart").remove()
-                    //    tr.insertAdjacentHTML("beforeend", this.#CommentInputHtmlPart())
-                    //}
-                //})
-            }
+        let img = new Image(trg);
+        img.onload = function () { trg.style.display = "flex" }
+        img.onerror = function () {
+            let srcQ = "https://rt.ink/f/" + fileId + "." + extension.trim()
+            trg.setAttribute("src", srcQ);
+            let imgQ = new Image();
+            imgQ.onload = function () { trg.style.display = "flex" }
+            imgQ.src = srcQ
         }
+        img.src = fileUrlSource
     }
 
-    async #LoadImages() {
-        for (var i = 0; i < this.#list.length; i++) {
-            if (this.#list[i].appended && !this.#list[i].imgcheck && this.#list[i].fileId > 0) {
-                let tr = document.querySelectorAll("article")[i];
-                let trg = tr.querySelector("img")
-                let fileId = this.#list[i].fileId
-                let extension = this.#list[i].extension.trim()
-
-                let img = new Image(trg);
-                img.onload = function () { trg.style.display = "flex" }
-                img.onerror = function () {
-                    let srcQ = "https://rt.ink/f/" + fileId + "." + extension
-                    trg.setAttribute("src", srcQ);
-                    let imgQ = new Image();
-                    imgQ.onload = function () { trg.style.display = "flex" }
-                    imgQ.src = srcQ
-                }
-                img.src = this.#list[i].fileUrlSource
-            }
-        }
+    async #AppendBody(titleHb) {
+        let bodyObj = await this.#ApiArticleBody(titleHb)
+        if (bodyObj != null && bodyObj.body.length > 0) {
+            let tr = document.querySelector("article[data-titleHb=\"" + titleHb + "\"]");
+            let dsT = tr.querySelector("._Description")
+            dsT.innerHTML = bodyObj.body
+            dsT.setAttribute("data-body", true);
+            dsT.setAttribute("data-isDescription", true)
+        }  
     }
 
-    //-- Api
+
+
+
+
+    //-- api acctions
 
     async #ApiAticles() {
-        const response = await fetch(this.#ApiUrl + "/RtInk/Articles?search=" + this.search + "&take=" + this.take + "&page=" + this.page, {
+        const response = await fetch(this.#ApiUrl + "/RtInk/Articles?search=" + this.#Search + "&take=" + this.#Take + "&page=" + this.Page, {
             method: "GET",
             headers: { "Accept": "application/json", "Authorization": "Bearer " + this.#AuthJWToken }
         });
@@ -305,13 +214,5 @@ export class ArticlesHtmlBox {
         });
         if (response.ok === true) return await response.json();
         return null;
-    }
-
-    async #ApiArticleBookmark(titleHb) {
-        const response = await fetch(this.#ApiUrl + "/RtInk/ArticleBookmark?titleHb=" + titleHb.toString(), {
-            method: "POST",
-            headers: { "Authorization": "Bearer " + this.#AuthJWToken }
-        });
-        return response.ok
     }
 }

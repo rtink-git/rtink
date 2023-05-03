@@ -236,7 +236,31 @@
         opacity: 0.1;
     }
 
-
-
 /*----------------------------------------*/
 
+#H1QHtmlBox {
+    float: left;
+    width: 100%;
+    margin: 20px 0 20px;
+}
+
+    #H1QHtmlBox > div {
+        float: left;
+        width: 100%;
+    }
+
+        #H1QHtmlBox > div > * {
+            float: left;
+            width: 100%;
+        }
+
+    #H1QHtmlBox h1 {
+        margin-bottom: 10px;
+        letter-spacing: 2px;
+        font-size: 32px;
+    }
+
+    #H1QHtmlBox p {
+        font-size: 14px;
+        letter-spacing: 1px;
+    }

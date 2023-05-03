@@ -1,14 +1,14 @@
 ﻿export class Sessions {
-    //roleId
     authJWToken
     async TokenRefresh(apiUrl) {
         let authJWTokenStr = "authJWToken"
-        //let roleIdStr = "roleId"
+        let sessionRefrshRequiredStr = "SessionRefrshRequired"
+        let sessionRefrshRequiredR = localStorage.getItem(sessionRefrshRequiredStr)
 
-        //this.roleId = localStorage.getItem(roleIdStr)
-        //if (this.roleId == null || this.roleId == undefined) this.roleId = 0
+        if (sessionRefrshRequiredR != "true" && sessionRefrshRequiredR != "false")
+            sessionRefrshRequiredR = "true"
 
-        const response = await fetch(apiUrl + "/Base/Authorization/Session/Refresh", {
+        const response = await fetch(apiUrl + "/Base/Authorization/Session/Refresh?required=" + sessionRefrshRequiredR, {
             method: "GET",
             headers: {
                 "Content-Type": "application/json",
@@ -19,9 +19,9 @@
 
         if (response.ok === true) {
             const data = await response.json();
-            //this.roleId = data.roleId
             this.authJWToken = data.token
             localStorage.setItem(authJWTokenStr, data.token)
+            localStorage.setItem(sessionRefrshRequiredStr, "false")
         }
     }
 }

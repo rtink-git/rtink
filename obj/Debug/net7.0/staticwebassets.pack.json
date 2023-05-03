@@ -1,379 +1,355 @@
 {
   "Files": [
     {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\ArticlesHtmlBox\\content\\arrow-down-black.png",
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\ArticlesHtmlBox\\content\\arrow-down-black.png",
       "PackagePath": "staticwebassets\\PageComponents\\ArticlesHtmlBox\\content\\arrow-down-black.png"
     },
     {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\ArticlesHtmlBox\\content\\bookmark.png",
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\ArticlesHtmlBox\\content\\bookmark.png",
       "PackagePath": "staticwebassets\\PageComponents\\ArticlesHtmlBox\\content\\bookmark.png"
     },
     {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\ArticlesHtmlBox\\content\\bookmarkSelected.png",
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\ArticlesHtmlBox\\content\\bookmarkSelected.png",
       "PackagePath": "staticwebassets\\PageComponents\\ArticlesHtmlBox\\content\\bookmarkSelected.png"
     },
     {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\ArticlesHtmlBox\\content\\send.png",
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\ArticlesHtmlBox\\content\\send.png",
       "PackagePath": "staticwebassets\\PageComponents\\ArticlesHtmlBox\\content\\send.png"
     },
     {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\ArticlesHtmlBox\\script.js",
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\ArticlesHtmlBox\\script.js",
       "PackagePath": "staticwebassets\\PageComponents\\ArticlesHtmlBox\\script.js"
     },
     {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\ArticlesHtmlBox\\style.css",
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\ArticlesHtmlBox\\style.css",
       "PackagePath": "staticwebassets\\PageComponents\\ArticlesHtmlBox\\style.css"
     },
     {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\CentralHtmlPart\\content\\404.png",
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\CentralHtmlPart\\content\\404.png",
       "PackagePath": "staticwebassets\\PageComponents\\CentralHtmlPart\\content\\404.png"
     },
     {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\CentralHtmlPart\\content\\error-x.png",
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\CentralHtmlPart\\content\\error-x.png",
       "PackagePath": "staticwebassets\\PageComponents\\CentralHtmlPart\\content\\error-x.png"
     },
     {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\CentralHtmlPart\\content\\loading.gif",
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\CentralHtmlPart\\content\\loading.gif",
       "PackagePath": "staticwebassets\\PageComponents\\CentralHtmlPart\\content\\loading.gif"
     },
     {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\CentralHtmlPart\\script.js",
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\CentralHtmlPart\\script.js",
       "PackagePath": "staticwebassets\\PageComponents\\CentralHtmlPart\\script.js"
     },
     {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\CentralHtmlPart\\style.css",
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\CentralHtmlPart\\style.css",
       "PackagePath": "staticwebassets\\PageComponents\\CentralHtmlPart\\style.css"
     },
     {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\CentralInfHtmlBox\\content\\404.png",
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\CentralInfHtmlBox\\content\\404.png",
       "PackagePath": "staticwebassets\\PageComponents\\CentralInfHtmlBox\\content\\404.png"
     },
     {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\CentralInfHtmlBox\\content\\loading.gif",
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\CentralInfHtmlBox\\content\\loading.gif",
       "PackagePath": "staticwebassets\\PageComponents\\CentralInfHtmlBox\\content\\loading.gif"
     },
     {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\CentralInfHtmlBox\\content\\loop.png",
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\CentralInfHtmlBox\\content\\loop.png",
       "PackagePath": "staticwebassets\\PageComponents\\CentralInfHtmlBox\\content\\loop.png"
     },
     {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\CentralInfHtmlBox\\script.js",
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\CentralInfHtmlBox\\script.js",
       "PackagePath": "staticwebassets\\PageComponents\\CentralInfHtmlBox\\script.js"
     },
     {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\CentralInfHtmlBox\\style.css",
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\CentralInfHtmlBox\\style.css",
       "PackagePath": "staticwebassets\\PageComponents\\CentralInfHtmlBox\\style.css"
     },
     {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\HeaderDescriptionHtmlBox\\script.js",
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\HeaderDescriptionHtmlBox\\script.js",
       "PackagePath": "staticwebassets\\PageComponents\\HeaderDescriptionHtmlBox\\script.js"
     },
     {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\HeaderDescriptionHtmlBox\\style.css",
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\HeaderDescriptionHtmlBox\\style.css",
       "PackagePath": "staticwebassets\\PageComponents\\HeaderDescriptionHtmlBox\\style.css"
     },
     {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\HeaderHtmlBox\\content\\logo.png",
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\HeaderHtmlBox\\content\\logo.png",
       "PackagePath": "staticwebassets\\PageComponents\\HeaderHtmlBox\\content\\logo.png"
     },
     {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\HeaderHtmlBox\\content\\test\\category.png",
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\HeaderHtmlBox\\content\\test\\category.png",
       "PackagePath": "staticwebassets\\PageComponents\\HeaderHtmlBox\\content\\test\\category.png"
     },
     {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\HeaderHtmlBox\\content\\test\\login.png",
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\HeaderHtmlBox\\content\\test\\login.png",
       "PackagePath": "staticwebassets\\PageComponents\\HeaderHtmlBox\\content\\test\\login.png"
     },
     {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\HeaderHtmlBox\\content\\test\\menu.png",
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\HeaderHtmlBox\\content\\test\\menu.png",
       "PackagePath": "staticwebassets\\PageComponents\\HeaderHtmlBox\\content\\test\\menu.png"
     },
     {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\HeaderHtmlBox\\script.js",
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\HeaderHtmlBox\\script.js",
       "PackagePath": "staticwebassets\\PageComponents\\HeaderHtmlBox\\script.js"
     },
     {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\HeaderHtmlBox\\style.css",
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\HeaderHtmlBox\\style.css",
       "PackagePath": "staticwebassets\\PageComponents\\HeaderHtmlBox\\style.css"
     },
     {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\LocsHtmlBox\\content\\arrow-down-black.png",
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\LocsHtmlBox\\content\\arrow-down-black.png",
       "PackagePath": "staticwebassets\\PageComponents\\LocsHtmlBox\\content\\arrow-down-black.png"
     },
     {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\LocsHtmlBox\\content\\pin-checked-red.png",
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\LocsHtmlBox\\content\\pin-checked-red.png",
       "PackagePath": "staticwebassets\\PageComponents\\LocsHtmlBox\\content\\pin-checked-red.png"
     },
     {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\LocsHtmlBox\\content\\pin.png",
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\LocsHtmlBox\\content\\pin-wait-CD9814.png",
+      "PackagePath": "staticwebassets\\PageComponents\\LocsHtmlBox\\content\\pin-wait-CD9814.png"
+    },
+    {
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\LocsHtmlBox\\content\\pin.png",
       "PackagePath": "staticwebassets\\PageComponents\\LocsHtmlBox\\content\\pin.png"
     },
     {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\LocsHtmlBox\\script.js",
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\LocsHtmlBox\\script.js",
       "PackagePath": "staticwebassets\\PageComponents\\LocsHtmlBox\\script.js"
     },
     {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\LocsHtmlBox\\style.css",
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\LocsHtmlBox\\style.css",
       "PackagePath": "staticwebassets\\PageComponents\\LocsHtmlBox\\style.css"
     },
     {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\MoreButtonHtmlBox\\script.js",
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\MoreButtonHtmlBox\\script.js",
       "PackagePath": "staticwebassets\\PageComponents\\MoreButtonHtmlBox\\script.js"
     },
     {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\MoreButtonHtmlBox\\style.css",
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\MoreButtonHtmlBox\\style.css",
       "PackagePath": "staticwebassets\\PageComponents\\MoreButtonHtmlBox\\style.css"
     },
     {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\Page\\script.js",
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\Page\\script.js",
       "PackagePath": "staticwebassets\\PageComponents\\Page\\script.js"
     },
     {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\Page\\style.css",
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\Page\\style.css",
       "PackagePath": "staticwebassets\\PageComponents\\Page\\style.css"
     },
     {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\SearchHeaderQHtmlBox\\content\\search.png",
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\SearchHeaderQHtmlBox\\content\\search.png",
       "PackagePath": "staticwebassets\\PageComponents\\SearchHeaderQHtmlBox\\content\\search.png"
     },
     {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\SearchHeaderQHtmlBox\\script.js",
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\SearchHeaderQHtmlBox\\script.js",
       "PackagePath": "staticwebassets\\PageComponents\\SearchHeaderQHtmlBox\\script.js"
     },
     {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\SearchHeaderQHtmlBox\\style.css",
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\SearchHeaderQHtmlBox\\style.css",
       "PackagePath": "staticwebassets\\PageComponents\\SearchHeaderQHtmlBox\\style.css"
     },
     {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\Sessions.js",
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\Sessions.js",
       "PackagePath": "staticwebassets\\PageComponents\\Sessions.js"
     },
     {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\UsersHtmlBox\\content\\doubleCheckBlackBlack.png",
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\UsersHtmlBox\\content\\doubleCheckBlackBlack.png",
       "PackagePath": "staticwebassets\\PageComponents\\UsersHtmlBox\\content\\doubleCheckBlackBlack.png"
     },
     {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\UsersHtmlBox\\content\\doubleCheckBlackRed.png",
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\UsersHtmlBox\\content\\doubleCheckBlackRed.png",
       "PackagePath": "staticwebassets\\PageComponents\\UsersHtmlBox\\content\\doubleCheckBlackRed.png"
     },
     {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\UsersHtmlBox\\content\\doubleCheckRedBlack.png",
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\UsersHtmlBox\\content\\doubleCheckRedBlack.png",
       "PackagePath": "staticwebassets\\PageComponents\\UsersHtmlBox\\content\\doubleCheckRedBlack.png"
     },
     {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\UsersHtmlBox\\content\\doubleCheckRedRed.png",
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\UsersHtmlBox\\content\\doubleCheckRedRed.png",
       "PackagePath": "staticwebassets\\PageComponents\\UsersHtmlBox\\content\\doubleCheckRedRed.png"
     },
     {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\UsersHtmlBox\\script.js",
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\UsersHtmlBox\\content\\login.png",
+      "PackagePath": "staticwebassets\\PageComponents\\UsersHtmlBox\\content\\login.png"
+    },
+    {
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\UsersHtmlBox\\content\\settings.png",
+      "PackagePath": "staticwebassets\\PageComponents\\UsersHtmlBox\\content\\settings.png"
+    },
+    {
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\UsersHtmlBox\\script.js",
       "PackagePath": "staticwebassets\\PageComponents\\UsersHtmlBox\\script.js"
     },
     {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\PageComponents\\UsersHtmlBox\\style.css",
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\UsersHtmlBox\\style.css",
       "PackagePath": "staticwebassets\\PageComponents\\UsersHtmlBox\\style.css"
     },
     {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\Locations\\content\\check.png",
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\Pages\\Locations\\content\\check.png",
       "PackagePath": "staticwebassets\\Pages\\Locations\\content\\check.png"
     },
     {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\Locations\\content\\close.png",
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\Pages\\Locations\\content\\close.png",
       "PackagePath": "staticwebassets\\Pages\\Locations\\content\\close.png"
     },
     {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\Locations\\content\\search.png",
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\Pages\\Locations\\content\\search.png",
       "PackagePath": "staticwebassets\\Pages\\Locations\\content\\search.png"
     },
     {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\Locations\\content\\undo.png",
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\Pages\\Locations\\content\\undo.png",
       "PackagePath": "staticwebassets\\Pages\\Locations\\content\\undo.png"
     },
     {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\Locations\\script.js",
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\Pages\\Locations\\script.js",
       "PackagePath": "staticwebassets\\Pages\\Locations\\script.js"
     },
     {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\Locations\\style.css",
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\Pages\\Locations\\style.css",
       "PackagePath": "staticwebassets\\Pages\\Locations\\style.css"
     },
     {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\Users\\content\\add-friend.png",
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\Pages\\Users\\content\\add-friend.png",
       "PackagePath": "staticwebassets\\Pages\\Users\\content\\add-friend.png"
     },
     {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\Users\\content\\bookmark.png",
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\Pages\\Users\\content\\bookmark.png",
       "PackagePath": "staticwebassets\\Pages\\Users\\content\\bookmark.png"
     },
     {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\Users\\content\\comment.png",
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\Pages\\Users\\content\\comment.png",
       "PackagePath": "staticwebassets\\Pages\\Users\\content\\comment.png"
     },
     {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\Users\\content\\delete-friend.png",
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\Pages\\Users\\content\\delete-friend.png",
       "PackagePath": "staticwebassets\\Pages\\Users\\content\\delete-friend.png"
     },
     {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\Users\\content\\location.png",
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\Pages\\Users\\content\\location.png",
       "PackagePath": "staticwebassets\\Pages\\Users\\content\\location.png"
     },
     {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\Users\\content\\logout.png",
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\Pages\\Users\\content\\login.png",
+      "PackagePath": "staticwebassets\\Pages\\Users\\content\\login.png"
+    },
+    {
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\Pages\\Users\\content\\logout.png",
       "PackagePath": "staticwebassets\\Pages\\Users\\content\\logout.png"
     },
     {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\Users\\content\\search.png",
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\Pages\\Users\\content\\search.png",
       "PackagePath": "staticwebassets\\Pages\\Users\\content\\search.png"
     },
     {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\Users\\content\\undo.png",
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\Pages\\Users\\content\\undo.png",
       "PackagePath": "staticwebassets\\Pages\\Users\\content\\undo.png"
     },
     {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\Users\\content\\user.png",
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\Pages\\Users\\content\\user.png",
       "PackagePath": "staticwebassets\\Pages\\Users\\content\\user.png"
     },
     {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\Users\\script.js",
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\Pages\\Users\\script.js",
       "PackagePath": "staticwebassets\\Pages\\Users\\script.js"
     },
     {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\Users\\style.css",
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\Pages\\Users\\style.css",
       "PackagePath": "staticwebassets\\Pages\\Users\\style.css"
     },
     {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\i\\content\\add-friend.png",
-      "PackagePath": "staticwebassets\\Pages\\i\\content\\add-friend.png"
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\Pages\\i\\content\\add.png",
+      "PackagePath": "staticwebassets\\Pages\\i\\content\\add.png"
     },
     {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\i\\content\\arrow-down-black.png",
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\Pages\\i\\content\\arrow-down-black.png",
       "PackagePath": "staticwebassets\\Pages\\i\\content\\arrow-down-black.png"
     },
     {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\i\\content\\category.png",
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\Pages\\i\\content\\bookmark.png",
+      "PackagePath": "staticwebassets\\Pages\\i\\content\\bookmark.png"
+    },
+    {
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\Pages\\i\\content\\bookmarkSelected.png",
+      "PackagePath": "staticwebassets\\Pages\\i\\content\\bookmarkSelected.png"
+    },
+    {
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\Pages\\i\\content\\category.png",
       "PackagePath": "staticwebassets\\Pages\\i\\content\\category.png"
     },
     {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\i\\content\\categoryRed.png",
-      "PackagePath": "staticwebassets\\Pages\\i\\content\\categoryRed.png"
-    },
-    {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\i\\content\\check.png",
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\Pages\\i\\content\\check.png",
       "PackagePath": "staticwebassets\\Pages\\i\\content\\check.png"
     },
     {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\i\\content\\cross.png",
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\Pages\\i\\content\\cross.png",
       "PackagePath": "staticwebassets\\Pages\\i\\content\\cross.png"
     },
     {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\i\\content\\delete-friend.png",
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\Pages\\i\\content\\delete-friend.png",
       "PackagePath": "staticwebassets\\Pages\\i\\content\\delete-friend.png"
     },
     {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\i\\content\\doubleCheckBlackBlack.png",
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\Pages\\i\\content\\doubleCheckBlackBlack.png",
       "PackagePath": "staticwebassets\\Pages\\i\\content\\doubleCheckBlackBlack.png"
     },
     {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\i\\content\\doubleCheckBlackRed.png",
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\Pages\\i\\content\\doubleCheckBlackRed.png",
       "PackagePath": "staticwebassets\\Pages\\i\\content\\doubleCheckBlackRed.png"
     },
     {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\i\\content\\doubleCheckRedBlack.png",
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\Pages\\i\\content\\doubleCheckRedBlack.png",
       "PackagePath": "staticwebassets\\Pages\\i\\content\\doubleCheckRedBlack.png"
     },
     {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\i\\content\\doubleCheckRedRed.png",
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\Pages\\i\\content\\doubleCheckRedRed.png",
       "PackagePath": "staticwebassets\\Pages\\i\\content\\doubleCheckRedRed.png"
     },
     {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\i\\content\\edit-text.png",
-      "PackagePath": "staticwebassets\\Pages\\i\\content\\edit-text.png"
-    },
-    {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\i\\content\\edit.png",
-      "PackagePath": "staticwebassets\\Pages\\i\\content\\edit.png"
-    },
-    {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\i\\content\\empty-folder.png",
-      "PackagePath": "staticwebassets\\Pages\\i\\content\\empty-folder.png"
-    },
-    {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\i\\content\\home.png",
-      "PackagePath": "staticwebassets\\Pages\\i\\content\\home.png"
-    },
-    {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\i\\content\\house.png",
-      "PackagePath": "staticwebassets\\Pages\\i\\content\\house.png"
-    },
-    {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\i\\content\\loading-gif-transparent-13.gif",
-      "PackagePath": "staticwebassets\\Pages\\i\\content\\loading-gif-transparent-13.gif"
-    },
-    {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\i\\content\\location.png",
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\Pages\\i\\content\\location.png",
       "PackagePath": "staticwebassets\\Pages\\i\\content\\location.png"
     },
     {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\i\\content\\login.png",
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\Pages\\i\\content\\location_.png",
+      "PackagePath": "staticwebassets\\Pages\\i\\content\\location_.png"
+    },
+    {
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\Pages\\i\\content\\login.png",
       "PackagePath": "staticwebassets\\Pages\\i\\content\\login.png"
     },
     {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\i\\content\\loop.png",
-      "PackagePath": "staticwebassets\\Pages\\i\\content\\loop.png"
-    },
-    {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\i\\content\\menu.png",
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\Pages\\i\\content\\menu.png",
       "PackagePath": "staticwebassets\\Pages\\i\\content\\menu.png"
     },
     {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\i\\content\\plus.png",
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\Pages\\i\\content\\plus.png",
       "PackagePath": "staticwebassets\\Pages\\i\\content\\plus.png"
     },
     {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\i\\content\\reload.png",
-      "PackagePath": "staticwebassets\\Pages\\i\\content\\reload.png"
-    },
-    {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\i\\content\\rotate.png",
-      "PackagePath": "staticwebassets\\Pages\\i\\content\\rotate.png"
-    },
-    {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\i\\content\\search.png",
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\Pages\\i\\content\\search.png",
       "PackagePath": "staticwebassets\\Pages\\i\\content\\search.png"
     },
     {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\i\\content\\settings.png",
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\Pages\\i\\content\\settings.png",
       "PackagePath": "staticwebassets\\Pages\\i\\content\\settings.png"
     },
     {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\i\\content\\spaceship.png",
-      "PackagePath": "staticwebassets\\Pages\\i\\content\\spaceship.png"
-    },
-    {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\i\\content\\testProfile.jpg",
-      "PackagePath": "staticwebassets\\Pages\\i\\content\\testProfile.jpg"
-    },
-    {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\i\\content\\tick.png",
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\Pages\\i\\content\\tick.png",
       "PackagePath": "staticwebassets\\Pages\\i\\content\\tick.png"
     },
     {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\i\\content\\undo.png",
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\Pages\\i\\content\\undo.png",
       "PackagePath": "staticwebassets\\Pages\\i\\content\\undo.png"
     },
     {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\i\\content\\user-settings.png",
-      "PackagePath": "staticwebassets\\Pages\\i\\content\\user-settings.png"
-    },
-    {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\i\\content\\user.png",
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\Pages\\i\\content\\user.png",
       "PackagePath": "staticwebassets\\Pages\\i\\content\\user.png"
     },
     {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\i\\script.js",
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\Pages\\i\\script.js",
       "PackagePath": "staticwebassets\\Pages\\i\\script.js"
     },
     {
-      "Id": "D:\\dev\\Wecan\\rt_ink\\dev\\rt ink net seven git rep\\rtink\\wwwroot\\Pages\\i\\style.css",
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\Pages\\i\\style.css",
       "PackagePath": "staticwebassets\\Pages\\i\\style.css"
     },
     {

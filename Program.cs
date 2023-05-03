@@ -1,15 +1,29 @@
-/*-- Notes --*/
-/*-- Polly with .NET 6, Part 4 - Dependency Injection of a HttpClientFactory and Policy into a Minimal API Endpoint: https://nodogmablog.bryanhogan.net/2022/03/polly-with-net-6-part-4-dependency-injection-of-a-httpclientfactory-and-policy-into-a-minimal-api-endpoint/ --*/
+//-- Notes
+//-- Main page
 
-/*-- Project publication --*/
+
+
+
+
+//-- Project publication
 //-- 1. wwwroot /PageComponents/Page/script.js 
 //---- Set window.isTest = false
-//---- set server host apiUrl 
 //---- Set server host url RtInk.Constants
-//---- Check base project params HeadPage
 
-// Tasks
 
+
+
+
+//-- Tasks
+//-- 2023-04-25 i/-user (location account) - RT / LOC
+
+
+
+
+
+//-- Knowledge Library
+//-- ASP.NET: Polly with .NET 6, Part 4 - Dependency Injection of a HttpClientFactory and Policy into a Minimal API Endpoint: https://nodogmablog.bryanhogan.net/2022/03/polly-with-net-6-part-4-dependency-injection-of-a-httpclientfactory-and-policy-into-a-minimal-api-endpoint/
+//-- JS: Private class features: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Private_class_fields
 
 
 
