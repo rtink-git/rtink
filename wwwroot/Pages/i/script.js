@@ -64,24 +64,27 @@ if (typeApiPageI == 0) {
     //    menuList.push({ "icon": iPageUrlContent + "/category.png", "href": "/users" });
 }
 else if (typeApiPageI == 1) {
-    HeaderTitle = "RT / USER"
+    //HeaderTitle = "RT / USER"
+    HeaderTitle = ""
 
-    let userBio = await ApiUserBio(userLogin)
-    subscribType = userBio.sbt
-    if (subscribType != 1) {
-        let subscribUrl = iPageUrlContent + "/doubleCheckBlackBlack.png"
-        if (subscribType == 2)
-            subscribUrl = iPageUrlContent + "/doubleCheckBlackRed.png"
-        else if (subscribType == 3)
-            subscribUrl = iPageUrlContent + "/doubleCheckRedBlack.png"
-        else if (subscribType == 4)
-            subscribUrl = iPageUrlContent + "/doubleCheckRedRed.png"
+    if (RoleId > 0) {
+        let userBio = await ApiUserBio(userLogin)
+        subscribType = userBio.sbt
+        if (subscribType != 1) {
+            let subscribUrl = iPageUrlContent + "/doubleCheckBlackBlack.png"
+            if (subscribType == 2)
+                subscribUrl = iPageUrlContent + "/doubleCheckBlackRed.png"
+            else if (subscribType == 3)
+                subscribUrl = iPageUrlContent + "/doubleCheckRedBlack.png"
+            else if (subscribType == 4)
+                subscribUrl = iPageUrlContent + "/doubleCheckRedRed.png"
 
-        menuList.push({ "icon": subscribUrl, "href": "", "id": "SubsribB" });
-    }
-    else {
-        menuList.push({ "icon": iPageUrlContent + "/add.png", "href": "" });
-        menuList.push({ "icon": iPageUrlContent + "/settings.png", "href": "" });
+            menuList.push({ "icon": subscribUrl, "href": "", "id": "SubsribB" });
+        }
+        else {
+            menuList.push({ "icon": iPageUrlContent + "/add.png", "href": "" });
+            menuList.push({ "icon": iPageUrlContent + "/settings.png", "href": "" });
+        }
     }
 
     menuList.push({ "icon": iPageUrlContent + "/search.png", "href": "", "id": "SearchBM" });
@@ -136,8 +139,12 @@ else if (typeApiPageI == 3) {
     headerDescriptionName = "SEARCH";
 }
 
-new HeaderDescriptionHtmlBox(document.getElementById("HeaderHtmlBox"), "afterend", headerDescriptionName, headerDescriptionNameSub, "Moscow")
-new SearchHeaderQHtmlBox(document.getElementById("HeaderDescriptionHtmlBox"), "afterend", placeholder, "", userLogin)
+let idxy = "HeaderDescriptionHtmlBox"
+if (HeaderTitle.length > 0)
+    new HeaderDescriptionHtmlBox(document.getElementById("HeaderHtmlBox"), "afterend", headerDescriptionName, headerDescriptionNameSub, "Moscow");
+else 
+    idxy = "HeaderHtmlBox"
+new SearchHeaderQHtmlBox(document.getElementById(idxy), "afterend", placeholder, "", userLogin)
 
 if (typeApiPageI == 1) {
     if (search.split('-').length > 2) {
@@ -158,7 +165,30 @@ else if (typeApiPageI == 3) {
     document.getElementById("SearchBM").style.display = "none";
 }
 
-let articlesHtmlBox = new ArticlesHtmlBox(document.getElementById("SearchHeaderQHtmlBox"), "afterend", search, apiUrl, authJWToken)
+
+let idz = "SearchHeaderQHtmlBox"
+if (userLogin.length > 0) {
+    let htmlUserQ = "\
+    <div id=\"H1QHtmlBox\">\
+        <div>\
+            <h1>\
+                <span>\
+                " + userLogin.toUpperCase() + "\
+                </span>\
+            </h1>\
+            <p>\
+                user profile\
+            </p>\
+        </div>\
+    </div>\
+    "
+
+    document.getElementById("SearchHeaderQHtmlBox").insertAdjacentHTML("afterend", htmlUserQ)
+    idz = "H1QHtmlBox"
+}
+
+
+let articlesHtmlBox = new ArticlesHtmlBox(document.getElementById(idz), "afterend", search, apiUrl, authJWToken)
 await articlesHtmlBox.AppendList()
 
 

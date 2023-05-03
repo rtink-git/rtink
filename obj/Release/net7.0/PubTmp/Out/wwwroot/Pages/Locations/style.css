@@ -68,6 +68,7 @@
 #H1QHtmlBox {
     float: left;
     width: 100%;
+    margin: 20px 0 40px;
 }
 
     #H1QHtmlBox > div {
@@ -84,4 +85,9 @@
         margin-bottom: 10px;
         letter-spacing:2px;
         font-size:32px;
+    }
+
+    #H1QHtmlBox p {
+        font-size:14px;
+        letter-spacing: 1px;
     }
