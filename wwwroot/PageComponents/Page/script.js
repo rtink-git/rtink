@@ -57,6 +57,10 @@ export function PageHeadsBuild(title = null, description = null, imageUrl = null
 
     //----------
 
+    document.documentElement.lang = navigator.language;
+
+    //----------
+
     let metaHeadCharset = document.createElement("meta"); metaHeadCharset.setAttribute("charset", "utf-8"); document.head.append(metaHeadCharset);
     let metaHeadViewport = document.createElement("meta"); metaHeadViewport.setAttribute("name", "viewport"); metaHeadViewport.setAttribute("content", "width=device-width, initial-scale=1"); document.head.append(metaHeadViewport);
 

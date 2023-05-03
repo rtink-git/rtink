@@ -105,7 +105,7 @@ export class ArticlesHtmlBox {
                         </a>\
                     </h1>\
                 </div>\
-                <img src=\"" + e.fileUrlSource + "\" />\
+                <img alt=\"" + e.title + "\" src=\"" + e.fileUrlSource + "\" />\
                 <div class=\"_Description\">\
                 " + e.description + "\
                 </div>\
