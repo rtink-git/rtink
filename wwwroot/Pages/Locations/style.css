@@ -63,3 +63,25 @@
 #LocationsCheckedHtmlPart > * > * {
     background: #e5fdc6;
 }
+
+
+#H1QHtmlBox {
+    float: left;
+    width: 100%;
+}
+
+    #H1QHtmlBox > div {
+        float: left;
+        width: 100%;
+    }
+
+        #H1QHtmlBox > div > * {
+            float: left;
+            width: 100%;
+        }
+
+    #H1QHtmlBox h1 {
+        margin-bottom: 10px;
+        letter-spacing:2px;
+        font-size:32px;
+    }
