@@ -1,6 +1,7 @@
 \\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink git\rtink\obj\Release\net7.0\PubTmp\Out\RtInk.exe
 \\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink git\rtink\obj\Release\net7.0\PubTmp\Out\appsettings.Development.json
 \\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink git\rtink\obj\Release\net7.0\PubTmp\Out\appsettings.json
+\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink git\rtink\obj\Release\net7.0\PubTmp\Out\bundleconfig.json
 \\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink git\rtink\obj\Release\net7.0\PubTmp\Out\RtInk.dll
 \\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink git\rtink\obj\Release\net7.0\PubTmp\Out\RtInk.deps.json
 \\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink git\rtink\obj\Release\net7.0\PubTmp\Out\RtInk.runtimeconfig.json

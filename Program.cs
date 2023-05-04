@@ -23,23 +23,26 @@
 
 //-- Knowledge Library
 //-- ASP.NET: Polly with .NET 6, Part 4 - Dependency Injection of a HttpClientFactory and Policy into a Minimal API Endpoint: https://nodogmablog.bryanhogan.net/2022/03/polly-with-net-6-part-4-dependency-injection-of-a-httpclientfactory-and-policy-into-a-minimal-api-endpoint/
+//-- APP.NET: ASP.NET Core response compression and content encoding: https://gunnarpeipman.com/aspnet-core-compress-gzip-brotli-content-encoding/
 //-- JS: Private class features: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Private_class_fields
 
 
 
 
+using System.IO.Compression;
 using System.Text.Json;
+using Microsoft.AspNetCore.ResponseCompression;
 using RtInk;
 
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.Configure<GzipCompressionProviderOptions>(options => { options.Level = CompressionLevel.Optimal; });
+builder.Services.AddResponseCompression(options => { options.EnableForHttps = true; options.Providers.Add<GzipCompressionProvider>(); });
+builder.Services.AddSession(options => { options.IdleTimeout = TimeSpan.FromDays(1); });
+
 // Add services to the container.
 builder.Services.AddRazorPages();
-builder.Services.AddSession(options =>
-{
-    options.IdleTimeout = TimeSpan.FromDays(1);
-});
 
 builder.Services.AddHttpClient("ApiRtInkNetCoreApp", client => {
     client.DefaultRequestHeaders.Add("key", Constants.apiKeyRtInk);
@@ -57,6 +60,7 @@ if (!app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
+app.UseResponseCompression();
 app.UseSession();
 app.UseRouting();
 app.UseAuthorization();

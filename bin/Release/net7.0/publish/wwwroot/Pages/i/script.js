@@ -7,16 +7,18 @@
 /*-- 2023-02-16 Task.Error: User edit about only latin symbols --*/
 /*-- 2023-02-16 Task.Warning: Login не может быть числом --*/
 
-import { isTest, apiUrl, PageHeadsBuild, authJWToken, RoleId } from '/PageComponents/Page/script.js';
+
+
+import { isTest, MinifyExpansion, apiUrl, PageHeadsBuild, authJWToken, RoleId } from '/PageComponents/Page/script.js';
 import { HeaderHtmlBox } from '/PageComponents/HeaderHtmlBox/script.js';
 import { HeaderDescriptionHtmlBox } from '/PageComponents/HeaderDescriptionHtmlBox/script.js';
 import { SearchHeaderQHtmlBox } from "/PageComponents/SearchHeaderQHtmlBox/script.js";
-import { ArticlesHtmlBox } from '/PageComponents/ArticlesHtmlBox/script.js';
+import { ArticlesHtmlBox } from "/PageComponents/ArticlesHtmlBox/script.js";
 
 //--------------------
 
 const iPageName = "i";  const iPageUrl = "/Pages/" + iPageName; const iPageUrlContent = iPageUrl + "/content";
-let iPageCss = document.createElement("link"); iPageCss.setAttribute("rel", "stylesheet"); iPageCss.setAttribute("href", iPageUrl + "/style.css"); document.head.append(iPageCss);
+let iPageCss = document.createElement("link"); iPageCss.setAttribute("rel", "stylesheet"); iPageCss.setAttribute("href", iPageUrl + "/style" + MinifyExpansion + ".css"); document.head.append(iPageCss);
 PageHeadsBuild("News aggregator", "RT - точка сбора самых интересных и актуальных новостей российских онлайн-медиа. \"Картина дня\" формируется автоматически на базе популярности материалов.")
 
 //-- data from url ---
@@ -54,34 +56,37 @@ let subscribType = 0;
 let menuList = new Array()
 
 if (typeApiPageI == 0) {
-    //menuList.push({ "icon": iPageUrlContent + "/location.png", "href": "/locations" });
-    menuList.push({ "icon": iPageUrlContent + "/search.png", "href": "", "id": "SearchBM" });
-    //if (RoleId == 0)
-    //    menuList.push({ "icon": iPageUrlContent + "/location.png", "href": "/locations" });
-    //else
-    menuList.push({ "icon": iPageUrlContent + "/category.png", "href": "/users" });
-
-    //if (RoleId == 0) menuList.push({ "icon": iPageUrlContent + "/login.png", "href": "", "id": "SigninB" });
+    menuList.push({ "icon": iPageUrlContent + "/search.png", "href": "", "id": "SearchBM", "alt": "search" });
+    menuList.push({ "icon": iPageUrlContent + "/location.png", "href": "/locations", "id": "LocationBM", "alt": "location" });
+    if (RoleId == 0) {
+    //    localStorage.setItem("SessionRefrshRequired", "true")
+    //    menuList.push({ "icon": iPageUrlContent + "/login.png", "href": apiUrl + "/Base/Authorization/Signin/Google?SessionToken=" + authJWToken + "&RedirectUrl=" + document.URL });
+    }
+    else
+        menuList.push({ "icon": iPageUrlContent + "/category.png", "href": "/users", "alt": "signin" });
 }
 else if (typeApiPageI == 1) {
-    HeaderTitle = "RT / USER"
+    //HeaderTitle = "RT / USER"
+    HeaderTitle = ""
 
-    let userBio = await ApiUserBio(userLogin)
-    subscribType = userBio.sbt
-    if (subscribType != 1) {
-        let subscribUrl = iPageUrlContent + "/doubleCheckBlackBlack.png"
-        if (subscribType == 2)
-            subscribUrl = iPageUrlContent + "/doubleCheckBlackRed.png"
-        else if (subscribType == 3)
-            subscribUrl = iPageUrlContent + "/doubleCheckRedBlack.png"
-        else if (subscribType == 4)
-            subscribUrl = iPageUrlContent + "/doubleCheckRedRed.png"
+    if (RoleId > 0) {
+        let userBio = await ApiUserBio(userLogin)
+        subscribType = userBio.sbt
+        if (subscribType != 1) {
+            let subscribUrl = iPageUrlContent + "/doubleCheckBlackBlack.png"
+            if (subscribType == 2)
+                subscribUrl = iPageUrlContent + "/doubleCheckBlackRed.png"
+            else if (subscribType == 3)
+                subscribUrl = iPageUrlContent + "/doubleCheckRedBlack.png"
+            else if (subscribType == 4)
+                subscribUrl = iPageUrlContent + "/doubleCheckRedRed.png"
 
-        menuList.push({ "icon": subscribUrl, "href": "", "id": "SubsribB" });
-    }
-    else {
-        menuList.push({ "icon": iPageUrlContent + "/add.png", "href": "" });
-        menuList.push({ "icon": iPageUrlContent + "/settings.png", "href": "" });
+            menuList.push({ "icon": subscribUrl, "href": "", "id": "SubsribB" });
+        }
+        else {
+            menuList.push({ "icon": iPageUrlContent + "/add.png", "href": "" });
+            menuList.push({ "icon": iPageUrlContent + "/settings.png", "href": "" });
+        }
     }
 
     menuList.push({ "icon": iPageUrlContent + "/search.png", "href": "", "id": "SearchBM" });
@@ -101,7 +106,7 @@ else if (typeApiPageI == 3) {
 
 //--------------------
 
-new HeaderHtmlBox(document.getElementsByTagName("body")[0], "afterbegin", HeaderTitle, null, menuList, isTest)
+new HeaderHtmlBox(document.getElementsByTagName("body")[0], "afterbegin", HeaderTitle, null, menuList, isTest, MinifyExpansion)
 
 //if (typeApiPageI == 0 && RoleId == 0) {
 //    document.getElementById("SigninB").addEventListener('click', async () => {
@@ -136,8 +141,12 @@ else if (typeApiPageI == 3) {
     headerDescriptionName = "SEARCH";
 }
 
-new HeaderDescriptionHtmlBox(document.getElementById("HeaderHtmlBox"), "afterend", headerDescriptionName, headerDescriptionNameSub, "Moscow")
-new SearchHeaderQHtmlBox(document.getElementById("HeaderDescriptionHtmlBox"), "afterend", placeholder, "", userLogin)
+let idxy = "HeaderDescriptionHtmlBox"
+if (HeaderTitle.length > 0)
+    new HeaderDescriptionHtmlBox(document.getElementById("HeaderHtmlBox"), "afterend", headerDescriptionName, headerDescriptionNameSub, "Moscow", MinifyExpansion);
+else 
+    idxy = "HeaderHtmlBox"
+new SearchHeaderQHtmlBox(document.getElementById(idxy), "afterend", placeholder, "", userLogin, MinifyExpansion)
 
 if (typeApiPageI == 1) {
     if (search.split('-').length > 2) {
@@ -158,7 +167,30 @@ else if (typeApiPageI == 3) {
     document.getElementById("SearchBM").style.display = "none";
 }
 
-let articlesHtmlBox = new ArticlesHtmlBox(document.getElementById("SearchHeaderQHtmlBox"), "afterend", search, apiUrl, authJWToken)
+
+let idz = "SearchHeaderQHtmlBox"
+if (userLogin.length > 0) {
+    let htmlUserQ = "\
+    <div id=\"H1QHtmlBox\">\
+        <div>\
+            <h1>\
+                <span>\
+                " + userLogin.toUpperCase() + "\
+                </span>\
+            </h1>\
+            <p>\
+                user profile\
+            </p>\
+        </div>\
+    </div>\
+    "
+
+    document.getElementById("SearchHeaderQHtmlBox").insertAdjacentHTML("afterend", htmlUserQ)
+    idz = "H1QHtmlBox"
+}
+
+
+let articlesHtmlBox = new ArticlesHtmlBox(document.getElementById(idz), "afterend", search, apiUrl, authJWToken, MinifyExpansion)
 await articlesHtmlBox.AppendList()
 
 

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "xqnr/LhwC+hP7cICAFJCwmsxZ/slLB0DUzxRhl/DlE8=",
+  "Hash": "pprAJzWfWx9wUuecm1Ic3EAOknQcpM0ENWiL4zUqSM4=",
   "Source": "RtInk",
   "BasePath": "_content/RtInk",
   "Mode": "Default",
@@ -119,6 +119,23 @@
       "OriginalItemSpec": "wwwroot\\PageComponents\\ArticlesHtmlBox\\style.css"
     },
     {
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\ArticlesHtmlBox\\style.min.css",
+      "SourceId": "RtInk",
+      "SourceType": "Discovered",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\",
+      "BasePath": "_content/RtInk",
+      "RelativePath": "PageComponents/ArticlesHtmlBox/style.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\PageComponents\\ArticlesHtmlBox\\style.min.css"
+    },
+    {
       "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\CentralHtmlPart\\content\\404.png",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
@@ -202,6 +219,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\PageComponents\\CentralHtmlPart\\style.css"
+    },
+    {
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\CentralHtmlPart\\style.min.css",
+      "SourceId": "RtInk",
+      "SourceType": "Discovered",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\",
+      "BasePath": "_content/RtInk",
+      "RelativePath": "PageComponents/CentralHtmlPart/style.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\PageComponents\\CentralHtmlPart\\style.min.css"
     },
     {
       "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\CentralInfHtmlBox\\content\\404.png",
@@ -289,6 +323,23 @@
       "OriginalItemSpec": "wwwroot\\PageComponents\\CentralInfHtmlBox\\style.css"
     },
     {
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\CentralInfHtmlBox\\style.min.css",
+      "SourceId": "RtInk",
+      "SourceType": "Discovered",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\",
+      "BasePath": "_content/RtInk",
+      "RelativePath": "PageComponents/CentralInfHtmlBox/style.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\PageComponents\\CentralInfHtmlBox\\style.min.css"
+    },
+    {
       "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\HeaderDescriptionHtmlBox\\script.js",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
@@ -321,6 +372,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\PageComponents\\HeaderDescriptionHtmlBox\\style.css"
+    },
+    {
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\HeaderDescriptionHtmlBox\\style.min.css",
+      "SourceId": "RtInk",
+      "SourceType": "Discovered",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\",
+      "BasePath": "_content/RtInk",
+      "RelativePath": "PageComponents/HeaderDescriptionHtmlBox/style.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\PageComponents\\HeaderDescriptionHtmlBox\\style.min.css"
     },
     {
       "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\HeaderHtmlBox\\content\\logo.png",
@@ -425,6 +493,23 @@
       "OriginalItemSpec": "wwwroot\\PageComponents\\HeaderHtmlBox\\style.css"
     },
     {
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\HeaderHtmlBox\\style.min.css",
+      "SourceId": "RtInk",
+      "SourceType": "Discovered",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\",
+      "BasePath": "_content/RtInk",
+      "RelativePath": "PageComponents/HeaderHtmlBox/style.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\PageComponents\\HeaderHtmlBox\\style.min.css"
+    },
+    {
       "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\LocsHtmlBox\\content\\arrow-down-black.png",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
@@ -527,6 +612,23 @@
       "OriginalItemSpec": "wwwroot\\PageComponents\\LocsHtmlBox\\style.css"
     },
     {
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\LocsHtmlBox\\style.min.css",
+      "SourceId": "RtInk",
+      "SourceType": "Discovered",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\",
+      "BasePath": "_content/RtInk",
+      "RelativePath": "PageComponents/LocsHtmlBox/style.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\PageComponents\\LocsHtmlBox\\style.min.css"
+    },
+    {
       "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\MoreButtonHtmlBox\\script.js",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
@@ -561,6 +663,23 @@
       "OriginalItemSpec": "wwwroot\\PageComponents\\MoreButtonHtmlBox\\style.css"
     },
     {
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\MoreButtonHtmlBox\\style.min.css",
+      "SourceId": "RtInk",
+      "SourceType": "Discovered",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\",
+      "BasePath": "_content/RtInk",
+      "RelativePath": "PageComponents/MoreButtonHtmlBox/style.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\PageComponents\\MoreButtonHtmlBox\\style.min.css"
+    },
+    {
       "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\Page\\script.js",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
@@ -578,6 +697,23 @@
       "OriginalItemSpec": "wwwroot\\PageComponents\\Page\\script.js"
     },
     {
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\Page\\script.min.js",
+      "SourceId": "RtInk",
+      "SourceType": "Discovered",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\",
+      "BasePath": "_content/RtInk",
+      "RelativePath": "PageComponents/Page/script.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\PageComponents\\Page\\script.min.js"
+    },
+    {
       "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\Page\\style.css",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
@@ -593,6 +729,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\PageComponents\\Page\\style.css"
+    },
+    {
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\Page\\style.min.css",
+      "SourceId": "RtInk",
+      "SourceType": "Discovered",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\",
+      "BasePath": "_content/RtInk",
+      "RelativePath": "PageComponents/Page/style.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\PageComponents\\Page\\style.min.css"
     },
     {
       "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\SearchHeaderQHtmlBox\\content\\search.png",
@@ -644,6 +797,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\PageComponents\\SearchHeaderQHtmlBox\\style.css"
+    },
+    {
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\SearchHeaderQHtmlBox\\style.min.css",
+      "SourceId": "RtInk",
+      "SourceType": "Discovered",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\",
+      "BasePath": "_content/RtInk",
+      "RelativePath": "PageComponents/SearchHeaderQHtmlBox/style.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\PageComponents\\SearchHeaderQHtmlBox\\style.min.css"
     },
     {
       "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\Sessions.js",
@@ -797,6 +967,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\PageComponents\\UsersHtmlBox\\style.css"
+    },
+    {
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\UsersHtmlBox\\style.min.css",
+      "SourceId": "RtInk",
+      "SourceType": "Discovered",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\",
+      "BasePath": "_content/RtInk",
+      "RelativePath": "PageComponents/UsersHtmlBox/style.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\PageComponents\\UsersHtmlBox\\style.min.css"
     },
     {
       "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\Pages\\i\\content\\add.png",
@@ -1205,6 +1392,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Pages\\i\\style.css"
+    },
+    {
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\Pages\\i\\style.min.css",
+      "SourceId": "RtInk",
+      "SourceType": "Discovered",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\",
+      "BasePath": "_content/RtInk",
+      "RelativePath": "Pages/i/style.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Pages\\i\\style.min.css"
     },
     {
       "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\Pages\\Locations\\content\\check.png",

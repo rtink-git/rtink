@@ -40,6 +40,10 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "BuildBundlerMinifier": {
+              "target": "Package",
+              "version": "[3.2.449, )"
+            },
             "Microsoft.AspNetCore.Authentication.Google": {
               "target": "Package",
               "version": "[7.0.1, )"

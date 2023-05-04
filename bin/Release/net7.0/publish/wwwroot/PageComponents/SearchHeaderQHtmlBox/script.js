@@ -1,11 +1,11 @@
 ﻿export class SearchHeaderQHtmlBox {
     #userLogin
 
-    constructor(target, position, placeholder, placeholderFocus, userLogin) {
+    constructor(target, position, placeholder, placeholderFocus, userLogin, MinifyExpansion=null) {
         let name = "SearchHeaderQHtmlBox"
         let url = "/PageComponents/" + name;
         let urlContent = url + "/content"
-        let css = document.createElement("link"); css.setAttribute("rel", "stylesheet"); css.setAttribute("href", url + "/style.css"); document.head.append(css);
+        let css = document.createElement("link"); css.setAttribute("rel", "stylesheet"); css.setAttribute("href", url + "/style" + MinifyExpansion + ".css"); document.head.append(css);
 
         this.#userLogin = userLogin
 

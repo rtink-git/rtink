@@ -25,6 +25,10 @@
       "PackagePath": "staticwebassets\\PageComponents\\ArticlesHtmlBox\\style.css"
     },
     {
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\ArticlesHtmlBox\\style.min.css",
+      "PackagePath": "staticwebassets\\PageComponents\\ArticlesHtmlBox\\style.min.css"
+    },
+    {
       "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\CentralHtmlPart\\content\\404.png",
       "PackagePath": "staticwebassets\\PageComponents\\CentralHtmlPart\\content\\404.png"
     },
@@ -43,6 +47,10 @@
     {
       "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\CentralHtmlPart\\style.css",
       "PackagePath": "staticwebassets\\PageComponents\\CentralHtmlPart\\style.css"
+    },
+    {
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\CentralHtmlPart\\style.min.css",
+      "PackagePath": "staticwebassets\\PageComponents\\CentralHtmlPart\\style.min.css"
     },
     {
       "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\CentralInfHtmlBox\\content\\404.png",
@@ -65,12 +73,20 @@
       "PackagePath": "staticwebassets\\PageComponents\\CentralInfHtmlBox\\style.css"
     },
     {
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\CentralInfHtmlBox\\style.min.css",
+      "PackagePath": "staticwebassets\\PageComponents\\CentralInfHtmlBox\\style.min.css"
+    },
+    {
       "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\HeaderDescriptionHtmlBox\\script.js",
       "PackagePath": "staticwebassets\\PageComponents\\HeaderDescriptionHtmlBox\\script.js"
     },
     {
       "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\HeaderDescriptionHtmlBox\\style.css",
       "PackagePath": "staticwebassets\\PageComponents\\HeaderDescriptionHtmlBox\\style.css"
+    },
+    {
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\HeaderDescriptionHtmlBox\\style.min.css",
+      "PackagePath": "staticwebassets\\PageComponents\\HeaderDescriptionHtmlBox\\style.min.css"
     },
     {
       "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\HeaderHtmlBox\\content\\logo.png",
@@ -97,6 +113,10 @@
       "PackagePath": "staticwebassets\\PageComponents\\HeaderHtmlBox\\style.css"
     },
     {
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\HeaderHtmlBox\\style.min.css",
+      "PackagePath": "staticwebassets\\PageComponents\\HeaderHtmlBox\\style.min.css"
+    },
+    {
       "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\LocsHtmlBox\\content\\arrow-down-black.png",
       "PackagePath": "staticwebassets\\PageComponents\\LocsHtmlBox\\content\\arrow-down-black.png"
     },
@@ -121,6 +141,10 @@
       "PackagePath": "staticwebassets\\PageComponents\\LocsHtmlBox\\style.css"
     },
     {
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\LocsHtmlBox\\style.min.css",
+      "PackagePath": "staticwebassets\\PageComponents\\LocsHtmlBox\\style.min.css"
+    },
+    {
       "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\MoreButtonHtmlBox\\script.js",
       "PackagePath": "staticwebassets\\PageComponents\\MoreButtonHtmlBox\\script.js"
     },
@@ -129,12 +153,24 @@
       "PackagePath": "staticwebassets\\PageComponents\\MoreButtonHtmlBox\\style.css"
     },
     {
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\MoreButtonHtmlBox\\style.min.css",
+      "PackagePath": "staticwebassets\\PageComponents\\MoreButtonHtmlBox\\style.min.css"
+    },
+    {
       "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\Page\\script.js",
       "PackagePath": "staticwebassets\\PageComponents\\Page\\script.js"
     },
     {
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\Page\\script.min.js",
+      "PackagePath": "staticwebassets\\PageComponents\\Page\\script.min.js"
+    },
+    {
       "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\Page\\style.css",
       "PackagePath": "staticwebassets\\PageComponents\\Page\\style.css"
+    },
+    {
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\Page\\style.min.css",
+      "PackagePath": "staticwebassets\\PageComponents\\Page\\style.min.css"
     },
     {
       "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\SearchHeaderQHtmlBox\\content\\search.png",
@@ -147,6 +183,10 @@
     {
       "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\SearchHeaderQHtmlBox\\style.css",
       "PackagePath": "staticwebassets\\PageComponents\\SearchHeaderQHtmlBox\\style.css"
+    },
+    {
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\SearchHeaderQHtmlBox\\style.min.css",
+      "PackagePath": "staticwebassets\\PageComponents\\SearchHeaderQHtmlBox\\style.min.css"
     },
     {
       "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\Sessions.js",
@@ -183,6 +223,10 @@
     {
       "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\UsersHtmlBox\\style.css",
       "PackagePath": "staticwebassets\\PageComponents\\UsersHtmlBox\\style.css"
+    },
+    {
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\UsersHtmlBox\\style.min.css",
+      "PackagePath": "staticwebassets\\PageComponents\\UsersHtmlBox\\style.min.css"
     },
     {
       "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\Pages\\Locations\\content\\check.png",
@@ -351,6 +395,10 @@
     {
       "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\Pages\\i\\style.css",
       "PackagePath": "staticwebassets\\Pages\\i\\style.css"
+    },
+    {
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\Pages\\i\\style.min.css",
+      "PackagePath": "staticwebassets\\Pages\\i\\style.min.css"
     },
     {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.RtInk.Microsoft.AspNetCore.StaticWebAssets.props",

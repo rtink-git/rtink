@@ -13,6 +13,7 @@ export class ArticlesHtmlBox {
     #Search
     #ApiUrl
     #AuthJWToken
+    #MinifyExpansion
 
     Name
     Page
@@ -20,17 +21,18 @@ export class ArticlesHtmlBox {
     #UrlContent
     #Take
 
-    constructor(target, position, search, apiUrl, authJWToken) {
+    constructor(target, position, search, apiUrl, authJWToken, MinifyExpansion) {
         this.#Target = target
         this.#Position = position
         this.#Search = search
         this.#ApiUrl = apiUrl
         this.#AuthJWToken = authJWToken
+        this.#MinifyExpansion = MinifyExpansion
 
         this.Name = "ArticlesHtmlBox"
         let url = "/PageComponents/" + this.Name;
         this.#UrlContent = url + "/content"
-        let css = document.createElement("link"); css.setAttribute("rel", "stylesheet"); css.setAttribute("href", url + "/style.css"); document.head.append(css);
+        let css = document.createElement("link"); css.setAttribute("rel", "stylesheet"); css.setAttribute("href", url + "/style" + this.#MinifyExpansion + ".css"); document.head.append(css);
 
         this.Page = 1;
         this.#Take = 20;
@@ -42,7 +44,7 @@ export class ArticlesHtmlBox {
             this.#Target.insertAdjacentHTML(this.#Position, this.#HtmlPart())
 
             if (list.length == this.#Take) {
-                let moreButtonHtmlBox = new MoreButtonHtmlBox(document.getElementById(this.Name), "beforeend")
+                let moreButtonHtmlBox = new MoreButtonHtmlBox(document.getElementById(this.Name), "beforeend", this.#MinifyExpansion)
 
                 document.getElementById(moreButtonHtmlBox.Name).addEventListener('click', async () => {
                     let list = await this.#ApiAticles()

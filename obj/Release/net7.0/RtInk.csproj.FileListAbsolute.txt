@@ -213,6 +213,7 @@ D:\dev\Wecan\rt_ink\dev\rt ink net seven git rep\rtink\obj\Release\net7.0\ref\Rt
 \\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink net seven git rep clone\rtink-git\rtink\obj\Release\net7.0\ref\RtInk.dll
 \\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink git\rtink\bin\Release\net7.0\appsettings.Development.json
 \\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink git\rtink\bin\Release\net7.0\appsettings.json
+\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink git\rtink\bin\Release\net7.0\bundleconfig.json
 \\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink git\rtink\bin\Release\net7.0\RtInk.staticwebassets.runtime.json
 \\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink git\rtink\bin\Release\net7.0\RtInk.exe
 \\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink git\rtink\bin\Release\net7.0\RtInk.deps.json

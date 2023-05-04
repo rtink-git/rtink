@@ -7,6 +7,8 @@ export class UsersHtmlBox {
     #ApiUrl
     #AuthJWToken
     #RoleId
+    #MinifyExpansion
+
 
     Name
     Page
@@ -14,17 +16,18 @@ export class UsersHtmlBox {
     #UrlContent
     #Take
 
-    constructor(target, position, apiUrl, authJWToken, roleId) {
+    constructor(target, position, apiUrl, authJWToken, roleId, MinifyExpansion) {
         this.#Target = target
         this.#Position = position
         this.#ApiUrl = apiUrl
         this.#AuthJWToken = authJWToken
         this.#RoleId = roleId
+        this.#MinifyExpansion = MinifyExpansion
 
         this.Name = "UsersHtmlBox"
         let url = "/PageComponents/" + this.Name;
         this.#UrlContent = url + "/content"
-        let css = document.createElement("link"); css.setAttribute("rel", "stylesheet"); css.setAttribute("href", url + "/style.css"); document.head.append(css);
+        let css = document.createElement("link"); css.setAttribute("rel", "stylesheet"); css.setAttribute("href", url + "/style" + this.#MinifyExpansion + ".css"); document.head.append(css);
 
         this.Page = 1;
         this.#Take = 50;

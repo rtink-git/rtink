@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "b45aJpjmtE3JS62Y1msGe48b5Ob/3c6+gQW4MRQOpSGq9PvDnTLO/bc7Xo/0Ul3C3C+e2vD6qbW4pbjda2FoFA==",
+  "dgSpecHash": "T7Jg0XC+y3Oc+UJigyUxyizC/UJrzanfsRf53YJpUNifyiAbtupACu+xumLOciQbfkOlN/C3ZeqjENJDDRDs6A==",
   "success": true,
   "projectFilePath": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\RtInk.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\aidargalimov\\.nuget\\packages\\buildbundlerminifier\\3.2.449\\buildbundlerminifier.3.2.449.nupkg.sha512",
     "C:\\Users\\aidargalimov\\.nuget\\packages\\microsoft.aspnetcore.authentication.google\\7.0.1\\microsoft.aspnetcore.authentication.google.7.0.1.nupkg.sha512",
     "C:\\Users\\aidargalimov\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\7.0.1\\microsoft.aspnetcore.authentication.jwtbearer.7.0.1.nupkg.sha512",
     "C:\\Users\\aidargalimov\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

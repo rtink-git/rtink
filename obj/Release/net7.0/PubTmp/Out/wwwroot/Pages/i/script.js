@@ -7,16 +7,18 @@
 /*-- 2023-02-16 Task.Error: User edit about only latin symbols --*/
 /*-- 2023-02-16 Task.Warning: Login не может быть числом --*/
 
-import { isTest, apiUrl, PageHeadsBuild, authJWToken, RoleId } from '/PageComponents/Page/script.js';
+
+
+import { isTest, MinifyExpansion, apiUrl, PageHeadsBuild, authJWToken, RoleId } from '/PageComponents/Page/script.js';
 import { HeaderHtmlBox } from '/PageComponents/HeaderHtmlBox/script.js';
 import { HeaderDescriptionHtmlBox } from '/PageComponents/HeaderDescriptionHtmlBox/script.js';
 import { SearchHeaderQHtmlBox } from "/PageComponents/SearchHeaderQHtmlBox/script.js";
-import { ArticlesHtmlBox } from '/PageComponents/ArticlesHtmlBox/script.js';
+import { ArticlesHtmlBox } from "/PageComponents/ArticlesHtmlBox/script.js";
 
 //--------------------
 
 const iPageName = "i";  const iPageUrl = "/Pages/" + iPageName; const iPageUrlContent = iPageUrl + "/content";
-let iPageCss = document.createElement("link"); iPageCss.setAttribute("rel", "stylesheet"); iPageCss.setAttribute("href", iPageUrl + "/style.css"); document.head.append(iPageCss);
+let iPageCss = document.createElement("link"); iPageCss.setAttribute("rel", "stylesheet"); iPageCss.setAttribute("href", iPageUrl + "/style" + MinifyExpansion + ".css"); document.head.append(iPageCss);
 PageHeadsBuild("News aggregator", "RT - точка сбора самых интересных и актуальных новостей российских онлайн-медиа. \"Картина дня\" формируется автоматически на базе популярности материалов.")
 
 //-- data from url ---
@@ -54,14 +56,14 @@ let subscribType = 0;
 let menuList = new Array()
 
 if (typeApiPageI == 0) {
-    menuList.push({ "icon": iPageUrlContent + "/search.png", "href": "", "id": "SearchBM" });
-    menuList.push({ "icon": iPageUrlContent + "/location.png", "href": "/locations", "id": "LocationBM" });
-    //if (RoleId == 0) {
+    menuList.push({ "icon": iPageUrlContent + "/search.png", "href": "", "id": "SearchBM", "alt": "search" });
+    menuList.push({ "icon": iPageUrlContent + "/location.png", "href": "/locations", "id": "LocationBM", "alt": "location" });
+    if (RoleId == 0) {
     //    localStorage.setItem("SessionRefrshRequired", "true")
     //    menuList.push({ "icon": iPageUrlContent + "/login.png", "href": apiUrl + "/Base/Authorization/Signin/Google?SessionToken=" + authJWToken + "&RedirectUrl=" + document.URL });
-    //}
-    //else
-    //    menuList.push({ "icon": iPageUrlContent + "/category.png", "href": "/users" });
+    }
+    else
+        menuList.push({ "icon": iPageUrlContent + "/category.png", "href": "/users", "alt": "signin" });
 }
 else if (typeApiPageI == 1) {
     //HeaderTitle = "RT / USER"
@@ -104,7 +106,7 @@ else if (typeApiPageI == 3) {
 
 //--------------------
 
-new HeaderHtmlBox(document.getElementsByTagName("body")[0], "afterbegin", HeaderTitle, null, menuList, isTest)
+new HeaderHtmlBox(document.getElementsByTagName("body")[0], "afterbegin", HeaderTitle, null, menuList, isTest, MinifyExpansion)
 
 //if (typeApiPageI == 0 && RoleId == 0) {
 //    document.getElementById("SigninB").addEventListener('click', async () => {
@@ -141,10 +143,10 @@ else if (typeApiPageI == 3) {
 
 let idxy = "HeaderDescriptionHtmlBox"
 if (HeaderTitle.length > 0)
-    new HeaderDescriptionHtmlBox(document.getElementById("HeaderHtmlBox"), "afterend", headerDescriptionName, headerDescriptionNameSub, "Moscow");
+    new HeaderDescriptionHtmlBox(document.getElementById("HeaderHtmlBox"), "afterend", headerDescriptionName, headerDescriptionNameSub, "Moscow", MinifyExpansion);
 else 
     idxy = "HeaderHtmlBox"
-new SearchHeaderQHtmlBox(document.getElementById(idxy), "afterend", placeholder, "", userLogin)
+new SearchHeaderQHtmlBox(document.getElementById(idxy), "afterend", placeholder, "", userLogin, MinifyExpansion)
 
 if (typeApiPageI == 1) {
     if (search.split('-').length > 2) {
@@ -188,7 +190,7 @@ if (userLogin.length > 0) {
 }
 
 
-let articlesHtmlBox = new ArticlesHtmlBox(document.getElementById(idz), "afterend", search, apiUrl, authJWToken)
+let articlesHtmlBox = new ArticlesHtmlBox(document.getElementById(idz), "afterend", search, apiUrl, authJWToken, MinifyExpansion)
 await articlesHtmlBox.AppendList()
 
 

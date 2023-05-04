@@ -24,6 +24,9 @@ let MontserratGoogleFont = document.createElement("link"); MontserratGoogleFont.
 
 
 export let isTest = false; // true - режим тестирования. false - режим реализации
+export let MinifyExpansion = ".min";
+if (isTest)
+    MinifyExpansion = "";
 
 export let apiUrl = await ApiUrl()
 
@@ -33,6 +36,8 @@ export let authJWToken = sessions.authJWToken
 
 let authorizationInformationApi = await AuthorizationInformationApi()
 export let RoleId = await authorizationInformationApi.roleId
+
+let PageStylesheet = document.createElement("link"); PageStylesheet.setAttribute("rel", "stylesheet"); PageStylesheet.setAttribute("href", "/PageComponents/Page/style" + MinifyExpansion + ".css"); document.head.append(PageStylesheet);
 
 
 export function PageHeadsBuild(title = null, description = null, imageUrl = null, imageAlt = null, urlCanonical = null, robot = "index,follow") {
@@ -58,6 +63,7 @@ export function PageHeadsBuild(title = null, description = null, imageUrl = null
     //----------
 
     document.documentElement.lang = navigator.language;
+    //document.documentElement.setAttribute('lang', navigator.language);
 
     //----------
 
@@ -149,10 +155,6 @@ export function PageHeadsBuild(title = null, description = null, imageUrl = null
     let linkFontsGoogleapis = document.createElement("link"); linkFontsGoogleapis.setAttribute("rel", "preconnect"); linkFontsGoogleapis.setAttribute("href", "https://fonts.googleapis.com"); document.head.append(linkFontsGoogleapis);
     let linkFontsGstatic = document.createElement("link"); linkFontsGstatic.setAttribute("rel", "preconnect"); linkFontsGstatic.setAttribute("href", "https://fonts.gstatic.com"); linkFontsGstatic.setAttribute("crossorigin", ""); document.head.append(linkFontsGstatic);
     //let linkFontsMontserrat = document.createElement("link"); linkFontsMontserrat.setAttribute("rel", "stylesheet"); linkFontsMontserrat.setAttribute("href", "https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900;1000&display=swap"); document.head.append(linkFontsMontserrat);
-
-    //----------
-
-    let PageStylesheet = document.createElement("link"); PageStylesheet.setAttribute("rel", "stylesheet"); PageStylesheet.setAttribute("href", "/PageComponents/Page/style.css"); document.head.append(PageStylesheet);
 
     //----------
 

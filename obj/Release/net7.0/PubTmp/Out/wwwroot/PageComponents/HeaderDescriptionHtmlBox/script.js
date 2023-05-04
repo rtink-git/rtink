@@ -1,8 +1,8 @@
 ﻿export class HeaderDescriptionHtmlBox {
-    constructor(target, position, main, sub, location) {
+    constructor(target, position, main, sub, location, MinifyExpansion=null) {
         let name = "HeaderDescriptionHtmlBox"
         let url = "/PageComponents/" + name;
-        let css = document.createElement("link"); css.setAttribute("rel", "stylesheet"); css.setAttribute("href", url + "/style.css"); document.head.append(css);
+        let css = document.createElement("link"); css.setAttribute("rel", "stylesheet"); css.setAttribute("href", url + "/style" + MinifyExpansion + ".css"); document.head.append(css);
 
         let mainHtml = "";
         for (var i = 0; i < main.length; i++)

@@ -3,7 +3,7 @@
 //-- 2023-04-17 First row - your user page
 //-- 2023-04-17 Location user icon
 
-import { isTest, apiUrl, PageHeadsBuild, authJWToken, RoleId } from '/PageComponents/Page/script.js';
+import { isTest, MinifyExpansion, apiUrl, PageHeadsBuild, authJWToken, RoleId } from '/PageComponents/Page/script.js';
 import { HeaderHtmlBox } from '/PageComponents/HeaderHtmlBox/script.js';
 import { SearchHeaderQHtmlBox } from "/PageComponents/SearchHeaderQHtmlBox/script.js";
 import { UsersHtmlBox } from '/PageComponents/UsersHtmlBox/script.js';
@@ -28,9 +28,9 @@ menuList.push({ "icon": UsersPageUrlContent + "/search.png", "href": "", "id": "
 menuList.push({ "icon": UsersPageUrlContent + "/undo.png", "href": "/" });
 
 new HeaderHtmlBox(document.getElementsByTagName("body")[0], "afterbegin", "RT / USERS", null, menuList, isTest)
-new SearchHeaderQHtmlBox(document.getElementById("HeaderHtmlBox"), "afterend", "", "", "")
+new SearchHeaderQHtmlBox(document.getElementById("HeaderHtmlBox"), "afterend", "", "", "", MinifyExpansion)
 
-let usersHtmlBox = new UsersHtmlBox(document.getElementById("SearchHeaderQHtmlBox"), "afterend", apiUrl, authJWToken, RoleId)
+let usersHtmlBox = new UsersHtmlBox(document.getElementById("SearchHeaderQHtmlBox"), "afterend", apiUrl, authJWToken, RoleId, MinifyExpansion)
 await usersHtmlBox.AppendList()
 
 
