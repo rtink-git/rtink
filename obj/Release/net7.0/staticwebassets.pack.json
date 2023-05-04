@@ -21,6 +21,10 @@
       "PackagePath": "staticwebassets\\PageComponents\\ArticlesHtmlBox\\script.js"
     },
     {
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\ArticlesHtmlBox\\script.min.js",
+      "PackagePath": "staticwebassets\\PageComponents\\ArticlesHtmlBox\\script.min.js"
+    },
+    {
       "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\ArticlesHtmlBox\\style.css",
       "PackagePath": "staticwebassets\\PageComponents\\ArticlesHtmlBox\\style.css"
     },
@@ -81,6 +85,10 @@
       "PackagePath": "staticwebassets\\PageComponents\\HeaderDescriptionHtmlBox\\script.js"
     },
     {
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\HeaderDescriptionHtmlBox\\script.min.js",
+      "PackagePath": "staticwebassets\\PageComponents\\HeaderDescriptionHtmlBox\\script.min.js"
+    },
+    {
       "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\HeaderDescriptionHtmlBox\\style.css",
       "PackagePath": "staticwebassets\\PageComponents\\HeaderDescriptionHtmlBox\\style.css"
     },
@@ -107,6 +115,10 @@
     {
       "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\HeaderHtmlBox\\script.js",
       "PackagePath": "staticwebassets\\PageComponents\\HeaderHtmlBox\\script.js"
+    },
+    {
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\HeaderHtmlBox\\script.min.js",
+      "PackagePath": "staticwebassets\\PageComponents\\HeaderHtmlBox\\script.min.js"
     },
     {
       "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\HeaderHtmlBox\\style.css",
@@ -179,6 +191,10 @@
     {
       "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\SearchHeaderQHtmlBox\\script.js",
       "PackagePath": "staticwebassets\\PageComponents\\SearchHeaderQHtmlBox\\script.js"
+    },
+    {
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\SearchHeaderQHtmlBox\\script.min.js",
+      "PackagePath": "staticwebassets\\PageComponents\\SearchHeaderQHtmlBox\\script.min.js"
     },
     {
       "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\SearchHeaderQHtmlBox\\style.css",

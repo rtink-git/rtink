@@ -37,7 +37,7 @@ export let authJWToken = sessions.authJWToken
 let authorizationInformationApi = await AuthorizationInformationApi()
 export let RoleId = await authorizationInformationApi.roleId
 
-let PageStylesheet = document.createElement("link"); PageStylesheet.setAttribute("rel", "stylesheet"); PageStylesheet.setAttribute("href", "/PageComponents/Page/style" + MinifyExpansion + ".css"); document.head.append(PageStylesheet);
+let PageStylesheet = document.createElement("link"); PageStylesheet.setAttribute("rel", "stylesheet"); PageStylesheet.setAttribute("href", "/PageComponents/Page/style.min.css"); document.head.append(PageStylesheet);
 
 
 export function PageHeadsBuild(title = null, description = null, imageUrl = null, imageAlt = null, urlCanonical = null, robot = "index,follow") {

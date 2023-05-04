@@ -4,7 +4,7 @@
         let name = "CentralInfHtmlBox"
         let url = "/PageComponents/" + name;
         let urlContent = "/PageComponents/" + name + "/content";
-        let css = document.createElement("link"); css.setAttribute("rel", "stylesheet"); css.setAttribute("href", url + "/style.css"); document.head.append(css);
+        let css = document.createElement("link"); css.setAttribute("rel", "stylesheet"); css.setAttribute("href", url + "/style.min.css"); document.head.append(css);
 
         this.id = name + "-" + Math.floor(Math.random() * 1000000);
 

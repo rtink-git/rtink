@@ -1,7 +1,7 @@
 ﻿const CentralHtmlPartName = "CentralHtmlPart"
 const CentralHtmlPartUrl = "/PageComponents/" + CentralHtmlPartName;
 
-let CentralHtmlPartCss = document.createElement("link"); CentralHtmlPartCss.setAttribute("rel", "stylesheet"); CentralHtmlPartCss.setAttribute("href", CentralHtmlPartUrl + "/style.css"); document.head.append(CentralHtmlPartCss);
+let CentralHtmlPartCss = document.createElement("link"); CentralHtmlPartCss.setAttribute("rel", "stylesheet"); CentralHtmlPartCss.setAttribute("href", CentralHtmlPartUrl + "/style.min.css"); document.head.append(CentralHtmlPartCss);
 
 window.CentralHtmlPart = class CentralHtmlPart {
     id

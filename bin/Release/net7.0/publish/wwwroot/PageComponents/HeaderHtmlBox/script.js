@@ -5,7 +5,7 @@
         this.HeaderQBoxName = "HeaderHtmlBox"
         this.HeaderQBoxUrl = "/PageComponents/" + this.HeaderQBoxName;
 
-        let HeaderQBoxCss = document.createElement("link"); HeaderQBoxCss.setAttribute("rel", "stylesheet"); HeaderQBoxCss.setAttribute("href", this.HeaderQBoxUrl + "/style" + MinifyExpansion + ".css"); document.head.append(HeaderQBoxCss);
+        let HeaderQBoxCss = document.createElement("link"); HeaderQBoxCss.setAttribute("rel", "stylesheet"); HeaderQBoxCss.setAttribute("href", this.HeaderQBoxUrl + "/style.min.css"); document.head.append(HeaderQBoxCss);
         let AudiowideStylesheet = document.createElement("link"); AudiowideStylesheet.setAttribute("rel", "stylesheet"); AudiowideStylesheet.setAttribute("href", "https://fonts.googleapis.com/css2?family=Audiowide&display=swap"); document.head.append(AudiowideStylesheet);
 
         const projectLogoUrl = this.HeaderQBoxUrl + "/content/logo.png"

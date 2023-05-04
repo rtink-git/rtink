@@ -1,5 +1,5 @@
 ﻿import { isTest, MinifyExpansion, apiUrl, PageHeadsBuild, authJWToken, RoleId } from '/PageComponents/Page/script.js';
-import { HeaderHtmlBox } from '/PageComponents/HeaderHtmlBox/script.js';
+import { HeaderHtmlBox } from '/PageComponents/HeaderHtmlBox/script.min.js';
 //import { HeaderDescriptionHtmlBox } from '/PageComponents/HeaderDescriptionHtmlBox/script.js';
 //import { SearchHeaderQHtmlBox } from "/PageComponents/SearchHeaderQHtmlBox/script.js";
 import { LocsHtmlBox } from '/PageComponents/LocsHtmlBox/script.js';

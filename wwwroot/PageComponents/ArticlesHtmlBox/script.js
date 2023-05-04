@@ -8,53 +8,53 @@
 import { MoreButtonHtmlBox } from '/PageComponents/MoreButtonHtmlBox/script.js';
 
 export class ArticlesHtmlBox {
-    #Target
-    #Position
-    #Search
-    #ApiUrl
-    #AuthJWToken
-    #MinifyExpansion
+    Target
+    Position
+    Search
+    ApiUrl
+    AuthJWToken
+    MinifyExpansion
 
     Name
     Page
 
-    #UrlContent
-    #Take
+    UrlContent
+    Take
 
     constructor(target, position, search, apiUrl, authJWToken, MinifyExpansion) {
-        this.#Target = target
-        this.#Position = position
-        this.#Search = search
-        this.#ApiUrl = apiUrl
-        this.#AuthJWToken = authJWToken
-        this.#MinifyExpansion = MinifyExpansion
+        this.Target = target
+        this.Position = position
+        this.Search = search
+        this.ApiUrl = apiUrl
+        this.AuthJWToken = authJWToken
+        this.MinifyExpansion = MinifyExpansion
 
         this.Name = "ArticlesHtmlBox"
         let url = "/PageComponents/" + this.Name;
-        this.#UrlContent = url + "/content"
-        let css = document.createElement("link"); css.setAttribute("rel", "stylesheet"); css.setAttribute("href", url + "/style" + this.#MinifyExpansion + ".css"); document.head.append(css);
+        this.UrlContent = url + "/content"
+        let css = document.createElement("link"); css.setAttribute("rel", "stylesheet"); css.setAttribute("href", url + "/style.min.css"); document.head.append(css);
 
         this.Page = 1;
-        this.#Take = 20;
+        this.Take = 20;
     }
 
     async AppendList() {
-        let list = await this.#ApiAticles()
+        let list = await this.ApiAticles()
         if (this.Page == 1) {
-            this.#Target.insertAdjacentHTML(this.#Position, this.#HtmlPart())
+            this.Target.insertAdjacentHTML(this.Position, this.HtmlPart())
 
-            if (list.length == this.#Take) {
-                let moreButtonHtmlBox = new MoreButtonHtmlBox(document.getElementById(this.Name), "beforeend", this.#MinifyExpansion)
+            if (list.length == this.Take) {
+                let moreButtonHtmlBox = new MoreButtonHtmlBox(document.getElementById(this.Name), "beforeend", this.MinifyExpansion)
 
                 document.getElementById(moreButtonHtmlBox.Name).addEventListener('click', async () => {
-                    let list = await this.#ApiAticles()
+                    let list = await this.ApiAticles()
 
                     list.forEach(e => {
-                        document.querySelector("#" + this.Name + " > ul").insertAdjacentHTML("beforeend", this.#ItemHtmlBox(e))
-                        this.#LoadImages(e.titleHb, e.fileUrlSource, e.fileId, e.extension)
+                        document.querySelector("#" + this.Name + " > ul").insertAdjacentHTML("beforeend", this.ItemHtmlBox(e))
+                        this.LoadImages(e.titleHb, e.fileUrlSource, e.fileId, e.extension)
                         if (e.description.length > 0 && e.isBody) {
                             document.querySelector("article[data-titleHb=\"" + e.titleHb + "\"] ._Description").addEventListener('click', async () => {
-                                this.#AppendBody(e.titleHb)
+                                this.AppendBody(e.titleHb)
                             });
                         }
                     })
@@ -65,14 +65,14 @@ export class ArticlesHtmlBox {
         }
 
         list.forEach(e => {
-            document.querySelector("#" + this.Name + " > ul").insertAdjacentHTML("beforeend", this.#ItemHtmlBox(e))
+            document.querySelector("#" + this.Name + " > ul").insertAdjacentHTML("beforeend", this.ItemHtmlBox(e))
             if (e.rating != 4)
-                this.#LoadImages(e.titleHb, e.fileUrlSource, e.fileId, e.extension)
+                this.LoadImages(e.titleHb, e.fileUrlSource, e.fileId, e.extension)
             if (e.rating == -9223372036854776000)
-                this.#AppendBody(e.titleHb)
+                this.AppendBody(e.titleHb)
             if (e.description.length > 0 && e.isBody) {
                 document.querySelector("article[data-titleHb=\"" + e.titleHb + "\"] ._Description").addEventListener('click', async () => {
-                    this.#AppendBody(e.titleHb)
+                    this.AppendBody(e.titleHb)
                 });
             }
         })
@@ -86,7 +86,7 @@ export class ArticlesHtmlBox {
 
     //-- html parts
 
-    #HtmlPart() {
+    HtmlPart() {
         let html = "\
         <div id=\"" + this.Name + "\">\
             <ul>\
@@ -96,7 +96,7 @@ export class ArticlesHtmlBox {
         return html;
     }
 
-    #ItemHtmlBox(e) {
+    ItemHtmlBox(e) {
         let html = "\
         <li>\
             <article data-titleHb=\"" + e.titleHb + "\" data-tp=\"" + e.rating + "\" data-isBody=\"" + e.isBody + "\">\
@@ -118,7 +118,7 @@ export class ArticlesHtmlBox {
                         </span>\
                     </a>\
                     <span>\
-                    " + this.#ConvertDatetimeToShortFormat(e.dt) + "\
+                    " + this.ConvertDatetimeToShortFormat(e.dt) + "\
                     </span>\
                     <a href=\"/a/" + e.urlShort + "\">\
                         <span>\
@@ -133,7 +133,7 @@ export class ArticlesHtmlBox {
         return html;
     }
 
-    #ConvertDatetimeToShortFormat(datetime) {
+    ConvertDatetimeToShortFormat(datetime) {
         let s = "";
 
         //const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
@@ -167,7 +167,7 @@ export class ArticlesHtmlBox {
 
     //-- actions
 
-    #LoadImages(titleHb, fileUrlSource, fileId, extension) {
+    LoadImages(titleHb, fileUrlSource, fileId, extension) {
         let tr = document.querySelector("article[data-titleHb=\"" + titleHb + "\"]");
         let trg = tr.querySelector("img")
 
@@ -183,8 +183,8 @@ export class ArticlesHtmlBox {
         img.src = fileUrlSource
     }
 
-    async #AppendBody(titleHb) {
-        let bodyObj = await this.#ApiArticleBody(titleHb)
+    async AppendBody(titleHb) {
+        let bodyObj = await this.ApiArticleBody(titleHb)
         if (bodyObj != null && bodyObj.body.length > 0) {
             let tr = document.querySelector("article[data-titleHb=\"" + titleHb + "\"]");
             let dsT = tr.querySelector("._Description")
@@ -200,19 +200,19 @@ export class ArticlesHtmlBox {
 
     //-- api acctions
 
-    async #ApiAticles() {
-        const response = await fetch(this.#ApiUrl + "/RtInk/Articles?search=" + this.#Search + "&take=" + this.#Take + "&page=" + this.Page, {
+    async ApiAticles() {
+        const response = await fetch(this.ApiUrl + "/RtInk/Articles?search=" + this.Search + "&take=" + this.Take + "&page=" + this.Page, {
             method: "GET",
-            headers: { "Accept": "application/json", "Authorization": "Bearer " + this.#AuthJWToken }
+            headers: { "Accept": "application/json", "Authorization": "Bearer " + this.AuthJWToken }
         });
         if (response.ok === true) return await response.json();
         return null;
     }
 
-    async #ApiArticleBody(titleHb) {
-        const response = await fetch(this.#ApiUrl + "/RtInk/ArticleBody?titleHb=" + titleHb.toString(), {
+    async ApiArticleBody(titleHb) {
+        const response = await fetch(this.ApiUrl + "/RtInk/ArticleBody?titleHb=" + titleHb.toString(), {
             method: "GET",
-            headers: { "Accept": "application/json", "Authorization": "Bearer " + this.#AuthJWToken }
+            headers: { "Accept": "application/json", "Authorization": "Bearer " + this.AuthJWToken }
         });
         if (response.ok === true) return await response.json();
         return null;

@@ -10,6 +10,11 @@
     }
   },
   {
+    "outputFileName": "wwwroot/PageComponents/ArticlesHtmlBox/script.min.js",
+    "inputFiles": [ "wwwroot/PageComponents/ArticlesHtmlBox/script.js" ],
+    "minify": { "renameLocals": false }
+  },
+  {
     "outputFileName": "wwwroot/PageComponents/ArticlesHtmlBox/style.min.css",
     "inputFiles": [ "wwwroot/PageComponents/ArticlesHtmlBox/style.css" ],
     "minify": {
@@ -34,12 +39,22 @@
     }
   },
   {
+    "outputFileName": "wwwroot/PageComponents/HeaderDescriptionHtmlBox/script.min.js",
+    "inputFiles": [ "wwwroot/PageComponents/HeaderDescriptionHtmlBox/script.js" ],
+    "minify": { "renameLocals": false }
+  },
+  {
     "outputFileName": "wwwroot/PageComponents/HeaderDescriptionHtmlBox/style.min.css",
     "inputFiles": [ "wwwroot/PageComponents/HeaderDescriptionHtmlBox/style.css" ],
     "minify": {
       "enabled": true,
       "renameLocals": false
     }
+  },
+  {
+    "outputFileName": "wwwroot/PageComponents/HeaderHtmlBox/script.min.js",
+    "inputFiles": [ "wwwroot/PageComponents/HeaderHtmlBox/script.js" ],
+    "minify": { "renameLocals": false }
   },
   {
     "outputFileName": "wwwroot/PageComponents/HeaderHtmlBox/style.min.css",
@@ -65,6 +80,11 @@
       "enabled": true,
       "renameLocals": false
     }
+  },
+  {
+    "outputFileName": "wwwroot/PageComponents/SearchHeaderQHtmlBox/script.min.js",
+    "inputFiles": [ "wwwroot/PageComponents/SearchHeaderQHtmlBox/script.js" ],
+    "minify": { "renameLocals": false }
   },
   {
     "outputFileName": "wwwroot/PageComponents/SearchHeaderQHtmlBox/style.min.css",

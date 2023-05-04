@@ -27,7 +27,7 @@ export class UsersHtmlBox {
         this.Name = "UsersHtmlBox"
         let url = "/PageComponents/" + this.Name;
         this.#UrlContent = url + "/content"
-        let css = document.createElement("link"); css.setAttribute("rel", "stylesheet"); css.setAttribute("href", url + "/style" + this.#MinifyExpansion + ".css"); document.head.append(css);
+        let css = document.createElement("link"); css.setAttribute("rel", "stylesheet"); css.setAttribute("href", url + "/style.min.css"); document.head.append(css);
 
         this.Page = 1;
         this.#Take = 50;

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "/YS6M78CFGtB6ozObWoYiTs7BBKL2QuhkwoahbX2gL4=",
+  "Hash": "lm3Kg4uosJ93mTxBDM6JsUUDkBLEHFCpnk4MKuM7Tc8=",
   "Source": "RtInk",
   "BasePath": "_content/RtInk",
   "Mode": "Default",
@@ -100,6 +100,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\PageComponents\\ArticlesHtmlBox\\script.js"
+    },
+    {
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\ArticlesHtmlBox\\script.min.js",
+      "SourceId": "RtInk",
+      "SourceType": "Discovered",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\",
+      "BasePath": "_content/RtInk",
+      "RelativePath": "PageComponents/ArticlesHtmlBox/script.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\PageComponents\\ArticlesHtmlBox\\script.min.js"
     },
     {
       "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\ArticlesHtmlBox\\style.css",
@@ -357,6 +374,23 @@
       "OriginalItemSpec": "wwwroot\\PageComponents\\HeaderDescriptionHtmlBox\\script.js"
     },
     {
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\HeaderDescriptionHtmlBox\\script.min.js",
+      "SourceId": "RtInk",
+      "SourceType": "Discovered",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\",
+      "BasePath": "_content/RtInk",
+      "RelativePath": "PageComponents/HeaderDescriptionHtmlBox/script.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\PageComponents\\HeaderDescriptionHtmlBox\\script.min.js"
+    },
+    {
       "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\HeaderDescriptionHtmlBox\\style.css",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
@@ -474,6 +508,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\PageComponents\\HeaderHtmlBox\\script.js"
+    },
+    {
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\HeaderHtmlBox\\script.min.js",
+      "SourceId": "RtInk",
+      "SourceType": "Discovered",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\",
+      "BasePath": "_content/RtInk",
+      "RelativePath": "PageComponents/HeaderHtmlBox/script.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\PageComponents\\HeaderHtmlBox\\script.min.js"
     },
     {
       "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\HeaderHtmlBox\\style.css",
@@ -780,6 +831,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\PageComponents\\SearchHeaderQHtmlBox\\script.js"
+    },
+    {
+      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\SearchHeaderQHtmlBox\\script.min.js",
+      "SourceId": "RtInk",
+      "SourceType": "Discovered",
+      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\",
+      "BasePath": "_content/RtInk",
+      "RelativePath": "PageComponents/SearchHeaderQHtmlBox/script.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\PageComponents\\SearchHeaderQHtmlBox\\script.min.js"
     },
     {
       "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\SearchHeaderQHtmlBox\\style.css",

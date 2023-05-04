@@ -4,8 +4,8 @@
 //-- 2023-04-17 Location user icon
 
 import { isTest, MinifyExpansion, apiUrl, PageHeadsBuild, authJWToken, RoleId } from '/PageComponents/Page/script.js';
-import { HeaderHtmlBox } from '/PageComponents/HeaderHtmlBox/script.js';
-import { SearchHeaderQHtmlBox } from "/PageComponents/SearchHeaderQHtmlBox/script.js";
+import { HeaderHtmlBox } from '/PageComponents/HeaderHtmlBox/script.min.js';
+import { SearchHeaderQHtmlBox } from "/PageComponents/SearchHeaderQHtmlBox/script.min.js";
 import { UsersHtmlBox } from '/PageComponents/UsersHtmlBox/script.js';
 
 //--------------------
