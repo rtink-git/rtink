@@ -16,18 +16,18 @@ const UsersPageUrlContent = UsersPageUrl + "/content";
 let UsersPageCss = document.createElement("link"); UsersPageCss.setAttribute("rel", "stylesheet"); UsersPageCss.setAttribute("href", UsersPageUrl + "/style.css"); document.head.append(UsersPageCss);
 PageHeadsBuild("Users - RT", "")
 
-let menuList = new Array()
-if (RoleId == 0) {
-}
-else {
-    var userLoginJson = await ApiGetUserLogin()
-    menuList.push({ "icon": UsersPageUrlContent + "/user.png", "href": "/i/-" + userLoginJson.login });
-    menuList.push({ "icon": UsersPageUrlContent + "/location.png", "href": "/locations", "id": "LocationBM", "alt": "location" });
-}
-menuList.push({ "icon": UsersPageUrlContent + "/search.png", "href": "", "id": "SearchBM" });
-menuList.push({ "icon": UsersPageUrlContent + "/undo.png", "href": "/" });
+let headerHtmlBox = new HeaderHtmlBox()
 
-new HeaderHtmlBox(document.getElementsByTagName("body")[0], "afterbegin", "RT / USERS", null, menuList, isTest)
+
+if (RoleId > 0) {
+    var userLoginJson = await ApiGetUserLogin()
+    headerHtmlBox.PushMenuRow({ "icon": UsersPageUrlContent + "/user.png", "href": "/i/-" + userLoginJson.login });
+    headerHtmlBox.PushMenuRow({ "icon": UsersPageUrlContent + "/location.png", "href": "/locations", "id": "LocationBM", "alt": "location" });
+}
+headerHtmlBox.PushMenuRow({ "icon": UsersPageUrlContent + "/search.png", "href": "", "id": "SearchBM" });
+headerHtmlBox.PushMenuRow({ "icon": UsersPageUrlContent + "/undo.png", "href": "/" });
+
+headerHtmlBox.InsertAdjacentHTML(document.getElementsByTagName("body")[0], "afterbegin", "RT / USERS")
 new SearchHeaderQHtmlBox(document.getElementById("HeaderHtmlBox"), "afterend", "", "", "", MinifyExpansion)
 
 let usersHtmlBox = new UsersHtmlBox(document.getElementById("SearchHeaderQHtmlBox"), "afterend", apiUrl, authJWToken, RoleId, MinifyExpansion)

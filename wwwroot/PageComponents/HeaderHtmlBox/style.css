@@ -30,21 +30,7 @@
         float: left;
     }
 
-    #HeaderHtmlBox > *:nth-child(2) {
-/*        padding-left:20px;*/
-    }
-
         #HeaderHtmlBox > *:first-child {
-            display:none;
-        }
-
-        #HeaderHtmlBox > *:first-child > img {
-            width: 20px;
-            height: 20px;
-            margin:14px 0 16px;
-        }
-
-        #HeaderHtmlBox > *:nth-child(2) {
             margin-top:12px;
         }
 

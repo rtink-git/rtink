@@ -8,7 +8,7 @@
 /*-- 2023-02-16 Task.Warning: Login не может быть числом --*/
 
 import { isTest, MinifyExpansion, apiUrl, PageHeadsBuild, authJWToken, RoleId } from '/PageComponents/Page/script.js';
-import { HeaderHtmlBox } from "/PageComponents/HeaderHtmlBox/script.js";
+import { HeaderHtmlBox } from "/PageComponents/HeaderHtmlBox/script.min.js";
 import { HeaderDescriptionHtmlBox } from '/PageComponents/HeaderDescriptionHtmlBox/script.min.js';
 import { SearchHeaderQHtmlBox } from "/PageComponents/SearchHeaderQHtmlBox/script.min.js";
 import { ArticlesHtmlBox } from "/PageComponents/ArticlesHtmlBox/script.js";
@@ -52,24 +52,25 @@ if (search.length > 0) {
 
 //--------------------
 
+let headerHtmlBox = new HeaderHtmlBox()
+
 let HeaderTitle = "";
 let headerDescriptionName = ""
 let headerDescriptionNameSub = ""
 let placeholder = ""
 let subscribType = 0;
-let menuList = new Array();
 
 if (typeApiPageI == 0) {
     HeaderTitle = "RT"
     headerDescriptionName = "NEWS";
 
-    menuList.push({ "icon": iPageUrlContent + "/search.png", "href": "", "id": "SearchBM", "alt": "search" });
+    headerHtmlBox.PushMenuRow({ "icon": iPageUrlContent + "/search.png", "href": "", "id": "SearchBM", "alt": "search" })
     if (RoleId == 0) {
-        menuList.push({ "icon": iPageUrlContent + "/location.png", "href": "/locations", "id": "LocationBM", "alt": "location" });
+        headerHtmlBox.PushMenuRow({ "icon": iPageUrlContent + "/location.png", "href": "/locations", "id": "LocationBM", "alt": "location" });
         localStorage.setItem("SessionRefrshRequired", "true")
-        menuList.push({ "icon": iPageUrlContent + "/login.png", "href": apiUrl + "/Base/Authorization/Signin/Google?SessionToken=" + authJWToken + "&RedirectUrl=" + document.URL });
+        headerHtmlBox.PushMenuRow({ "icon": iPageUrlContent + "/login.png", "href": apiUrl + "/Base/Authorization/Signin/Google?SessionToken=" + authJWToken + "&RedirectUrl=" + document.URL });
     }
-    else menuList.push({ "icon": iPageUrlContent + "/category.png", "href": "/users", "alt": "signin" });
+    else headerHtmlBox.PushMenuRow({ "icon": iPageUrlContent + "/category.png", "href": "/users", "alt": "signin" });
 }
 else if (typeApiPageI == 1) {
     if (RoleId > 0) {
@@ -84,11 +85,11 @@ else if (typeApiPageI == 1) {
             else if (subscribType == 4)
                 subscribUrl = iPageUrlContent + "/doubleCheckRedRed.png"
 
-            menuList.push({ "icon": subscribUrl, "href": "", "id": "SubsribB" });
+            headerHtmlBox.PushMenuRow({ "icon": subscribUrl, "href": "", "id": "SubsribB" });
         }
         else {
-            menuList.push({ "icon": iPageUrlContent + "/add.png", "href": "" });
-            menuList.push({ "icon": iPageUrlContent + "/settings.png", "href": "" });
+            headerHtmlBox.PushMenuRow({ "icon": iPageUrlContent + "/add.png", "href": "" });
+            headerHtmlBox.PushMenuRow({ "icon": iPageUrlContent + "/settings.png", "href": "" });
         }
     }
 
@@ -99,28 +100,28 @@ else if (typeApiPageI == 1) {
         placeholder = placeholder.trim().toUpperCase();
     }
 
-    menuList.push({ "icon": iPageUrlContent + "/search.png", "href": "", "id": "SearchBM" });
+    headerHtmlBox.PushMenuRow({ "icon": iPageUrlContent + "/search.png", "href": "", "id": "SearchBM" });
     let href = "/"
     if (RoleId > 0) href = "/users"
-    menuList.push({ "icon": iPageUrlContent + "/undo.png", "href": href });
+    headerHtmlBox.PushMenuRow({ "icon": iPageUrlContent + "/undo.png", "href": href });
 }
 else if (typeApiPageI == 2) {
-    menuList.push({ "icon": iPageUrlContent + "/bookmark.png", "id": "BookmarkB" });
-    menuList.push({ "icon": iPageUrlContent + "/undo.png", "href": "/" });
+    headerHtmlBox.PushMenuRow({ "icon": iPageUrlContent + "/bookmark.png", "id": "BookmarkB" });
+    headerHtmlBox.PushMenuRow({ "icon": iPageUrlContent + "/undo.png", "href": "/" });
 }
 else if (typeApiPageI == 3) {
     placeholder = search.toUpperCase().replaceAll('-', ' ');
     HeaderTitle = "RT"
     headerDescriptionName = "SEARCH";
 
-    menuList.push({ "icon": iPageUrlContent + "/search.png", "href": "", "id": "SearchBM" });
-    menuList.push({ "icon": iPageUrlContent + "/undo.png", "href": "/" });
+    headerHtmlBox.PushMenuRow({ "icon": iPageUrlContent + "/search.png", "href": "", "id": "SearchBM" });
+    headerHtmlBox.PushMenuRow({ "icon": iPageUrlContent + "/undo.png", "href": "/" });
 } 
 
 //--------------------
 
-new HeaderHtmlBox(document.getElementsByTagName("body")[0], "afterbegin", HeaderTitle, null, menuList, isTest, MinifyExpansion)
-
+//new HeaderHtmlBox(document.getElementsByTagName("body")[0], "afterbegin", HeaderTitle, menuList)
+headerHtmlBox.InsertAdjacentHTML(document.getElementsByTagName("body")[0], "afterbegin", HeaderTitle)
 
 let idxy = "HeaderDescriptionHtmlBox"
 if (headerDescriptionName.length > 0)

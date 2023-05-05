@@ -1,10 +1,6 @@
 ﻿import { isTest, MinifyExpansion, apiUrl, PageHeadsBuild, authJWToken, RoleId } from '/PageComponents/Page/script.js';
 import { HeaderHtmlBox } from '/PageComponents/HeaderHtmlBox/script.min.js';
-//import { HeaderDescriptionHtmlBox } from '/PageComponents/HeaderDescriptionHtmlBox/script.js';
-//import { SearchHeaderQHtmlBox } from "/PageComponents/SearchHeaderQHtmlBox/script.js";
 import { LocsHtmlBox } from '/PageComponents/LocsHtmlBox/script.js';
-
-
 
 
 
@@ -14,15 +10,15 @@ const LocationsPageUrlContent = LocationsPageUrl + "/content";
 let LocationsPageCss = document.createElement("link"); LocationsPageCss.setAttribute("rel", "stylesheet"); LocationsPageCss.setAttribute("href", LocationsPageUrl + "/style.css"); document.head.append(LocationsPageCss);
 PageHeadsBuild("Locations - RT", "")
 
-let menuList = new Array()
-//menuList.push({ "icon": LocationsPageUrlContent + "/search.png", "href": "", "id": "SearchBM" });
+let headerHtmlBox = new HeaderHtmlBox()
+
+
 let href = "/users"
 if (RoleId == 0)
     href = "/"
-menuList.push({ "icon": LocationsPageUrlContent + "/undo.png", "href": href });
+headerHtmlBox.PushMenuRow({ "icon": LocationsPageUrlContent + "/undo.png", "href": href });
 
-new HeaderHtmlBox(document.getElementsByTagName("body")[0], "afterbegin", "", null, menuList, isTest, MinifyExpansion)
-//new HeaderDescriptionHtmlBox(document.getElementById("HeaderHtmlBox"), "afterend", "LOCATIONS", "")
+headerHtmlBox.InsertAdjacentHTML(document.getElementsByTagName("body")[0], "afterbegin", "")
 
 let htmlQ = "\
 <div id=\"H1QHtmlBox\">\
@@ -40,17 +36,6 @@ let htmlQ = "\
 "
 
 document.getElementById("HeaderHtmlBox").insertAdjacentHTML("afterend", htmlQ)
-//new SearchHeaderQHtmlBox(document.getElementById("HeaderHtmlBox"), "afterend", "", "", "")
 
 let locsHtmlBox = new LocsHtmlBox(document.getElementById("H1QHtmlBox"), "afterend", apiUrl, authJWToken, RoleId, MinifyExpansion)
 await locsHtmlBox.AppendBaseList()
-
-
-
-
-//-- html actions
-
-//document.getElementById("SearchBM").addEventListener('click', async (event) => {
-//    document.getElementById("SearchBM").style.display = "none";
-//    document.getElementById("SearchHeaderQHtmlBox").style.display = "block";
-//});

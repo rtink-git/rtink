@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "3RQ6vTdLCyQsX2IY1t7wGLw2+QaO+DJ4G/LYgLy9joA=",
+  "Hash": "f3S5XUFwg+kD7NQmaXXndzVHthW85+OmpU9m1pu4g5M=",
   "Source": "RtInk",
   "BasePath": "_content/RtInk",
   "Mode": "Default",
@@ -1273,23 +1273,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Pages\\i\\content\\location.png"
-    },
-    {
-      "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\Pages\\i\\content\\location_.png",
-      "SourceId": "RtInk",
-      "SourceType": "Discovered",
-      "ContentRoot": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\",
-      "BasePath": "_content/RtInk",
-      "RelativePath": "Pages/i/content/location_.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Pages\\i\\content\\location_.png"
     },
     {
       "Identity": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\Pages\\i\\content\\login.png",
