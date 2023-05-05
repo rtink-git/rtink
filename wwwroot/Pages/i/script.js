@@ -8,7 +8,7 @@
 /*-- 2023-02-16 Task.Warning: Login не может быть числом --*/
 
 import { isTest, MinifyExpansion, apiUrl, PageHeadsBuild, authJWToken, RoleId } from '/PageComponents/Page/script.js';
-import { HeaderHtmlBox } from "/PageComponents/HeaderHtmlBox/script.min.js";
+import { HeaderHtmlBox } from "/PageComponents/HeaderHtmlBox/script.js";
 import { HeaderDescriptionHtmlBox } from '/PageComponents/HeaderDescriptionHtmlBox/script.min.js';
 import { SearchHeaderQHtmlBox } from "/PageComponents/SearchHeaderQHtmlBox/script.min.js";
 import { ArticlesHtmlBox } from "/PageComponents/ArticlesHtmlBox/script.js";
@@ -16,7 +16,7 @@ import { ArticlesHtmlBox } from "/PageComponents/ArticlesHtmlBox/script.js";
 //-- css
 
 const iPageName = "i";  const iPageUrl = "/Pages/" + iPageName; const iPageUrlContent = iPageUrl + "/content";
-let iPageCss = document.createElement("link"); iPageCss.setAttribute("rel", "stylesheet"); iPageCss.setAttribute("href", iPageUrl + "/style.min.css"); document.head.append(iPageCss);
+let iPageCss = document.createElement("link"); iPageCss.setAttribute("rel", "stylesheet"); iPageCss.setAttribute("href", iPageUrl + "/style.css"); document.head.append(iPageCss);
 
 //--------------------
 
@@ -52,24 +52,26 @@ if (search.length > 0) {
 
 //--------------------
 
-let HeaderTitle = "RT"
+let HeaderTitle = "";
+let headerDescriptionName = ""
+let headerDescriptionNameSub = ""
+let placeholder = ""
 let subscribType = 0;
-let menuList = new Array()
+let menuList = new Array();
 
 if (typeApiPageI == 0) {
+    HeaderTitle = "RT"
+    headerDescriptionName = "NEWS";
+
     menuList.push({ "icon": iPageUrlContent + "/search.png", "href": "", "id": "SearchBM", "alt": "search" });
-    menuList.push({ "icon": iPageUrlContent + "/location.png", "href": "/locations", "id": "LocationBM", "alt": "location" });
     if (RoleId == 0) {
-    //    localStorage.setItem("SessionRefrshRequired", "true")
-    //    menuList.push({ "icon": iPageUrlContent + "/login.png", "href": apiUrl + "/Base/Authorization/Signin/Google?SessionToken=" + authJWToken + "&RedirectUrl=" + document.URL });
+        menuList.push({ "icon": iPageUrlContent + "/location.png", "href": "/locations", "id": "LocationBM", "alt": "location" });
+        localStorage.setItem("SessionRefrshRequired", "true")
+        menuList.push({ "icon": iPageUrlContent + "/login.png", "href": apiUrl + "/Base/Authorization/Signin/Google?SessionToken=" + authJWToken + "&RedirectUrl=" + document.URL });
     }
-    else
-        menuList.push({ "icon": iPageUrlContent + "/category.png", "href": "/users", "alt": "signin" });
+    else menuList.push({ "icon": iPageUrlContent + "/category.png", "href": "/users", "alt": "signin" });
 }
 else if (typeApiPageI == 1) {
-    //HeaderTitle = "RT / USER"
-    HeaderTitle = ""
-
     if (RoleId > 0) {
         let userBio = await ApiUserBio(userLogin)
         subscribType = userBio.sbt
@@ -90,10 +92,16 @@ else if (typeApiPageI == 1) {
         }
     }
 
+    if (search.split('-').length > 2) {
+        let searchSplit = search.split('-')
+        for (var i = 2; i < searchSplit.length; i++)
+            placeholder += searchSplit[i] + ' '
+        placeholder = placeholder.trim().toUpperCase();
+    }
+
     menuList.push({ "icon": iPageUrlContent + "/search.png", "href": "", "id": "SearchBM" });
-    let href = "/users"
-    if (RoleId == 0)
-        href = "/"
+    let href = "/"
+    if (RoleId > 0) href = "/users"
     menuList.push({ "icon": iPageUrlContent + "/undo.png", "href": href });
 }
 else if (typeApiPageI == 2) {
@@ -101,6 +109,10 @@ else if (typeApiPageI == 2) {
     menuList.push({ "icon": iPageUrlContent + "/undo.png", "href": "/" });
 }
 else if (typeApiPageI == 3) {
+    placeholder = search.toUpperCase().replaceAll('-', ' ');
+    HeaderTitle = "RT"
+    headerDescriptionName = "SEARCH";
+
     menuList.push({ "icon": iPageUrlContent + "/search.png", "href": "", "id": "SearchBM" });
     menuList.push({ "icon": iPageUrlContent + "/undo.png", "href": "/" });
 } 
@@ -109,41 +121,9 @@ else if (typeApiPageI == 3) {
 
 new HeaderHtmlBox(document.getElementsByTagName("body")[0], "afterbegin", HeaderTitle, null, menuList, isTest, MinifyExpansion)
 
-//if (typeApiPageI == 0 && RoleId == 0) {
-//    document.getElementById("SigninB").addEventListener('click', async () => {
-//        window.location.href = apiUrl + "/Base/Authorization/Signin/Google?SessionToken=" + authJWToken + "&RedirectUrl=" + document.URL //https://localhost:7199/
-//    });
-//}
-
-let placeholder = ""
-//let afterend = "HeaderHtmlBox"
-let headerDescriptionName = ""
-let headerDescriptionNameSub = ""
-
-if (typeApiPageI == 0) {
-    headerDescriptionName = "NEWS";
-}
-else if (typeApiPageI == 1) {
-    if (search.split('-').length > 2) {
-        let searchSplit = search.split('-')
-        for (var i = 2; i < searchSplit.length; i++)
-            placeholder += searchSplit[i] + ' '
-        placeholder = placeholder.trim().toUpperCase();
-    }
-    let userName = search.split('-')[1].toUpperCase()
-    headerDescriptionName = userName.substring(0, 4);
-    headerDescriptionNameSub = userName.substring(4, userName.length)
-}
-else if (typeApiPageI == 2) {
-    headerDescriptionName = "ARTICLE";
-}
-else if (typeApiPageI == 3) {
-    placeholder = search.toUpperCase().replaceAll('-', ' ');
-    headerDescriptionName = "SEARCH";
-}
 
 let idxy = "HeaderDescriptionHtmlBox"
-if (HeaderTitle.length > 0)
+if (headerDescriptionName.length > 0)
     new HeaderDescriptionHtmlBox(document.getElementById("HeaderHtmlBox"), "afterend", headerDescriptionName, headerDescriptionNameSub, "Moscow", MinifyExpansion);
 else 
     idxy = "HeaderHtmlBox"

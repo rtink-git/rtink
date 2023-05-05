@@ -4,7 +4,7 @@
 //-- 2023-04-17 Location user icon
 
 import { isTest, MinifyExpansion, apiUrl, PageHeadsBuild, authJWToken, RoleId } from '/PageComponents/Page/script.js';
-import { HeaderHtmlBox } from '/PageComponents/HeaderHtmlBox/script.min.js';
+import { HeaderHtmlBox } from '/PageComponents/HeaderHtmlBox/script.js';
 import { SearchHeaderQHtmlBox } from "/PageComponents/SearchHeaderQHtmlBox/script.min.js";
 import { UsersHtmlBox } from '/PageComponents/UsersHtmlBox/script.js';
 
@@ -17,12 +17,12 @@ let UsersPageCss = document.createElement("link"); UsersPageCss.setAttribute("re
 PageHeadsBuild("Users - RT", "")
 
 let menuList = new Array()
-menuList.push({ "icon": UsersPageUrlContent + "/location.png", "href": "/locations", "id": "LocationBM" });
 if (RoleId == 0) {
 }
 else {
     var userLoginJson = await ApiGetUserLogin()
     menuList.push({ "icon": UsersPageUrlContent + "/user.png", "href": "/i/-" + userLoginJson.login });
+    menuList.push({ "icon": UsersPageUrlContent + "/location.png", "href": "/locations", "id": "LocationBM", "alt": "location" });
 }
 menuList.push({ "icon": UsersPageUrlContent + "/search.png", "href": "", "id": "SearchBM" });
 menuList.push({ "icon": UsersPageUrlContent + "/undo.png", "href": "/" });
