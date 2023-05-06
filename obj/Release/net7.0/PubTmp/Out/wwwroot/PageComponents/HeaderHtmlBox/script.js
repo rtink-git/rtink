@@ -1,50 +1,40 @@
 ﻿export class HeaderHtmlBox {
-    HeaderQBoxName
-    HeaderQBoxUrl
-    constructor(target, position, title, backToPreviousPage = null, menuList = null, isTest = false, MinifyExpansion = null) {
-        this.HeaderQBoxName = "HeaderHtmlBox"
-        this.HeaderQBoxUrl = "/PageComponents/" + this.HeaderQBoxName;
+    _MenuList
 
-        let HeaderQBoxCss = document.createElement("link"); HeaderQBoxCss.setAttribute("rel", "stylesheet"); HeaderQBoxCss.setAttribute("href", this.HeaderQBoxUrl + "/style.min.css"); document.head.append(HeaderQBoxCss);
-        let AudiowideStylesheet = document.createElement("link"); AudiowideStylesheet.setAttribute("rel", "stylesheet"); AudiowideStylesheet.setAttribute("href", "https://fonts.googleapis.com/css2?family=Audiowide&display=swap"); document.head.append(AudiowideStylesheet);
-
-        const projectLogoUrl = this.HeaderQBoxUrl + "/content/logo.png"
-
-        let html = this.MainHtmlPart(title, projectLogoUrl,backToPreviousPage, menuList, isTest);
-        target.insertAdjacentHTML(position, html)
+    constructor() {
+        let url = "/PageComponents/" + this.constructor.name;
+        let css = document.createElement("link"); css.setAttribute("rel", "stylesheet"); css.setAttribute("href", url + "/style.min.css"); document.head.append(css);
+        this._MenuList = new Array()
     }
 
-    MainHtmlPart(title, projectLogoUrl, backToPreviousPage = null, menuList = null, isTest = false) {
-        if (backToPreviousPage == null)
-            backToPreviousPage = document.URL
+    PushMenuRow(e) {
+        //-- example: headerHtmlBox.PushMenuRow({ "icon": this.url + "/content/test/category.png", "href": "/", "id": "_CategoryId" });
+        this._MenuList.push(e)
+    }
+
+    InsertAdjacentHTML(target, position, title) {
+        target.insertAdjacentHTML(position, this._HtmlPart(title))
+    }
+
+    _HtmlPart(title) {
         let html =
-            "<header id=\"" + this.HeaderQBoxName + "\">\
-                <a href=\"" + backToPreviousPage + "\">\
-                    <img src=\"" + projectLogoUrl + "\" />\
-                </a>\
-                <a href=\"" + backToPreviousPage + "\">\
-                    " + title + "\
-                </a>\
-                " + this.MenuHtmlPart(menuList, isTest) + "\
-            </header>";
+"<header id=\"" + this.constructor.name + "\">\
+    <a href=\"/\">\
+    " + title + "\
+    </a>\
+    " + this._MenuHtmlPartBuild() + "\
+</header>";
 
         return html;
     }
 
-    MenuHtmlPart(menuList, isTest) {
+    _MenuHtmlPartBuild() {
         let html = "";
 
-        if (isTest == true && (menuList == null || menuList.length == 0)) {
-            menuList = new Array()
-            menuList.push({ "icon": this.HeaderQBoxUrl + "/content/test/category.png", "href": "/", "id": "_CategoryId" });
-            menuList.push({ "icon": this.HeaderQBoxUrl + "/content/test/menu.png", "href": "", "id": "_MenuId" });
-            menuList.push({ "icon": this.HeaderQBoxUrl + "/content/test/login.png", "href": "" });
-        }
-
-        if (menuList != null && menuList.length > 0) {
+        if (this._MenuList.length > 0) {
             html = "<ul>";
 
-            menuList.forEach(e => {
+            this._MenuList.forEach(e => {
                 let idAttr = "";
                 if (e.id != undefined && e.id != null && e.id.length > 0)
                     idAttr = "id=\"" + e.id + "\""
@@ -59,11 +49,11 @@
                     hrefAttr = "href=\"" + e.href + "\""
 
                 html +=
-                    "<li " + idAttr + ">\
-                        <a " + hrefAttr + ">\
-                            <img " + altAttr + " src=\"" + e.icon + "\">\
-                        </a>\
-                    </li>"
+"<li " + idAttr + ">\
+    <a " + hrefAttr + ">\
+        <img " + altAttr + " src=\"" + e.icon + "\">\
+    </a>\
+</li>"
             })
 
             html += "</ul>";

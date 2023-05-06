@@ -1,0 +1,37 @@
+﻿<Properties StartupConfiguration="{2A94A121-35CD-4AF3-A8E2-4F7ED5E25B9B}|https">
+  <MonoDevelop.Ide.ItemProperties.RtInk PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench>
+    <Files>
+      <File FileName="wwwroot/Pages/i/script.js" />
+      <File FileName="wwwroot/Pages/Locations/script.js" Line="25" Column="9" />
+      <File FileName="wwwroot/PageComponents/HeaderDescriptionHtmlBox/script.js" Line="7" Column="1" NotebookId="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="RtInk" expanded="True">
+            <Node name="RtInk" expanded="True">
+              <Node name="wwwroot" expanded="True">
+                <Node name="PageComponents" expanded="True">
+                  <Node name="HeaderTitleDescriptionHtmlBox" expanded="True" />
+                </Node>
+                <Node name="Pages" expanded="True">
+                  <Node name="i" expanded="True" />
+                  <Node name="Locations" expanded="True">
+                    <Node name="script.js" selected="True" />
+                  </Node>
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+</Properties>

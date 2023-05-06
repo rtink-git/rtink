@@ -149,6 +149,10 @@
       "PackagePath": "staticwebassets\\PageComponents\\LocsHtmlBox\\script.js"
     },
     {
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\LocsHtmlBox\\script.min.js",
+      "PackagePath": "staticwebassets\\PageComponents\\LocsHtmlBox\\script.min.js"
+    },
+    {
       "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\LocsHtmlBox\\style.css",
       "PackagePath": "staticwebassets\\PageComponents\\LocsHtmlBox\\style.css"
     },
@@ -167,6 +171,22 @@
     {
       "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\MoreButtonHtmlBox\\style.min.css",
       "PackagePath": "staticwebassets\\PageComponents\\MoreButtonHtmlBox\\style.min.css"
+    },
+    {
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\Page\\content\\logo.png",
+      "PackagePath": "staticwebassets\\PageComponents\\Page\\content\\logo.png"
+    },
+    {
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\Page\\content\\logo180.png",
+      "PackagePath": "staticwebassets\\PageComponents\\Page\\content\\logo180.png"
+    },
+    {
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\Page\\content\\logo192.png",
+      "PackagePath": "staticwebassets\\PageComponents\\Page\\content\\logo192.png"
+    },
+    {
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\Page\\content\\logo528.png",
+      "PackagePath": "staticwebassets\\PageComponents\\Page\\content\\logo528.png"
     },
     {
       "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\Page\\script.js",
@@ -207,6 +227,10 @@
     {
       "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\Sessions.js",
       "PackagePath": "staticwebassets\\PageComponents\\Sessions.js"
+    },
+    {
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\Sessions.min.js",
+      "PackagePath": "staticwebassets\\PageComponents\\Sessions.min.js"
     },
     {
       "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\PageComponents\\UsersHtmlBox\\content\\doubleCheckBlackBlack.png",
@@ -265,8 +289,16 @@
       "PackagePath": "staticwebassets\\Pages\\Locations\\script.js"
     },
     {
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\Pages\\Locations\\script.min.js",
+      "PackagePath": "staticwebassets\\Pages\\Locations\\script.min.js"
+    },
+    {
       "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\Pages\\Locations\\style.css",
       "PackagePath": "staticwebassets\\Pages\\Locations\\style.css"
+    },
+    {
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\Pages\\Locations\\style.min.css",
+      "PackagePath": "staticwebassets\\Pages\\Locations\\style.min.css"
     },
     {
       "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\Pages\\Users\\content\\add-friend.png",
@@ -403,6 +435,10 @@
     {
       "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\Pages\\i\\script.js",
       "PackagePath": "staticwebassets\\Pages\\i\\script.js"
+    },
+    {
+      "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\Pages\\i\\script.min.js",
+      "PackagePath": "staticwebassets\\Pages\\i\\script.min.js"
     },
     {
       "Id": "\\\\Mac\\Home\\Documents\\Airat\\dev\\Wecan\\rt_ink\\dev\\rt ink git\\rtink\\wwwroot\\Pages\\i\\style.css",

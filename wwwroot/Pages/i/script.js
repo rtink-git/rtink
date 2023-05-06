@@ -1,26 +1,27 @@
 ﻿/*-- Notes --*/
 
-/*-- Knowledge Library --*/
-/*-- Модули js: https://learn.javascript.ru/modules-intro --*/
-
 /*-- Tasks --*/
 /*-- 2023-02-16 Task.Error: User edit about only latin symbols --*/
 /*-- 2023-02-16 Task.Warning: Login не может быть числом --*/
 
-import { isTest, MinifyExpansion, apiUrl, PageHeadsBuild, authJWToken, RoleId } from '/PageComponents/Page/script.js';
+import { ApiUrl, PageHeadsBuild, Session } from '/PageComponents/Page/script.min.js';
 import { HeaderHtmlBox } from "/PageComponents/HeaderHtmlBox/script.min.js";
 import { HeaderDescriptionHtmlBox } from '/PageComponents/HeaderDescriptionHtmlBox/script.min.js';
+import { HeaderTitleDescriptionHtmlBox } from '/PageComponents/HeaderTitleDescriptionHtmlBox/script.js';
 import { SearchHeaderQHtmlBox } from "/PageComponents/SearchHeaderQHtmlBox/script.min.js";
-import { ArticlesHtmlBox } from "/PageComponents/ArticlesHtmlBox/script.js";
+import { ArticlesHtmlBox } from "/PageComponents/ArticlesHtmlBox/script.min.js";
 
-//-- css
+let searchHeaderQHtmlBox = new SearchHeaderQHtmlBox();
+let headerTitleDescriptionHtmlBox = new HeaderTitleDescriptionHtmlBox();
+
+//-- PageHeadsBuild - start
+
+PageHeadsBuild("News aggregator - RT", "RT - точка сбора самых интересных и актуальных новостей российских онлайн-медиа. \"Картина дня\" формируется автоматически на базе популярности материалов.")
+
+//-- css set
 
 const iPageName = "i";  const iPageUrl = "/Pages/" + iPageName; const iPageUrlContent = iPageUrl + "/content";
-let iPageCss = document.createElement("link"); iPageCss.setAttribute("rel", "stylesheet"); iPageCss.setAttribute("href", iPageUrl + "/style.css"); document.head.append(iPageCss);
-
-//--------------------
-
-PageHeadsBuild("News aggregator", "RT - точка сбора самых интересных и актуальных новостей российских онлайн-медиа. \"Картина дня\" формируется автоматически на базе популярности материалов.")
+let iPageCss = document.createElement("link"); iPageCss.setAttribute("rel", "stylesheet"); iPageCss.setAttribute("href", iPageUrl + "/style.min.css"); document.head.append(iPageCss);
 
 //-- data from url ---
 
@@ -54,26 +55,25 @@ if (search.length > 0) {
 
 let headerHtmlBox = new HeaderHtmlBox()
 
-let HeaderTitle = "";
+let HeaderTitle = "RT";
 let headerDescriptionName = ""
-let headerDescriptionNameSub = ""
 let placeholder = ""
 let subscribType = 0;
 
 if (typeApiPageI == 0) {
-    HeaderTitle = "RT"
     headerDescriptionName = "NEWS";
-
     headerHtmlBox.PushMenuRow({ "icon": iPageUrlContent + "/search.png", "href": "", "id": "SearchBM", "alt": "search" })
-    if (RoleId == 0) {
+    if (Session.RoleId == 0) {
         headerHtmlBox.PushMenuRow({ "icon": iPageUrlContent + "/location.png", "href": "/locations", "id": "LocationBM", "alt": "location" });
-        localStorage.setItem("SessionRefrshRequired", "true")
-        headerHtmlBox.PushMenuRow({ "icon": iPageUrlContent + "/login.png", "href": apiUrl + "/Base/Authorization/Signin/Google?SessionToken=" + authJWToken + "&RedirectUrl=" + document.URL });
+        //localStorage.setItem("SessionRefrshRequired", "true")
+        //headerHtmlBox.PushMenuRow({ "icon": iPageUrlContent + "/login.png", "href": ApiUrl + "/Base/Authorization/Signin/Google?SessionToken=" + Session.Token + "&RedirectUrl=" + document.URL });
     }
     else headerHtmlBox.PushMenuRow({ "icon": iPageUrlContent + "/category.png", "href": "/users", "alt": "signin" });
 }
 else if (typeApiPageI == 1) {
-    if (RoleId > 0) {
+    HeaderTitle = ""
+
+    if (Session.RoleId > 0) {
         let userBio = await ApiUserBio(userLogin)
         subscribType = userBio.sbt
         if (subscribType != 1) {
@@ -102,17 +102,18 @@ else if (typeApiPageI == 1) {
 
     headerHtmlBox.PushMenuRow({ "icon": iPageUrlContent + "/search.png", "href": "", "id": "SearchBM" });
     let href = "/"
-    if (RoleId > 0) href = "/users"
+    if (Session.RoleId > 0) href = "/users"
     headerHtmlBox.PushMenuRow({ "icon": iPageUrlContent + "/undo.png", "href": href });
 }
 else if (typeApiPageI == 2) {
+    headerDescriptionName = "ARTICLE";
+
     headerHtmlBox.PushMenuRow({ "icon": iPageUrlContent + "/bookmark.png", "id": "BookmarkB" });
     headerHtmlBox.PushMenuRow({ "icon": iPageUrlContent + "/undo.png", "href": "/" });
 }
 else if (typeApiPageI == 3) {
-    placeholder = search.toUpperCase().replaceAll('-', ' ');
-    HeaderTitle = "RT"
     headerDescriptionName = "SEARCH";
+    placeholder = search.toUpperCase().replaceAll('-', ' ');
 
     headerHtmlBox.PushMenuRow({ "icon": iPageUrlContent + "/search.png", "href": "", "id": "SearchBM" });
     headerHtmlBox.PushMenuRow({ "icon": iPageUrlContent + "/undo.png", "href": "/" });
@@ -120,15 +121,13 @@ else if (typeApiPageI == 3) {
 
 //--------------------
 
-//new HeaderHtmlBox(document.getElementsByTagName("body")[0], "afterbegin", HeaderTitle, menuList)
 headerHtmlBox.InsertAdjacentHTML(document.getElementsByTagName("body")[0], "afterbegin", HeaderTitle)
 
 let idxy = "HeaderDescriptionHtmlBox"
 if (headerDescriptionName.length > 0)
-    new HeaderDescriptionHtmlBox(document.getElementById("HeaderHtmlBox"), "afterend", headerDescriptionName, headerDescriptionNameSub, "Moscow", MinifyExpansion);
-else 
-    idxy = "HeaderHtmlBox"
-new SearchHeaderQHtmlBox(document.getElementById(idxy), "afterend", placeholder, "", userLogin, MinifyExpansion)
+    new HeaderDescriptionHtmlBox().InsertAdjacentHTML(document.getElementById("HeaderHtmlBox"), "afterend", headerDescriptionName)
+else idxy = "HeaderHtmlBox"
+searchHeaderQHtmlBox.InsertAdjacentHTML(document.getElementById(idxy), "afterend", placeholder)
 
 if (typeApiPageI == 1) {
     if (search.split('-').length > 2) {
@@ -152,27 +151,12 @@ else if (typeApiPageI == 3) {
 
 let idz = "SearchHeaderQHtmlBox"
 if (userLogin.length > 0) {
-    let htmlUserQ = "\
-    <div id=\"H1QHtmlBox\">\
-        <div>\
-            <h1>\
-                <span>\
-                " + userLogin.toUpperCase() + "\
-                </span>\
-            </h1>\
-            <p>\
-                user profile\
-            </p>\
-        </div>\
-    </div>\
-    "
-
-    document.getElementById("SearchHeaderQHtmlBox").insertAdjacentHTML("afterend", htmlUserQ)
-    idz = "H1QHtmlBox"
+    headerTitleDescriptionHtmlBox.InsertAdjacentHTML(document.getElementById("SearchHeaderQHtmlBox"), "afterend", userLogin.toUpperCase(), "user profile")
+    idz = headerTitleDescriptionHtmlBox.Name
 }
 
 
-let articlesHtmlBox = new ArticlesHtmlBox(document.getElementById(idz), "afterend", search, apiUrl, authJWToken, MinifyExpansion)
+let articlesHtmlBox = new ArticlesHtmlBox(document.getElementById(idz), "afterend", search, ApiUrl, Session.Token)
 await articlesHtmlBox.AppendList()
 
 
@@ -228,6 +212,23 @@ if (document.getElementById("SubsribB") != null)
         }
     });
 
+function _SearchFind() {
+    let search = document.querySelector("#" + searchHeaderQHtmlBox.Name + " input").value.toLowerCase();
+    if (userLogin.length > 0)
+        search = "-" + userLogin + "-" + search
+    if (search.length > 0)
+        window.location.href = "/i/" + search
+}
+
+document.querySelector("#" + searchHeaderQHtmlBox.Name + " > a").addEventListener('click', async () => {
+    _SearchFind()
+});
+
+document.querySelector("#" + searchHeaderQHtmlBox.Name + " input").addEventListener('keypress', async (event) => {
+    if (event.key == "Enter")
+        _SearchFind()
+});
+
 
 
 
@@ -235,32 +236,32 @@ if (document.getElementById("SubsribB") != null)
 //-- api actions
 
 async function ApiUserBio(userLogin) {
-    const response = await fetch(apiUrl + "/Base/User/Bio?userLogin=" + userLogin, {
-        method: "GET", headers: { "Accept": "application/json", "Authorization": "Bearer " + authJWToken }
+    const response = await fetch(ApiUrl + "/Base/User/Bio?userLogin=" + userLogin, {
+        method: "GET", headers: { "Accept": "application/json", "Authorization": "Bearer " + Session.Token }
     });
     if (response.ok === true) return await response.json();
     return null;
 }
 
 async function ApiUserSubscrib(userLogin) {
-    const response = await fetch(apiUrl + "/Base/User/Subscrib?userLogin=" + userLogin, {
-        method: "POST", headers: { "Accept": "application/json", "Authorization": "Bearer " + authJWToken }
+    const response = await fetch(ApiUrl + "/Base/User/Subscrib?userLogin=" + userLogin, {
+        method: "POST", headers: { "Accept": "application/json", "Authorization": "Bearer " + Session.Token }
     });
     if (response.ok === true) return await response.json();
     return null;
 }
 
 async function ApiArticleBookmarkGet(urlShort) {
-    const response = await fetch(apiUrl + "/RtInk/ArticleBookmark?urlShort=" + urlShort, {
-        method: "GET", headers: { "Authorization": "Bearer " + authJWToken }
+    const response = await fetch(ApiUrl + "/RtInk/ArticleBookmark?urlShort=" + urlShort, {
+        method: "GET", headers: { "Authorization": "Bearer " + Session.Token }
     });
     if (response.ok === true) return await response.json();
     return null;
 }
 
 async function ApiArticleBookmarkPost(urlShort) {
-    const response = await fetch(apiUrl + "/RtInk/ArticleBookmark?urlShort=" + urlShort, {
-        method: "POST", headers: { "Authorization": "Bearer " + authJWToken }
+    const response = await fetch(ApiUrl + "/RtInk/ArticleBookmark?urlShort=" + urlShort, {
+        method: "POST", headers: { "Authorization": "Bearer " + Session.Token }
     });
     return response.ok
 }

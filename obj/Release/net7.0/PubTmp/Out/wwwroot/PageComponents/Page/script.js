@@ -14,33 +14,28 @@
 //-- note: https://habr.com/ru/post/445264/
 //-- icon sizes - https://blog.hubspot.com/website/what-is-a-favicon
 
-/*-- Tasks --*/
+//-- Tasks
 
+//----------
 
+import { Sessions } from '/PageComponents/Sessions.min.js';
 
-import { Sessions } from '/PageComponents/Sessions.js';
+//----------
 
-let MontserratGoogleFont = document.createElement("link"); MontserratGoogleFont.setAttribute("rel", "stylesheet"); MontserratGoogleFont.setAttribute("href", "https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900;1000&display=swap"); document.head.append(MontserratGoogleFont);
+export let ApiUrl = "https://api.rt.ink"
+//export let ApiUrl = "https://localhost:7025"
 
+//----------
 
-export let isTest = false; // true - режим тестирования. false - режим реализации
-export let MinifyExpansion = ".min";
-if (isTest)
-    MinifyExpansion = "";
+let sessions = new Sessions();
+await sessions.TokenRefresh(ApiUrl);
+export let Session = sessions
 
-export let apiUrl = await ApiUrl()
-
-var sessions = new Sessions();
-await sessions.TokenRefresh(apiUrl);
-export let authJWToken = sessions.authJWToken
-
-let authorizationInformationApi = await AuthorizationInformationApi()
-export let RoleId = await authorizationInformationApi.roleId
-
-let PageStylesheet = document.createElement("link"); PageStylesheet.setAttribute("rel", "stylesheet"); PageStylesheet.setAttribute("href", "/PageComponents/Page/style.min.css"); document.head.append(PageStylesheet);
-
+//----------
 
 export function PageHeadsBuild(title = null, description = null, imageUrl = null, imageAlt = null, urlCanonical = null, robot = "index,follow") {
+    let PageStylesheet = document.createElement("link"); PageStylesheet.setAttribute("rel", "stylesheet"); PageStylesheet.setAttribute("href", "/PageComponents/Page/style.min.css"); document.head.append(PageStylesheet);
+
     //-- base project params
 
     let urlBase = "https://rt.ink";
@@ -53,17 +48,16 @@ export function PageHeadsBuild(title = null, description = null, imageUrl = null
     let geoCountry = null; // example: Россия
     let email = null; // example: xmail@gmail.com
     let phone = null; // example: +79012345678
-    let icon144 = "" // example: this.urlBase + "/PageComponents/HtmlBase/content/logo.png\"
-    let iconUrlAppleTouch = null;
-    let iconUrlAndroidTouch = null;
-    let iconUrl528 = null;
+    let icon144 = "/PageComponents/Page/content/logo.png" // example: this.urlBase + "/PageComponents/HtmlBase/content/logo.png\"
+    let iconUrlAppleTouch = "/PageComponents/Page/content/logo180.png"; // 180x180
+    let iconUrlAndroidTouch = "/PageComponents/Page/content/logo192.png"; // 192x192
+    let iconUrl528 = "/PageComponents/Page/content/logo528.png";
     let twitterSite = null; // example: @ElonMusk
     let ogSiteName = null;
 
     //----------
 
     document.documentElement.lang = navigator.language;
-    //document.documentElement.setAttribute('lang', navigator.language);
 
     //----------
 
@@ -150,15 +144,6 @@ export function PageHeadsBuild(title = null, description = null, imageUrl = null
 
     let linkApi = document.createElement("link"); linkApi.setAttribute("rel", "preconnect"); linkApi.setAttribute("href", "https://api.rt.ink"); linkApi.setAttribute("crossorigin", ""); document.head.append(linkApi);
 
-    /*-- fonts --*/
-
-    let linkFontsGoogleapis = document.createElement("link"); linkFontsGoogleapis.setAttribute("rel", "preconnect"); linkFontsGoogleapis.setAttribute("href", "https://fonts.googleapis.com"); document.head.append(linkFontsGoogleapis);
-    let linkFontsGstatic = document.createElement("link"); linkFontsGstatic.setAttribute("rel", "preconnect"); linkFontsGstatic.setAttribute("href", "https://fonts.gstatic.com"); linkFontsGstatic.setAttribute("crossorigin", ""); document.head.append(linkFontsGstatic);
-    //let linkFontsMontserrat = document.createElement("link"); linkFontsMontserrat.setAttribute("rel", "stylesheet"); linkFontsMontserrat.setAttribute("href", "https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900;1000&display=swap"); document.head.append(linkFontsMontserrat);
-
-    //----------
-
-
 
     /*-- robot --*/
 
@@ -188,32 +173,10 @@ export function PageHeadsBuild(title = null, description = null, imageUrl = null
         if (imageAlt != null) { let metaHeadOgAlt = document.createElement("meta"); metaHeadOgAlt.setAttribute("property", "og:image:alt"); metaHeadOgAlt.setAttribute("content", imageUrl); document.head.append(metaHeadOgAlt); }
     }
 
-    /*-- Google tag(gtag.js) --*/
+    //-- Google tag(gtag.js)
 
     let scriptHeadGoogletagmanager = document.createElement("script"); scriptHeadGoogletagmanager.setAttribute("async", ""); scriptHeadGoogletagmanager.setAttribute("src", "https://www.googletagmanager.com/gtag/js?id=G-M6XTS2RJDG"); document.head.append(scriptHeadGoogletagmanager);
     let scriptHeadGoogleTag = document.createElement("script"); scriptHeadGoogleTag.textContent = "window.dataLayer || [];  function gtag(){dataLayer.push(arguments);}  gtag('js', new Date());  gtag('config', 'G-M6XTS2RJDG');"; document.head.append(scriptHeadGoogleTag);
-}
 
-
-
-
-
-//-- api actions
-
-async function ApiUrl() {
-    const response = await fetch("/ApiUrl", {
-        method: "GET"
-    });
-    if (response.ok === true) return response.json();
-    return null;
-}
-
-async function AuthorizationInformationApi() {
-    const response = await fetch(apiUrl + "/Base/Authorization/Information", {
-        method: "GET",
-        headers: { "Accept": "application/json", "Authorization": "Bearer " + sessions.authJWToken }
-    });
-    if (response.ok === true)
-        return await response.json();
-    return null;
+    //----------
 }

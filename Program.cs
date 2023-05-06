@@ -7,8 +7,8 @@
 
 //-- Project publication
 //-- 1. wwwroot /PageComponents/Page/script.js 
-//---- Set window.isTest = false
-//---- Set server host url RtInk.Constants
+//---- ApiUrl - Set server host url RtInk.Constants
+//-- 2 Constants - urlApi
 
 
 
@@ -25,7 +25,7 @@
 //-- ASP.NET: Polly with .NET 6, Part 4 - Dependency Injection of a HttpClientFactory and Policy into a Minimal API Endpoint: https://nodogmablog.bryanhogan.net/2022/03/polly-with-net-6-part-4-dependency-injection-of-a-httpclientfactory-and-policy-into-a-minimal-api-endpoint/
 //-- APP.NET: ASP.NET Core response compression and content encoding: https://gunnarpeipman.com/aspnet-core-compress-gzip-brotli-content-encoding/
 //-- JS: Private class features: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Private_class_fields
-
+//-- JS: Модули js: https://learn.javascript.ru/modules-intro
 
 
 
@@ -51,11 +51,13 @@ builder.Services.AddHttpClient("ApiRtInkNetCoreApp", client => {
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
+var minify = "";
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Error");
     // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-    app.UseHsts();  
+    app.UseHsts();
+    minify = ".min";
 }
 
 app.UseHttpsRedirection();
@@ -65,10 +67,10 @@ app.UseSession();
 app.UseRouting();
 app.UseAuthorization();
 
-app.MapGet("/", async (context) => { await context.Response.WriteAsync("<script type=\"module\" src=\"/Pages/i/script.js\"></script>"); }); // /*await context.Response.WriteAsync(new RtInk.Pages.I().GetHtml());*/
-app.MapGet("/i/{search}", async (context) => { await context.Response.WriteAsync("<script type=\"module\" src=\"/Pages/i/script.js\"></script>"); });
+app.MapGet("/", async (context) => { await context.Response.WriteAsync("<script type=\"module\" src=\"/Pages/i/script" + minify + ".js\"></script>"); });
+app.MapGet("/i/{search}", async (context) => { await context.Response.WriteAsync("<script type=\"module\" src=\"/Pages/i/script" + minify + ".js\"></script>"); });
 app.MapGet("/users", async (context) => { await context.Response.WriteAsync("<script type=\"module\" src=\"/Pages/Users/script.js\"></script>"); });
-app.MapGet("/locations", async (context) => { await context.Response.WriteAsync("<script type=\"module\" src=\"/Pages/Locations/script.js\"></script>"); });
+app.MapGet("/locations", async (context) => { await context.Response.WriteAsync("<script type=\"module\" src=\"/Pages/Locations/script" + minify + ".js\"></script>"); });
 
 app.MapGet("/a/{urlShort}", async (string urlShort, HttpContext context, IHttpClientFactory httpClientFactory) => {
     //-- Task.Note: app.MapGet [/a/{urlShort}] устарел, но необходимо поддерживать, потому что применялся в ранних версиях и может оставаться актуальным
@@ -127,9 +129,6 @@ app.MapGet("/f/{id_with_extension}", (string id_with_extension) =>
     }
     catch { return Results.Redirect("/"); }
 });
-
-app.MapGet("/ApiUrl", () => { return Results.Ok(Constants.urlApi); });
-
 
 //app.MapPost("/user-logo-upload", async (IFormFile file, HttpContext context) => {
 //    try

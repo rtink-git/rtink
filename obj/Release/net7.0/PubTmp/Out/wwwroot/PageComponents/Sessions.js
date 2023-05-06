@@ -1,5 +1,6 @@
 ﻿export class Sessions {
-    authJWToken
+    Token
+    RoleId
     async TokenRefresh(apiUrl) {
         let authJWTokenStr = "authJWToken"
         let sessionRefrshRequiredStr = "SessionRefrshRequired"
@@ -19,8 +20,9 @@
 
         if (response.ok === true) {
             const data = await response.json();
-            this.authJWToken = data.token
-            localStorage.setItem(authJWTokenStr, data.token)
+            this.Token = data.token
+            this.RoleId = data.roleId
+            localStorage.setItem(authJWTokenStr, data.Token)
             localStorage.setItem(sessionRefrshRequiredStr, "false")
         }
     }

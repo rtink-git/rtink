@@ -1,65 +1,55 @@
 [
   {
+    "outputFileName": "wwwroot/Pages/i/script.min.js",
+    "inputFiles": [ "wwwroot/Pages/i/script.js" ]
+  },
+  {
     "outputFileName": "wwwroot/Pages/i/style.min.css",
-    "inputFiles": [
-      "wwwroot/Pages/i/style.css"
-    ],
-    "minify": {
-      "enabled": true,
-      "renameLocals": false
-    }
+    "inputFiles": [ "wwwroot/Pages/i/style.css" ]
+  },
+  {
+    "outputFileName": "wwwroot/Pages/Locations/script.min.js",
+    "inputFiles": [ "wwwroot/Pages/Locations/script.js" ]
+  },
+  {
+    "outputFileName": "wwwroot/Pages/Locations/style.min.css",
+    "inputFiles": [ "wwwroot/Pages/Locations/style.css" ]
   },
   {
     "outputFileName": "wwwroot/PageComponents/ArticlesHtmlBox/script.min.js",
-    "inputFiles": [ "wwwroot/PageComponents/ArticlesHtmlBox/script.js" ],
-    "minify": { "renameLocals": false }
+    "inputFiles": [ "wwwroot/PageComponents/ArticlesHtmlBox/script.js" ]
   },
   {
     "outputFileName": "wwwroot/PageComponents/ArticlesHtmlBox/style.min.css",
-    "inputFiles": [ "wwwroot/PageComponents/ArticlesHtmlBox/style.css" ],
-    "minify": {
-      "enabled": true,
-      "renameLocals": false
-    }
+    "inputFiles": [ "wwwroot/PageComponents/ArticlesHtmlBox/style.css" ]
   },
   {
     "outputFileName": "wwwroot/PageComponents/CentralHtmlPart/style.min.css",
-    "inputFiles": [ "wwwroot/PageComponents/CentralHtmlPart/style.css" ],
-    "minify": {
-      "enabled": true,
-      "renameLocals": false
-    }
+    "inputFiles": [ "wwwroot/PageComponents/CentralHtmlPart/style.css" ]
   },
   {
     "outputFileName": "wwwroot/PageComponents/CentralInfHtmlBox/style.min.css",
-    "inputFiles": [ "wwwroot/PageComponents/CentralInfHtmlBox/style.css" ],
-    "minify": {
-      "enabled": true,
-      "renameLocals": false
-    }
+    "inputFiles": [ "wwwroot/PageComponents/CentralInfHtmlBox/style.css" ]
   },
   {
     "outputFileName": "wwwroot/PageComponents/HeaderDescriptionHtmlBox/script.min.js",
-    "inputFiles": [ "wwwroot/PageComponents/HeaderDescriptionHtmlBox/script.js" ],
-    "minify": { "renameLocals": false }
+    "inputFiles": [ "wwwroot/PageComponents/HeaderDescriptionHtmlBox/script.js" ]
   },
   {
     "outputFileName": "wwwroot/PageComponents/HeaderDescriptionHtmlBox/style.min.css",
-    "inputFiles": [ "wwwroot/PageComponents/HeaderDescriptionHtmlBox/style.css" ],
-    "minify": {
-      "enabled": true,
-      "renameLocals": false
-    }
+    "inputFiles": [ "wwwroot/PageComponents/HeaderDescriptionHtmlBox/style.css" ]
   },
   {
     "outputFileName": "wwwroot/PageComponents/HeaderHtmlBox/script.min.js",
-    "inputFiles": [ "wwwroot/PageComponents/HeaderHtmlBox/script.js" ],
-    "minify": { "renameLocals": false }
+    "inputFiles": [ "wwwroot/PageComponents/HeaderHtmlBox/script.js" ]
   },
   {
     "outputFileName": "wwwroot/PageComponents/HeaderHtmlBox/style.min.css",
-    "inputFiles": [ "wwwroot/PageComponents/HeaderHtmlBox/style.css" ],
-    "minify": { "renameLocals": false }
+    "inputFiles": [ "wwwroot/PageComponents/HeaderHtmlBox/style.css" ]
+  },
+  {
+    "outputFileName": "wwwroot/PageComponents/LocsHtmlBox/script.min.js",
+    "inputFiles": [ "wwwroot/PageComponents/LocsHtmlBox/script.js" ]
   },
   {
     "outputFileName": "wwwroot/PageComponents/LocsHtmlBox/style.min.css",
@@ -72,28 +62,28 @@
     "minify": { "renameLocals": false }
   },
   {
+    "outputFileName": "wwwroot/PageComponents/Page/script.min.js",
+    "inputFiles": [ "wwwroot/PageComponents/Page/script.js" ]
+  },
+  {
     "outputFileName": "wwwroot/PageComponents/Page/style.min.css",
-    "inputFiles": [
-      "wwwroot/PageComponents/Page/style.css"
-    ],
-    "minify": {
-      "enabled": true,
-      "renameLocals": false
-    }
+    "inputFiles": [ "wwwroot/PageComponents/Page/style.css" ]
   },
   {
     "outputFileName": "wwwroot/PageComponents/SearchHeaderQHtmlBox/script.min.js",
-    "inputFiles": [ "wwwroot/PageComponents/SearchHeaderQHtmlBox/script.js" ],
-    "minify": { "renameLocals": false }
+    "inputFiles": [ "wwwroot/PageComponents/SearchHeaderQHtmlBox/script.js" ]
   },
   {
     "outputFileName": "wwwroot/PageComponents/SearchHeaderQHtmlBox/style.min.css",
-    "inputFiles": [ "wwwroot/PageComponents/SearchHeaderQHtmlBox/style.css" ],
-    "minify": { "renameLocals": false }
+    "inputFiles": [ "wwwroot/PageComponents/SearchHeaderQHtmlBox/style.css" ]
   },
   {
     "outputFileName": "wwwroot/PageComponents/UsersHtmlBox/style.min.css",
     "inputFiles": [ "wwwroot/PageComponents/UsersHtmlBox/style.css" ],
     "minify": { "renameLocals": false }
+  },
+  {
+    "outputFileName": "wwwroot/PageComponents/Sessions.min.js",
+    "inputFiles": [ "wwwroot/PageComponents/Sessions.js" ]
   }
 ]

@@ -1,219 +1,256 @@
-C:\Users\mvop6\OneDrive\Документы\dev\Wecan\rt_ink\dev\rt ink net seven\RtInk\obj\Debug\net7.0\RtInk.csproj.AssemblyReference.cache
-C:\Users\mvop6\OneDrive\Документы\dev\Wecan\rt_ink\dev\rt ink net seven\RtInk\obj\Debug\net7.0\RtInk.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\mvop6\OneDrive\Документы\dev\Wecan\rt_ink\dev\rt ink net seven\RtInk\obj\Debug\net7.0\RtInk.AssemblyInfoInputs.cache
-C:\Users\mvop6\OneDrive\Документы\dev\Wecan\rt_ink\dev\rt ink net seven\RtInk\obj\Debug\net7.0\RtInk.AssemblyInfo.cs
-C:\Users\mvop6\OneDrive\Документы\dev\Wecan\rt_ink\dev\rt ink net seven\RtInk\obj\Debug\net7.0\RtInk.csproj.CoreCompileInputs.cache
-C:\Users\mvop6\OneDrive\Документы\dev\Wecan\rt_ink\dev\rt ink net seven\RtInk\obj\Debug\net7.0\RtInk.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\mvop6\OneDrive\Документы\dev\Wecan\rt_ink\dev\rt ink net seven\RtInk\bin\Debug\net7.0\appsettings.Development.json
-C:\Users\mvop6\OneDrive\Документы\dev\Wecan\rt_ink\dev\rt ink net seven\RtInk\bin\Debug\net7.0\appsettings.json
-C:\Users\mvop6\OneDrive\Документы\dev\Wecan\rt_ink\dev\rt ink net seven\RtInk\bin\Debug\net7.0\RtInk.staticwebassets.runtime.json
-C:\Users\mvop6\OneDrive\Документы\dev\Wecan\rt_ink\dev\rt ink net seven\RtInk\bin\Debug\net7.0\RtInk.exe
-C:\Users\mvop6\OneDrive\Документы\dev\Wecan\rt_ink\dev\rt ink net seven\RtInk\bin\Debug\net7.0\RtInk.deps.json
-C:\Users\mvop6\OneDrive\Документы\dev\Wecan\rt_ink\dev\rt ink net seven\RtInk\bin\Debug\net7.0\RtInk.runtimeconfig.json
-C:\Users\mvop6\OneDrive\Документы\dev\Wecan\rt_ink\dev\rt ink net seven\RtInk\bin\Debug\net7.0\RtInk.dll
-C:\Users\mvop6\OneDrive\Документы\dev\Wecan\rt_ink\dev\rt ink net seven\RtInk\bin\Debug\net7.0\RtInk.pdb
-C:\Users\mvop6\OneDrive\Документы\dev\Wecan\rt_ink\dev\rt ink net seven\RtInk\obj\Debug\net7.0\staticwebassets\msbuild.RtInk.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Users\mvop6\OneDrive\Документы\dev\Wecan\rt_ink\dev\rt ink net seven\RtInk\obj\Debug\net7.0\staticwebassets\msbuild.build.RtInk.props
-C:\Users\mvop6\OneDrive\Документы\dev\Wecan\rt_ink\dev\rt ink net seven\RtInk\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.RtInk.props
-C:\Users\mvop6\OneDrive\Документы\dev\Wecan\rt_ink\dev\rt ink net seven\RtInk\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.RtInk.props
-C:\Users\mvop6\OneDrive\Документы\dev\Wecan\rt_ink\dev\rt ink net seven\RtInk\obj\Debug\net7.0\staticwebassets.pack.json
-C:\Users\mvop6\OneDrive\Документы\dev\Wecan\rt_ink\dev\rt ink net seven\RtInk\obj\Debug\net7.0\staticwebassets.build.json
-C:\Users\mvop6\OneDrive\Документы\dev\Wecan\rt_ink\dev\rt ink net seven\RtInk\obj\Debug\net7.0\staticwebassets.development.json
-C:\Users\mvop6\OneDrive\Документы\dev\Wecan\rt_ink\dev\rt ink net seven\RtInk\obj\Debug\net7.0\scopedcss\bundle\RtInk.styles.css
-C:\Users\mvop6\OneDrive\Документы\dev\Wecan\rt_ink\dev\rt ink net seven\RtInk\obj\Debug\net7.0\RtInk.csproj.CopyComplete
-C:\Users\mvop6\OneDrive\Документы\dev\Wecan\rt_ink\dev\rt ink net seven\RtInk\obj\Debug\net7.0\RtInk.dll
-C:\Users\mvop6\OneDrive\Документы\dev\Wecan\rt_ink\dev\rt ink net seven\RtInk\obj\Debug\net7.0\refint\RtInk.dll
-C:\Users\mvop6\OneDrive\Документы\dev\Wecan\rt_ink\dev\rt ink net seven\RtInk\obj\Debug\net7.0\RtInk.pdb
-C:\Users\mvop6\OneDrive\Документы\dev\Wecan\rt_ink\dev\rt ink net seven\RtInk\obj\Debug\net7.0\RtInk.genruntimeconfig.cache
-C:\Users\mvop6\OneDrive\Документы\dev\Wecan\rt_ink\dev\rt ink net seven\RtInk\obj\Debug\net7.0\ref\RtInk.dll
-C:\Users\mvop6\OneDrive\Документы\dev\Wecan\rt_ink\dev\rt ink net seven\RtInk\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.Google.dll
-C:\Users\mvop6\OneDrive\Документы\dev\Wecan\rt_ink\dev\rt ink net seven\RtInk\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
-C:\Users\mvop6\OneDrive\Документы\dev\Wecan\rt_ink\dev\rt ink net seven\RtInk\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
-C:\Users\mvop6\OneDrive\Документы\dev\Wecan\rt_ink\dev\rt ink net seven\RtInk\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
-C:\Users\mvop6\OneDrive\Документы\dev\Wecan\rt_ink\dev\rt ink net seven\RtInk\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
-C:\Users\mvop6\OneDrive\Документы\dev\Wecan\rt_ink\dev\rt ink net seven\RtInk\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-C:\Users\mvop6\OneDrive\Документы\dev\Wecan\rt_ink\dev\rt ink net seven\RtInk\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
-C:\Users\mvop6\OneDrive\Документы\dev\Wecan\rt_ink\dev\rt ink net seven\RtInk\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
-C:\Users\mvop6\OneDrive\Документы\dev\Wecan\rt_ink\dev\rt ink net seven\RtInk\bin\Debug\net7.0\System.Text.Json.dll
-D:\dev\Wecan\rt_ink\dev\rt ink net seven\RtInk\bin\Debug\net7.0\appsettings.Development.json
-D:\dev\Wecan\rt_ink\dev\rt ink net seven\RtInk\bin\Debug\net7.0\appsettings.json
-D:\dev\Wecan\rt_ink\dev\rt ink net seven\RtInk\bin\Debug\net7.0\RtInk.staticwebassets.runtime.json
-D:\dev\Wecan\rt_ink\dev\rt ink net seven\RtInk\bin\Debug\net7.0\RtInk.exe
-D:\dev\Wecan\rt_ink\dev\rt ink net seven\RtInk\bin\Debug\net7.0\RtInk.deps.json
-D:\dev\Wecan\rt_ink\dev\rt ink net seven\RtInk\bin\Debug\net7.0\RtInk.runtimeconfig.json
-D:\dev\Wecan\rt_ink\dev\rt ink net seven\RtInk\bin\Debug\net7.0\RtInk.dll
-D:\dev\Wecan\rt_ink\dev\rt ink net seven\RtInk\bin\Debug\net7.0\RtInk.pdb
-D:\dev\Wecan\rt_ink\dev\rt ink net seven\RtInk\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.Google.dll
-D:\dev\Wecan\rt_ink\dev\rt ink net seven\RtInk\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
-D:\dev\Wecan\rt_ink\dev\rt ink net seven\RtInk\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
-D:\dev\Wecan\rt_ink\dev\rt ink net seven\RtInk\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
-D:\dev\Wecan\rt_ink\dev\rt ink net seven\RtInk\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
-D:\dev\Wecan\rt_ink\dev\rt ink net seven\RtInk\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-D:\dev\Wecan\rt_ink\dev\rt ink net seven\RtInk\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
-D:\dev\Wecan\rt_ink\dev\rt ink net seven\RtInk\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
-D:\dev\Wecan\rt_ink\dev\rt ink net seven\RtInk\bin\Debug\net7.0\System.Text.Json.dll
-D:\dev\Wecan\rt_ink\dev\rt ink net seven\RtInk\obj\Debug\net7.0\RtInk.csproj.AssemblyReference.cache
-D:\dev\Wecan\rt_ink\dev\rt ink net seven\RtInk\obj\Debug\net7.0\RtInk.GeneratedMSBuildEditorConfig.editorconfig
-D:\dev\Wecan\rt_ink\dev\rt ink net seven\RtInk\obj\Debug\net7.0\RtInk.AssemblyInfoInputs.cache
-D:\dev\Wecan\rt_ink\dev\rt ink net seven\RtInk\obj\Debug\net7.0\RtInk.AssemblyInfo.cs
-D:\dev\Wecan\rt_ink\dev\rt ink net seven\RtInk\obj\Debug\net7.0\RtInk.csproj.CoreCompileInputs.cache
-D:\dev\Wecan\rt_ink\dev\rt ink net seven\RtInk\obj\Debug\net7.0\RtInk.MvcApplicationPartsAssemblyInfo.cache
-D:\dev\Wecan\rt_ink\dev\rt ink net seven\RtInk\obj\Debug\net7.0\staticwebassets\msbuild.RtInk.Microsoft.AspNetCore.StaticWebAssets.props
-D:\dev\Wecan\rt_ink\dev\rt ink net seven\RtInk\obj\Debug\net7.0\staticwebassets\msbuild.build.RtInk.props
-D:\dev\Wecan\rt_ink\dev\rt ink net seven\RtInk\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.RtInk.props
-D:\dev\Wecan\rt_ink\dev\rt ink net seven\RtInk\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.RtInk.props
-D:\dev\Wecan\rt_ink\dev\rt ink net seven\RtInk\obj\Debug\net7.0\staticwebassets.pack.json
-D:\dev\Wecan\rt_ink\dev\rt ink net seven\RtInk\obj\Debug\net7.0\staticwebassets.build.json
-D:\dev\Wecan\rt_ink\dev\rt ink net seven\RtInk\obj\Debug\net7.0\staticwebassets.development.json
-D:\dev\Wecan\rt_ink\dev\rt ink net seven\RtInk\obj\Debug\net7.0\scopedcss\bundle\RtInk.styles.css
-D:\dev\Wecan\rt_ink\dev\rt ink net seven\RtInk\obj\Debug\net7.0\RtInk.csproj.CopyComplete
-D:\dev\Wecan\rt_ink\dev\rt ink net seven\RtInk\obj\Debug\net7.0\RtInk.dll
-D:\dev\Wecan\rt_ink\dev\rt ink net seven\RtInk\obj\Debug\net7.0\refint\RtInk.dll
-D:\dev\Wecan\rt_ink\dev\rt ink net seven\RtInk\obj\Debug\net7.0\RtInk.pdb
-D:\dev\Wecan\rt_ink\dev\rt ink net seven\RtInk\obj\Debug\net7.0\RtInk.genruntimeconfig.cache
-D:\dev\Wecan\rt_ink\dev\rt ink net seven\RtInk\obj\Debug\net7.0\ref\RtInk.dll
-D:\dev\Wecan\rt_ink\dev\rt ink net seven 1\RtInk\bin\Debug\net7.0\appsettings.Development.json
-D:\dev\Wecan\rt_ink\dev\rt ink net seven 1\RtInk\bin\Debug\net7.0\appsettings.json
-D:\dev\Wecan\rt_ink\dev\rt ink net seven 1\RtInk\bin\Debug\net7.0\RtInk.staticwebassets.runtime.json
-D:\dev\Wecan\rt_ink\dev\rt ink net seven 1\RtInk\bin\Debug\net7.0\RtInk.exe
-D:\dev\Wecan\rt_ink\dev\rt ink net seven 1\RtInk\bin\Debug\net7.0\RtInk.deps.json
-D:\dev\Wecan\rt_ink\dev\rt ink net seven 1\RtInk\bin\Debug\net7.0\RtInk.runtimeconfig.json
-D:\dev\Wecan\rt_ink\dev\rt ink net seven 1\RtInk\bin\Debug\net7.0\RtInk.dll
-D:\dev\Wecan\rt_ink\dev\rt ink net seven 1\RtInk\bin\Debug\net7.0\RtInk.pdb
-D:\dev\Wecan\rt_ink\dev\rt ink net seven 1\RtInk\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.Google.dll
-D:\dev\Wecan\rt_ink\dev\rt ink net seven 1\RtInk\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
-D:\dev\Wecan\rt_ink\dev\rt ink net seven 1\RtInk\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
-D:\dev\Wecan\rt_ink\dev\rt ink net seven 1\RtInk\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
-D:\dev\Wecan\rt_ink\dev\rt ink net seven 1\RtInk\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
-D:\dev\Wecan\rt_ink\dev\rt ink net seven 1\RtInk\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-D:\dev\Wecan\rt_ink\dev\rt ink net seven 1\RtInk\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
-D:\dev\Wecan\rt_ink\dev\rt ink net seven 1\RtInk\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
-D:\dev\Wecan\rt_ink\dev\rt ink net seven 1\RtInk\obj\Debug\net7.0\RtInk.csproj.AssemblyReference.cache
-D:\dev\Wecan\rt_ink\dev\rt ink net seven 1\RtInk\obj\Debug\net7.0\RtInk.GeneratedMSBuildEditorConfig.editorconfig
-D:\dev\Wecan\rt_ink\dev\rt ink net seven 1\RtInk\obj\Debug\net7.0\RtInk.AssemblyInfoInputs.cache
-D:\dev\Wecan\rt_ink\dev\rt ink net seven 1\RtInk\obj\Debug\net7.0\RtInk.AssemblyInfo.cs
-D:\dev\Wecan\rt_ink\dev\rt ink net seven 1\RtInk\obj\Debug\net7.0\RtInk.csproj.CoreCompileInputs.cache
-D:\dev\Wecan\rt_ink\dev\rt ink net seven 1\RtInk\obj\Debug\net7.0\RtInk.MvcApplicationPartsAssemblyInfo.cache
-D:\dev\Wecan\rt_ink\dev\rt ink net seven 1\RtInk\obj\Debug\net7.0\staticwebassets\msbuild.RtInk.Microsoft.AspNetCore.StaticWebAssets.props
-D:\dev\Wecan\rt_ink\dev\rt ink net seven 1\RtInk\obj\Debug\net7.0\staticwebassets\msbuild.build.RtInk.props
-D:\dev\Wecan\rt_ink\dev\rt ink net seven 1\RtInk\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.RtInk.props
-D:\dev\Wecan\rt_ink\dev\rt ink net seven 1\RtInk\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.RtInk.props
-D:\dev\Wecan\rt_ink\dev\rt ink net seven 1\RtInk\obj\Debug\net7.0\staticwebassets.pack.json
-D:\dev\Wecan\rt_ink\dev\rt ink net seven 1\RtInk\obj\Debug\net7.0\staticwebassets.build.json
-D:\dev\Wecan\rt_ink\dev\rt ink net seven 1\RtInk\obj\Debug\net7.0\staticwebassets.development.json
-D:\dev\Wecan\rt_ink\dev\rt ink net seven 1\RtInk\obj\Debug\net7.0\scopedcss\bundle\RtInk.styles.css
-D:\dev\Wecan\rt_ink\dev\rt ink net seven 1\RtInk\obj\Debug\net7.0\RtInk.csproj.CopyComplete
-D:\dev\Wecan\rt_ink\dev\rt ink net seven 1\RtInk\obj\Debug\net7.0\RtInk.dll
-D:\dev\Wecan\rt_ink\dev\rt ink net seven 1\RtInk\obj\Debug\net7.0\refint\RtInk.dll
-D:\dev\Wecan\rt_ink\dev\rt ink net seven 1\RtInk\obj\Debug\net7.0\RtInk.pdb
-D:\dev\Wecan\rt_ink\dev\rt ink net seven 1\RtInk\obj\Debug\net7.0\RtInk.genruntimeconfig.cache
-D:\dev\Wecan\rt_ink\dev\rt ink net seven 1\RtInk\obj\Debug\net7.0\ref\RtInk.dll
-D:\dev\Wecan\rt_ink\dev\rt ink net seven git rep\rtink\bin\Debug\net7.0\appsettings.Development.json
-D:\dev\Wecan\rt_ink\dev\rt ink net seven git rep\rtink\bin\Debug\net7.0\appsettings.json
-D:\dev\Wecan\rt_ink\dev\rt ink net seven git rep\rtink\bin\Debug\net7.0\RtInk.staticwebassets.runtime.json
-D:\dev\Wecan\rt_ink\dev\rt ink net seven git rep\rtink\bin\Debug\net7.0\RtInk.exe
-D:\dev\Wecan\rt_ink\dev\rt ink net seven git rep\rtink\bin\Debug\net7.0\RtInk.deps.json
-D:\dev\Wecan\rt_ink\dev\rt ink net seven git rep\rtink\bin\Debug\net7.0\RtInk.runtimeconfig.json
-D:\dev\Wecan\rt_ink\dev\rt ink net seven git rep\rtink\bin\Debug\net7.0\RtInk.dll
-D:\dev\Wecan\rt_ink\dev\rt ink net seven git rep\rtink\bin\Debug\net7.0\RtInk.pdb
-D:\dev\Wecan\rt_ink\dev\rt ink net seven git rep\rtink\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.Google.dll
-D:\dev\Wecan\rt_ink\dev\rt ink net seven git rep\rtink\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
-D:\dev\Wecan\rt_ink\dev\rt ink net seven git rep\rtink\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
-D:\dev\Wecan\rt_ink\dev\rt ink net seven git rep\rtink\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
-D:\dev\Wecan\rt_ink\dev\rt ink net seven git rep\rtink\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
-D:\dev\Wecan\rt_ink\dev\rt ink net seven git rep\rtink\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-D:\dev\Wecan\rt_ink\dev\rt ink net seven git rep\rtink\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
-D:\dev\Wecan\rt_ink\dev\rt ink net seven git rep\rtink\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
-D:\dev\Wecan\rt_ink\dev\rt ink net seven git rep\rtink\obj\Debug\net7.0\RtInk.csproj.AssemblyReference.cache
-D:\dev\Wecan\rt_ink\dev\rt ink net seven git rep\rtink\obj\Debug\net7.0\RtInk.GeneratedMSBuildEditorConfig.editorconfig
-D:\dev\Wecan\rt_ink\dev\rt ink net seven git rep\rtink\obj\Debug\net7.0\RtInk.AssemblyInfoInputs.cache
-D:\dev\Wecan\rt_ink\dev\rt ink net seven git rep\rtink\obj\Debug\net7.0\RtInk.AssemblyInfo.cs
-D:\dev\Wecan\rt_ink\dev\rt ink net seven git rep\rtink\obj\Debug\net7.0\RtInk.csproj.CoreCompileInputs.cache
-D:\dev\Wecan\rt_ink\dev\rt ink net seven git rep\rtink\obj\Debug\net7.0\RtInk.MvcApplicationPartsAssemblyInfo.cache
-D:\dev\Wecan\rt_ink\dev\rt ink net seven git rep\rtink\obj\Debug\net7.0\staticwebassets\msbuild.RtInk.Microsoft.AspNetCore.StaticWebAssets.props
-D:\dev\Wecan\rt_ink\dev\rt ink net seven git rep\rtink\obj\Debug\net7.0\staticwebassets\msbuild.build.RtInk.props
-D:\dev\Wecan\rt_ink\dev\rt ink net seven git rep\rtink\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.RtInk.props
-D:\dev\Wecan\rt_ink\dev\rt ink net seven git rep\rtink\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.RtInk.props
-D:\dev\Wecan\rt_ink\dev\rt ink net seven git rep\rtink\obj\Debug\net7.0\staticwebassets.pack.json
-D:\dev\Wecan\rt_ink\dev\rt ink net seven git rep\rtink\obj\Debug\net7.0\staticwebassets.build.json
-D:\dev\Wecan\rt_ink\dev\rt ink net seven git rep\rtink\obj\Debug\net7.0\staticwebassets.development.json
-D:\dev\Wecan\rt_ink\dev\rt ink net seven git rep\rtink\obj\Debug\net7.0\scopedcss\bundle\RtInk.styles.css
-D:\dev\Wecan\rt_ink\dev\rt ink net seven git rep\rtink\obj\Debug\net7.0\RtInk.csproj.CopyComplete
-D:\dev\Wecan\rt_ink\dev\rt ink net seven git rep\rtink\obj\Debug\net7.0\RtInk.dll
-D:\dev\Wecan\rt_ink\dev\rt ink net seven git rep\rtink\obj\Debug\net7.0\refint\RtInk.dll
-D:\dev\Wecan\rt_ink\dev\rt ink net seven git rep\rtink\obj\Debug\net7.0\RtInk.pdb
-D:\dev\Wecan\rt_ink\dev\rt ink net seven git rep\rtink\obj\Debug\net7.0\RtInk.genruntimeconfig.cache
-D:\dev\Wecan\rt_ink\dev\rt ink net seven git rep\rtink\obj\Debug\net7.0\ref\RtInk.dll
-\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink net seven git rep clone\rtink-git\rtink\bin\Debug\net7.0\appsettings.Development.json
-\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink net seven git rep clone\rtink-git\rtink\bin\Debug\net7.0\appsettings.json
-\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink net seven git rep clone\rtink-git\rtink\bin\Debug\net7.0\RtInk.staticwebassets.runtime.json
-\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink net seven git rep clone\rtink-git\rtink\bin\Debug\net7.0\RtInk.exe
-\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink net seven git rep clone\rtink-git\rtink\bin\Debug\net7.0\RtInk.deps.json
-\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink net seven git rep clone\rtink-git\rtink\bin\Debug\net7.0\RtInk.runtimeconfig.json
-\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink net seven git rep clone\rtink-git\rtink\bin\Debug\net7.0\RtInk.dll
-\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink net seven git rep clone\rtink-git\rtink\bin\Debug\net7.0\RtInk.pdb
-\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink net seven git rep clone\rtink-git\rtink\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.Google.dll
-\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink net seven git rep clone\rtink-git\rtink\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
-\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink net seven git rep clone\rtink-git\rtink\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
-\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink net seven git rep clone\rtink-git\rtink\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
-\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink net seven git rep clone\rtink-git\rtink\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
-\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink net seven git rep clone\rtink-git\rtink\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink net seven git rep clone\rtink-git\rtink\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
-\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink net seven git rep clone\rtink-git\rtink\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
-\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink net seven git rep clone\rtink-git\rtink\obj\Debug\net7.0\RtInk.csproj.AssemblyReference.cache
-\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink net seven git rep clone\rtink-git\rtink\obj\Debug\net7.0\RtInk.GeneratedMSBuildEditorConfig.editorconfig
-\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink net seven git rep clone\rtink-git\rtink\obj\Debug\net7.0\RtInk.AssemblyInfoInputs.cache
-\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink net seven git rep clone\rtink-git\rtink\obj\Debug\net7.0\RtInk.AssemblyInfo.cs
-\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink net seven git rep clone\rtink-git\rtink\obj\Debug\net7.0\RtInk.csproj.CoreCompileInputs.cache
-\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink net seven git rep clone\rtink-git\rtink\obj\Debug\net7.0\RtInk.MvcApplicationPartsAssemblyInfo.cache
-\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink net seven git rep clone\rtink-git\rtink\obj\Debug\net7.0\staticwebassets\msbuild.RtInk.Microsoft.AspNetCore.StaticWebAssets.props
-\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink net seven git rep clone\rtink-git\rtink\obj\Debug\net7.0\staticwebassets\msbuild.build.RtInk.props
-\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink net seven git rep clone\rtink-git\rtink\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.RtInk.props
-\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink net seven git rep clone\rtink-git\rtink\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.RtInk.props
-\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink net seven git rep clone\rtink-git\rtink\obj\Debug\net7.0\staticwebassets.pack.json
-\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink net seven git rep clone\rtink-git\rtink\obj\Debug\net7.0\staticwebassets.build.json
-\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink net seven git rep clone\rtink-git\rtink\obj\Debug\net7.0\staticwebassets.development.json
-\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink net seven git rep clone\rtink-git\rtink\obj\Debug\net7.0\scopedcss\bundle\RtInk.styles.css
-\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink net seven git rep clone\rtink-git\rtink\obj\Debug\net7.0\RtInk.csproj.CopyComplete
-\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink net seven git rep clone\rtink-git\rtink\obj\Debug\net7.0\RtInk.dll
-\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink net seven git rep clone\rtink-git\rtink\obj\Debug\net7.0\refint\RtInk.dll
-\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink net seven git rep clone\rtink-git\rtink\obj\Debug\net7.0\RtInk.pdb
-\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink net seven git rep clone\rtink-git\rtink\obj\Debug\net7.0\RtInk.genruntimeconfig.cache
-\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink net seven git rep clone\rtink-git\rtink\obj\Debug\net7.0\ref\RtInk.dll
-\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink git\rtink\bin\Debug\net7.0\appsettings.Development.json
-\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink git\rtink\bin\Debug\net7.0\appsettings.json
-\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink git\rtink\bin\Debug\net7.0\bundleconfig.json
-\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink git\rtink\bin\Debug\net7.0\RtInk.staticwebassets.runtime.json
-\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink git\rtink\bin\Debug\net7.0\RtInk.exe
-\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink git\rtink\bin\Debug\net7.0\RtInk.deps.json
-\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink git\rtink\bin\Debug\net7.0\RtInk.runtimeconfig.json
-\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink git\rtink\bin\Debug\net7.0\RtInk.dll
-\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink git\rtink\bin\Debug\net7.0\RtInk.pdb
-\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink git\rtink\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.Google.dll
-\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink git\rtink\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
-\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink git\rtink\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
-\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink git\rtink\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
-\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink git\rtink\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
-\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink git\rtink\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink git\rtink\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
-\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink git\rtink\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
-\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink git\rtink\obj\Debug\net7.0\RtInk.csproj.AssemblyReference.cache
-\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink git\rtink\obj\Debug\net7.0\RtInk.GeneratedMSBuildEditorConfig.editorconfig
-\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink git\rtink\obj\Debug\net7.0\RtInk.AssemblyInfoInputs.cache
-\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink git\rtink\obj\Debug\net7.0\RtInk.AssemblyInfo.cs
-\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink git\rtink\obj\Debug\net7.0\RtInk.csproj.CoreCompileInputs.cache
-\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink git\rtink\obj\Debug\net7.0\RtInk.MvcApplicationPartsAssemblyInfo.cache
-\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink git\rtink\obj\Debug\net7.0\staticwebassets\msbuild.RtInk.Microsoft.AspNetCore.StaticWebAssets.props
-\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink git\rtink\obj\Debug\net7.0\staticwebassets\msbuild.build.RtInk.props
-\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink git\rtink\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.RtInk.props
-\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink git\rtink\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.RtInk.props
-\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink git\rtink\obj\Debug\net7.0\staticwebassets.pack.json
-\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink git\rtink\obj\Debug\net7.0\staticwebassets.build.json
-\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink git\rtink\obj\Debug\net7.0\staticwebassets.development.json
-\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink git\rtink\obj\Debug\net7.0\scopedcss\bundle\RtInk.styles.css
-\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink git\rtink\obj\Debug\net7.0\RtInk.csproj.CopyComplete
-\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink git\rtink\obj\Debug\net7.0\RtInk.dll
-\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink git\rtink\obj\Debug\net7.0\refint\RtInk.dll
-\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink git\rtink\obj\Debug\net7.0\RtInk.pdb
-\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink git\rtink\obj\Debug\net7.0\RtInk.genruntimeconfig.cache
-\\Mac\Home\Documents\Airat\dev\Wecan\rt_ink\dev\rt ink git\rtink\obj\Debug\net7.0\ref\RtInk.dll
+C:/Users/mvop6/OneDrive/Документы/dev/Wecan/rt_ink/dev/rt ink net seven/RtInk/obj/Debug/net7.0/RtInk.csproj.AssemblyReference.cache
+C:/Users/mvop6/OneDrive/Документы/dev/Wecan/rt_ink/dev/rt ink net seven/RtInk/obj/Debug/net7.0/RtInk.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/mvop6/OneDrive/Документы/dev/Wecan/rt_ink/dev/rt ink net seven/RtInk/obj/Debug/net7.0/RtInk.AssemblyInfoInputs.cache
+C:/Users/mvop6/OneDrive/Документы/dev/Wecan/rt_ink/dev/rt ink net seven/RtInk/obj/Debug/net7.0/RtInk.AssemblyInfo.cs
+C:/Users/mvop6/OneDrive/Документы/dev/Wecan/rt_ink/dev/rt ink net seven/RtInk/obj/Debug/net7.0/RtInk.csproj.CoreCompileInputs.cache
+C:/Users/mvop6/OneDrive/Документы/dev/Wecan/rt_ink/dev/rt ink net seven/RtInk/obj/Debug/net7.0/RtInk.MvcApplicationPartsAssemblyInfo.cache
+C:/Users/mvop6/OneDrive/Документы/dev/Wecan/rt_ink/dev/rt ink net seven/RtInk/bin/Debug/net7.0/appsettings.Development.json
+C:/Users/mvop6/OneDrive/Документы/dev/Wecan/rt_ink/dev/rt ink net seven/RtInk/bin/Debug/net7.0/appsettings.json
+C:/Users/mvop6/OneDrive/Документы/dev/Wecan/rt_ink/dev/rt ink net seven/RtInk/bin/Debug/net7.0/RtInk.staticwebassets.runtime.json
+C:/Users/mvop6/OneDrive/Документы/dev/Wecan/rt_ink/dev/rt ink net seven/RtInk/bin/Debug/net7.0/RtInk.exe
+C:/Users/mvop6/OneDrive/Документы/dev/Wecan/rt_ink/dev/rt ink net seven/RtInk/bin/Debug/net7.0/RtInk.deps.json
+C:/Users/mvop6/OneDrive/Документы/dev/Wecan/rt_ink/dev/rt ink net seven/RtInk/bin/Debug/net7.0/RtInk.runtimeconfig.json
+C:/Users/mvop6/OneDrive/Документы/dev/Wecan/rt_ink/dev/rt ink net seven/RtInk/bin/Debug/net7.0/RtInk.dll
+C:/Users/mvop6/OneDrive/Документы/dev/Wecan/rt_ink/dev/rt ink net seven/RtInk/bin/Debug/net7.0/RtInk.pdb
+C:/Users/mvop6/OneDrive/Документы/dev/Wecan/rt_ink/dev/rt ink net seven/RtInk/obj/Debug/net7.0/staticwebassets/msbuild.RtInk.Microsoft.AspNetCore.StaticWebAssets.props
+C:/Users/mvop6/OneDrive/Документы/dev/Wecan/rt_ink/dev/rt ink net seven/RtInk/obj/Debug/net7.0/staticwebassets/msbuild.build.RtInk.props
+C:/Users/mvop6/OneDrive/Документы/dev/Wecan/rt_ink/dev/rt ink net seven/RtInk/obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.RtInk.props
+C:/Users/mvop6/OneDrive/Документы/dev/Wecan/rt_ink/dev/rt ink net seven/RtInk/obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.RtInk.props
+C:/Users/mvop6/OneDrive/Документы/dev/Wecan/rt_ink/dev/rt ink net seven/RtInk/obj/Debug/net7.0/staticwebassets.pack.json
+C:/Users/mvop6/OneDrive/Документы/dev/Wecan/rt_ink/dev/rt ink net seven/RtInk/obj/Debug/net7.0/staticwebassets.build.json
+C:/Users/mvop6/OneDrive/Документы/dev/Wecan/rt_ink/dev/rt ink net seven/RtInk/obj/Debug/net7.0/staticwebassets.development.json
+C:/Users/mvop6/OneDrive/Документы/dev/Wecan/rt_ink/dev/rt ink net seven/RtInk/obj/Debug/net7.0/scopedcss/bundle/RtInk.styles.css
+C:/Users/mvop6/OneDrive/Документы/dev/Wecan/rt_ink/dev/rt ink net seven/RtInk/obj/Debug/net7.0/RtInk.csproj.CopyComplete
+C:/Users/mvop6/OneDrive/Документы/dev/Wecan/rt_ink/dev/rt ink net seven/RtInk/obj/Debug/net7.0/RtInk.dll
+C:/Users/mvop6/OneDrive/Документы/dev/Wecan/rt_ink/dev/rt ink net seven/RtInk/obj/Debug/net7.0/refint/RtInk.dll
+C:/Users/mvop6/OneDrive/Документы/dev/Wecan/rt_ink/dev/rt ink net seven/RtInk/obj/Debug/net7.0/RtInk.pdb
+C:/Users/mvop6/OneDrive/Документы/dev/Wecan/rt_ink/dev/rt ink net seven/RtInk/obj/Debug/net7.0/RtInk.genruntimeconfig.cache
+C:/Users/mvop6/OneDrive/Документы/dev/Wecan/rt_ink/dev/rt ink net seven/RtInk/obj/Debug/net7.0/ref/RtInk.dll
+C:/Users/mvop6/OneDrive/Документы/dev/Wecan/rt_ink/dev/rt ink net seven/RtInk/bin/Debug/net7.0/Microsoft.AspNetCore.Authentication.Google.dll
+C:/Users/mvop6/OneDrive/Документы/dev/Wecan/rt_ink/dev/rt ink net seven/RtInk/bin/Debug/net7.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:/Users/mvop6/OneDrive/Документы/dev/Wecan/rt_ink/dev/rt ink net seven/RtInk/bin/Debug/net7.0/Microsoft.IdentityModel.JsonWebTokens.dll
+C:/Users/mvop6/OneDrive/Документы/dev/Wecan/rt_ink/dev/rt ink net seven/RtInk/bin/Debug/net7.0/Microsoft.IdentityModel.Logging.dll
+C:/Users/mvop6/OneDrive/Документы/dev/Wecan/rt_ink/dev/rt ink net seven/RtInk/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.dll
+C:/Users/mvop6/OneDrive/Документы/dev/Wecan/rt_ink/dev/rt ink net seven/RtInk/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:/Users/mvop6/OneDrive/Документы/dev/Wecan/rt_ink/dev/rt ink net seven/RtInk/bin/Debug/net7.0/Microsoft.IdentityModel.Tokens.dll
+C:/Users/mvop6/OneDrive/Документы/dev/Wecan/rt_ink/dev/rt ink net seven/RtInk/bin/Debug/net7.0/System.IdentityModel.Tokens.Jwt.dll
+C:/Users/mvop6/OneDrive/Документы/dev/Wecan/rt_ink/dev/rt ink net seven/RtInk/bin/Debug/net7.0/System.Text.Json.dll
+D:/dev/Wecan/rt_ink/dev/rt ink net seven/RtInk/bin/Debug/net7.0/appsettings.Development.json
+D:/dev/Wecan/rt_ink/dev/rt ink net seven/RtInk/bin/Debug/net7.0/appsettings.json
+D:/dev/Wecan/rt_ink/dev/rt ink net seven/RtInk/bin/Debug/net7.0/RtInk.staticwebassets.runtime.json
+D:/dev/Wecan/rt_ink/dev/rt ink net seven/RtInk/bin/Debug/net7.0/RtInk.exe
+D:/dev/Wecan/rt_ink/dev/rt ink net seven/RtInk/bin/Debug/net7.0/RtInk.deps.json
+D:/dev/Wecan/rt_ink/dev/rt ink net seven/RtInk/bin/Debug/net7.0/RtInk.runtimeconfig.json
+D:/dev/Wecan/rt_ink/dev/rt ink net seven/RtInk/bin/Debug/net7.0/RtInk.dll
+D:/dev/Wecan/rt_ink/dev/rt ink net seven/RtInk/bin/Debug/net7.0/RtInk.pdb
+D:/dev/Wecan/rt_ink/dev/rt ink net seven/RtInk/bin/Debug/net7.0/Microsoft.AspNetCore.Authentication.Google.dll
+D:/dev/Wecan/rt_ink/dev/rt ink net seven/RtInk/bin/Debug/net7.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:/dev/Wecan/rt_ink/dev/rt ink net seven/RtInk/bin/Debug/net7.0/Microsoft.IdentityModel.JsonWebTokens.dll
+D:/dev/Wecan/rt_ink/dev/rt ink net seven/RtInk/bin/Debug/net7.0/Microsoft.IdentityModel.Logging.dll
+D:/dev/Wecan/rt_ink/dev/rt ink net seven/RtInk/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.dll
+D:/dev/Wecan/rt_ink/dev/rt ink net seven/RtInk/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:/dev/Wecan/rt_ink/dev/rt ink net seven/RtInk/bin/Debug/net7.0/Microsoft.IdentityModel.Tokens.dll
+D:/dev/Wecan/rt_ink/dev/rt ink net seven/RtInk/bin/Debug/net7.0/System.IdentityModel.Tokens.Jwt.dll
+D:/dev/Wecan/rt_ink/dev/rt ink net seven/RtInk/bin/Debug/net7.0/System.Text.Json.dll
+D:/dev/Wecan/rt_ink/dev/rt ink net seven/RtInk/obj/Debug/net7.0/RtInk.csproj.AssemblyReference.cache
+D:/dev/Wecan/rt_ink/dev/rt ink net seven/RtInk/obj/Debug/net7.0/RtInk.GeneratedMSBuildEditorConfig.editorconfig
+D:/dev/Wecan/rt_ink/dev/rt ink net seven/RtInk/obj/Debug/net7.0/RtInk.AssemblyInfoInputs.cache
+D:/dev/Wecan/rt_ink/dev/rt ink net seven/RtInk/obj/Debug/net7.0/RtInk.AssemblyInfo.cs
+D:/dev/Wecan/rt_ink/dev/rt ink net seven/RtInk/obj/Debug/net7.0/RtInk.csproj.CoreCompileInputs.cache
+D:/dev/Wecan/rt_ink/dev/rt ink net seven/RtInk/obj/Debug/net7.0/RtInk.MvcApplicationPartsAssemblyInfo.cache
+D:/dev/Wecan/rt_ink/dev/rt ink net seven/RtInk/obj/Debug/net7.0/staticwebassets/msbuild.RtInk.Microsoft.AspNetCore.StaticWebAssets.props
+D:/dev/Wecan/rt_ink/dev/rt ink net seven/RtInk/obj/Debug/net7.0/staticwebassets/msbuild.build.RtInk.props
+D:/dev/Wecan/rt_ink/dev/rt ink net seven/RtInk/obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.RtInk.props
+D:/dev/Wecan/rt_ink/dev/rt ink net seven/RtInk/obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.RtInk.props
+D:/dev/Wecan/rt_ink/dev/rt ink net seven/RtInk/obj/Debug/net7.0/staticwebassets.pack.json
+D:/dev/Wecan/rt_ink/dev/rt ink net seven/RtInk/obj/Debug/net7.0/staticwebassets.build.json
+D:/dev/Wecan/rt_ink/dev/rt ink net seven/RtInk/obj/Debug/net7.0/staticwebassets.development.json
+D:/dev/Wecan/rt_ink/dev/rt ink net seven/RtInk/obj/Debug/net7.0/scopedcss/bundle/RtInk.styles.css
+D:/dev/Wecan/rt_ink/dev/rt ink net seven/RtInk/obj/Debug/net7.0/RtInk.csproj.CopyComplete
+D:/dev/Wecan/rt_ink/dev/rt ink net seven/RtInk/obj/Debug/net7.0/RtInk.dll
+D:/dev/Wecan/rt_ink/dev/rt ink net seven/RtInk/obj/Debug/net7.0/refint/RtInk.dll
+D:/dev/Wecan/rt_ink/dev/rt ink net seven/RtInk/obj/Debug/net7.0/RtInk.pdb
+D:/dev/Wecan/rt_ink/dev/rt ink net seven/RtInk/obj/Debug/net7.0/RtInk.genruntimeconfig.cache
+D:/dev/Wecan/rt_ink/dev/rt ink net seven/RtInk/obj/Debug/net7.0/ref/RtInk.dll
+D:/dev/Wecan/rt_ink/dev/rt ink net seven 1/RtInk/bin/Debug/net7.0/appsettings.Development.json
+D:/dev/Wecan/rt_ink/dev/rt ink net seven 1/RtInk/bin/Debug/net7.0/appsettings.json
+D:/dev/Wecan/rt_ink/dev/rt ink net seven 1/RtInk/bin/Debug/net7.0/RtInk.staticwebassets.runtime.json
+D:/dev/Wecan/rt_ink/dev/rt ink net seven 1/RtInk/bin/Debug/net7.0/RtInk.exe
+D:/dev/Wecan/rt_ink/dev/rt ink net seven 1/RtInk/bin/Debug/net7.0/RtInk.deps.json
+D:/dev/Wecan/rt_ink/dev/rt ink net seven 1/RtInk/bin/Debug/net7.0/RtInk.runtimeconfig.json
+D:/dev/Wecan/rt_ink/dev/rt ink net seven 1/RtInk/bin/Debug/net7.0/RtInk.dll
+D:/dev/Wecan/rt_ink/dev/rt ink net seven 1/RtInk/bin/Debug/net7.0/RtInk.pdb
+D:/dev/Wecan/rt_ink/dev/rt ink net seven 1/RtInk/bin/Debug/net7.0/Microsoft.AspNetCore.Authentication.Google.dll
+D:/dev/Wecan/rt_ink/dev/rt ink net seven 1/RtInk/bin/Debug/net7.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:/dev/Wecan/rt_ink/dev/rt ink net seven 1/RtInk/bin/Debug/net7.0/Microsoft.IdentityModel.JsonWebTokens.dll
+D:/dev/Wecan/rt_ink/dev/rt ink net seven 1/RtInk/bin/Debug/net7.0/Microsoft.IdentityModel.Logging.dll
+D:/dev/Wecan/rt_ink/dev/rt ink net seven 1/RtInk/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.dll
+D:/dev/Wecan/rt_ink/dev/rt ink net seven 1/RtInk/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:/dev/Wecan/rt_ink/dev/rt ink net seven 1/RtInk/bin/Debug/net7.0/Microsoft.IdentityModel.Tokens.dll
+D:/dev/Wecan/rt_ink/dev/rt ink net seven 1/RtInk/bin/Debug/net7.0/System.IdentityModel.Tokens.Jwt.dll
+D:/dev/Wecan/rt_ink/dev/rt ink net seven 1/RtInk/obj/Debug/net7.0/RtInk.csproj.AssemblyReference.cache
+D:/dev/Wecan/rt_ink/dev/rt ink net seven 1/RtInk/obj/Debug/net7.0/RtInk.GeneratedMSBuildEditorConfig.editorconfig
+D:/dev/Wecan/rt_ink/dev/rt ink net seven 1/RtInk/obj/Debug/net7.0/RtInk.AssemblyInfoInputs.cache
+D:/dev/Wecan/rt_ink/dev/rt ink net seven 1/RtInk/obj/Debug/net7.0/RtInk.AssemblyInfo.cs
+D:/dev/Wecan/rt_ink/dev/rt ink net seven 1/RtInk/obj/Debug/net7.0/RtInk.csproj.CoreCompileInputs.cache
+D:/dev/Wecan/rt_ink/dev/rt ink net seven 1/RtInk/obj/Debug/net7.0/RtInk.MvcApplicationPartsAssemblyInfo.cache
+D:/dev/Wecan/rt_ink/dev/rt ink net seven 1/RtInk/obj/Debug/net7.0/staticwebassets/msbuild.RtInk.Microsoft.AspNetCore.StaticWebAssets.props
+D:/dev/Wecan/rt_ink/dev/rt ink net seven 1/RtInk/obj/Debug/net7.0/staticwebassets/msbuild.build.RtInk.props
+D:/dev/Wecan/rt_ink/dev/rt ink net seven 1/RtInk/obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.RtInk.props
+D:/dev/Wecan/rt_ink/dev/rt ink net seven 1/RtInk/obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.RtInk.props
+D:/dev/Wecan/rt_ink/dev/rt ink net seven 1/RtInk/obj/Debug/net7.0/staticwebassets.pack.json
+D:/dev/Wecan/rt_ink/dev/rt ink net seven 1/RtInk/obj/Debug/net7.0/staticwebassets.build.json
+D:/dev/Wecan/rt_ink/dev/rt ink net seven 1/RtInk/obj/Debug/net7.0/staticwebassets.development.json
+D:/dev/Wecan/rt_ink/dev/rt ink net seven 1/RtInk/obj/Debug/net7.0/scopedcss/bundle/RtInk.styles.css
+D:/dev/Wecan/rt_ink/dev/rt ink net seven 1/RtInk/obj/Debug/net7.0/RtInk.csproj.CopyComplete
+D:/dev/Wecan/rt_ink/dev/rt ink net seven 1/RtInk/obj/Debug/net7.0/RtInk.dll
+D:/dev/Wecan/rt_ink/dev/rt ink net seven 1/RtInk/obj/Debug/net7.0/refint/RtInk.dll
+D:/dev/Wecan/rt_ink/dev/rt ink net seven 1/RtInk/obj/Debug/net7.0/RtInk.pdb
+D:/dev/Wecan/rt_ink/dev/rt ink net seven 1/RtInk/obj/Debug/net7.0/RtInk.genruntimeconfig.cache
+D:/dev/Wecan/rt_ink/dev/rt ink net seven 1/RtInk/obj/Debug/net7.0/ref/RtInk.dll
+D:/dev/Wecan/rt_ink/dev/rt ink net seven git rep/rtink/bin/Debug/net7.0/appsettings.Development.json
+D:/dev/Wecan/rt_ink/dev/rt ink net seven git rep/rtink/bin/Debug/net7.0/appsettings.json
+D:/dev/Wecan/rt_ink/dev/rt ink net seven git rep/rtink/bin/Debug/net7.0/RtInk.staticwebassets.runtime.json
+D:/dev/Wecan/rt_ink/dev/rt ink net seven git rep/rtink/bin/Debug/net7.0/RtInk.exe
+D:/dev/Wecan/rt_ink/dev/rt ink net seven git rep/rtink/bin/Debug/net7.0/RtInk.deps.json
+D:/dev/Wecan/rt_ink/dev/rt ink net seven git rep/rtink/bin/Debug/net7.0/RtInk.runtimeconfig.json
+D:/dev/Wecan/rt_ink/dev/rt ink net seven git rep/rtink/bin/Debug/net7.0/RtInk.dll
+D:/dev/Wecan/rt_ink/dev/rt ink net seven git rep/rtink/bin/Debug/net7.0/RtInk.pdb
+D:/dev/Wecan/rt_ink/dev/rt ink net seven git rep/rtink/bin/Debug/net7.0/Microsoft.AspNetCore.Authentication.Google.dll
+D:/dev/Wecan/rt_ink/dev/rt ink net seven git rep/rtink/bin/Debug/net7.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:/dev/Wecan/rt_ink/dev/rt ink net seven git rep/rtink/bin/Debug/net7.0/Microsoft.IdentityModel.JsonWebTokens.dll
+D:/dev/Wecan/rt_ink/dev/rt ink net seven git rep/rtink/bin/Debug/net7.0/Microsoft.IdentityModel.Logging.dll
+D:/dev/Wecan/rt_ink/dev/rt ink net seven git rep/rtink/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.dll
+D:/dev/Wecan/rt_ink/dev/rt ink net seven git rep/rtink/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:/dev/Wecan/rt_ink/dev/rt ink net seven git rep/rtink/bin/Debug/net7.0/Microsoft.IdentityModel.Tokens.dll
+D:/dev/Wecan/rt_ink/dev/rt ink net seven git rep/rtink/bin/Debug/net7.0/System.IdentityModel.Tokens.Jwt.dll
+D:/dev/Wecan/rt_ink/dev/rt ink net seven git rep/rtink/obj/Debug/net7.0/RtInk.csproj.AssemblyReference.cache
+D:/dev/Wecan/rt_ink/dev/rt ink net seven git rep/rtink/obj/Debug/net7.0/RtInk.GeneratedMSBuildEditorConfig.editorconfig
+D:/dev/Wecan/rt_ink/dev/rt ink net seven git rep/rtink/obj/Debug/net7.0/RtInk.AssemblyInfoInputs.cache
+D:/dev/Wecan/rt_ink/dev/rt ink net seven git rep/rtink/obj/Debug/net7.0/RtInk.AssemblyInfo.cs
+D:/dev/Wecan/rt_ink/dev/rt ink net seven git rep/rtink/obj/Debug/net7.0/RtInk.csproj.CoreCompileInputs.cache
+D:/dev/Wecan/rt_ink/dev/rt ink net seven git rep/rtink/obj/Debug/net7.0/RtInk.MvcApplicationPartsAssemblyInfo.cache
+D:/dev/Wecan/rt_ink/dev/rt ink net seven git rep/rtink/obj/Debug/net7.0/staticwebassets/msbuild.RtInk.Microsoft.AspNetCore.StaticWebAssets.props
+D:/dev/Wecan/rt_ink/dev/rt ink net seven git rep/rtink/obj/Debug/net7.0/staticwebassets/msbuild.build.RtInk.props
+D:/dev/Wecan/rt_ink/dev/rt ink net seven git rep/rtink/obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.RtInk.props
+D:/dev/Wecan/rt_ink/dev/rt ink net seven git rep/rtink/obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.RtInk.props
+D:/dev/Wecan/rt_ink/dev/rt ink net seven git rep/rtink/obj/Debug/net7.0/staticwebassets.pack.json
+D:/dev/Wecan/rt_ink/dev/rt ink net seven git rep/rtink/obj/Debug/net7.0/staticwebassets.build.json
+D:/dev/Wecan/rt_ink/dev/rt ink net seven git rep/rtink/obj/Debug/net7.0/staticwebassets.development.json
+D:/dev/Wecan/rt_ink/dev/rt ink net seven git rep/rtink/obj/Debug/net7.0/scopedcss/bundle/RtInk.styles.css
+D:/dev/Wecan/rt_ink/dev/rt ink net seven git rep/rtink/obj/Debug/net7.0/RtInk.csproj.CopyComplete
+D:/dev/Wecan/rt_ink/dev/rt ink net seven git rep/rtink/obj/Debug/net7.0/RtInk.dll
+D:/dev/Wecan/rt_ink/dev/rt ink net seven git rep/rtink/obj/Debug/net7.0/refint/RtInk.dll
+D:/dev/Wecan/rt_ink/dev/rt ink net seven git rep/rtink/obj/Debug/net7.0/RtInk.pdb
+D:/dev/Wecan/rt_ink/dev/rt ink net seven git rep/rtink/obj/Debug/net7.0/RtInk.genruntimeconfig.cache
+D:/dev/Wecan/rt_ink/dev/rt ink net seven git rep/rtink/obj/Debug/net7.0/ref/RtInk.dll
+//Mac/Home/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink net seven git rep clone/rtink-git/rtink/bin/Debug/net7.0/appsettings.Development.json
+//Mac/Home/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink net seven git rep clone/rtink-git/rtink/bin/Debug/net7.0/appsettings.json
+//Mac/Home/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink net seven git rep clone/rtink-git/rtink/bin/Debug/net7.0/RtInk.staticwebassets.runtime.json
+//Mac/Home/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink net seven git rep clone/rtink-git/rtink/bin/Debug/net7.0/RtInk.exe
+//Mac/Home/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink net seven git rep clone/rtink-git/rtink/bin/Debug/net7.0/RtInk.deps.json
+//Mac/Home/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink net seven git rep clone/rtink-git/rtink/bin/Debug/net7.0/RtInk.runtimeconfig.json
+//Mac/Home/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink net seven git rep clone/rtink-git/rtink/bin/Debug/net7.0/RtInk.dll
+//Mac/Home/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink net seven git rep clone/rtink-git/rtink/bin/Debug/net7.0/RtInk.pdb
+//Mac/Home/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink net seven git rep clone/rtink-git/rtink/bin/Debug/net7.0/Microsoft.AspNetCore.Authentication.Google.dll
+//Mac/Home/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink net seven git rep clone/rtink-git/rtink/bin/Debug/net7.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+//Mac/Home/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink net seven git rep clone/rtink-git/rtink/bin/Debug/net7.0/Microsoft.IdentityModel.JsonWebTokens.dll
+//Mac/Home/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink net seven git rep clone/rtink-git/rtink/bin/Debug/net7.0/Microsoft.IdentityModel.Logging.dll
+//Mac/Home/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink net seven git rep clone/rtink-git/rtink/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.dll
+//Mac/Home/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink net seven git rep clone/rtink-git/rtink/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+//Mac/Home/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink net seven git rep clone/rtink-git/rtink/bin/Debug/net7.0/Microsoft.IdentityModel.Tokens.dll
+//Mac/Home/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink net seven git rep clone/rtink-git/rtink/bin/Debug/net7.0/System.IdentityModel.Tokens.Jwt.dll
+//Mac/Home/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink net seven git rep clone/rtink-git/rtink/obj/Debug/net7.0/RtInk.csproj.AssemblyReference.cache
+//Mac/Home/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink net seven git rep clone/rtink-git/rtink/obj/Debug/net7.0/RtInk.GeneratedMSBuildEditorConfig.editorconfig
+//Mac/Home/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink net seven git rep clone/rtink-git/rtink/obj/Debug/net7.0/RtInk.AssemblyInfoInputs.cache
+//Mac/Home/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink net seven git rep clone/rtink-git/rtink/obj/Debug/net7.0/RtInk.AssemblyInfo.cs
+//Mac/Home/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink net seven git rep clone/rtink-git/rtink/obj/Debug/net7.0/RtInk.csproj.CoreCompileInputs.cache
+//Mac/Home/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink net seven git rep clone/rtink-git/rtink/obj/Debug/net7.0/RtInk.MvcApplicationPartsAssemblyInfo.cache
+//Mac/Home/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink net seven git rep clone/rtink-git/rtink/obj/Debug/net7.0/staticwebassets/msbuild.RtInk.Microsoft.AspNetCore.StaticWebAssets.props
+//Mac/Home/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink net seven git rep clone/rtink-git/rtink/obj/Debug/net7.0/staticwebassets/msbuild.build.RtInk.props
+//Mac/Home/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink net seven git rep clone/rtink-git/rtink/obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.RtInk.props
+//Mac/Home/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink net seven git rep clone/rtink-git/rtink/obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.RtInk.props
+//Mac/Home/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink net seven git rep clone/rtink-git/rtink/obj/Debug/net7.0/staticwebassets.pack.json
+//Mac/Home/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink net seven git rep clone/rtink-git/rtink/obj/Debug/net7.0/staticwebassets.build.json
+//Mac/Home/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink net seven git rep clone/rtink-git/rtink/obj/Debug/net7.0/staticwebassets.development.json
+//Mac/Home/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink net seven git rep clone/rtink-git/rtink/obj/Debug/net7.0/scopedcss/bundle/RtInk.styles.css
+//Mac/Home/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink net seven git rep clone/rtink-git/rtink/obj/Debug/net7.0/RtInk.csproj.CopyComplete
+//Mac/Home/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink net seven git rep clone/rtink-git/rtink/obj/Debug/net7.0/RtInk.dll
+//Mac/Home/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink net seven git rep clone/rtink-git/rtink/obj/Debug/net7.0/refint/RtInk.dll
+//Mac/Home/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink net seven git rep clone/rtink-git/rtink/obj/Debug/net7.0/RtInk.pdb
+//Mac/Home/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink net seven git rep clone/rtink-git/rtink/obj/Debug/net7.0/RtInk.genruntimeconfig.cache
+//Mac/Home/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink net seven git rep clone/rtink-git/rtink/obj/Debug/net7.0/ref/RtInk.dll
+//Mac/Home/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/bin/Debug/net7.0/appsettings.Development.json
+//Mac/Home/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/bin/Debug/net7.0/appsettings.json
+//Mac/Home/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/bin/Debug/net7.0/bundleconfig.json
+//Mac/Home/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/bin/Debug/net7.0/RtInk.staticwebassets.runtime.json
+//Mac/Home/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/bin/Debug/net7.0/RtInk.exe
+//Mac/Home/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/bin/Debug/net7.0/RtInk.deps.json
+//Mac/Home/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/bin/Debug/net7.0/RtInk.runtimeconfig.json
+//Mac/Home/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/bin/Debug/net7.0/RtInk.dll
+//Mac/Home/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/bin/Debug/net7.0/RtInk.pdb
+//Mac/Home/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/bin/Debug/net7.0/Microsoft.AspNetCore.Authentication.Google.dll
+//Mac/Home/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/bin/Debug/net7.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+//Mac/Home/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/bin/Debug/net7.0/Microsoft.IdentityModel.JsonWebTokens.dll
+//Mac/Home/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/bin/Debug/net7.0/Microsoft.IdentityModel.Logging.dll
+//Mac/Home/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.dll
+//Mac/Home/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+//Mac/Home/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/bin/Debug/net7.0/Microsoft.IdentityModel.Tokens.dll
+//Mac/Home/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/bin/Debug/net7.0/System.IdentityModel.Tokens.Jwt.dll
+//Mac/Home/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/obj/Debug/net7.0/RtInk.csproj.AssemblyReference.cache
+//Mac/Home/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/obj/Debug/net7.0/RtInk.GeneratedMSBuildEditorConfig.editorconfig
+//Mac/Home/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/obj/Debug/net7.0/RtInk.AssemblyInfoInputs.cache
+//Mac/Home/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/obj/Debug/net7.0/RtInk.AssemblyInfo.cs
+//Mac/Home/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/obj/Debug/net7.0/RtInk.csproj.CoreCompileInputs.cache
+//Mac/Home/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/obj/Debug/net7.0/RtInk.MvcApplicationPartsAssemblyInfo.cache
+//Mac/Home/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/obj/Debug/net7.0/staticwebassets/msbuild.RtInk.Microsoft.AspNetCore.StaticWebAssets.props
+//Mac/Home/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/obj/Debug/net7.0/staticwebassets/msbuild.build.RtInk.props
+//Mac/Home/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.RtInk.props
+//Mac/Home/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.RtInk.props
+//Mac/Home/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/obj/Debug/net7.0/staticwebassets.pack.json
+//Mac/Home/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/obj/Debug/net7.0/staticwebassets.build.json
+//Mac/Home/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/obj/Debug/net7.0/staticwebassets.development.json
+//Mac/Home/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/obj/Debug/net7.0/scopedcss/bundle/RtInk.styles.css
+//Mac/Home/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/obj/Debug/net7.0/RtInk.csproj.CopyComplete
+//Mac/Home/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/obj/Debug/net7.0/RtInk.dll
+//Mac/Home/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/obj/Debug/net7.0/refint/RtInk.dll
+//Mac/Home/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/obj/Debug/net7.0/RtInk.pdb
+//Mac/Home/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/obj/Debug/net7.0/RtInk.genruntimeconfig.cache
+//Mac/Home/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/obj/Debug/net7.0/ref/RtInk.dll
+/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/obj/Debug/net7.0/RtInk.csproj.AssemblyReference.cache
+/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/obj/Debug/net7.0/RtInk.GeneratedMSBuildEditorConfig.editorconfig
+/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/obj/Debug/net7.0/RtInk.AssemblyInfoInputs.cache
+/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/obj/Debug/net7.0/RtInk.AssemblyInfo.cs
+/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/obj/Debug/net7.0/RtInk.csproj.CoreCompileInputs.cache
+/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/obj/Debug/net7.0/RtInk.MvcApplicationPartsAssemblyInfo.cache
+/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/obj/Debug/net7.0/RtInk.dll
+/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/obj/Debug/net7.0/refint/RtInk.dll
+/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/obj/Debug/net7.0/RtInk.pdb
+/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/bin/Debug/net7.0/appsettings.Development.json
+/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/bin/Debug/net7.0/appsettings.json
+/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/bin/Debug/net7.0/bundleconfig.json
+/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/bin/Debug/net7.0/RtInk.staticwebassets.runtime.json
+/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/bin/Debug/net7.0/RtInk
+/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/bin/Debug/net7.0/RtInk.deps.json
+/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/bin/Debug/net7.0/RtInk.runtimeconfig.json
+/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/bin/Debug/net7.0/RtInk.dll
+/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/bin/Debug/net7.0/RtInk.pdb
+/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/bin/Debug/net7.0/Microsoft.AspNetCore.Authentication.Google.dll
+/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/bin/Debug/net7.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/bin/Debug/net7.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/bin/Debug/net7.0/Microsoft.IdentityModel.Logging.dll
+/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.dll
+/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/bin/Debug/net7.0/Microsoft.IdentityModel.Tokens.dll
+/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/bin/Debug/net7.0/System.IdentityModel.Tokens.Jwt.dll
+/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/obj/Debug/net7.0/staticwebassets/msbuild.RtInk.Microsoft.AspNetCore.StaticWebAssets.props
+/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/obj/Debug/net7.0/staticwebassets/msbuild.build.RtInk.props
+/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.RtInk.props
+/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.RtInk.props
+/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/obj/Debug/net7.0/staticwebassets.pack.json
+/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/obj/Debug/net7.0/staticwebassets.build.json
+/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/obj/Debug/net7.0/staticwebassets.development.json
+/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/obj/Debug/net7.0/scopedcss/bundle/RtInk.styles.css
+/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/obj/Debug/net7.0/RtInk.csproj.CopyComplete
+/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/obj/Debug/net7.0/RtInk.genruntimeconfig.cache
+/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/obj/Debug/net7.0/ref/RtInk.dll
