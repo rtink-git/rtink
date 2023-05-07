@@ -277,6 +277,10 @@
       "PackagePath": "staticwebassets/PageComponents/UsersHtmlBox/script.js"
     },
     {
+      "Id": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/PageComponents/UsersHtmlBox/script.min.js",
+      "PackagePath": "staticwebassets/PageComponents/UsersHtmlBox/script.min.js"
+    },
+    {
       "Id": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/PageComponents/UsersHtmlBox/style.css",
       "PackagePath": "staticwebassets/PageComponents/UsersHtmlBox/style.css"
     },
@@ -361,8 +365,16 @@
       "PackagePath": "staticwebassets/Pages/Users/script.js"
     },
     {
+      "Id": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/Pages/Users/script.min.js",
+      "PackagePath": "staticwebassets/Pages/Users/script.min.js"
+    },
+    {
       "Id": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/Pages/Users/style.css",
       "PackagePath": "staticwebassets/Pages/Users/style.css"
+    },
+    {
+      "Id": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/Pages/Users/style.min.css",
+      "PackagePath": "staticwebassets/Pages/Users/style.min.css"
     },
     {
       "Id": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/Pages/i/content/add.png",

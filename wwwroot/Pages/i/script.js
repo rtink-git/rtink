@@ -11,6 +11,7 @@ import { HeaderTitleDescriptionHtmlBox } from '/PageComponents/HeaderTitleDescri
 import { SearchHeaderQHtmlBox } from "/PageComponents/SearchHeaderQHtmlBox/script.min.js";
 import { ArticlesHtmlBox } from "/PageComponents/ArticlesHtmlBox/script.min.js";
 
+let headerHtmlBox = new HeaderHtmlBox()
 let searchHeaderQHtmlBox = new SearchHeaderQHtmlBox();
 let headerTitleDescriptionHtmlBox = new HeaderTitleDescriptionHtmlBox();
 
@@ -53,7 +54,6 @@ if (search.length > 0) {
 
 //--------------------
 
-let headerHtmlBox = new HeaderHtmlBox()
 
 let HeaderTitle = "RT";
 let headerDescriptionName = ""
@@ -63,10 +63,11 @@ let subscribType = 0;
 if (typeApiPageI == 0) {
     headerDescriptionName = "NEWS";
     headerHtmlBox.PushMenuRow({ "icon": iPageUrlContent + "/search.png", "href": "", "id": "SearchBM", "alt": "search" })
+
     if (Session.RoleId == 0) {
         headerHtmlBox.PushMenuRow({ "icon": iPageUrlContent + "/location.png", "href": "/locations", "id": "LocationBM", "alt": "location" });
-        //localStorage.setItem("SessionRefrshRequired", "true")
-        //headerHtmlBox.PushMenuRow({ "icon": iPageUrlContent + "/login.png", "href": ApiUrl + "/Base/Authorization/Signin/Google?SessionToken=" + Session.Token + "&RedirectUrl=" + document.URL });
+        localStorage.setItem("SessionRefrshRequired", "true")
+        headerHtmlBox.PushMenuRow({ "icon": iPageUrlContent + "/login.png", "href": ApiUrl + "/Base/Authorization/Signin/Google?SessionToken=" + Session.Token + "&RedirectUrl=" + document.URL });
     }
     else headerHtmlBox.PushMenuRow({ "icon": iPageUrlContent + "/category.png", "href": "/users", "alt": "signin" });
 }
@@ -148,15 +149,17 @@ else if (typeApiPageI == 3) {
     document.getElementById("SearchBM").style.display = "none";
 }
 
+//--------------------
 
-let idz = "SearchHeaderQHtmlBox"
+let prevBoxName = "SearchHeaderQHtmlBox"
 if (userLogin.length > 0) {
-    headerTitleDescriptionHtmlBox.InsertAdjacentHTML(document.getElementById("SearchHeaderQHtmlBox"), "afterend", userLogin.toUpperCase(), "user profile")
-    idz = headerTitleDescriptionHtmlBox.Name
+    headerTitleDescriptionHtmlBox.InsertAdjacentHTML(document.getElementById("SearchHeaderQHtmlBox"), "afterend", userLogin.toUpperCase(), "User and his articles")
+    prevBoxName = headerTitleDescriptionHtmlBox.Name
 }
 
+//--------------------
 
-let articlesHtmlBox = new ArticlesHtmlBox(document.getElementById(idz), "afterend", search, ApiUrl, Session.Token)
+let articlesHtmlBox = new ArticlesHtmlBox(document.getElementById(prevBoxName), "afterend", search, ApiUrl, Session.Token)
 await articlesHtmlBox.AppendList()
 
 

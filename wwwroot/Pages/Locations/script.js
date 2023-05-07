@@ -1,6 +1,6 @@
 ﻿import { ApiUrl, PageHeadsBuild, Session } from '/PageComponents/Page/script.min.js';
 import { HeaderHtmlBox } from '/PageComponents/HeaderHtmlBox/script.min.js';
-import { HeaderTitleDescriptionHtmlBox } from '/PageComponents/HeaderTitleDescriptionHtmlBox/script.js';
+import { HeaderTitleDescriptionHtmlBox } from '/PageComponents/HeaderTitleDescriptionHtmlBox/script.min.js';
 import { LocsHtmlBox } from '/PageComponents/LocsHtmlBox/script.min.js';
 
 let headerHtmlBox = new HeaderHtmlBox()

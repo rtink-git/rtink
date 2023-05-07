@@ -15,9 +15,10 @@
         }
 
     #HeaderTitleDescriptionHtmlBox h1 {
-        margin-bottom: 10px;
-        letter-spacing: 2px;
-        font-size: 32px;
+        margin-bottom: 15px;
+        letter-spacing: 3px;
+        font-size: 36px;
+        font-weight:600;
     }
 
     #HeaderTitleDescriptionHtmlBox p {
