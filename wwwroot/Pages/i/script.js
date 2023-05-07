@@ -50,7 +50,7 @@ if (search.length > 0) {
         else if (searchSplit.length == 2 && searchSplit[1].length == 0 && search[search.length - 1] == '-')
             typeApiPageI = 2
         else typeApiPageI = 3
-}
+} 
 
 //--------------------
 
