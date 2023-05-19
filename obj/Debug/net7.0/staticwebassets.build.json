@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "6B7VLfUgbu4v6K4ZX/R91NDEsqtXP/Nh90E+sq/IJ3A=",
+  "Hash": "2gn6mubTLw5BNyHXddhBVQnuheihO0SqImtolccyRyQ=",
   "Source": "RtInk",
   "BasePath": "_content/RtInk",
   "Mode": "Default",
@@ -136,6 +136,23 @@
       "OriginalItemSpec": "wwwroot/PageComponents/ArticlesHtmlBox/script.js"
     },
     {
+      "Identity": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/PageComponents/ArticlesHtmlBox/script.min.js",
+      "SourceId": "RtInk",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/",
+      "BasePath": "_content/RtInk",
+      "RelativePath": "PageComponents/ArticlesHtmlBox/script.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/PageComponents/ArticlesHtmlBox/script.min.js"
+    },
+    {
       "Identity": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/PageComponents/ArticlesHtmlBox/style.css",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
@@ -151,6 +168,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/PageComponents/ArticlesHtmlBox/style.css"
+    },
+    {
+      "Identity": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/PageComponents/ArticlesHtmlBox/style.min.css",
+      "SourceId": "RtInk",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/",
+      "BasePath": "_content/RtInk",
+      "RelativePath": "PageComponents/ArticlesHtmlBox/style.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/PageComponents/ArticlesHtmlBox/style.min.css"
     },
     {
       "Identity": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/PageComponents/CentralHtmlPart/content/404.png",
@@ -238,6 +272,23 @@
       "OriginalItemSpec": "wwwroot/PageComponents/CentralHtmlPart/style.css"
     },
     {
+      "Identity": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/PageComponents/CentralHtmlPart/style.min.css",
+      "SourceId": "RtInk",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/",
+      "BasePath": "_content/RtInk",
+      "RelativePath": "PageComponents/CentralHtmlPart/style.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/PageComponents/CentralHtmlPart/style.min.css"
+    },
+    {
       "Identity": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/PageComponents/CentralInfHtmlBox/content/404.png",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
@@ -323,6 +374,23 @@
       "OriginalItemSpec": "wwwroot/PageComponents/CentralInfHtmlBox/style.css"
     },
     {
+      "Identity": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/PageComponents/CentralInfHtmlBox/style.min.css",
+      "SourceId": "RtInk",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/",
+      "BasePath": "_content/RtInk",
+      "RelativePath": "PageComponents/CentralInfHtmlBox/style.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/PageComponents/CentralInfHtmlBox/style.min.css"
+    },
+    {
       "Identity": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/PageComponents/HeaderDescriptionHtmlBox/script.js",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
@@ -340,6 +408,23 @@
       "OriginalItemSpec": "wwwroot/PageComponents/HeaderDescriptionHtmlBox/script.js"
     },
     {
+      "Identity": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/PageComponents/HeaderDescriptionHtmlBox/script.min.js",
+      "SourceId": "RtInk",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/",
+      "BasePath": "_content/RtInk",
+      "RelativePath": "PageComponents/HeaderDescriptionHtmlBox/script.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/PageComponents/HeaderDescriptionHtmlBox/script.min.js"
+    },
+    {
       "Identity": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/PageComponents/HeaderDescriptionHtmlBox/style.css",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
@@ -355,6 +440,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/PageComponents/HeaderDescriptionHtmlBox/style.css"
+    },
+    {
+      "Identity": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/PageComponents/HeaderDescriptionHtmlBox/style.min.css",
+      "SourceId": "RtInk",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/",
+      "BasePath": "_content/RtInk",
+      "RelativePath": "PageComponents/HeaderDescriptionHtmlBox/style.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/PageComponents/HeaderDescriptionHtmlBox/style.min.css"
     },
     {
       "Identity": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/PageComponents/HeaderHtmlBox/content/logo.png",
@@ -442,6 +544,23 @@
       "OriginalItemSpec": "wwwroot/PageComponents/HeaderHtmlBox/script.js"
     },
     {
+      "Identity": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/PageComponents/HeaderHtmlBox/script.min.js",
+      "SourceId": "RtInk",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/",
+      "BasePath": "_content/RtInk",
+      "RelativePath": "PageComponents/HeaderHtmlBox/script.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/PageComponents/HeaderHtmlBox/script.min.js"
+    },
+    {
       "Identity": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/PageComponents/HeaderHtmlBox/style.css",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
@@ -457,6 +576,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/PageComponents/HeaderHtmlBox/style.css"
+    },
+    {
+      "Identity": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/PageComponents/HeaderHtmlBox/style.min.css",
+      "SourceId": "RtInk",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/",
+      "BasePath": "_content/RtInk",
+      "RelativePath": "PageComponents/HeaderHtmlBox/style.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/PageComponents/HeaderHtmlBox/style.min.css"
     },
     {
       "Identity": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/PageComponents/HeaderTitleDescriptionHtmlBox/script.js",
@@ -476,6 +612,23 @@
       "OriginalItemSpec": "wwwroot/PageComponents/HeaderTitleDescriptionHtmlBox/script.js"
     },
     {
+      "Identity": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/PageComponents/HeaderTitleDescriptionHtmlBox/script.min.js",
+      "SourceId": "RtInk",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/",
+      "BasePath": "_content/RtInk",
+      "RelativePath": "PageComponents/HeaderTitleDescriptionHtmlBox/script.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/PageComponents/HeaderTitleDescriptionHtmlBox/script.min.js"
+    },
+    {
       "Identity": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/PageComponents/HeaderTitleDescriptionHtmlBox/style.css",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
@@ -491,6 +644,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/PageComponents/HeaderTitleDescriptionHtmlBox/style.css"
+    },
+    {
+      "Identity": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/PageComponents/HeaderTitleDescriptionHtmlBox/style.min.css",
+      "SourceId": "RtInk",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/",
+      "BasePath": "_content/RtInk",
+      "RelativePath": "PageComponents/HeaderTitleDescriptionHtmlBox/style.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/PageComponents/HeaderTitleDescriptionHtmlBox/style.min.css"
     },
     {
       "Identity": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/PageComponents/LocsHtmlBox/content/arrow-down-black.png",
@@ -578,6 +748,23 @@
       "OriginalItemSpec": "wwwroot/PageComponents/LocsHtmlBox/script.js"
     },
     {
+      "Identity": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/PageComponents/LocsHtmlBox/script.min.js",
+      "SourceId": "RtInk",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/",
+      "BasePath": "_content/RtInk",
+      "RelativePath": "PageComponents/LocsHtmlBox/script.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/PageComponents/LocsHtmlBox/script.min.js"
+    },
+    {
       "Identity": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/PageComponents/LocsHtmlBox/style.css",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
@@ -593,6 +780,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/PageComponents/LocsHtmlBox/style.css"
+    },
+    {
+      "Identity": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/PageComponents/LocsHtmlBox/style.min.css",
+      "SourceId": "RtInk",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/",
+      "BasePath": "_content/RtInk",
+      "RelativePath": "PageComponents/LocsHtmlBox/style.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/PageComponents/LocsHtmlBox/style.min.css"
     },
     {
       "Identity": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/PageComponents/MoreButtonHtmlBox/script.js",
@@ -627,6 +831,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/PageComponents/MoreButtonHtmlBox/style.css"
+    },
+    {
+      "Identity": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/PageComponents/MoreButtonHtmlBox/style.min.css",
+      "SourceId": "RtInk",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/",
+      "BasePath": "_content/RtInk",
+      "RelativePath": "PageComponents/MoreButtonHtmlBox/style.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/PageComponents/MoreButtonHtmlBox/style.min.css"
     },
     {
       "Identity": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/PageComponents/Page/.DS_Store",
@@ -731,6 +952,23 @@
       "OriginalItemSpec": "wwwroot/PageComponents/Page/script.js"
     },
     {
+      "Identity": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/PageComponents/Page/script.min.js",
+      "SourceId": "RtInk",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/",
+      "BasePath": "_content/RtInk",
+      "RelativePath": "PageComponents/Page/script.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/PageComponents/Page/script.min.js"
+    },
+    {
       "Identity": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/PageComponents/Page/style.css",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
@@ -746,6 +984,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/PageComponents/Page/style.css"
+    },
+    {
+      "Identity": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/PageComponents/Page/style.min.css",
+      "SourceId": "RtInk",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/",
+      "BasePath": "_content/RtInk",
+      "RelativePath": "PageComponents/Page/style.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/PageComponents/Page/style.min.css"
     },
     {
       "Identity": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/PageComponents/SearchHeaderQHtmlBox/content/search.png",
@@ -782,6 +1037,23 @@
       "OriginalItemSpec": "wwwroot/PageComponents/SearchHeaderQHtmlBox/script.js"
     },
     {
+      "Identity": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/PageComponents/SearchHeaderQHtmlBox/script.min.js",
+      "SourceId": "RtInk",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/",
+      "BasePath": "_content/RtInk",
+      "RelativePath": "PageComponents/SearchHeaderQHtmlBox/script.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/PageComponents/SearchHeaderQHtmlBox/script.min.js"
+    },
+    {
       "Identity": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/PageComponents/SearchHeaderQHtmlBox/style.css",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
@@ -799,6 +1071,23 @@
       "OriginalItemSpec": "wwwroot/PageComponents/SearchHeaderQHtmlBox/style.css"
     },
     {
+      "Identity": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/PageComponents/SearchHeaderQHtmlBox/style.min.css",
+      "SourceId": "RtInk",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/",
+      "BasePath": "_content/RtInk",
+      "RelativePath": "PageComponents/SearchHeaderQHtmlBox/style.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/PageComponents/SearchHeaderQHtmlBox/style.min.css"
+    },
+    {
       "Identity": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/PageComponents/Sessions.js",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
@@ -814,6 +1103,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/PageComponents/Sessions.js"
+    },
+    {
+      "Identity": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/PageComponents/Sessions.min.js",
+      "SourceId": "RtInk",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/",
+      "BasePath": "_content/RtInk",
+      "RelativePath": "PageComponents/Sessions.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/PageComponents/Sessions.min.js"
     },
     {
       "Identity": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/PageComponents/UsersHtmlBox/content/doubleCheckBlackBlack.png",
@@ -935,6 +1241,23 @@
       "OriginalItemSpec": "wwwroot/PageComponents/UsersHtmlBox/script.js"
     },
     {
+      "Identity": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/PageComponents/UsersHtmlBox/script.min.js",
+      "SourceId": "RtInk",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/",
+      "BasePath": "_content/RtInk",
+      "RelativePath": "PageComponents/UsersHtmlBox/script.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/PageComponents/UsersHtmlBox/script.min.js"
+    },
+    {
       "Identity": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/PageComponents/UsersHtmlBox/style.css",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
@@ -950,6 +1273,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/PageComponents/UsersHtmlBox/style.css"
+    },
+    {
+      "Identity": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/PageComponents/UsersHtmlBox/style.min.css",
+      "SourceId": "RtInk",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/",
+      "BasePath": "_content/RtInk",
+      "RelativePath": "PageComponents/UsersHtmlBox/style.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/PageComponents/UsersHtmlBox/style.min.css"
     },
     {
       "Identity": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/Pages/i/content/add.png",
@@ -1326,6 +1666,23 @@
       "OriginalItemSpec": "wwwroot/Pages/i/script.js"
     },
     {
+      "Identity": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/Pages/i/script.min.js",
+      "SourceId": "RtInk",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/",
+      "BasePath": "_content/RtInk",
+      "RelativePath": "Pages/i/script.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Pages/i/script.min.js"
+    },
+    {
       "Identity": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/Pages/i/style.css",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
@@ -1341,6 +1698,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/Pages/i/style.css"
+    },
+    {
+      "Identity": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/Pages/i/style.min.css",
+      "SourceId": "RtInk",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/",
+      "BasePath": "_content/RtInk",
+      "RelativePath": "Pages/i/style.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Pages/i/style.min.css"
     },
     {
       "Identity": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/Pages/Locations/content/check.png",
@@ -1428,6 +1802,23 @@
       "OriginalItemSpec": "wwwroot/Pages/Locations/script.js"
     },
     {
+      "Identity": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/Pages/Locations/script.min.js",
+      "SourceId": "RtInk",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/",
+      "BasePath": "_content/RtInk",
+      "RelativePath": "Pages/Locations/script.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Pages/Locations/script.min.js"
+    },
+    {
       "Identity": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/Pages/Locations/style.css",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
@@ -1443,6 +1834,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/Pages/Locations/style.css"
+    },
+    {
+      "Identity": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/Pages/Locations/style.min.css",
+      "SourceId": "RtInk",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/",
+      "BasePath": "_content/RtInk",
+      "RelativePath": "Pages/Locations/style.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Pages/Locations/style.min.css"
     },
     {
       "Identity": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/Pages/UserAdd/content/login.png",
@@ -1836,6 +2244,23 @@
       "OriginalItemSpec": "wwwroot/Pages/Users/script.js"
     },
     {
+      "Identity": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/Pages/Users/script.min.js",
+      "SourceId": "RtInk",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/",
+      "BasePath": "_content/RtInk",
+      "RelativePath": "Pages/Users/script.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Pages/Users/script.min.js"
+    },
+    {
       "Identity": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/Pages/Users/style.css",
       "SourceId": "RtInk",
       "SourceType": "Discovered",
@@ -1851,6 +2276,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/Pages/Users/style.css"
+    },
+    {
+      "Identity": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/Pages/Users/style.min.css",
+      "SourceId": "RtInk",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/",
+      "BasePath": "_content/RtInk",
+      "RelativePath": "Pages/Users/style.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Pages/Users/style.min.css"
     }
   ]
 }

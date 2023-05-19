@@ -29,8 +29,16 @@
       "PackagePath": "staticwebassets/PageComponents/ArticlesHtmlBox/script.js"
     },
     {
+      "Id": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/PageComponents/ArticlesHtmlBox/script.min.js",
+      "PackagePath": "staticwebassets/PageComponents/ArticlesHtmlBox/script.min.js"
+    },
+    {
       "Id": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/PageComponents/ArticlesHtmlBox/style.css",
       "PackagePath": "staticwebassets/PageComponents/ArticlesHtmlBox/style.css"
+    },
+    {
+      "Id": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/PageComponents/ArticlesHtmlBox/style.min.css",
+      "PackagePath": "staticwebassets/PageComponents/ArticlesHtmlBox/style.min.css"
     },
     {
       "Id": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/PageComponents/CentralHtmlPart/content/404.png",
@@ -53,6 +61,10 @@
       "PackagePath": "staticwebassets/PageComponents/CentralHtmlPart/style.css"
     },
     {
+      "Id": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/PageComponents/CentralHtmlPart/style.min.css",
+      "PackagePath": "staticwebassets/PageComponents/CentralHtmlPart/style.min.css"
+    },
+    {
       "Id": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/PageComponents/CentralInfHtmlBox/content/404.png",
       "PackagePath": "staticwebassets/PageComponents/CentralInfHtmlBox/content/404.png"
     },
@@ -73,12 +85,24 @@
       "PackagePath": "staticwebassets/PageComponents/CentralInfHtmlBox/style.css"
     },
     {
+      "Id": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/PageComponents/CentralInfHtmlBox/style.min.css",
+      "PackagePath": "staticwebassets/PageComponents/CentralInfHtmlBox/style.min.css"
+    },
+    {
       "Id": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/PageComponents/HeaderDescriptionHtmlBox/script.js",
       "PackagePath": "staticwebassets/PageComponents/HeaderDescriptionHtmlBox/script.js"
     },
     {
+      "Id": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/PageComponents/HeaderDescriptionHtmlBox/script.min.js",
+      "PackagePath": "staticwebassets/PageComponents/HeaderDescriptionHtmlBox/script.min.js"
+    },
+    {
       "Id": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/PageComponents/HeaderDescriptionHtmlBox/style.css",
       "PackagePath": "staticwebassets/PageComponents/HeaderDescriptionHtmlBox/style.css"
+    },
+    {
+      "Id": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/PageComponents/HeaderDescriptionHtmlBox/style.min.css",
+      "PackagePath": "staticwebassets/PageComponents/HeaderDescriptionHtmlBox/style.min.css"
     },
     {
       "Id": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/PageComponents/HeaderHtmlBox/content/logo.png",
@@ -101,16 +125,32 @@
       "PackagePath": "staticwebassets/PageComponents/HeaderHtmlBox/script.js"
     },
     {
+      "Id": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/PageComponents/HeaderHtmlBox/script.min.js",
+      "PackagePath": "staticwebassets/PageComponents/HeaderHtmlBox/script.min.js"
+    },
+    {
       "Id": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/PageComponents/HeaderHtmlBox/style.css",
       "PackagePath": "staticwebassets/PageComponents/HeaderHtmlBox/style.css"
+    },
+    {
+      "Id": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/PageComponents/HeaderHtmlBox/style.min.css",
+      "PackagePath": "staticwebassets/PageComponents/HeaderHtmlBox/style.min.css"
     },
     {
       "Id": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/PageComponents/HeaderTitleDescriptionHtmlBox/script.js",
       "PackagePath": "staticwebassets/PageComponents/HeaderTitleDescriptionHtmlBox/script.js"
     },
     {
+      "Id": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/PageComponents/HeaderTitleDescriptionHtmlBox/script.min.js",
+      "PackagePath": "staticwebassets/PageComponents/HeaderTitleDescriptionHtmlBox/script.min.js"
+    },
+    {
       "Id": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/PageComponents/HeaderTitleDescriptionHtmlBox/style.css",
       "PackagePath": "staticwebassets/PageComponents/HeaderTitleDescriptionHtmlBox/style.css"
+    },
+    {
+      "Id": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/PageComponents/HeaderTitleDescriptionHtmlBox/style.min.css",
+      "PackagePath": "staticwebassets/PageComponents/HeaderTitleDescriptionHtmlBox/style.min.css"
     },
     {
       "Id": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/PageComponents/LocsHtmlBox/content/arrow-down-black.png",
@@ -133,8 +173,16 @@
       "PackagePath": "staticwebassets/PageComponents/LocsHtmlBox/script.js"
     },
     {
+      "Id": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/PageComponents/LocsHtmlBox/script.min.js",
+      "PackagePath": "staticwebassets/PageComponents/LocsHtmlBox/script.min.js"
+    },
+    {
       "Id": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/PageComponents/LocsHtmlBox/style.css",
       "PackagePath": "staticwebassets/PageComponents/LocsHtmlBox/style.css"
+    },
+    {
+      "Id": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/PageComponents/LocsHtmlBox/style.min.css",
+      "PackagePath": "staticwebassets/PageComponents/LocsHtmlBox/style.min.css"
     },
     {
       "Id": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/PageComponents/MoreButtonHtmlBox/script.js",
@@ -143,6 +191,10 @@
     {
       "Id": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/PageComponents/MoreButtonHtmlBox/style.css",
       "PackagePath": "staticwebassets/PageComponents/MoreButtonHtmlBox/style.css"
+    },
+    {
+      "Id": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/PageComponents/MoreButtonHtmlBox/style.min.css",
+      "PackagePath": "staticwebassets/PageComponents/MoreButtonHtmlBox/style.min.css"
     },
     {
       "Id": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/PageComponents/Page/.DS_Store",
@@ -169,8 +221,16 @@
       "PackagePath": "staticwebassets/PageComponents/Page/script.js"
     },
     {
+      "Id": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/PageComponents/Page/script.min.js",
+      "PackagePath": "staticwebassets/PageComponents/Page/script.min.js"
+    },
+    {
       "Id": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/PageComponents/Page/style.css",
       "PackagePath": "staticwebassets/PageComponents/Page/style.css"
+    },
+    {
+      "Id": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/PageComponents/Page/style.min.css",
+      "PackagePath": "staticwebassets/PageComponents/Page/style.min.css"
     },
     {
       "Id": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/PageComponents/SearchHeaderQHtmlBox/content/search.png",
@@ -181,12 +241,24 @@
       "PackagePath": "staticwebassets/PageComponents/SearchHeaderQHtmlBox/script.js"
     },
     {
+      "Id": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/PageComponents/SearchHeaderQHtmlBox/script.min.js",
+      "PackagePath": "staticwebassets/PageComponents/SearchHeaderQHtmlBox/script.min.js"
+    },
+    {
       "Id": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/PageComponents/SearchHeaderQHtmlBox/style.css",
       "PackagePath": "staticwebassets/PageComponents/SearchHeaderQHtmlBox/style.css"
     },
     {
+      "Id": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/PageComponents/SearchHeaderQHtmlBox/style.min.css",
+      "PackagePath": "staticwebassets/PageComponents/SearchHeaderQHtmlBox/style.min.css"
+    },
+    {
       "Id": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/PageComponents/Sessions.js",
       "PackagePath": "staticwebassets/PageComponents/Sessions.js"
+    },
+    {
+      "Id": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/PageComponents/Sessions.min.js",
+      "PackagePath": "staticwebassets/PageComponents/Sessions.min.js"
     },
     {
       "Id": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/PageComponents/UsersHtmlBox/content/doubleCheckBlackBlack.png",
@@ -217,8 +289,16 @@
       "PackagePath": "staticwebassets/PageComponents/UsersHtmlBox/script.js"
     },
     {
+      "Id": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/PageComponents/UsersHtmlBox/script.min.js",
+      "PackagePath": "staticwebassets/PageComponents/UsersHtmlBox/script.min.js"
+    },
+    {
       "Id": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/PageComponents/UsersHtmlBox/style.css",
       "PackagePath": "staticwebassets/PageComponents/UsersHtmlBox/style.css"
+    },
+    {
+      "Id": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/PageComponents/UsersHtmlBox/style.min.css",
+      "PackagePath": "staticwebassets/PageComponents/UsersHtmlBox/style.min.css"
     },
     {
       "Id": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/Pages/Locations/content/check.png",
@@ -241,8 +321,16 @@
       "PackagePath": "staticwebassets/Pages/Locations/script.js"
     },
     {
+      "Id": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/Pages/Locations/script.min.js",
+      "PackagePath": "staticwebassets/Pages/Locations/script.min.js"
+    },
+    {
       "Id": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/Pages/Locations/style.css",
       "PackagePath": "staticwebassets/Pages/Locations/style.css"
+    },
+    {
+      "Id": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/Pages/Locations/style.min.css",
+      "PackagePath": "staticwebassets/Pages/Locations/style.min.css"
     },
     {
       "Id": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/Pages/UserAdd/content/login.png",
@@ -337,8 +425,16 @@
       "PackagePath": "staticwebassets/Pages/Users/script.js"
     },
     {
+      "Id": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/Pages/Users/script.min.js",
+      "PackagePath": "staticwebassets/Pages/Users/script.min.js"
+    },
+    {
       "Id": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/Pages/Users/style.css",
       "PackagePath": "staticwebassets/Pages/Users/style.css"
+    },
+    {
+      "Id": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/Pages/Users/style.min.css",
+      "PackagePath": "staticwebassets/Pages/Users/style.min.css"
     },
     {
       "Id": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/Pages/i/content/add.png",
@@ -429,8 +525,16 @@
       "PackagePath": "staticwebassets/Pages/i/script.js"
     },
     {
+      "Id": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/Pages/i/script.min.js",
+      "PackagePath": "staticwebassets/Pages/i/script.min.js"
+    },
+    {
       "Id": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/Pages/i/style.css",
       "PackagePath": "staticwebassets/Pages/i/style.css"
+    },
+    {
+      "Id": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/Pages/i/style.min.css",
+      "PackagePath": "staticwebassets/Pages/i/style.min.css"
     },
     {
       "Id": "obj/Debug/net7.0/staticwebassets/msbuild.RtInk.Microsoft.AspNetCore.StaticWebAssets.props",
