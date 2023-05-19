@@ -5,36 +5,44 @@
 
 import { ApiUrl, PageHeadsBuild, Session } from '/PageComponents/Page/script.min.js';
 import { HeaderHtmlBox } from '/PageComponents/HeaderHtmlBox/script.min.js';
+import { HeaderTitleDescriptionHtmlBox } from '/PageComponents/HeaderTitleDescriptionHtmlBox/script.min.js';
 import { SearchHeaderQHtmlBox } from "/PageComponents/SearchHeaderQHtmlBox/script.min.js";
-import { UsersHtmlBox } from '/PageComponents/UsersHtmlBox/script.min.js';
+import { UsersHtmlBox } from '/PageComponents/UsersHtmlBox/script.js';
 
 let headerHtmlBox = new HeaderHtmlBox()
 let searchHeaderQHtmlBox = new SearchHeaderQHtmlBox();
+let headerTitleDescriptionHtmlBox = new HeaderTitleDescriptionHtmlBox();
 
 //--------------------
 
-const UsersPageName = "Users";
+const UsersPageName = "Users"; 
 const UsersPageUrl = "/Pages/" + UsersPageName;
 const UsersPageUrlContent = UsersPageUrl + "/content";
-let UsersPageCss = document.createElement("link"); UsersPageCss.setAttribute("rel", "stylesheet"); UsersPageCss.setAttribute("href", UsersPageUrl + "/style.min.css"); document.head.append(UsersPageCss);
+let UsersPageCss = document.createElement("link"); UsersPageCss.setAttribute("rel", "stylesheet"); UsersPageCss.setAttribute("href", UsersPageUrl + "/style.css"); document.head.append(UsersPageCss);
 
 PageHeadsBuild("Users - RT", "")
 
 
-
+//let userLogin = "";
 if (Session.RoleId > 0) {
-    var userLoginJson = await ApiGetUserLogin()
-    headerHtmlBox.PushMenuRow({ "icon": UsersPageUrlContent + "/user.png", "href": "/i/-" + userLoginJson.login });
+    if (Session.RoleId == 2)
+        headerHtmlBox.PushMenuRow({ "icon": UsersPageUrlContent + "/add.png", "href": "/user/add", "alt": "add" });
     headerHtmlBox.PushMenuRow({ "icon": UsersPageUrlContent + "/location.png", "href": "/locations", "id": "LocationBM", "alt": "location" });
 }
 headerHtmlBox.PushMenuRow({ "icon": UsersPageUrlContent + "/search.png", "href": "", "id": "SearchBM" });
 headerHtmlBox.PushMenuRow({ "icon": UsersPageUrlContent + "/undo.png", "href": "/" });
 
-headerHtmlBox.InsertAdjacentHTML(document.getElementsByTagName("body")[0], "afterbegin", "RT / USERS")
-searchHeaderQHtmlBox.InsertAdjacentHTML(document.getElementById("HeaderHtmlBox"), "afterend", "")
+headerHtmlBox.InsertAdjacentHTML(document.getElementsByTagName("body")[0], "afterbegin", "")
+headerTitleDescriptionHtmlBox.InsertAdjacentHTML(document.getElementById("HeaderHtmlBox"), "afterend", "USERS", "watch & choose")
+searchHeaderQHtmlBox.InsertAdjacentHTML(document.getElementById("HeaderTitleDescriptionHtmlBox"), "afterend", "")
+
 
 let usersHtmlBox = new UsersHtmlBox(document.getElementById("SearchHeaderQHtmlBox"), "afterend", ApiUrl, Session.Token, Session.RoleId)
-await usersHtmlBox.AppendList()
+await usersHtmlBox.AppendList() 
+if (Session.RoleId > 0) {
+    var userLoginJson = await ApiGetUserLogin()
+    usersHtmlBox.AppendItem(userLoginJson.login, 0, "321")
+}
 
 
 

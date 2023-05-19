@@ -3,35 +3,46 @@
 //-- 2023-04-17 First row - your user page
 //-- 2023-04-17 Location user icon
 
-import { isTest, MinifyExpansion, apiUrl, PageHeadsBuild, authJWToken, RoleId } from '/PageComponents/Page/script.js';
-import { HeaderHtmlBox } from '/PageComponents/HeaderHtmlBox/script.js';
+import { ApiUrl, PageHeadsBuild, Session } from '/PageComponents/Page/script.min.js';
+import { HeaderHtmlBox } from '/PageComponents/HeaderHtmlBox/script.min.js';
+import { HeaderTitleDescriptionHtmlBox } from '/PageComponents/HeaderTitleDescriptionHtmlBox/script.min.js';
 import { SearchHeaderQHtmlBox } from "/PageComponents/SearchHeaderQHtmlBox/script.min.js";
 import { UsersHtmlBox } from '/PageComponents/UsersHtmlBox/script.js';
 
+let headerHtmlBox = new HeaderHtmlBox()
+let searchHeaderQHtmlBox = new SearchHeaderQHtmlBox();
+let headerTitleDescriptionHtmlBox = new HeaderTitleDescriptionHtmlBox();
+
 //--------------------
 
-const UsersPageName = "Users";
+const UsersPageName = "Users"; 
 const UsersPageUrl = "/Pages/" + UsersPageName;
 const UsersPageUrlContent = UsersPageUrl + "/content";
 let UsersPageCss = document.createElement("link"); UsersPageCss.setAttribute("rel", "stylesheet"); UsersPageCss.setAttribute("href", UsersPageUrl + "/style.css"); document.head.append(UsersPageCss);
+
 PageHeadsBuild("Users - RT", "")
 
-let headerHtmlBox = new HeaderHtmlBox()
 
-
-if (RoleId > 0) {
-    var userLoginJson = await ApiGetUserLogin()
-    headerHtmlBox.PushMenuRow({ "icon": UsersPageUrlContent + "/user.png", "href": "/i/-" + userLoginJson.login });
+//let userLogin = "";
+if (Session.RoleId > 0) {
+    if (Session.RoleId == 2)
+        headerHtmlBox.PushMenuRow({ "icon": UsersPageUrlContent + "/add.png", "href": "/user/add", "alt": "add" });
     headerHtmlBox.PushMenuRow({ "icon": UsersPageUrlContent + "/location.png", "href": "/locations", "id": "LocationBM", "alt": "location" });
 }
 headerHtmlBox.PushMenuRow({ "icon": UsersPageUrlContent + "/search.png", "href": "", "id": "SearchBM" });
 headerHtmlBox.PushMenuRow({ "icon": UsersPageUrlContent + "/undo.png", "href": "/" });
 
-headerHtmlBox.InsertAdjacentHTML(document.getElementsByTagName("body")[0], "afterbegin", "RT / USERS")
-new SearchHeaderQHtmlBox(document.getElementById("HeaderHtmlBox"), "afterend", "", "", "", MinifyExpansion)
+headerHtmlBox.InsertAdjacentHTML(document.getElementsByTagName("body")[0], "afterbegin", "")
+headerTitleDescriptionHtmlBox.InsertAdjacentHTML(document.getElementById("HeaderHtmlBox"), "afterend", "USERS", "watch & choose")
+searchHeaderQHtmlBox.InsertAdjacentHTML(document.getElementById("HeaderTitleDescriptionHtmlBox"), "afterend", "")
 
-let usersHtmlBox = new UsersHtmlBox(document.getElementById("SearchHeaderQHtmlBox"), "afterend", apiUrl, authJWToken, RoleId, MinifyExpansion)
-await usersHtmlBox.AppendList()
+
+let usersHtmlBox = new UsersHtmlBox(document.getElementById("SearchHeaderQHtmlBox"), "afterend", ApiUrl, Session.Token, Session.RoleId)
+await usersHtmlBox.AppendList() 
+if (Session.RoleId > 0) {
+    var userLoginJson = await ApiGetUserLogin()
+    usersHtmlBox.AppendItem(userLoginJson.login, 0, "321")
+}
 
 
 
@@ -45,11 +56,10 @@ document.getElementById("SearchBM").addEventListener('click', async (event) => {
     document.getElementById("LocationBM").style.display = "block"
 });
 
-if (document.getElementById(usersHtmlBox.Name) != null) {
-    document.getElementById("MoreButtonHtmlBox").addEventListener('click', async (event) => {
-        await usersHtmlBox.AppendList()
-    });
-}
+//if (document.getElementById(usersHtmlBox.Name) != null)
+//    document.getElementById("MoreButtonHtmlBox").addEventListener('click', async (event) => {
+//        await usersHtmlBox.AppendList()
+//    });
 
 let prevScrollY = window.scrollY
 document.addEventListener('scroll', async (event) => {
@@ -66,9 +76,9 @@ document.addEventListener('scroll', async (event) => {
 //-- api actions
 
 async function ApiGetUserLogin() {
-    const response = await fetch(apiUrl + "/Base/User/Login", {
+    const response = await fetch(ApiUrl + "/Base/User/Login", {
         method: "GET",
-        headers: { "Accept": "application/json", "Authorization": "Bearer " + authJWToken }
+        headers: { "Accept": "application/json", "Authorization": "Bearer " + Session.Token }
     });
     if (response.ok === true) { return await response.json(); }
     return null;

@@ -7,10 +7,15 @@
 import { ApiUrl, PageHeadsBuild, Session } from '/PageComponents/Page/script.min.js';
 import { HeaderHtmlBox } from "/PageComponents/HeaderHtmlBox/script.min.js";
 import { HeaderDescriptionHtmlBox } from '/PageComponents/HeaderDescriptionHtmlBox/script.min.js';
+import { HeaderTitleDescriptionHtmlBox } from '/PageComponents/HeaderTitleDescriptionHtmlBox/script.js';
 import { SearchHeaderQHtmlBox } from "/PageComponents/SearchHeaderQHtmlBox/script.min.js";
 import { ArticlesHtmlBox } from "/PageComponents/ArticlesHtmlBox/script.min.js";
 
+let headerHtmlBox = new HeaderHtmlBox()
 let searchHeaderQHtmlBox = new SearchHeaderQHtmlBox();
+let headerTitleDescriptionHtmlBox = new HeaderTitleDescriptionHtmlBox();
+
+//alert(Session.RoleId)
 
 //-- PageHeadsBuild - start
 
@@ -47,33 +52,41 @@ if (search.length > 0) {
         else if (searchSplit.length == 2 && searchSplit[1].length == 0 && search[search.length - 1] == '-')
             typeApiPageI = 2
         else typeApiPageI = 3
-}
+} 
 
 //--------------------
 
-let headerHtmlBox = new HeaderHtmlBox()
 
 let HeaderTitle = "RT";
 let headerDescriptionName = ""
 let placeholder = ""
 let subscribType = 0;
+let userTitle = "";
+let userDescription = "";
+
 
 if (typeApiPageI == 0) {
     headerDescriptionName = "NEWS";
     headerHtmlBox.PushMenuRow({ "icon": iPageUrlContent + "/search.png", "href": "", "id": "SearchBM", "alt": "search" })
+
     if (Session.RoleId == 0) {
         headerHtmlBox.PushMenuRow({ "icon": iPageUrlContent + "/location.png", "href": "/locations", "id": "LocationBM", "alt": "location" });
-        //localStorage.setItem("SessionRefrshRequired", "true")
-        //headerHtmlBox.PushMenuRow({ "icon": iPageUrlContent + "/login.png", "href": ApiUrl + "/Base/Authorization/Signin/Google?SessionToken=" + Session.Token + "&RedirectUrl=" + document.URL });
+        localStorage.setItem("SessionRefrshRequired", "true")
+        headerHtmlBox.PushMenuRow({ "icon": iPageUrlContent + "/login.png", "href": ApiUrl + "/Base/Authorization/Signin/Google?SessionToken=" + Session.Token + "&RedirectUrl=" + document.URL });
     }
     else headerHtmlBox.PushMenuRow({ "icon": iPageUrlContent + "/category.png", "href": "/users", "alt": "signin" });
 }
 else if (typeApiPageI == 1) {
     HeaderTitle = ""
 
+    let userBio = await ApiUserBio(userLogin)
+    subscribType = userBio.sbt
+    userTitle = userBio.title;
+    userDescription = userBio.description;
+
     if (Session.RoleId > 0) {
-        let userBio = await ApiUserBio(userLogin)
-        subscribType = userBio.sbt
+
+
         if (subscribType != 1) {
             let subscribUrl = iPageUrlContent + "/doubleCheckBlackBlack.png"
             if (subscribType == 2)
@@ -146,30 +159,26 @@ else if (typeApiPageI == 3) {
     document.getElementById("SearchBM").style.display = "none";
 }
 
+//--------------------
 
-let idz = "SearchHeaderQHtmlBox"
+let prevBoxName = "SearchHeaderQHtmlBox"
 if (userLogin.length > 0) {
-    let htmlUserQ = "\
-<div id=\"H1QHtmlBox\">\
-    <div>\
-        <h1>\
-            <span>\
-            " + userLogin.toUpperCase() + "\
-            </span>\
-        </h1>\
-        <p>\
-            user profile\
-        </p>\
-    </div>\
-</div>\
-"
+    if (userTitle == "")
+        userTitle = userLogin.toUpperCase()
+    if (userDescription == "")
+        userDescription = "User and his articles."
 
-    document.getElementById("SearchHeaderQHtmlBox").insertAdjacentHTML("afterend", htmlUserQ)
-    idz = "H1QHtmlBox"
+    if (Session.RoleId == 2)
+        userDescription += " <a href=\"/user/edit/" + userLogin + "\">Edit profile</a>"
+
+
+    headerTitleDescriptionHtmlBox.InsertAdjacentHTML(document.getElementById("SearchHeaderQHtmlBox"), "afterend", userTitle.toUpperCase(), userDescription)
+    prevBoxName = headerTitleDescriptionHtmlBox.Name
 }
 
+//--------------------
 
-let articlesHtmlBox = new ArticlesHtmlBox(document.getElementById(idz), "afterend", search, ApiUrl, Session.Token)
+let articlesHtmlBox = new ArticlesHtmlBox(document.getElementById(prevBoxName), "afterend", search, ApiUrl, Session.Token)
 await articlesHtmlBox.AppendList()
 
 
@@ -245,11 +254,11 @@ document.querySelector("#" + searchHeaderQHtmlBox.Name + " input").addEventListe
 
 
 
-
+ 
 //-- api actions
 
 async function ApiUserBio(userLogin) {
-    const response = await fetch(ApiUrl + "/Base/User/Bio?userLogin=" + userLogin, {
+    const response = await fetch(ApiUrl + "/RtInk/User?userLogin=" + userLogin, {
         method: "GET", headers: { "Accept": "application/json", "Authorization": "Bearer " + Session.Token }
     });
     if (response.ok === true) return await response.json();

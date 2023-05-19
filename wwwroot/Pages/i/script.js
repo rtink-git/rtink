@@ -15,6 +15,8 @@ let headerHtmlBox = new HeaderHtmlBox()
 let searchHeaderQHtmlBox = new SearchHeaderQHtmlBox();
 let headerTitleDescriptionHtmlBox = new HeaderTitleDescriptionHtmlBox();
 
+//alert(Session.RoleId)
+
 //-- PageHeadsBuild - start
 
 PageHeadsBuild("News aggregator - RT", "RT - точка сбора самых интересных и актуальных новостей российских онлайн-медиа. \"Картина дня\" формируется автоматически на базе популярности материалов.")
@@ -59,6 +61,9 @@ let HeaderTitle = "RT";
 let headerDescriptionName = ""
 let placeholder = ""
 let subscribType = 0;
+let userTitle = "";
+let userDescription = "";
+
 
 if (typeApiPageI == 0) {
     headerDescriptionName = "NEWS";
@@ -74,9 +79,14 @@ if (typeApiPageI == 0) {
 else if (typeApiPageI == 1) {
     HeaderTitle = ""
 
+    let userBio = await ApiUserBio(userLogin)
+    subscribType = userBio.sbt
+    userTitle = userBio.title;
+    userDescription = userBio.description;
+
     if (Session.RoleId > 0) {
-        let userBio = await ApiUserBio(userLogin)
-        subscribType = userBio.sbt
+
+
         if (subscribType != 1) {
             let subscribUrl = iPageUrlContent + "/doubleCheckBlackBlack.png"
             if (subscribType == 2)
@@ -153,7 +163,16 @@ else if (typeApiPageI == 3) {
 
 let prevBoxName = "SearchHeaderQHtmlBox"
 if (userLogin.length > 0) {
-    headerTitleDescriptionHtmlBox.InsertAdjacentHTML(document.getElementById("SearchHeaderQHtmlBox"), "afterend", userLogin.toUpperCase(), "User and his articles")
+    if (userTitle == "")
+        userTitle = userLogin.toUpperCase()
+    if (userDescription == "")
+        userDescription = "User and his articles."
+
+    if (Session.RoleId == 2)
+        userDescription += " <a href=\"/user/edit/" + userLogin + "\">Edit profile</a>"
+
+
+    headerTitleDescriptionHtmlBox.InsertAdjacentHTML(document.getElementById("SearchHeaderQHtmlBox"), "afterend", userTitle.toUpperCase(), userDescription)
     prevBoxName = headerTitleDescriptionHtmlBox.Name
 }
 
@@ -239,7 +258,7 @@ document.querySelector("#" + searchHeaderQHtmlBox.Name + " input").addEventListe
 //-- api actions
 
 async function ApiUserBio(userLogin) {
-    const response = await fetch(ApiUrl + "/Base/User/Bio?userLogin=" + userLogin, {
+    const response = await fetch(ApiUrl + "/RtInk/User?userLogin=" + userLogin, {
         method: "GET", headers: { "Accept": "application/json", "Authorization": "Bearer " + Session.Token }
     });
     if (response.ok === true) return await response.json();

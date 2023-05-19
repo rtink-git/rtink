@@ -18,8 +18,16 @@
 
   <ItemGroup>
     <Content Remove="wwwroot\PageComponents\HeaderTitleDescriptionHtmlBox\" />
+    <Content Remove="wwwroot\Pages\UserEdit\" />
+    <Content Remove="wwwroot\Pages\UserEdit\content\" />
+    <Content Remove="wwwroot\Pages\UserAdd\" />
+    <Content Remove="wwwroot\Pages\UserAdd\content\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="wwwroot\PageComponents\HeaderTitleDescriptionHtmlBox\" />
+    <Folder Include="wwwroot\Pages\UserEdit\" />
+    <Folder Include="wwwroot\Pages\UserEdit\content\" />
+    <Folder Include="wwwroot\Pages\UserAdd\" />
+    <Folder Include="wwwroot\Pages\UserAdd\content\" />
   </ItemGroup>
 </Project>

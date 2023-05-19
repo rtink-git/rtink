@@ -1,0 +1,16 @@
+/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/bin/Release/net7.0/publish/RtInk
+/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/bin/Release/net7.0/publish/appsettings.Development.json
+/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/bin/Release/net7.0/publish/appsettings.json
+/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/bin/Release/net7.0/publish/bundleconfig.json
+/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/bin/Release/net7.0/publish/RtInk.dll
+/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/bin/Release/net7.0/publish/RtInk.deps.json
+/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/bin/Release/net7.0/publish/RtInk.runtimeconfig.json
+/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/bin/Release/net7.0/publish/RtInk.pdb
+/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/bin/Release/net7.0/publish/Microsoft.AspNetCore.Authentication.Google.dll
+/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/bin/Release/net7.0/publish/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/bin/Release/net7.0/publish/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/bin/Release/net7.0/publish/Microsoft.IdentityModel.Logging.dll
+/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/bin/Release/net7.0/publish/Microsoft.IdentityModel.Protocols.dll
+/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/bin/Release/net7.0/publish/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/bin/Release/net7.0/publish/Microsoft.IdentityModel.Tokens.dll
+/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/bin/Release/net7.0/publish/System.IdentityModel.Tokens.Jwt.dll

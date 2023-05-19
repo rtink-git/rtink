@@ -1,16 +1,17 @@
 ﻿<Properties StartupConfiguration="{2A94A121-35CD-4AF3-A8E2-4F7ED5E25B9B}|https">
-  <MonoDevelop.Ide.ItemProperties.RtInk PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.RtInk PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="wwwroot/Pages/UserAdd/script.js">
     <Files>
-      <File FileName="wwwroot/Pages/i/script.js" />
-      <File FileName="wwwroot/Pages/Locations/script.js" Line="25" Column="9" />
-      <File FileName="wwwroot/PageComponents/HeaderDescriptionHtmlBox/script.js" Line="7" Column="1" NotebookId="1" />
+      <File FileName="Program.cs" Line="348" Column="3" IsPinned="True" />
+      <File FileName="wwwroot/PageComponents/HeaderTitleDescriptionHtmlBox/style.css" Line="27" Column="22" IsPinned="True" />
+      <File FileName="wwwroot/Pages/UserAdd/script.js" Line="91" Column="6" />
+      <File FileName="wwwroot/Pages/UserEdit/script.js" Line="118" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -20,12 +21,14 @@
               <Node name="wwwroot" expanded="True">
                 <Node name="PageComponents" expanded="True">
                   <Node name="HeaderTitleDescriptionHtmlBox" expanded="True" />
+                  <Node name="Page" expanded="True" />
                 </Node>
                 <Node name="Pages" expanded="True">
                   <Node name="i" expanded="True" />
-                  <Node name="Locations" expanded="True">
+                  <Node name="UserAdd" expanded="True">
                     <Node name="script.js" selected="True" />
                   </Node>
+                  <Node name="UserEdit" expanded="True" />
                 </Node>
               </Node>
             </Node>

@@ -46,6 +46,10 @@
         this.Page++;
     }
 
+    AppendItem(login, articleN, title) {
+        document.querySelector("#" + this.Name + " > ul").insertAdjacentHTML("afterbegin", this._ItemHtmlBox(login, articleN, title))
+    }
+
 
 
 

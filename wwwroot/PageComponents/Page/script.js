@@ -22,8 +22,8 @@ import { Sessions } from '/PageComponents/Sessions.js';
 
 //----------
 
-//export let ApiUrl = "https://api.rt.ink"
-export let ApiUrl = "https://localhost:7025"
+export let ApiUrl = "https://api.rt.ink"
+//export let ApiUrl = "https://localhost:7025"
 
 //----------
 

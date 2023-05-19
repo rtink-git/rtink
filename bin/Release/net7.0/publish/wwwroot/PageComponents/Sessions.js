@@ -5,7 +5,6 @@
         let authJWTokenStr = "authJWToken"
         let sessionRefrshRequiredStr = "SessionRefrshRequired"
         let sessionRefrshRequiredR = localStorage.getItem(sessionRefrshRequiredStr)
-
         if (sessionRefrshRequiredR != "true" && sessionRefrshRequiredR != "false")
             sessionRefrshRequiredR = "true"
 
@@ -22,7 +21,7 @@
             const data = await response.json();
             this.Token = data.token
             this.RoleId = data.roleId
-            localStorage.setItem(authJWTokenStr, data.Token)
+            localStorage.setItem(authJWTokenStr, data.token)
             localStorage.setItem(sessionRefrshRequiredStr, "false")
         }
     }

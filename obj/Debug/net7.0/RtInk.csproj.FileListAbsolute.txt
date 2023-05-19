@@ -217,15 +217,6 @@ D:/dev/Wecan/rt_ink/dev/rt ink net seven git rep/rtink/obj/Debug/net7.0/ref/RtIn
 //Mac/Home/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/obj/Debug/net7.0/RtInk.pdb
 //Mac/Home/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/obj/Debug/net7.0/RtInk.genruntimeconfig.cache
 //Mac/Home/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/obj/Debug/net7.0/ref/RtInk.dll
-/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/obj/Debug/net7.0/RtInk.csproj.AssemblyReference.cache
-/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/obj/Debug/net7.0/RtInk.GeneratedMSBuildEditorConfig.editorconfig
-/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/obj/Debug/net7.0/RtInk.AssemblyInfoInputs.cache
-/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/obj/Debug/net7.0/RtInk.AssemblyInfo.cs
-/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/obj/Debug/net7.0/RtInk.csproj.CoreCompileInputs.cache
-/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/obj/Debug/net7.0/RtInk.MvcApplicationPartsAssemblyInfo.cache
-/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/obj/Debug/net7.0/RtInk.dll
-/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/obj/Debug/net7.0/refint/RtInk.dll
-/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/obj/Debug/net7.0/RtInk.pdb
 /Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/bin/Debug/net7.0/appsettings.Development.json
 /Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/bin/Debug/net7.0/appsettings.json
 /Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/bin/Debug/net7.0/bundleconfig.json
@@ -243,6 +234,12 @@ D:/dev/Wecan/rt_ink/dev/rt ink net seven git rep/rtink/obj/Debug/net7.0/ref/RtIn
 /Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 /Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/bin/Debug/net7.0/Microsoft.IdentityModel.Tokens.dll
 /Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/bin/Debug/net7.0/System.IdentityModel.Tokens.Jwt.dll
+/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/obj/Debug/net7.0/RtInk.csproj.AssemblyReference.cache
+/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/obj/Debug/net7.0/RtInk.GeneratedMSBuildEditorConfig.editorconfig
+/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/obj/Debug/net7.0/RtInk.AssemblyInfoInputs.cache
+/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/obj/Debug/net7.0/RtInk.AssemblyInfo.cs
+/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/obj/Debug/net7.0/RtInk.csproj.CoreCompileInputs.cache
+/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/obj/Debug/net7.0/RtInk.MvcApplicationPartsAssemblyInfo.cache
 /Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/obj/Debug/net7.0/staticwebassets/msbuild.RtInk.Microsoft.AspNetCore.StaticWebAssets.props
 /Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/obj/Debug/net7.0/staticwebassets/msbuild.build.RtInk.props
 /Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.RtInk.props
@@ -252,5 +249,8 @@ D:/dev/Wecan/rt_ink/dev/rt ink net seven git rep/rtink/obj/Debug/net7.0/ref/RtIn
 /Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/obj/Debug/net7.0/staticwebassets.development.json
 /Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/obj/Debug/net7.0/scopedcss/bundle/RtInk.styles.css
 /Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/obj/Debug/net7.0/RtInk.csproj.CopyComplete
+/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/obj/Debug/net7.0/RtInk.dll
+/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/obj/Debug/net7.0/refint/RtInk.dll
+/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/obj/Debug/net7.0/RtInk.pdb
 /Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/obj/Debug/net7.0/RtInk.genruntimeconfig.cache
 /Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/obj/Debug/net7.0/ref/RtInk.dll

@@ -1,0 +1,83 @@
+﻿::placeholder {
+    letter-spacing: 1px;
+    color: #707070;
+    font-size:13px;
+}
+
+
+#UserEditHtmlBox {
+    float: left;
+    text-align: center;
+    width: 100%;
+}
+
+#UserEditHtmlBox h1 {
+    text-align:left;
+    font-size:20px;
+    font-weight:600;
+    letter-spacing:1.5px;
+/*    text-transform:uppercase;*/
+}
+
+    #UserEditHtmlBox > div {
+        display: inline-block;
+        width:400px;
+        margin:100px 0;
+    }
+
+@media (max-width: 460px) {
+    #UserEditHtmlBox > div {
+        margin:0 30px;
+        width: calc(100% - 60px);
+    }
+}
+
+#UserEditHtmlBox > div > * {
+    float:left;
+    width:100%;
+}
+
+    #UserEditHtmlBox > div > *:first-child {
+        width: calc(100% - 30px);
+        padding: 0 15px;
+    }
+
+    #UserEditHtmlBox > div > *:nth-child(2) {
+        margin-top:20px;
+    }
+
+    #UserEditHtmlBox > div > *:nth-child(2) > * {
+        float: left;
+        width: 100%;
+        margin-top:10px;
+    }
+
+        #UserEditHtmlBox > div > *:nth-child(2) > *:nth-child(2n) {
+            display:none;
+        }
+
+        #UserEditHtmlBox > div > *:nth-child(2) > input[type="text"] {
+            float: left;
+            width: 100%;
+            padding: 0 15px;
+            border: none;
+            height: 40px;
+            border-radius: 4px;
+            background: #f7f7f7;
+            font-size: 13px;
+            letter-spacing: 1px;
+            color: #363636;
+        }
+
+#UserEditHtmlBox #UserEditHtmlBoxSubmit {
+    float: left;
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 20px;
+    border-radius: 4px;
+    background: #db5656;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+

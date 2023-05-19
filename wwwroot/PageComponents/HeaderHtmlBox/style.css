@@ -12,7 +12,7 @@
         height: 16px;
     }
 
-    #HeaderHtmlBox a {
+    #HeaderHtmlBox > a {
         font-family: 'Audiowide', cursive;
         font-weight: 600;
         font-size:20px;

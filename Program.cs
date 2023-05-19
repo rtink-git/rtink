@@ -25,7 +25,7 @@
 //-- ASP.NET: Polly with .NET 6, Part 4 - Dependency Injection of a HttpClientFactory and Policy into a Minimal API Endpoint: https://nodogmablog.bryanhogan.net/2022/03/polly-with-net-6-part-4-dependency-injection-of-a-httpclientfactory-and-policy-into-a-minimal-api-endpoint/
 //-- APP.NET: ASP.NET Core response compression and content encoding: https://gunnarpeipman.com/aspnet-core-compress-gzip-brotli-content-encoding/
 //-- JS: Private class features: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Private_class_fields
-//-- JS: Модули js: https://learn.javascript.ru/modules-intro
+//-- JS: пїЅпїЅпїЅпїЅпїЅпїЅ js: https://learn.javascript.ru/modules-intro
 
 
 
@@ -69,11 +69,13 @@ app.UseAuthorization();
 
 app.MapGet("/", async (context) => { await context.Response.WriteAsync("<script type=\"module\" src=\"/Pages/i/script" + minify + ".js\"></script>"); });
 app.MapGet("/i/{search}", async (context) => { await context.Response.WriteAsync("<script type=\"module\" src=\"/Pages/i/script" + minify + ".js\"></script>"); });
-app.MapGet("/users", async (context) => { await context.Response.WriteAsync("<script type=\"module\" src=\"/Pages/Users/script.js\"></script>"); });
 app.MapGet("/locations", async (context) => { await context.Response.WriteAsync("<script type=\"module\" src=\"/Pages/Locations/script" + minify + ".js\"></script>"); });
+app.MapGet("/users", async (context) => { await context.Response.WriteAsync("<script type=\"module\" src=\"/Pages/Users/script.js\"></script>"); });
+app.MapGet("/user/add", async (context) => { await context.Response.WriteAsync("<script type=\"module\" src=\"/Pages/UserAdd/script.js\"></script>"); });
+app.MapGet("/user/edit/{login}", async (context) => { await context.Response.WriteAsync("<script type=\"module\" src=\"/Pages/UserEdit/script.js\"></script>"); });
 
 app.MapGet("/a/{urlShort}", async (string urlShort, HttpContext context, IHttpClientFactory httpClientFactory) => {
-    //-- Task.Note: app.MapGet [/a/{urlShort}] устарел, но необходимо поддерживать, потому что применялся в ранних версиях и может оставаться актуальным
+    //-- Task.Note: app.MapGet [/a/{urlShort}] пїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 
     //var request = context.Request;
     //long userId = new Session.JWToken().GetUserId(context);
@@ -343,10 +345,10 @@ app.MapGet("/f/{id_with_extension}", (string id_with_extension) =>
 
 app.Run();
 
-public class SigninModel { public byte roleId { get; set; } public string login { get; set; } };
-public class IPageModel { public string userLogin { get; set; } public string userName { get; set; } public string userAbout { get; set; } public string articleUrl { get; set; } public byte pageType { get; set; } public byte userIsFollowType { get; set; } public int userFollowingsNumber { get; set; } public int userFollowersNumber { get; set; } public bool logoF { get; set; } };
+//public class SigninModel { public byte roleId { get; set; } public string login { get; set; } };
+//public class IPageModel { public string userLogin { get; set; } public string userName { get; set; } public string userAbout { get; set; } public string articleUrl { get; set; } public byte pageType { get; set; } public byte userIsFollowType { get; set; } public int userFollowingsNumber { get; set; } public int userFollowersNumber { get; set; } public bool logoF { get; set; } };
 public class GetAticlesModel{public string title { get; set; } public string urlShort { get; set; } public long fileId { get; set; } public string extension { get; set; } public string description { get; set; } public DateTime dt { get; set; } public string login { get; set; } public int isBody { get; set; } public string titleHb { get; set; } public string? fileUrlSource { get; set; }};
-public record GetAticleSimillarsModel(long titleHb, string title, string urlShort);
+//public record GetAticleSimillarsModel(long titleHb, string title, string urlShort);
 public record ArticleUrlModel (string url);
 public record UPDATE_roleIdGET_updateNumberModel(int updateNumber);
 public record UserProfileModel(string name, string about);

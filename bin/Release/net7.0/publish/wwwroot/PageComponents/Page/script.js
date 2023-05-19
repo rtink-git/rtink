@@ -18,7 +18,7 @@
 
 //----------
 
-import { Sessions } from '/PageComponents/Sessions.min.js';
+import { Sessions } from '/PageComponents/Sessions.js';
 
 //----------
 

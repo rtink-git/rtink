@@ -16,6 +16,14 @@
     "inputFiles": [ "wwwroot/Pages/Locations/style.css" ]
   },
   {
+    "outputFileName": "wwwroot/Pages/Users/script.min.js",
+    "inputFiles": [ "wwwroot/Pages/Users/script.js" ]
+  },
+  {
+    "outputFileName": "wwwroot/Pages/Users/style.min.css",
+    "inputFiles": [ "wwwroot/Pages/Users/style.css" ]
+  },
+  {
     "outputFileName": "wwwroot/PageComponents/ArticlesHtmlBox/script.min.js",
     "inputFiles": [ "wwwroot/PageComponents/ArticlesHtmlBox/script.js" ]
   },
@@ -48,6 +56,14 @@
     "inputFiles": [ "wwwroot/PageComponents/HeaderHtmlBox/style.css" ]
   },
   {
+    "outputFileName": "wwwroot/PageComponents/HeaderTitleDescriptionHtmlBox/script.min.js",
+    "inputFiles": [ "wwwroot/PageComponents/HeaderTitleDescriptionHtmlBox/script.js" ]
+  },
+  {
+    "outputFileName": "wwwroot/PageComponents/HeaderTitleDescriptionHtmlBox/style.min.css",
+    "inputFiles": [ "wwwroot/PageComponents/HeaderTitleDescriptionHtmlBox/style.css" ]
+  },
+  {
     "outputFileName": "wwwroot/PageComponents/LocsHtmlBox/script.min.js",
     "inputFiles": [ "wwwroot/PageComponents/LocsHtmlBox/script.js" ]
   },
@@ -78,9 +94,12 @@
     "inputFiles": [ "wwwroot/PageComponents/SearchHeaderQHtmlBox/style.css" ]
   },
   {
+    "outputFileName": "wwwroot/PageComponents/UsersHtmlBox/script.min.js",
+    "inputFiles": [ "wwwroot/PageComponents/UsersHtmlBox/script.js" ]
+  },
+  {
     "outputFileName": "wwwroot/PageComponents/UsersHtmlBox/style.min.css",
-    "inputFiles": [ "wwwroot/PageComponents/UsersHtmlBox/style.css" ],
-    "minify": { "renameLocals": false }
+    "inputFiles": [ "wwwroot/PageComponents/UsersHtmlBox/style.css" ]
   },
   {
     "outputFileName": "wwwroot/PageComponents/Sessions.min.js",
