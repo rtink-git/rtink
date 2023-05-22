@@ -11,7 +11,7 @@
     Name
     Page
 
-    constructor(target, position, apiUrl, sessionToken, sessionRoleId) {
+    constructor(target, position, apiUrl, sessionToken, sessionRoleId, minifiedCode) {
         this._Target = target
         this._Position = position
         this._ApiUrl = apiUrl
@@ -21,7 +21,7 @@
         this.Name = this.constructor.name;
         let url = "/PageComponents/" + this.Name;
         this._UrlContent = url + "/content"
-        let css = document.createElement("link"); css.setAttribute("rel", "stylesheet"); css.setAttribute("href", url + "/style.min.css"); document.head.append(css);
+        let css = document.createElement("link"); css.setAttribute("rel", "stylesheet"); css.setAttribute("href", url + "/style" + minifiedCode + ".css"); document.head.append(css);
 
         this.Page = 1;
         this._Take = 50;

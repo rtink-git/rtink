@@ -3,10 +3,10 @@
 
     Name
 
-    constructor() {
+    constructor(minifiedCode) {
         this.Name = this.constructor.name;
         let url = "/PageComponents/" + this.Name;
-        let css = document.createElement("link"); css.setAttribute("rel", "stylesheet"); css.setAttribute("href", url + "/style.min.css"); document.head.append(css);
+        let css = document.createElement("link"); css.setAttribute("rel", "stylesheet"); css.setAttribute("href", url + "/style" + minifiedCode + ".css"); document.head.append(css);
         this._UrlContent = url + "/content"
     }
 

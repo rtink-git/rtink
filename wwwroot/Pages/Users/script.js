@@ -3,15 +3,15 @@
 //-- 2023-04-17 First row - your user page
 //-- 2023-04-17 Location user icon
 
-import { ApiUrl, PageHeadsBuild, Session } from '/PageComponents/Page/script.min.js';
+import { IsDebug, ApiUrl, MinifiedCode, PageHeadsBuild, Session } from '/PageComponents/Page/script.min.js';
 import { HeaderHtmlBox } from '/PageComponents/HeaderHtmlBox/script.min.js';
 import { HeaderTitleDescriptionHtmlBox } from '/PageComponents/HeaderTitleDescriptionHtmlBox/script.min.js';
 import { SearchHeaderQHtmlBox } from "/PageComponents/SearchHeaderQHtmlBox/script.min.js";
-import { UsersHtmlBox } from '/PageComponents/UsersHtmlBox/script.js';
+import { UsersHtmlBox } from '/PageComponents/UsersHtmlBox/script.min.js';
 
-let headerHtmlBox = new HeaderHtmlBox()
-let searchHeaderQHtmlBox = new SearchHeaderQHtmlBox();
-let headerTitleDescriptionHtmlBox = new HeaderTitleDescriptionHtmlBox();
+let headerHtmlBox = new HeaderHtmlBox(MinifiedCode)
+let searchHeaderQHtmlBox = new SearchHeaderQHtmlBox(MinifiedCode);
+let headerTitleDescriptionHtmlBox = new HeaderTitleDescriptionHtmlBox(MinifiedCode);
 
 //--------------------
 
@@ -37,7 +37,7 @@ headerTitleDescriptionHtmlBox.InsertAdjacentHTML(document.getElementById("Header
 searchHeaderQHtmlBox.InsertAdjacentHTML(document.getElementById("HeaderTitleDescriptionHtmlBox"), "afterend", "")
 
 
-let usersHtmlBox = new UsersHtmlBox(document.getElementById("SearchHeaderQHtmlBox"), "afterend", ApiUrl, Session.Token, Session.RoleId)
+let usersHtmlBox = new UsersHtmlBox(document.getElementById("SearchHeaderQHtmlBox"), "afterend", ApiUrl, Session.Token, Session.RoleId, MinifiedCode)
 await usersHtmlBox.AppendList() 
 if (Session.RoleId > 0) {
     var userLoginJson = await ApiGetUserLogin()

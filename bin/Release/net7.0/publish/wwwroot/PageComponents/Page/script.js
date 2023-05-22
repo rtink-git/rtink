@@ -14,16 +14,32 @@
 //-- note: https://habr.com/ru/post/445264/
 //-- icon sizes - https://blog.hubspot.com/website/what-is-a-favicon
 
-//-- Tasks
+//----------
+
+
+import { Sessions } from '/PageComponents/Sessions.min.js';
 
 //----------
 
-import { Sessions } from '/PageComponents/Sessions.js';
+let IsDebugA = false;
+if (document.URL.includes("https://localhost"))
+    IsDebugA = true;
+export let IsDebug = IsDebugA
 
 //----------
 
-export let ApiUrl = "https://api.rt.ink"
-//export let ApiUrl = "https://localhost:7025"
+let ApiUrlA = "https://api.rt.ink"
+if (IsDebug)
+    ApiUrlA = "https://localhost:7025"
+export let ApiUrl = ApiUrlA
+
+//----------
+
+
+let MinifiedCodeA = ".min";
+if (IsDebug)
+    MinifiedCodeA = ""
+export let MinifiedCode = MinifiedCodeA
 
 //----------
 
@@ -34,7 +50,7 @@ export let Session = sessions
 //----------
 
 export function PageHeadsBuild(title = null, description = null, imageUrl = null, imageAlt = null, urlCanonical = null, robot = "index,follow") {
-    let PageStylesheet = document.createElement("link"); PageStylesheet.setAttribute("rel", "stylesheet"); PageStylesheet.setAttribute("href", "/PageComponents/Page/style.min.css"); document.head.append(PageStylesheet);
+    let PageStylesheet = document.createElement("link"); PageStylesheet.setAttribute("rel", "stylesheet"); PageStylesheet.setAttribute("href", "/PageComponents/Page/style" + MinifiedCode + ".css"); document.head.append(PageStylesheet);
 
     //-- base project params
 

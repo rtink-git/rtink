@@ -7,7 +7,7 @@
 
 //-- Project publication
 //-- 1. wwwroot /PageComponents/Page/script.js 
-//---- ApiUrl - Set server host url RtInk.Constants
+//---- urlApi - Set server host url RtInk.Constants
 //-- 2 Constants - urlApi
 
 

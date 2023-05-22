@@ -15,7 +15,7 @@ export class ArticlesHtmlBox {
 
     Page
 
-    constructor(target, position, search, apiUrl, seessionToken) {
+    constructor(target, position, search, apiUrl, seessionToken, minifiedCode) {
         this._Target = target;
         this._Position = position;
         this._Search = search;
@@ -24,7 +24,7 @@ export class ArticlesHtmlBox {
 
         let url = "/PageComponents/" + this.constructor.name;
         this._UrlContent = url + "/content";
-        let css = document.createElement("link"); css.setAttribute("rel", "stylesheet"); css.setAttribute("href", url + "/style.min.css"); document.head.append(css);
+        let css = document.createElement("link"); css.setAttribute("rel", "stylesheet"); css.setAttribute("href", url + "/style" + minifiedCode + ".css"); document.head.append(css);
 
         this._Take = 20;
 

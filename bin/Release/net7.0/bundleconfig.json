@@ -16,6 +16,22 @@
     "inputFiles": [ "wwwroot/Pages/Locations/style.css" ]
   },
   {
+    "outputFileName": "wwwroot/Pages/UserAdd/script.min.js",
+    "inputFiles": [ "wwwroot/Pages/UserAdd/script.js" ]
+  },
+  {
+    "outputFileName": "wwwroot/Pages/UserAdd/style.min.css",
+    "inputFiles": [ "wwwroot/Pages/UserAdd/style.css" ]
+  },
+  {
+    "outputFileName": "wwwroot/Pages/UseerEdit/script.min.js",
+    "inputFiles": [ "wwwroot/Pages/UseerEdit/script.js" ]
+  },
+  {
+    "outputFileName": "wwwroot/Pages/UserEdit/style.min.css",
+    "inputFiles": [ "wwwroot/Pages/UserEdit/style.css" ]
+  },
+  {
     "outputFileName": "wwwroot/Pages/Users/script.min.js",
     "inputFiles": [ "wwwroot/Pages/Users/script.js" ]
   },

@@ -4,18 +4,16 @@
 /*-- 2023-02-16 Task.Error: User edit about only latin symbols --*/
 /*-- 2023-02-16 Task.Warning: Login не может быть числом --*/
 
-import { ApiUrl, PageHeadsBuild, Session } from '/PageComponents/Page/script.min.js';
+import { IsDebug, ApiUrl, MinifiedCode, PageHeadsBuild, Session } from '/PageComponents/Page/script.min.js';
 import { HeaderHtmlBox } from "/PageComponents/HeaderHtmlBox/script.min.js";
 import { HeaderDescriptionHtmlBox } from '/PageComponents/HeaderDescriptionHtmlBox/script.min.js';
-import { HeaderTitleDescriptionHtmlBox } from '/PageComponents/HeaderTitleDescriptionHtmlBox/script.js';
+import { HeaderTitleDescriptionHtmlBox } from '/PageComponents/HeaderTitleDescriptionHtmlBox/script.min.js';
 import { SearchHeaderQHtmlBox } from "/PageComponents/SearchHeaderQHtmlBox/script.min.js";
 import { ArticlesHtmlBox } from "/PageComponents/ArticlesHtmlBox/script.min.js";
 
-let headerHtmlBox = new HeaderHtmlBox()
-let searchHeaderQHtmlBox = new SearchHeaderQHtmlBox();
-let headerTitleDescriptionHtmlBox = new HeaderTitleDescriptionHtmlBox();
-
-//alert(Session.RoleId)
+let headerHtmlBox = new HeaderHtmlBox(MinifiedCode)
+let searchHeaderQHtmlBox = new SearchHeaderQHtmlBox(MinifiedCode);
+let headerTitleDescriptionHtmlBox = new HeaderTitleDescriptionHtmlBox(MinifiedCode);
 
 //-- PageHeadsBuild - start
 
@@ -24,7 +22,7 @@ PageHeadsBuild("News aggregator - RT", "RT - точка сбора самых и
 //-- css set
 
 const iPageName = "i";  const iPageUrl = "/Pages/" + iPageName; const iPageUrlContent = iPageUrl + "/content";
-let iPageCss = document.createElement("link"); iPageCss.setAttribute("rel", "stylesheet"); iPageCss.setAttribute("href", iPageUrl + "/style.min.css"); document.head.append(iPageCss);
+let iPageCss = document.createElement("link"); iPageCss.setAttribute("rel", "stylesheet"); iPageCss.setAttribute("href", iPageUrl + "/style" + MinifiedCode + ".css"); document.head.append(iPageCss);
 
 //-- data from url ---
 
@@ -136,7 +134,7 @@ headerHtmlBox.InsertAdjacentHTML(document.getElementsByTagName("body")[0], "afte
 
 let idxy = "HeaderDescriptionHtmlBox"
 if (headerDescriptionName.length > 0)
-    new HeaderDescriptionHtmlBox().InsertAdjacentHTML(document.getElementById("HeaderHtmlBox"), "afterend", headerDescriptionName)
+    new HeaderDescriptionHtmlBox(MinifiedCode).InsertAdjacentHTML(document.getElementById("HeaderHtmlBox"), "afterend", headerDescriptionName)
 else idxy = "HeaderHtmlBox"
 searchHeaderQHtmlBox.InsertAdjacentHTML(document.getElementById(idxy), "afterend", placeholder)
 
@@ -178,7 +176,7 @@ if (userLogin.length > 0) {
 
 //--------------------
 
-let articlesHtmlBox = new ArticlesHtmlBox(document.getElementById(prevBoxName), "afterend", search, ApiUrl, Session.Token)
+let articlesHtmlBox = new ArticlesHtmlBox(document.getElementById(prevBoxName), "afterend", search, ApiUrl, Session.Token, MinifiedCode)
 await articlesHtmlBox.AppendList()
 
 

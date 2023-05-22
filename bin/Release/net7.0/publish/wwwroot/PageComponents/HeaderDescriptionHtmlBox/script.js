@@ -1,7 +1,7 @@
 ﻿export class HeaderDescriptionHtmlBox {
-    constructor() {
+    constructor(minifiedCode) {
         let url = "/PageComponents/" + this.constructor.name;
-        let css = document.createElement("link"); css.setAttribute("rel", "stylesheet"); css.setAttribute("href", url + "/style.min.css"); document.head.append(css);
+        let css = document.createElement("link"); css.setAttribute("rel", "stylesheet"); css.setAttribute("href", url + "/style" + minifiedCode + ".css"); document.head.append(css);
     }
 
     InsertAdjacentHTML(target, position, title) {

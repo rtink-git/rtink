@@ -1,12 +1,12 @@
-﻿import { ApiUrl, PageHeadsBuild, Session } from '/PageComponents/Page/script.min.js';
+﻿import { IsDebug, ApiUrl, MinifiedCode, PageHeadsBuild, Session } from '/PageComponents/Page/script.min.js';
 import { HeaderHtmlBox } from "/PageComponents/HeaderHtmlBox/script.min.js";
-import { HeaderTitleDescriptionHtmlBox } from '/PageComponents/HeaderTitleDescriptionHtmlBox/script.js';
+import { HeaderTitleDescriptionHtmlBox } from '/PageComponents/HeaderTitleDescriptionHtmlBox/script.min.js';
 
 const UserAddPageName = "UserAdd"; const UserAddPageUrl = "/Pages/" + UserAddPageName; const UserAddUrlContent = UserAddPageUrl + "/content";
-let UserAddPageCss = document.createElement("link"); UserAddPageCss.setAttribute("rel", "stylesheet"); UserAddPageCss.setAttribute("href", UserAddPageUrl + "/style.css"); document.head.append(UserAddPageCss);
+let UserAddPageCss = document.createElement("link"); UserAddPageCss.setAttribute("rel", "stylesheet"); UserAddPageCss.setAttribute("href", UserAddPageUrl + "/style" + MinifiedCode + ".css"); document.head.append(UserAddPageCss);
 
-let headerHtmlBox = new HeaderHtmlBox()
-let headerTitleDescriptionHtmlBox = new HeaderTitleDescriptionHtmlBox();
+let headerHtmlBox = new HeaderHtmlBox(MinifiedCode)
+let headerTitleDescriptionHtmlBox = new HeaderTitleDescriptionHtmlBox(MinifiedCode);
 
 PageHeadsBuild("User add - RT", "")
 

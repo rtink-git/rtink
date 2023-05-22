@@ -1,12 +1,12 @@
-﻿import { ApiUrl, PageHeadsBuild, Session } from '/PageComponents/Page/script.min.js';
+﻿import { IsDebug, ApiUrl, MinifiedCode, PageHeadsBuild, Session } from '/PageComponents/Page/script.min.js';
 import { HeaderHtmlBox } from "/PageComponents/HeaderHtmlBox/script.min.js";
-import { HeaderTitleDescriptionHtmlBox } from '/PageComponents/HeaderTitleDescriptionHtmlBox/script.js';
+import { HeaderTitleDescriptionHtmlBox } from '/PageComponents/HeaderTitleDescriptionHtmlBox/script.min.js';
 
 const UserEditPageName = "UserEdit"; const UserEditPageUrl = "/Pages/" + UserEditPageName; const UserEditUrlContent = UserEditPageUrl + "/content";
-let UserEditPageCss = document.createElement("link"); UserEditPageCss.setAttribute("rel", "stylesheet"); UserEditPageCss.setAttribute("href", UserEditPageUrl + "/style.css"); document.head.append(UserEditPageCss);
+let UserEditPageCss = document.createElement("link"); UserEditPageCss.setAttribute("rel", "stylesheet"); UserEditPageCss.setAttribute("href", UserEditPageUrl + "/style" + MinifiedCode + ".css"); document.head.append(UserEditPageCss);
 
-let headerHtmlBox = new HeaderHtmlBox()
-let headerTitleDescriptionHtmlBox = new HeaderTitleDescriptionHtmlBox();
+let headerHtmlBox = new HeaderHtmlBox(MinifiedCode)
+let headerTitleDescriptionHtmlBox = new HeaderTitleDescriptionHtmlBox(MinifiedCode);
 
 PageHeadsBuild("User Edit - RT", "")
 
