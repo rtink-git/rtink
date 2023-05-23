@@ -1,20 +1,19 @@
-﻿import { IsDebug, ApiUrl, MinifiedCode, PageHeadsBuild, Session } from '/PageComponents/Page/script.min.js';
+﻿import { Page } from '/PageComponents/Page/script.min.js';
 import { HeaderHtmlBox } from "/PageComponents/HeaderHtmlBox/script.min.js";
 import { HeaderTitleDescriptionHtmlBox } from '/PageComponents/HeaderTitleDescriptionHtmlBox/script.min.js';
 
-const UserAddPageName = "UserAdd"; const UserAddPageUrl = "/Pages/" + UserAddPageName; const UserAddUrlContent = UserAddPageUrl + "/content";
-let UserAddPageCss = document.createElement("link"); UserAddPageCss.setAttribute("rel", "stylesheet"); UserAddPageCss.setAttribute("href", UserAddPageUrl + "/style" + MinifiedCode + ".css"); document.head.append(UserAddPageCss);
+let PageModuleUse = new Page({ name: "UserAdd", title: "User add - RT" })
+await PageModuleUse.Build();
+let HeaderHtmlBoxModuleUse = new HeaderHtmlBox(PageModuleUse.MinifiedCode)
+let HeaderTitleDescriptionHtmlBoxModuleUse = new HeaderTitleDescriptionHtmlBox(PageModuleUse.MinifiedCode);
 
-let headerHtmlBox = new HeaderHtmlBox(MinifiedCode)
-let headerTitleDescriptionHtmlBox = new HeaderTitleDescriptionHtmlBox(MinifiedCode);
-
-PageHeadsBuild("User add - RT", "")
+//--------------------
 
 try {
-    if (Session.RoleId > 0) {
-        if (Session.RoleId == 2) {
-            headerHtmlBox.PushMenuRow({ "icon": UserAddUrlContent + "/undo.png", "href": "/users" });
-            headerHtmlBox.InsertAdjacentHTML(document.getElementsByTagName("body")[0], "afterbegin", "")
+    if (PageModuleUse.Session.RoleId > 0) {
+        if (PageModuleUse.Session.RoleId == 2) {
+            HeaderHtmlBoxModuleUse.PushMenuRow({ "icon": PageModuleUse.UrlContent + "/undo.png", "href": "/users" });
+            HeaderHtmlBoxModuleUse.InsertAdjacentHTML(document.getElementsByTagName("body")[0], "afterbegin", "")
 
             let html = "\
 <div id=\"UserAddHtmlBox\">\
@@ -51,25 +50,25 @@ try {
 
         }
         else {
-            headerHtmlBox.PushMenuRow({ "icon": UserAddUrlContent + "/undo.png", "href": "/users" });
-            headerHtmlBox.InsertAdjacentHTML(document.getElementsByTagName("body")[0], "afterbegin", "")
-            headerTitleDescriptionHtmlBox.InsertAdjacentHTML(document.body, "beforeend", "403", "Forbidden. The page is available only to the administrator.")
+            HeaderHtmlBoxModuleUse.PushMenuRow({ "icon": PageModuleUse.UrlContent + "/undo.png", "href": "/users" });
+            HeaderHtmlBoxModuleUse.InsertAdjacentHTML(document.getElementsByTagName("body")[0], "afterbegin", "")
+            HeaderTitleDescriptionHtmlBoxModuleUse.InsertAdjacentHTML(document.body, "beforeend", "403", "Forbidden. The page is available only to the administrator.")
             document.getElementById("HeaderTitleDescriptionHtmlBox").style.marginTop = ((window.screen.height - document.getElementById("HeaderTitleDescriptionHtmlBox").clientHeight - document.getElementById("HeaderHtmlBox").clientHeight - 100) / 2)
         }
     }
     else {
         localStorage.setItem("SessionRefrshRequired", "true")
-        let signinUrl = ApiUrl + "/Base/Authorization/Signin/Google?SessionToken=" + Session.Token + "&RedirectUrl=" + document.URL
-        headerHtmlBox.PushMenuRow({ "icon": UserAddUrlContent + "/login.png", "href": signinUrl });
-        headerHtmlBox.InsertAdjacentHTML(document.getElementsByTagName("body")[0], "afterbegin", "")
-        headerTitleDescriptionHtmlBox.InsertAdjacentHTML(document.body, "beforeend", "401", "Unauthorized.")
+        let signinUrl = PageModuleUse.UrlApi + "/Base/Authorization/Signin/Google?SessionToken=" + PageModuleUse.Session.Token + "&RedirectUrl=" + document.URL
+        HeaderHtmlBoxModuleUse.PushMenuRow({ "icon": PageModuleUse.UrlContent + "/login.png", "href": signinUrl });
+        HeaderHtmlBoxModuleUse.InsertAdjacentHTML(document.getElementsByTagName("body")[0], "afterbegin", "")
+        HeaderTitleDescriptionHtmlBoxModuleUse.InsertAdjacentHTML(document.body, "beforeend", "401", "Unauthorized.")
         document.getElementById("HeaderTitleDescriptionHtmlBox").style.marginTop = ((window.screen.height - document.getElementById("HeaderTitleDescriptionHtmlBox").clientHeight - document.getElementById("HeaderHtmlBox").clientHeight - 100) / 2)
     }
 }
 catch {
-    headerHtmlBox.PushMenuRow({ "icon": UserAddUrlContent + "/undo.png", "href": "/users" });
-    headerHtmlBox.InsertAdjacentHTML(document.getElementsByTagName("body")[0], "afterbegin", "")
-    headerTitleDescriptionHtmlBox.InsertAdjacentHTML(document.body, "beforeend", "ERROR", "Error in code. Try again.")
+    HeaderHtmlBoxModuleUse.PushMenuRow({ "icon": PageModuleUse.UrlContent + "/undo.png", "href": "/users" });
+    HeaderHtmlBoxModuleUse.InsertAdjacentHTML(document.getElementsByTagName("body")[0], "afterbegin", "")
+    HeaderTitleDescriptionHtmlBoxModuleUse.InsertAdjacentHTML(document.body, "beforeend", "ERROR", "Error in code. Try again.")
     document.getElementById("HeaderTitleDescriptionHtmlBox").style.marginTop = ((window.screen.height - document.getElementById("HeaderTitleDescriptionHtmlBox").clientHeight - document.getElementById("HeaderHtmlBox").clientHeight - 100) / 2)
 }
 
@@ -98,13 +97,12 @@ document.getElementById("UserAddHtmlBoxSubmit").addEventListener('click', async 
 //-- api actions
 
 async function ApiUserAdd(login, title, description, url, parseType) {
-    const response = await fetch(ApiUrl + "/RtInk/User", {
+    const response = await fetch(PageModuleUse.UrlApi + "/RtInk/User", {
         method: "POST",
-        headers: { "Accept": "application/json", "Content-Type": "application/json", "Authorization": "Bearer " + Session.Token },
+        headers: { "Accept": "application/json", "Content-Type": "application/json", "Authorization": "Bearer " + PageModuleUse.Session.Token },
         body: JSON.stringify({ "login": login, "title": title, "description": description, "url": url, "parseType": parseType })
     });
     if (response.ok === true) {
         document.location.href = "/i/-" + login
-
     }
 }

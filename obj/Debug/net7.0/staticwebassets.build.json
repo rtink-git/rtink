@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "2gn6mubTLw5BNyHXddhBVQnuheihO0SqImtolccyRyQ=",
+  "Hash": "68bWVE/nOrPTTI0SDyXmQh8Uhx8rcE7e4rMwezutnzg=",
   "Source": "RtInk",
   "BasePath": "_content/RtInk",
   "Mode": "Default",
@@ -1936,23 +1936,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/Pages/UserAdd/style.css"
-    },
-    {
-      "Identity": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/Pages/UserAdd/style.min.css",
-      "SourceId": "RtInk",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/",
-      "BasePath": "_content/RtInk",
-      "RelativePath": "Pages/UserAdd/style.min.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/Pages/UserAdd/style.min.css"
     },
     {
       "Identity": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/Pages/UserEdit/content/undo.png",

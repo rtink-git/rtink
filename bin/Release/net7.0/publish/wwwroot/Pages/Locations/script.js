@@ -1,25 +1,21 @@
-﻿import { IsDebug, ApiUrl, MinifiedCode, PageHeadsBuild, Session } from '/PageComponents/Page/script.min.js';
+﻿import { Page } from '/PageComponents/Page/script.min.js';
 import { HeaderHtmlBox } from '/PageComponents/HeaderHtmlBox/script.min.js';
 import { HeaderTitleDescriptionHtmlBox } from '/PageComponents/HeaderTitleDescriptionHtmlBox/script.min.js';
 import { LocsHtmlBox } from '/PageComponents/LocsHtmlBox/script.min.js';
 
-let headerHtmlBox = new HeaderHtmlBox(MinifiedCode)
-let headerTitleDescriptionHtmlBox = new HeaderTitleDescriptionHtmlBox(MinifiedCode);
+let PageModuleUse = new Page({ name: "Locations", title: "Locations - RT" })
+await PageModuleUse.Build();
+let HeaderHtmlBoxModuleUse = new HeaderHtmlBox(PageModuleUse.MinifiedCode)
+let HeaderTitleDescriptionHtmlBoxModuleUse = new HeaderTitleDescriptionHtmlBox(PageModuleUse.MinifiedCode);
 
-const LocationsPageName = "Locations";
-const LocationsPageUrl = "/Pages/" + LocationsPageName;
-const LocationsPageUrlContent = LocationsPageUrl + "/content";
-let LocationsPageCss = document.createElement("link"); LocationsPageCss.setAttribute("rel", "stylesheet"); LocationsPageCss.setAttribute("href", LocationsPageUrl + "/style" + MinifiedCode + ".css"); document.head.append(LocationsPageCss);
-PageHeadsBuild("Locations - RT", "")
-
-
+//--------------------
 
 let href = "/users"
-if (Session.RoleId == 0)
+if (PageModuleUse.Session.RoleId == 0)
     href = "/"
-headerHtmlBox.PushMenuRow({ "icon": LocationsPageUrlContent + "/undo.png", "href": href })
-headerHtmlBox.InsertAdjacentHTML(document.getElementsByTagName("body")[0], "afterbegin", "")
-headerTitleDescriptionHtmlBox.InsertAdjacentHTML(document.getElementById("HeaderHtmlBox"), "afterend", "LOCATIONS", "watch & choose")
+HeaderHtmlBoxModuleUse.PushMenuRow({ "icon": PageModuleUse.UrlContent + "/undo.png", "href": href })
+HeaderHtmlBoxModuleUse.InsertAdjacentHTML(document.getElementsByTagName("body")[0], "afterbegin", "")
+HeaderTitleDescriptionHtmlBoxModuleUse.InsertAdjacentHTML(document.getElementById("HeaderHtmlBox"), "afterend", "LOCATIONS", "watch & choose")
 
-let locsHtmlBox = new LocsHtmlBox(document.getElementById(headerTitleDescriptionHtmlBox.Name), "afterend", ApiUrl, Session.Token, Session.RoleId, MinifiedCode)
+let locsHtmlBox = new LocsHtmlBox(document.getElementById(HeaderTitleDescriptionHtmlBoxModuleUse.Name), "afterend", PageModuleUse)
 await locsHtmlBox.AppendList()

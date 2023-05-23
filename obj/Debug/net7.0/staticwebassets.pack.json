@@ -353,10 +353,6 @@
       "PackagePath": "staticwebassets/Pages/UserAdd/style.css"
     },
     {
-      "Id": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/Pages/UserAdd/style.min.css",
-      "PackagePath": "staticwebassets/Pages/UserAdd/style.min.css"
-    },
-    {
       "Id": "/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/wwwroot/Pages/UserEdit/content/undo.png",
       "PackagePath": "staticwebassets/Pages/UserEdit/content/undo.png"
     },

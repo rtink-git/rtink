@@ -1,9 +1,7 @@
 ﻿export class UsersHtmlBox {
     _Target
     _Position
-    _ApiUrl
-    _SessionToken
-    _SessionRoleId
+    _Page
 
     _UrlContent
     _Take
@@ -11,17 +9,15 @@
     Name
     Page
 
-    constructor(target, position, apiUrl, sessionToken, sessionRoleId, minifiedCode) {
+    constructor(target, position, page) {
         this._Target = target
         this._Position = position
-        this._ApiUrl = apiUrl
-        this._SessionToken = sessionToken
-        this._SessionRoleId = sessionRoleId
+        this._Page = page
 
         this.Name = this.constructor.name;
         let url = "/PageComponents/" + this.Name;
         this._UrlContent = url + "/content"
-        let css = document.createElement("link"); css.setAttribute("rel", "stylesheet"); css.setAttribute("href", url + "/style" + minifiedCode + ".css"); document.head.append(css);
+        let css = document.createElement("link"); css.setAttribute("rel", "stylesheet"); css.setAttribute("href", url + "/style" + this._Page.MinifiedCode + ".css"); document.head.append(css);
 
         this.Page = 1;
         this._Take = 50;
@@ -138,18 +134,18 @@
     //-- api actions
 
     async _ApiGetList() {
-        const response = await fetch(this._ApiUrl + "/RtInk/Users?take=" + this._Take + "&page=" + this.Page, {
+        const response = await fetch(this._Page.UrlApi + "/RtInk/Users?take=" + this._Take + "&page=" + this.Page, {
             method: "GET",
-            headers: { "Accept": "application/json", "Authorization": "Bearer " + this._SessionToken }
+            headers: { "Accept": "application/json", "Authorization": "Bearer " + this._Page.Session.Token }
         });
         if (response.ok === true) return await response.json();
         return null;
     }
 
     async _ApiUserSubscrib(userLogin) {
-        const response = await fetch(this._ApiUrl + "/Base/User/Subscrib?userLogin=" + userLogin, {
+        const response = await fetch(this._Page.UrlApi + "/Base/User/Subscrib?userLogin=" + userLogin, {
             method: "POST",
-            headers: { "Accept": "application/json", "Authorization": "Bearer " + this._SessionToken }
+            headers: { "Accept": "application/json", "Authorization": "Bearer " + this._Page.Session.Token }
         });
         if (response.ok === true) return await response.json();
         return null;

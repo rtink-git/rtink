@@ -248,6 +248,8 @@ D:/dev/Wecan/rt_ink/dev/rt ink net seven git rep/rtink/obj/Release/net7.0/ref/Rt
 //Mac/Home/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/obj/Release/net7.0/RtInk.pdb
 //Mac/Home/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/obj/Release/net7.0/RtInk.genruntimeconfig.cache
 //Mac/Home/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/obj/Release/net7.0/ref/RtInk.dll
+/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/obj/Release/net7.0/RtInk.csproj.AssemblyReference.cache
+/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/obj/Release/net7.0/RtInk.GeneratedMSBuildEditorConfig.editorconfig
 /Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/bin/Release/net7.0/appsettings.Development.json
 /Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/bin/Release/net7.0/appsettings.json
 /Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/bin/Release/net7.0/bundleconfig.json
@@ -265,8 +267,6 @@ D:/dev/Wecan/rt_ink/dev/rt ink net seven git rep/rtink/obj/Release/net7.0/ref/Rt
 /Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/bin/Release/net7.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 /Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/bin/Release/net7.0/Microsoft.IdentityModel.Tokens.dll
 /Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/bin/Release/net7.0/System.IdentityModel.Tokens.Jwt.dll
-/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/obj/Release/net7.0/RtInk.csproj.AssemblyReference.cache
-/Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/obj/Release/net7.0/RtInk.GeneratedMSBuildEditorConfig.editorconfig
 /Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/obj/Release/net7.0/RtInk.AssemblyInfoInputs.cache
 /Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/obj/Release/net7.0/RtInk.AssemblyInfo.cs
 /Users/aidargalimov/Documents/Airat/dev/Wecan/rt_ink/dev/rt ink git/rtink/obj/Release/net7.0/RtInk.csproj.CoreCompileInputs.cache

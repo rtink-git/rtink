@@ -4,25 +4,19 @@
 /*-- 2023-02-16 Task.Error: User edit about only latin symbols --*/
 /*-- 2023-02-16 Task.Warning: Login не может быть числом --*/
 
-import { IsDebug, ApiUrl, MinifiedCode, PageHeadsBuild, Session } from '/PageComponents/Page/script.min.js';
+import { Page } from '/PageComponents/Page/script.min.js';
 import { HeaderHtmlBox } from "/PageComponents/HeaderHtmlBox/script.min.js";
 import { HeaderDescriptionHtmlBox } from '/PageComponents/HeaderDescriptionHtmlBox/script.min.js';
 import { HeaderTitleDescriptionHtmlBox } from '/PageComponents/HeaderTitleDescriptionHtmlBox/script.min.js';
 import { SearchHeaderQHtmlBox } from "/PageComponents/SearchHeaderQHtmlBox/script.min.js";
 import { ArticlesHtmlBox } from "/PageComponents/ArticlesHtmlBox/script.min.js";
 
-let headerHtmlBox = new HeaderHtmlBox(MinifiedCode)
-let searchHeaderQHtmlBox = new SearchHeaderQHtmlBox(MinifiedCode);
-let headerTitleDescriptionHtmlBox = new HeaderTitleDescriptionHtmlBox(MinifiedCode);
+let PageModuleUse = new Page({ name: "i", title: "News aggregator - RT", description: "RT - точка сбора самых интересных и актуальных новостей российских онлайн-медиа. \"Картина дня\" формируется автоматически на базе популярности материалов." })
+await PageModuleUse.Build();
 
-//-- PageHeadsBuild - start
-
-PageHeadsBuild("News aggregator - RT", "RT - точка сбора самых интересных и актуальных новостей российских онлайн-медиа. \"Картина дня\" формируется автоматически на базе популярности материалов.")
-
-//-- css set
-
-const iPageName = "i";  const iPageUrl = "/Pages/" + iPageName; const iPageUrlContent = iPageUrl + "/content";
-let iPageCss = document.createElement("link"); iPageCss.setAttribute("rel", "stylesheet"); iPageCss.setAttribute("href", iPageUrl + "/style" + MinifiedCode + ".css"); document.head.append(iPageCss);
+let HeaderHtmlBoxModuleUse = new HeaderHtmlBox(PageModuleUse.MinifiedCode)
+let HeaderTitleDescriptionHtmlBoxModuleUse = new HeaderTitleDescriptionHtmlBox(PageModuleUse.MinifiedCode);
+let SearchHeaderQHtmlBoxModuleUse = new SearchHeaderQHtmlBox(PageModuleUse.MinifiedCode);
 
 //-- data from url ---
 
@@ -50,10 +44,9 @@ if (search.length > 0) {
         else if (searchSplit.length == 2 && searchSplit[1].length == 0 && search[search.length - 1] == '-')
             typeApiPageI = 2
         else typeApiPageI = 3
-} 
+}
 
 //--------------------
-
 
 let HeaderTitle = "RT";
 let headerDescriptionName = ""
@@ -62,43 +55,39 @@ let subscribType = 0;
 let userTitle = "";
 let userDescription = "";
 
-
 if (typeApiPageI == 0) {
     headerDescriptionName = "NEWS";
-    headerHtmlBox.PushMenuRow({ "icon": iPageUrlContent + "/search.png", "href": "", "id": "SearchBM", "alt": "search" })
+    HeaderHtmlBoxModuleUse.PushMenuRow({ "icon": PageModuleUse.UrlContent + "/search.png", "href": "", "id": "SearchBM", "alt": "search" })
 
-    if (Session.RoleId == 0) {
-        headerHtmlBox.PushMenuRow({ "icon": iPageUrlContent + "/location.png", "href": "/locations", "id": "LocationBM", "alt": "location" });
+    if (PageModuleUse.Session.RoleId == 0) {
+        HeaderHtmlBoxModuleUse.PushMenuRow({ "icon": PageModuleUse.UrlContent + "/location.png", "href": "/locations", "id": "LocationBM", "alt": "location" });
         localStorage.setItem("SessionRefrshRequired", "true")
-        headerHtmlBox.PushMenuRow({ "icon": iPageUrlContent + "/login.png", "href": ApiUrl + "/Base/Authorization/Signin/Google?SessionToken=" + Session.Token + "&RedirectUrl=" + document.URL });
+        HeaderHtmlBoxModuleUse.PushMenuRow({ "icon": PageModuleUse.UrlContent + "/login.png", "href": PageModuleUse.UrlApi + "/Base/Authorization/Signin/Google?SessionToken=" + PageModuleUse.Session.Token + "&RedirectUrl=" + document.URL });
     }
-    else headerHtmlBox.PushMenuRow({ "icon": iPageUrlContent + "/category.png", "href": "/users", "alt": "signin" });
+    else HeaderHtmlBoxModuleUse.PushMenuRow({ "icon": PageModuleUse.UrlContent + "/category.png", "href": "/users", "alt": "signin" });
 }
 else if (typeApiPageI == 1) {
     HeaderTitle = ""
-
     let userBio = await ApiUserBio(userLogin)
     subscribType = userBio.sbt
     userTitle = userBio.title;
     userDescription = userBio.description;
 
-    if (Session.RoleId > 0) {
-
-
+    if (PageModuleUse.Session.RoleId > 0) {
         if (subscribType != 1) {
-            let subscribUrl = iPageUrlContent + "/doubleCheckBlackBlack.png"
+            let subscribUrl = PageModuleUse.UrlContent + "/doubleCheckBlackBlack.png"
             if (subscribType == 2)
-                subscribUrl = iPageUrlContent + "/doubleCheckBlackRed.png"
+                subscribUrl = PageModuleUse.UrlContent + "/doubleCheckBlackRed.png"
             else if (subscribType == 3)
-                subscribUrl = iPageUrlContent + "/doubleCheckRedBlack.png"
+                subscribUrl = PageModuleUse.UrlContent + "/doubleCheckRedBlack.png"
             else if (subscribType == 4)
-                subscribUrl = iPageUrlContent + "/doubleCheckRedRed.png"
+                subscribUrl = PageModuleUse.UrlContent + "/doubleCheckRedRed.png"
 
-            headerHtmlBox.PushMenuRow({ "icon": subscribUrl, "href": "", "id": "SubsribB" });
+            HeaderHtmlBoxModuleUse.PushMenuRow({ "icon": subscribUrl, "href": "", "id": "SubsribB" });
         }
         else {
-            headerHtmlBox.PushMenuRow({ "icon": iPageUrlContent + "/add.png", "href": "" });
-            headerHtmlBox.PushMenuRow({ "icon": iPageUrlContent + "/settings.png", "href": "" });
+            HeaderHtmlBoxModuleUse.PushMenuRow({ "icon": PageModuleUse.UrlContent + "/add.png", "href": "" });
+            HeaderHtmlBoxModuleUse.PushMenuRow({ "icon": PageModuleUse.UrlContent + "/settings.png", "href": "" });
         }
     }
 
@@ -109,34 +98,34 @@ else if (typeApiPageI == 1) {
         placeholder = placeholder.trim().toUpperCase();
     }
 
-    headerHtmlBox.PushMenuRow({ "icon": iPageUrlContent + "/search.png", "href": "", "id": "SearchBM" });
+    HeaderHtmlBoxModuleUse.PushMenuRow({ "icon": PageModuleUse.UrlContent + "/search.png", "href": "", "id": "SearchBM" });
     let href = "/"
-    if (Session.RoleId > 0) href = "/users"
-    headerHtmlBox.PushMenuRow({ "icon": iPageUrlContent + "/undo.png", "href": href });
+    if (PageModuleUse.Session.RoleId > 0) href = "/users"
+    HeaderHtmlBoxModuleUse.PushMenuRow({ "icon": PageModuleUse.UrlContent + "/undo.png", "href": href });
 }
 else if (typeApiPageI == 2) {
-    headerDescriptionName = "ARTICLE";
+    HeaderHtmlBoxModuleUse = "ARTICLE";
 
-    headerHtmlBox.PushMenuRow({ "icon": iPageUrlContent + "/bookmark.png", "id": "BookmarkB" });
-    headerHtmlBox.PushMenuRow({ "icon": iPageUrlContent + "/undo.png", "href": "/" });
+    HeaderHtmlBoxModuleUse.PushMenuRow({ "icon": PageModuleUse.UrlContent + "/bookmark.png", "id": "BookmarkB" });
+    HeaderHtmlBoxModuleUse.PushMenuRow({ "icon": PageModuleUse.UrlContent + "/undo.png", "href": "/" });
 }
 else if (typeApiPageI == 3) {
     headerDescriptionName = "SEARCH";
     placeholder = search.toUpperCase().replaceAll('-', ' ');
 
-    headerHtmlBox.PushMenuRow({ "icon": iPageUrlContent + "/search.png", "href": "", "id": "SearchBM" });
-    headerHtmlBox.PushMenuRow({ "icon": iPageUrlContent + "/undo.png", "href": "/" });
+    HeaderHtmlBoxModuleUse.PushMenuRow({ "icon": PageModuleUse.UrlContent + "/search.png", "href": "", "id": "SearchBM" });
+    HeaderHtmlBoxModuleUse.PushMenuRow({ "icon": PageModuleUse.UrlContent + "/undo.png", "href": "/" });
 } 
 
 //--------------------
 
-headerHtmlBox.InsertAdjacentHTML(document.getElementsByTagName("body")[0], "afterbegin", HeaderTitle)
+HeaderHtmlBoxModuleUse.InsertAdjacentHTML(document.getElementsByTagName("body")[0], "afterbegin", HeaderTitle)
 
 let idxy = "HeaderDescriptionHtmlBox"
 if (headerDescriptionName.length > 0)
-    new HeaderDescriptionHtmlBox(MinifiedCode).InsertAdjacentHTML(document.getElementById("HeaderHtmlBox"), "afterend", headerDescriptionName)
+    new HeaderDescriptionHtmlBox(PageModuleUse.MinifiedCode).InsertAdjacentHTML(document.getElementById("HeaderHtmlBox"), "afterend", headerDescriptionName)
 else idxy = "HeaderHtmlBox"
-searchHeaderQHtmlBox.InsertAdjacentHTML(document.getElementById(idxy), "afterend", placeholder)
+SearchHeaderQHtmlBoxModuleUse.InsertAdjacentHTML(document.getElementById(idxy), "afterend", placeholder)
 
 if (typeApiPageI == 1) {
     if (search.split('-').length > 2) {
@@ -148,9 +137,9 @@ else if (typeApiPageI == 2)
 {
     let apiArticleBookmarkJson = await ApiArticleBookmarkGet(search.substring(0, search.length - 1))
     if (apiArticleBookmarkJson.ok)
-        document.getElementById("BookmarkB").querySelector("img").setAttribute("src", iPageUrlContent + "/bookmarkSelected.png")
+        document.getElementById("BookmarkB").querySelector("img").setAttribute("src", PageModuleUse.UrlContent + "/bookmarkSelected.png")
     else
-        document.getElementById("BookmarkB").querySelector("img").setAttribute("src", iPageUrlContent + "/bookmark.png")
+        document.getElementById("BookmarkB").querySelector("img").setAttribute("src", PageModuleUse.UrlContent + "/bookmark.png")
 }
 else if (typeApiPageI == 3) {
     document.getElementById("SearchHeaderQHtmlBox").style.display = "block"
@@ -166,17 +155,17 @@ if (userLogin.length > 0) {
     if (userDescription == "")
         userDescription = "User and his articles."
 
-    if (Session.RoleId == 2)
+    if (PageModuleUse.Session.RoleId == 2)
         userDescription += " <a href=\"/user/edit/" + userLogin + "\">Edit profile</a>"
 
 
-    headerTitleDescriptionHtmlBox.InsertAdjacentHTML(document.getElementById("SearchHeaderQHtmlBox"), "afterend", userTitle.toUpperCase(), userDescription)
-    prevBoxName = headerTitleDescriptionHtmlBox.Name
+    HeaderTitleDescriptionHtmlBoxModuleUse.InsertAdjacentHTML(document.getElementById("SearchHeaderQHtmlBox"), "afterend", userTitle.toUpperCase(), userDescription)
+    prevBoxName = HeaderTitleDescriptionHtmlBoxModuleUse.Name
 }
 
 //--------------------
 
-let articlesHtmlBox = new ArticlesHtmlBox(document.getElementById(prevBoxName), "afterend", search, ApiUrl, Session.Token, MinifiedCode)
+let articlesHtmlBox = new ArticlesHtmlBox(document.getElementById(prevBoxName), "afterend", search, PageModuleUse)
 await articlesHtmlBox.AppendList()
 
 
@@ -189,10 +178,10 @@ if (document.getElementById("BookmarkB") != null)
     document.getElementById("BookmarkB").addEventListener('click', async (event) => {
         let apiArticleBookmarkJson = await ApiArticleBookmarkPost(search.substring(0, search.length - 1))
         if (apiArticleBookmarkJson)
-            if (document.getElementById("BookmarkB").querySelector("img").getAttribute("src") == iPageUrlContent + "/bookmark.png")
-                document.getElementById("BookmarkB").querySelector("img").setAttribute("src", iPageUrlContent + "/bookmarkSelected.png")
+            if (document.getElementById("BookmarkB").querySelector("img").getAttribute("src") == PageModuleUse.UrlContent + "/bookmark.png")
+                document.getElementById("BookmarkB").querySelector("img").setAttribute("src", PageModuleUse.UrlContent + "/bookmarkSelected.png")
             else
-                document.getElementById("BookmarkB").querySelector("img").setAttribute("src", iPageUrlContent + "/bookmark.png")
+                document.getElementById("BookmarkB").querySelector("img").setAttribute("src", PageModuleUse.UrlContent + "/bookmark.png")
     });
 
 let prevScrollY = window.scrollY
@@ -256,32 +245,32 @@ document.querySelector("#" + searchHeaderQHtmlBox.Name + " input").addEventListe
 //-- api actions
 
 async function ApiUserBio(userLogin) {
-    const response = await fetch(ApiUrl + "/RtInk/User?userLogin=" + userLogin, {
-        method: "GET", headers: { "Accept": "application/json", "Authorization": "Bearer " + Session.Token }
+    const response = await fetch(PageModuleUse.UrlApi + "/RtInk/User?userLogin=" + userLogin, {
+        method: "GET", headers: { "Accept": "application/json", "Authorization": "Bearer " + PageModuleUse.Session.Token }
     });
     if (response.ok === true) return await response.json();
     return null;
 }
 
 async function ApiUserSubscrib(userLogin) {
-    const response = await fetch(ApiUrl + "/Base/User/Subscrib?userLogin=" + userLogin, {
-        method: "POST", headers: { "Accept": "application/json", "Authorization": "Bearer " + Session.Token }
+    const response = await fetch(PageModuleUse.UrlApi + "/Base/User/Subscrib?userLogin=" + userLogin, {
+        method: "POST", headers: { "Accept": "application/json", "Authorization": "Bearer " + PageModuleUse.Session.Token }
     });
     if (response.ok === true) return await response.json();
     return null;
 }
 
 async function ApiArticleBookmarkGet(urlShort) {
-    const response = await fetch(ApiUrl + "/RtInk/ArticleBookmark?urlShort=" + urlShort, {
-        method: "GET", headers: { "Authorization": "Bearer " + Session.Token }
+    const response = await fetch(PageModuleUse.UrlApi + "/RtInk/ArticleBookmark?urlShort=" + urlShort, {
+        method: "GET", headers: { "Authorization": "Bearer " + PageModuleUse.Session.Token }
     });
     if (response.ok === true) return await response.json();
     return null;
 }
 
 async function ApiArticleBookmarkPost(urlShort) {
-    const response = await fetch(ApiUrl + "/RtInk/ArticleBookmark?urlShort=" + urlShort, {
-        method: "POST", headers: { "Authorization": "Bearer " + Session.Token }
+    const response = await fetch(PageModuleUse.UrlApi + "/RtInk/ArticleBookmark?urlShort=" + urlShort, {
+        method: "POST", headers: { "Authorization": "Bearer " + PageModuleUse.Session.Token }
     });
     return response.ok
 }
